@@ -17,14 +17,15 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
 Import-Package: org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: fr.inria.diverse.hdl,
- fr.inria.diverse.hdl.services,
+ fr.inria.diverse.hdl.formatting2,
+ fr.inria.diverse.hdl.generator,
  fr.inria.diverse.hdl.hipsterDomainLanguage,
  fr.inria.diverse.hdl.hipsterDomainLanguage.impl,
  fr.inria.diverse.hdl.hipsterDomainLanguage.util,
- fr.inria.diverse.hdl.serializer,
  fr.inria.diverse.hdl.parser.antlr,
  fr.inria.diverse.hdl.parser.antlr.internal,
- fr.inria.diverse.hdl.validation,
+ fr.inria.diverse.hdl.refactoring,
  fr.inria.diverse.hdl.scoping,
- fr.inria.diverse.hdl.generator,
- fr.inria.diverse.hdl.formatting
+ fr.inria.diverse.hdl.serializer,
+ fr.inria.diverse.hdl.services,
+ fr.inria.diverse.hdl.validation

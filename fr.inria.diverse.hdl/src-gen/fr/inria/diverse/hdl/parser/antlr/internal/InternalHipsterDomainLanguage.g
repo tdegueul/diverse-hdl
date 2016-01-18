@@ -275,9 +275,9 @@ ruleRelation returns [EObject current=null]
 	}
 
 )
-)(	otherlv_4='{' 
+)(	otherlv_4='[' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_4_0());
+    	newLeafNode(otherlv_4, grammarAccess.getRelationAccess().getLeftSquareBracketKeyword_4_0());
     }
 (
 (
@@ -297,9 +297,9 @@ ruleRelation returns [EObject current=null]
 	    }
 
 )
-)	otherlv_6='}' 
+)	otherlv_6=']' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_4_2());
+    	newLeafNode(otherlv_6, grammarAccess.getRelationAccess().getRightSquareBracketKeyword_4_2());
     }
 )	otherlv_7='to' 
     {
@@ -318,9 +318,9 @@ ruleRelation returns [EObject current=null]
 	}
 
 )
-)(	otherlv_9='{' 
+)(	otherlv_9='[' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_7_0());
+    	newLeafNode(otherlv_9, grammarAccess.getRelationAccess().getLeftSquareBracketKeyword_7_0());
     }
 (
 (
@@ -340,9 +340,9 @@ ruleRelation returns [EObject current=null]
 	    }
 
 )
-)	otherlv_11='}' 
+)	otherlv_11=']' 
     {
-    	newLeafNode(otherlv_11, grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_7_2());
+    	newLeafNode(otherlv_11, grammarAccess.getRelationAccess().getRightSquareBracketKeyword_7_2());
     }
 )	otherlv_12='}' 
     {

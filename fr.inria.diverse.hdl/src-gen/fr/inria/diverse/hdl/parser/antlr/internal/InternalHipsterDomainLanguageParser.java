@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'entity'", "'{'", "'}'", "'relationship'", "'to'", "'enum'", "','", "'required'", "'minlength'", "'('", "')'", "'maxlength'", "'min'", "'max'", "'pattern'", "'OneToMany'", "'ManyToOne'", "'OneToOne'", "'ManyToMany'", "'String'", "'Integer'", "'Long'", "'BigDecimal'", "'Float'", "'Double'", "'Enum'", "'Boolean'", "'LocalDate'", "'ZoneDateTime'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'entity'", "'{'", "'}'", "'relationship'", "'['", "']'", "'to'", "'enum'", "','", "'required'", "'minlength'", "'('", "')'", "'maxlength'", "'min'", "'max'", "'pattern'", "'OneToMany'", "'ManyToOne'", "'OneToOne'", "'ManyToMany'", "'String'", "'Integer'", "'Long'", "'BigDecimal'", "'Float'", "'Double'", "'Enum'", "'Boolean'", "'LocalDate'", "'ZoneDateTime'"
     };
     public static final int RULE_STRING=6;
     public static final int RULE_SL_COMMENT=8;
@@ -59,6 +59,8 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
     public static final int T__23=23;
     public static final int T__24=24;
     public static final int T__25=25;
+    public static final int T__40=40;
+    public static final int T__41=41;
     public static final int T__20=20;
     public static final int T__21=21;
 
@@ -156,7 +158,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( (LA1_0==11||LA1_0==14||LA1_0==16) ) {
+                if ( (LA1_0==11||LA1_0==14||LA1_0==18) ) {
                     alt1=1;
                 }
 
@@ -283,7 +285,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                 alt2=2;
                 }
                 break;
-            case 16:
+            case 18:
                 {
                 alt2=3;
                 }
@@ -577,7 +579,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
 
     // $ANTLR start "ruleRelation"
-    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:235:1: ruleRelation returns [EObject current=null] : (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' ) ;
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:235:1: ruleRelation returns [EObject current=null] : (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '[' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= ']' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '[' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= ']' ) otherlv_12= '}' ) ;
     public final EObject ruleRelation() throws RecognitionException {
         EObject current = null;
 
@@ -599,11 +601,11 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
          enterRule(); 
             
         try {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:238:28: ( (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' ) )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:1: (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:238:28: ( (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '[' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= ']' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '[' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= ']' ) otherlv_12= '}' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:1: (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '[' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= ']' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '[' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= ']' ) otherlv_12= '}' )
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:1: (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:3: otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}'
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:1: (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '[' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= ']' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '[' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= ']' ) otherlv_12= '}' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:3: otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '[' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= ']' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '[' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= ']' ) otherlv_12= '}'
             {
             otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleRelation512); 
 
@@ -665,12 +667,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:278:2: (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:278:4: otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}'
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:278:2: (otherlv_4= '[' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= ']' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:278:4: otherlv_4= '[' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= ']'
             {
-            otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleRelation578); 
+            otherlv_4=(Token)match(input,15,FOLLOW_15_in_ruleRelation578); 
 
-                	newLeafNode(otherlv_4, grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_4_0());
+                	newLeafNode(otherlv_4, grammarAccess.getRelationAccess().getLeftSquareBracketKeyword_4_0());
                 
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:282:1: ( (lv_fromRelationName_5_0= RULE_ID ) )
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:283:1: (lv_fromRelationName_5_0= RULE_ID )
@@ -698,14 +700,14 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            otherlv_6=(Token)match(input,13,FOLLOW_13_in_ruleRelation612); 
+            otherlv_6=(Token)match(input,16,FOLLOW_16_in_ruleRelation612); 
 
-                	newLeafNode(otherlv_6, grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_4_2());
+                	newLeafNode(otherlv_6, grammarAccess.getRelationAccess().getRightSquareBracketKeyword_4_2());
                 
 
             }
 
-            otherlv_7=(Token)match(input,15,FOLLOW_15_in_ruleRelation625); 
+            otherlv_7=(Token)match(input,17,FOLLOW_17_in_ruleRelation625); 
 
                 	newLeafNode(otherlv_7, grammarAccess.getRelationAccess().getToKeyword_5());
                 
@@ -730,12 +732,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:321:2: (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:321:4: otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}'
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:321:2: (otherlv_9= '[' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= ']' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:321:4: otherlv_9= '[' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= ']'
             {
-            otherlv_9=(Token)match(input,12,FOLLOW_12_in_ruleRelation658); 
+            otherlv_9=(Token)match(input,15,FOLLOW_15_in_ruleRelation658); 
 
-                	newLeafNode(otherlv_9, grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_7_0());
+                	newLeafNode(otherlv_9, grammarAccess.getRelationAccess().getLeftSquareBracketKeyword_7_0());
                 
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:325:1: ( (lv_toRelationName_10_0= RULE_ID ) )
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:326:1: (lv_toRelationName_10_0= RULE_ID )
@@ -763,9 +765,9 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            otherlv_11=(Token)match(input,13,FOLLOW_13_in_ruleRelation692); 
+            otherlv_11=(Token)match(input,16,FOLLOW_16_in_ruleRelation692); 
 
-                	newLeafNode(otherlv_11, grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_7_2());
+                	newLeafNode(otherlv_11, grammarAccess.getRelationAccess().getRightSquareBracketKeyword_7_2());
                 
 
             }
@@ -852,7 +854,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:372:1: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_literals_3_0= RULE_ID ) ) (otherlv_4= ',' ( (lv_literals_5_0= RULE_ID ) ) )* otherlv_6= '}' )
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:372:3: otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_literals_3_0= RULE_ID ) ) (otherlv_4= ',' ( (lv_literals_5_0= RULE_ID ) ) )* otherlv_6= '}'
             {
-            otherlv_0=(Token)match(input,16,FOLLOW_16_in_ruleEnum788); 
+            otherlv_0=(Token)match(input,18,FOLLOW_18_in_ruleEnum788); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getEnumAccess().getEnumKeyword_0());
                 
@@ -918,7 +920,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                 int alt4=2;
                 int LA4_0 = input.LA(1);
 
-                if ( (LA4_0==17) ) {
+                if ( (LA4_0==19) ) {
                     alt4=1;
                 }
 
@@ -927,7 +929,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             	case 1 :
             	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:416:4: otherlv_4= ',' ( (lv_literals_5_0= RULE_ID ) )
             	    {
-            	    otherlv_4=(Token)match(input,17,FOLLOW_17_in_ruleEnum857); 
+            	    otherlv_4=(Token)match(input,19,FOLLOW_19_in_ruleEnum857); 
 
             	        	newLeafNode(otherlv_4, grammarAccess.getEnumAccess().getCommaKeyword_4_0());
             	        
@@ -1108,7 +1110,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             int alt5=2;
             int LA5_0 = input.LA(1);
 
-            if ( (LA5_0==18) ) {
+            if ( (LA5_0==20) ) {
                 alt5=1;
             }
             switch (alt5) {
@@ -1118,7 +1120,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:500:1: (lv_required_2_0= 'required' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:501:3: lv_required_2_0= 'required'
                     {
-                    lv_required_2_0=(Token)match(input,18,FOLLOW_18_in_ruleField1025); 
+                    lv_required_2_0=(Token)match(input,20,FOLLOW_20_in_ruleField1025); 
 
                             newLeafNode(lv_required_2_0, grammarAccess.getFieldAccess().getRequiredRequiredKeyword_2_0());
                         
@@ -1143,7 +1145,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                 int alt6=2;
                 int LA6_0 = input.LA(1);
 
-                if ( (LA6_0==19||(LA6_0>=22 && LA6_0<=25)) ) {
+                if ( (LA6_0==21||(LA6_0>=24 && LA6_0<=27)) ) {
                     alt6=1;
                 }
 
@@ -1262,10 +1264,10 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             int alt7=2;
             int LA7_0 = input.LA(1);
 
-            if ( (LA7_0==19||(LA7_0>=22 && LA7_0<=24)) ) {
+            if ( (LA7_0==21||(LA7_0>=24 && LA7_0<=26)) ) {
                 alt7=1;
             }
-            else if ( (LA7_0==25) ) {
+            else if ( (LA7_0==27) ) {
                 alt7=2;
             }
             else {
@@ -1387,10 +1389,10 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             int alt8=2;
             int LA8_0 = input.LA(1);
 
-            if ( (LA8_0==19||LA8_0==23) ) {
+            if ( (LA8_0==21||LA8_0==25) ) {
                 alt8=1;
             }
-            else if ( (LA8_0==22||LA8_0==24) ) {
+            else if ( (LA8_0==24||LA8_0==26) ) {
                 alt8=2;
             }
             else {
@@ -1512,10 +1514,10 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             int alt9=2;
             int LA9_0 = input.LA(1);
 
-            if ( (LA9_0==19) ) {
+            if ( (LA9_0==21) ) {
                 alt9=1;
             }
-            else if ( (LA9_0==23) ) {
+            else if ( (LA9_0==25) ) {
                 alt9=2;
             }
             else {
@@ -1637,10 +1639,10 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             int alt10=2;
             int LA10_0 = input.LA(1);
 
-            if ( (LA10_0==22) ) {
+            if ( (LA10_0==24) ) {
                 alt10=1;
             }
-            else if ( (LA10_0==24) ) {
+            else if ( (LA10_0==26) ) {
                 alt10=2;
             }
             else {
@@ -1761,11 +1763,11 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:713:1: (otherlv_0= 'minlength' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' )
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:713:3: otherlv_0= 'minlength' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')'
             {
-            otherlv_0=(Token)match(input,19,FOLLOW_19_in_ruleStringMinSpecification1620); 
+            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleStringMinSpecification1620); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getStringMinSpecificationAccess().getMinlengthKeyword_0());
                 
-            otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleStringMinSpecification1632); 
+            otherlv_1=(Token)match(input,22,FOLLOW_22_in_ruleStringMinSpecification1632); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getStringMinSpecificationAccess().getLeftParenthesisKeyword_1());
                 
@@ -1795,7 +1797,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            otherlv_3=(Token)match(input,21,FOLLOW_21_in_ruleStringMinSpecification1666); 
+            otherlv_3=(Token)match(input,23,FOLLOW_23_in_ruleStringMinSpecification1666); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getStringMinSpecificationAccess().getRightParenthesisKeyword_3());
                 
@@ -1874,11 +1876,11 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:764:1: (otherlv_0= 'maxlength' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' )
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:764:3: otherlv_0= 'maxlength' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')'
             {
-            otherlv_0=(Token)match(input,22,FOLLOW_22_in_ruleStringMaxSpecification1749); 
+            otherlv_0=(Token)match(input,24,FOLLOW_24_in_ruleStringMaxSpecification1749); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getStringMaxSpecificationAccess().getMaxlengthKeyword_0());
                 
-            otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleStringMaxSpecification1761); 
+            otherlv_1=(Token)match(input,22,FOLLOW_22_in_ruleStringMaxSpecification1761); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getStringMaxSpecificationAccess().getLeftParenthesisKeyword_1());
                 
@@ -1908,7 +1910,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            otherlv_3=(Token)match(input,21,FOLLOW_21_in_ruleStringMaxSpecification1795); 
+            otherlv_3=(Token)match(input,23,FOLLOW_23_in_ruleStringMaxSpecification1795); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getStringMaxSpecificationAccess().getRightParenthesisKeyword_3());
                 
@@ -1987,11 +1989,11 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:815:1: (otherlv_0= 'min' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' )
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:815:3: otherlv_0= 'min' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')'
             {
-            otherlv_0=(Token)match(input,23,FOLLOW_23_in_ruleIntegerMinSpecification1878); 
+            otherlv_0=(Token)match(input,25,FOLLOW_25_in_ruleIntegerMinSpecification1878); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getIntegerMinSpecificationAccess().getMinKeyword_0());
                 
-            otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleIntegerMinSpecification1890); 
+            otherlv_1=(Token)match(input,22,FOLLOW_22_in_ruleIntegerMinSpecification1890); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getIntegerMinSpecificationAccess().getLeftParenthesisKeyword_1());
                 
@@ -2021,7 +2023,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            otherlv_3=(Token)match(input,21,FOLLOW_21_in_ruleIntegerMinSpecification1924); 
+            otherlv_3=(Token)match(input,23,FOLLOW_23_in_ruleIntegerMinSpecification1924); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getIntegerMinSpecificationAccess().getRightParenthesisKeyword_3());
                 
@@ -2100,11 +2102,11 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:866:1: (otherlv_0= 'max' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' )
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:866:3: otherlv_0= 'max' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')'
             {
-            otherlv_0=(Token)match(input,24,FOLLOW_24_in_ruleIntegerMaxSpecification2007); 
+            otherlv_0=(Token)match(input,26,FOLLOW_26_in_ruleIntegerMaxSpecification2007); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getIntegerMaxSpecificationAccess().getMaxKeyword_0());
                 
-            otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleIntegerMaxSpecification2019); 
+            otherlv_1=(Token)match(input,22,FOLLOW_22_in_ruleIntegerMaxSpecification2019); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getIntegerMaxSpecificationAccess().getLeftParenthesisKeyword_1());
                 
@@ -2134,7 +2136,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            otherlv_3=(Token)match(input,21,FOLLOW_21_in_ruleIntegerMaxSpecification2053); 
+            otherlv_3=(Token)match(input,23,FOLLOW_23_in_ruleIntegerMaxSpecification2053); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getIntegerMaxSpecificationAccess().getRightParenthesisKeyword_3());
                 
@@ -2213,11 +2215,11 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:917:1: (otherlv_0= 'pattern' otherlv_1= '(' ( (lv_regex_2_0= RULE_STRING ) ) otherlv_3= ')' )
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:917:3: otherlv_0= 'pattern' otherlv_1= '(' ( (lv_regex_2_0= RULE_STRING ) ) otherlv_3= ')'
             {
-            otherlv_0=(Token)match(input,25,FOLLOW_25_in_rulePattern2136); 
+            otherlv_0=(Token)match(input,27,FOLLOW_27_in_rulePattern2136); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getPatternAccess().getPatternKeyword_0());
                 
-            otherlv_1=(Token)match(input,20,FOLLOW_20_in_rulePattern2148); 
+            otherlv_1=(Token)match(input,22,FOLLOW_22_in_rulePattern2148); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getPatternAccess().getLeftParenthesisKeyword_1());
                 
@@ -2247,7 +2249,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            otherlv_3=(Token)match(input,21,FOLLOW_21_in_rulePattern2182); 
+            otherlv_3=(Token)match(input,23,FOLLOW_23_in_rulePattern2182); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getPatternAccess().getRightParenthesisKeyword_3());
                 
@@ -2330,7 +2332,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             if ( (LA11_0==RULE_ID) ) {
                 alt11=1;
             }
-            else if ( ((LA11_0>=30 && LA11_0<=39)) ) {
+            else if ( ((LA11_0>=32 && LA11_0<=41)) ) {
                 alt11=2;
             }
             else {
@@ -2599,22 +2601,22 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1071:1: ( (enumLiteral_0= 'OneToMany' ) | (enumLiteral_1= 'ManyToOne' ) | (enumLiteral_2= 'OneToOne' ) | (enumLiteral_3= 'ManyToMany' ) )
             int alt12=4;
             switch ( input.LA(1) ) {
-            case 26:
+            case 28:
                 {
                 alt12=1;
                 }
                 break;
-            case 27:
+            case 29:
                 {
                 alt12=2;
                 }
                 break;
-            case 28:
+            case 30:
                 {
                 alt12=3;
                 }
                 break;
-            case 29:
+            case 31:
                 {
                 alt12=4;
                 }
@@ -2633,7 +2635,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1071:2: (enumLiteral_0= 'OneToMany' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1071:4: enumLiteral_0= 'OneToMany'
                     {
-                    enumLiteral_0=(Token)match(input,26,FOLLOW_26_in_ruleRelationType2530); 
+                    enumLiteral_0=(Token)match(input,28,FOLLOW_28_in_ruleRelationType2530); 
 
                             current = grammarAccess.getRelationTypeAccess().getONE_TO_MANYEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getRelationTypeAccess().getONE_TO_MANYEnumLiteralDeclaration_0()); 
@@ -2650,7 +2652,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1077:6: (enumLiteral_1= 'ManyToOne' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1077:8: enumLiteral_1= 'ManyToOne'
                     {
-                    enumLiteral_1=(Token)match(input,27,FOLLOW_27_in_ruleRelationType2547); 
+                    enumLiteral_1=(Token)match(input,29,FOLLOW_29_in_ruleRelationType2547); 
 
                             current = grammarAccess.getRelationTypeAccess().getMANY_TO_ONEEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getRelationTypeAccess().getMANY_TO_ONEEnumLiteralDeclaration_1()); 
@@ -2667,7 +2669,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1083:6: (enumLiteral_2= 'OneToOne' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1083:8: enumLiteral_2= 'OneToOne'
                     {
-                    enumLiteral_2=(Token)match(input,28,FOLLOW_28_in_ruleRelationType2564); 
+                    enumLiteral_2=(Token)match(input,30,FOLLOW_30_in_ruleRelationType2564); 
 
                             current = grammarAccess.getRelationTypeAccess().getONE_TO_ONEEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_2, grammarAccess.getRelationTypeAccess().getONE_TO_ONEEnumLiteralDeclaration_2()); 
@@ -2684,7 +2686,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1089:6: (enumLiteral_3= 'ManyToMany' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1089:8: enumLiteral_3= 'ManyToMany'
                     {
-                    enumLiteral_3=(Token)match(input,29,FOLLOW_29_in_ruleRelationType2581); 
+                    enumLiteral_3=(Token)match(input,31,FOLLOW_31_in_ruleRelationType2581); 
 
                             current = grammarAccess.getRelationTypeAccess().getMANY_TO_MANYEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_3, grammarAccess.getRelationTypeAccess().getMANY_TO_MANYEnumLiteralDeclaration_3()); 
@@ -2739,52 +2741,52 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1102:1: ( (enumLiteral_0= 'String' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Long' ) | (enumLiteral_3= 'BigDecimal' ) | (enumLiteral_4= 'Float' ) | (enumLiteral_5= 'Double' ) | (enumLiteral_6= 'Enum' ) | (enumLiteral_7= 'Boolean' ) | (enumLiteral_8= 'LocalDate' ) | (enumLiteral_9= 'ZoneDateTime' ) )
             int alt13=10;
             switch ( input.LA(1) ) {
-            case 30:
+            case 32:
                 {
                 alt13=1;
                 }
                 break;
-            case 31:
+            case 33:
                 {
                 alt13=2;
                 }
                 break;
-            case 32:
+            case 34:
                 {
                 alt13=3;
                 }
                 break;
-            case 33:
+            case 35:
                 {
                 alt13=4;
                 }
                 break;
-            case 34:
+            case 36:
                 {
                 alt13=5;
                 }
                 break;
-            case 35:
+            case 37:
                 {
                 alt13=6;
                 }
                 break;
-            case 36:
+            case 38:
                 {
                 alt13=7;
                 }
                 break;
-            case 37:
+            case 39:
                 {
                 alt13=8;
                 }
                 break;
-            case 38:
+            case 40:
                 {
                 alt13=9;
                 }
                 break;
-            case 39:
+            case 41:
                 {
                 alt13=10;
                 }
@@ -2803,7 +2805,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1102:2: (enumLiteral_0= 'String' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1102:4: enumLiteral_0= 'String'
                     {
-                    enumLiteral_0=(Token)match(input,30,FOLLOW_30_in_ruleJHipsterType2626); 
+                    enumLiteral_0=(Token)match(input,32,FOLLOW_32_in_ruleJHipsterType2626); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getSTRINGEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getJHipsterTypeAccess().getSTRINGEnumLiteralDeclaration_0()); 
@@ -2820,7 +2822,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1108:6: (enumLiteral_1= 'Integer' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1108:8: enumLiteral_1= 'Integer'
                     {
-                    enumLiteral_1=(Token)match(input,31,FOLLOW_31_in_ruleJHipsterType2643); 
+                    enumLiteral_1=(Token)match(input,33,FOLLOW_33_in_ruleJHipsterType2643); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getINTEGEREnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getJHipsterTypeAccess().getINTEGEREnumLiteralDeclaration_1()); 
@@ -2837,7 +2839,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1114:6: (enumLiteral_2= 'Long' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1114:8: enumLiteral_2= 'Long'
                     {
-                    enumLiteral_2=(Token)match(input,32,FOLLOW_32_in_ruleJHipsterType2660); 
+                    enumLiteral_2=(Token)match(input,34,FOLLOW_34_in_ruleJHipsterType2660); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getLONGEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_2, grammarAccess.getJHipsterTypeAccess().getLONGEnumLiteralDeclaration_2()); 
@@ -2854,7 +2856,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1120:6: (enumLiteral_3= 'BigDecimal' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1120:8: enumLiteral_3= 'BigDecimal'
                     {
-                    enumLiteral_3=(Token)match(input,33,FOLLOW_33_in_ruleJHipsterType2677); 
+                    enumLiteral_3=(Token)match(input,35,FOLLOW_35_in_ruleJHipsterType2677); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getBIG_DECIMALEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_3, grammarAccess.getJHipsterTypeAccess().getBIG_DECIMALEnumLiteralDeclaration_3()); 
@@ -2871,7 +2873,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1126:6: (enumLiteral_4= 'Float' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1126:8: enumLiteral_4= 'Float'
                     {
-                    enumLiteral_4=(Token)match(input,34,FOLLOW_34_in_ruleJHipsterType2694); 
+                    enumLiteral_4=(Token)match(input,36,FOLLOW_36_in_ruleJHipsterType2694); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getFLOATEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_4, grammarAccess.getJHipsterTypeAccess().getFLOATEnumLiteralDeclaration_4()); 
@@ -2888,7 +2890,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1132:6: (enumLiteral_5= 'Double' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1132:8: enumLiteral_5= 'Double'
                     {
-                    enumLiteral_5=(Token)match(input,35,FOLLOW_35_in_ruleJHipsterType2711); 
+                    enumLiteral_5=(Token)match(input,37,FOLLOW_37_in_ruleJHipsterType2711); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getDOUBLEEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_5, grammarAccess.getJHipsterTypeAccess().getDOUBLEEnumLiteralDeclaration_5()); 
@@ -2905,7 +2907,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1138:6: (enumLiteral_6= 'Enum' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1138:8: enumLiteral_6= 'Enum'
                     {
-                    enumLiteral_6=(Token)match(input,36,FOLLOW_36_in_ruleJHipsterType2728); 
+                    enumLiteral_6=(Token)match(input,38,FOLLOW_38_in_ruleJHipsterType2728); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getENUMEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_6, grammarAccess.getJHipsterTypeAccess().getENUMEnumLiteralDeclaration_6()); 
@@ -2922,7 +2924,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:6: (enumLiteral_7= 'Boolean' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:8: enumLiteral_7= 'Boolean'
                     {
-                    enumLiteral_7=(Token)match(input,37,FOLLOW_37_in_ruleJHipsterType2745); 
+                    enumLiteral_7=(Token)match(input,39,FOLLOW_39_in_ruleJHipsterType2745); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getBOOLEANEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_7, grammarAccess.getJHipsterTypeAccess().getBOOLEANEnumLiteralDeclaration_7()); 
@@ -2939,7 +2941,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1150:6: (enumLiteral_8= 'LocalDate' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1150:8: enumLiteral_8= 'LocalDate'
                     {
-                    enumLiteral_8=(Token)match(input,38,FOLLOW_38_in_ruleJHipsterType2762); 
+                    enumLiteral_8=(Token)match(input,40,FOLLOW_40_in_ruleJHipsterType2762); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getLOCAL_DATEEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_8, grammarAccess.getJHipsterTypeAccess().getLOCAL_DATEEnumLiteralDeclaration_8()); 
@@ -2956,7 +2958,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1156:6: (enumLiteral_9= 'ZoneDateTime' )
                     // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1156:8: enumLiteral_9= 'ZoneDateTime'
                     {
-                    enumLiteral_9=(Token)match(input,39,FOLLOW_39_in_ruleJHipsterType2779); 
+                    enumLiteral_9=(Token)match(input,41,FOLLOW_41_in_ruleJHipsterType2779); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getZONE_DATE_TIMEEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_9, grammarAccess.getJHipsterTypeAccess().getZONE_DATE_TIMEEnumLiteralDeclaration_9()); 
@@ -2993,7 +2995,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
     public static final BitSet FOLLOW_ruleDomain_in_entryRuleDomain75 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleDomain85 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDomainElement_in_ruleDomain130 = new BitSet(new long[]{0x0000000000014802L});
+    public static final BitSet FOLLOW_ruleDomainElement_in_ruleDomain130 = new BitSet(new long[]{0x0000000000044802L});
     public static final BitSet FOLLOW_ruleDomainElement_in_entryRuleDomainElement166 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleDomainElement176 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleEntity_in_ruleDomainElement223 = new BitSet(new long[]{0x0000000000000002L});
@@ -3008,34 +3010,34 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
     public static final BitSet FOLLOW_13_in_ruleEntity428 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleRelation_in_entryRuleRelation465 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleRelation475 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_ruleRelation512 = new BitSet(new long[]{0x000000003C000000L});
+    public static final BitSet FOLLOW_14_in_ruleRelation512 = new BitSet(new long[]{0x00000000F0000000L});
     public static final BitSet FOLLOW_ruleRelationType_in_ruleRelation533 = new BitSet(new long[]{0x0000000000001000L});
     public static final BitSet FOLLOW_12_in_ruleRelation545 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRelation565 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleRelation578 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRelation595 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleRelation612 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleRelation625 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRelation645 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleRelation658 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRelation675 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleRelation692 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRelation565 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleRelation578 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRelation595 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_16_in_ruleRelation612 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleRelation625 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRelation645 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleRelation658 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRelation675 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_16_in_ruleRelation692 = new BitSet(new long[]{0x0000000000002000L});
     public static final BitSet FOLLOW_13_in_ruleRelation705 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleEnum_in_entryRuleEnum741 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleEnum751 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_ruleEnum788 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_18_in_ruleEnum788 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleEnum805 = new BitSet(new long[]{0x0000000000001000L});
     public static final BitSet FOLLOW_12_in_ruleEnum822 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleEnum839 = new BitSet(new long[]{0x0000000000022000L});
-    public static final BitSet FOLLOW_17_in_ruleEnum857 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleEnum874 = new BitSet(new long[]{0x0000000000022000L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleEnum839 = new BitSet(new long[]{0x0000000000082000L});
+    public static final BitSet FOLLOW_19_in_ruleEnum857 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleEnum874 = new BitSet(new long[]{0x0000000000082000L});
     public static final BitSet FOLLOW_13_in_ruleEnum893 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleField_in_entryRuleField929 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleField939 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleField981 = new BitSet(new long[]{0x000000FFC0000010L});
-    public static final BitSet FOLLOW_ruleHdlTypeReference_in_ruleField1007 = new BitSet(new long[]{0x0000000003CC0002L});
-    public static final BitSet FOLLOW_18_in_ruleField1025 = new BitSet(new long[]{0x0000000003C80002L});
-    public static final BitSet FOLLOW_ruleValidationRule_in_ruleField1060 = new BitSet(new long[]{0x0000000003C80002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleField981 = new BitSet(new long[]{0x000003FF00000010L});
+    public static final BitSet FOLLOW_ruleHdlTypeReference_in_ruleField1007 = new BitSet(new long[]{0x000000000F300002L});
+    public static final BitSet FOLLOW_20_in_ruleField1025 = new BitSet(new long[]{0x000000000F200002L});
+    public static final BitSet FOLLOW_ruleValidationRule_in_ruleField1060 = new BitSet(new long[]{0x000000000F200002L});
     public static final BitSet FOLLOW_ruleValidationRule_in_entryRuleValidationRule1097 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleValidationRule1107 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleValueRange_in_ruleValidationRule1154 = new BitSet(new long[]{0x0000000000000002L});
@@ -3054,34 +3056,34 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
     public static final BitSet FOLLOW_ruleIntegerMaxSpecification_in_ruleMaxSpecification1538 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleStringMinSpecification_in_entryRuleStringMinSpecification1573 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleStringMinSpecification1583 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_ruleStringMinSpecification1620 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleStringMinSpecification1632 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleStringMinSpecification1649 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_21_in_ruleStringMinSpecification1666 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_ruleStringMinSpecification1620 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleStringMinSpecification1632 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleStringMinSpecification1649 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleStringMinSpecification1666 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleStringMaxSpecification_in_entryRuleStringMaxSpecification1702 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleStringMaxSpecification1712 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_ruleStringMaxSpecification1749 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleStringMaxSpecification1761 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleStringMaxSpecification1778 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_21_in_ruleStringMaxSpecification1795 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_ruleStringMaxSpecification1749 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleStringMaxSpecification1761 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleStringMaxSpecification1778 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleStringMaxSpecification1795 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleIntegerMinSpecification_in_entryRuleIntegerMinSpecification1831 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleIntegerMinSpecification1841 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_ruleIntegerMinSpecification1878 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleIntegerMinSpecification1890 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleIntegerMinSpecification1907 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_21_in_ruleIntegerMinSpecification1924 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_ruleIntegerMinSpecification1878 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleIntegerMinSpecification1890 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleIntegerMinSpecification1907 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleIntegerMinSpecification1924 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleIntegerMaxSpecification_in_entryRuleIntegerMaxSpecification1960 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleIntegerMaxSpecification1970 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_ruleIntegerMaxSpecification2007 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleIntegerMaxSpecification2019 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleIntegerMaxSpecification2036 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_21_in_ruleIntegerMaxSpecification2053 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_ruleIntegerMaxSpecification2007 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleIntegerMaxSpecification2019 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleIntegerMaxSpecification2036 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleIntegerMaxSpecification2053 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rulePattern_in_entryRulePattern2089 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRulePattern2099 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rulePattern2136 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_rulePattern2148 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rulePattern2165 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_21_in_rulePattern2182 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rulePattern2136 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_rulePattern2148 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rulePattern2165 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_rulePattern2182 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleHdlTypeReference_in_entryRuleHdlTypeReference2218 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleHdlTypeReference2228 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleEnumTypeReference_in_ruleHdlTypeReference2275 = new BitSet(new long[]{0x0000000000000002L});
@@ -3092,19 +3094,19 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
     public static final BitSet FOLLOW_rulePrimitiveTypeReference_in_entryRulePrimitiveTypeReference2426 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRulePrimitiveTypeReference2436 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleJHipsterType_in_rulePrimitiveTypeReference2481 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_ruleRelationType2530 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_ruleRelationType2547 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_ruleRelationType2564 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_ruleRelationType2581 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleJHipsterType2626 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_ruleJHipsterType2643 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_ruleJHipsterType2660 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_ruleJHipsterType2677 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_ruleJHipsterType2694 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_35_in_ruleJHipsterType2711 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_ruleJHipsterType2728 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_ruleJHipsterType2745 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_ruleJHipsterType2762 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_ruleJHipsterType2779 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_ruleRelationType2530 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_ruleRelationType2547 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_ruleRelationType2564 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_ruleRelationType2581 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_ruleJHipsterType2626 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_ruleJHipsterType2643 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_ruleJHipsterType2660 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_ruleJHipsterType2677 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_ruleJHipsterType2694 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_ruleJHipsterType2711 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_ruleJHipsterType2728 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_ruleJHipsterType2745 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_ruleJHipsterType2762 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_ruleJHipsterType2779 = new BitSet(new long[]{0x0000000000000002L});
 
 }

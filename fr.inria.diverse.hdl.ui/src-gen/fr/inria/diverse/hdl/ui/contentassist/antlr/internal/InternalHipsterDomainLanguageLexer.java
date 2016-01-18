@@ -47,6 +47,8 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
     public static final int T__23=23;
     public static final int T__24=24;
     public static final int T__25=25;
+    public static final int T__40=40;
+    public static final int T__41=41;
     public static final int T__20=20;
     public static final int T__21=21;
 
@@ -465,11 +467,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:30:7: ( 'enum' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:30:9: 'enum'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:30:7: ( '[' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:30:9: '['
             {
-            match("enum"); 
-
+            match('['); 
 
             }
 
@@ -486,10 +487,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:31:7: ( ',' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:31:9: ','
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:31:7: ( ']' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:31:9: ']'
             {
-            match(','); 
+            match(']'); 
 
             }
 
@@ -506,10 +507,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:32:7: ( 'minlength' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:32:9: 'minlength'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:32:7: ( 'enum' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:32:9: 'enum'
             {
-            match("minlength"); 
+            match("enum"); 
 
 
             }
@@ -527,10 +528,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:33:7: ( '(' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:33:9: '('
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:33:7: ( ',' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:33:9: ','
             {
-            match('('); 
+            match(','); 
 
             }
 
@@ -547,10 +548,11 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:34:7: ( ')' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:34:9: ')'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:34:7: ( 'minlength' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:34:9: 'minlength'
             {
-            match(')'); 
+            match("minlength"); 
+
 
             }
 
@@ -567,11 +569,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:35:7: ( 'maxlength' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:35:9: 'maxlength'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:35:7: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:35:9: '('
             {
-            match("maxlength"); 
-
+            match('('); 
 
             }
 
@@ -588,11 +589,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:36:7: ( 'min' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:36:9: 'min'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:36:7: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:36:9: ')'
             {
-            match("min"); 
-
+            match(')'); 
 
             }
 
@@ -609,10 +609,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:37:7: ( 'max' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:37:9: 'max'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:37:7: ( 'maxlength' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:37:9: 'maxlength'
             {
-            match("max"); 
+            match("maxlength"); 
 
 
             }
@@ -630,10 +630,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:38:7: ( 'pattern' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:38:9: 'pattern'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:38:7: ( 'min' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:38:9: 'min'
             {
-            match("pattern"); 
+            match("min"); 
 
 
             }
@@ -651,8 +651,50 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = T__39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:39:7: ( 'required' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:39:9: 'required'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:39:7: ( 'max' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:39:9: 'max'
+            {
+            match("max"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__39"
+
+    // $ANTLR start "T__40"
+    public final void mT__40() throws RecognitionException {
+        try {
+            int _type = T__40;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:40:7: ( 'pattern' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:40:9: 'pattern'
+            {
+            match("pattern"); 
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__40"
+
+    // $ANTLR start "T__41"
+    public final void mT__41() throws RecognitionException {
+        try {
+            int _type = T__41;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:41:7: ( 'required' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:41:9: 'required'
             {
             match("required"); 
 
@@ -665,7 +707,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "T__39"
+    // $ANTLR end "T__41"
 
     // $ANTLR start "RULE_ID"
     public final void mRULE_ID() throws RecognitionException {
@@ -1166,8 +1208,8 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt12=36;
+        // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt12=38;
         alt12 = dfa12.predict(input);
         switch (alt12) {
             case 1 :
@@ -1374,49 +1416,63 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
                 }
                 break;
             case 30 :
-                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:184: RULE_ID
+                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:184: T__40
+                {
+                mT__40(); 
+
+                }
+                break;
+            case 31 :
+                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:190: T__41
+                {
+                mT__41(); 
+
+                }
+                break;
+            case 32 :
+                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:196: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 31 :
-                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:192: RULE_INT
+            case 33 :
+                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:204: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 32 :
-                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:201: RULE_STRING
+            case 34 :
+                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:213: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 33 :
-                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:213: RULE_ML_COMMENT
+            case 35 :
+                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:225: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 34 :
-                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:229: RULE_SL_COMMENT
+            case 36 :
+                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:241: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 35 :
-                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:245: RULE_WS
+            case 37 :
+                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:257: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 36 :
-                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:253: RULE_ANY_OTHER
+            case 38 :
+                // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1:265: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -1430,79 +1486,79 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\13\36\2\uffff\2\36\1\uffff\1\36\2\uffff\1\36\1\34\2\uffff\3\34\2\uffff\1\36\1\uffff\13\36\2\uffff\1\36\1\111\1\uffff\2\36\2\uffff\1\36\5\uffff\20\36\1\uffff\1\136\1\140\5\36\1\146\5\36\1\154\2\36\1\157\3\36\1\uffff\1\36\1\uffff\5\36\1\uffff\3\36\1\175\1\36\1\uffff\2\36\1\uffff\10\36\1\u008a\4\36\1\uffff\1\u008f\1\36\1\u0091\11\36\1\uffff\1\u009b\2\36\1\u009e\1\uffff\1\36\1\uffff\4\36\1\u00a4\1\36\1\u00a6\2\36\1\uffff\2\36\1\uffff\2\36\1\u00ad\2\36\1\uffff\1\u00b0\1\uffff\1\u00b1\1\36\1\u00b3\3\36\1\uffff\1\u00b7\1\u00b8\2\uffff\1\u00b9\1\uffff\1\u00ba\2\36\4\uffff\2\36\1\u00bf\1\u00c0\2\uffff";
+        "\1\uffff\13\40\2\uffff\2\40\3\uffff\1\40\2\uffff\1\40\1\36\2\uffff\3\36\2\uffff\1\40\1\uffff\13\40\2\uffff\1\40\1\115\3\uffff\2\40\2\uffff\1\40\5\uffff\20\40\1\uffff\1\142\1\144\5\40\1\152\5\40\1\160\2\40\1\163\3\40\1\uffff\1\40\1\uffff\5\40\1\uffff\3\40\1\u0081\1\40\1\uffff\2\40\1\uffff\10\40\1\u008e\4\40\1\uffff\1\u0093\1\40\1\u0095\11\40\1\uffff\1\u009f\2\40\1\u00a2\1\uffff\1\40\1\uffff\4\40\1\u00a8\1\40\1\u00aa\2\40\1\uffff\2\40\1\uffff\2\40\1\u00b1\2\40\1\uffff\1\u00b4\1\uffff\1\u00b5\1\40\1\u00b7\3\40\1\uffff\1\u00bb\1\u00bc\2\uffff\1\u00bd\1\uffff\1\u00be\2\40\4\uffff\2\40\1\u00c3\1\u00c4\2\uffff";
     static final String DFA12_eofS =
-        "\u00c1\uffff";
+        "\u00c5\uffff";
     static final String DFA12_minS =
-        "\1\0\1\156\1\141\1\164\1\156\1\157\1\151\1\154\1\157\1\156\1\157\1\156\2\uffff\1\145\1\157\1\uffff\1\141\2\uffff\1\141\1\101\2\uffff\2\0\1\52\2\uffff\1\145\1\uffff\1\156\1\162\1\164\1\143\1\147\2\157\2\165\1\156\1\164\2\uffff\1\154\1\60\1\uffff\1\156\1\170\2\uffff\1\164\5\uffff\1\124\1\171\1\151\1\145\1\147\1\141\1\104\1\154\1\141\1\142\1\155\1\145\1\151\1\155\1\141\1\165\1\uffff\2\60\1\164\1\157\1\124\1\156\1\147\1\60\1\154\2\145\1\164\1\154\1\60\1\104\1\164\1\60\1\164\1\151\1\145\1\uffff\1\145\1\uffff\1\145\1\115\1\157\1\147\1\145\1\uffff\1\104\1\143\1\141\1\60\1\145\1\uffff\1\141\1\171\1\uffff\1\151\1\162\2\156\1\162\1\141\1\156\1\115\1\60\1\162\1\141\1\151\1\156\1\uffff\1\60\1\164\1\60\1\157\1\145\2\147\2\156\1\145\1\156\1\141\1\uffff\1\60\1\164\1\155\1\60\1\uffff\1\145\1\uffff\1\156\1\144\2\164\1\60\1\171\1\60\1\145\1\156\1\uffff\1\145\1\141\1\uffff\1\124\1\163\1\60\2\150\1\uffff\1\60\1\uffff\1\60\1\171\1\60\1\154\1\151\1\150\1\uffff\2\60\2\uffff\1\60\1\uffff\1\60\1\155\1\151\4\uffff\1\145\1\160\2\60\2\uffff";
+        "\1\0\1\156\1\141\1\164\1\156\1\157\1\151\1\154\1\157\1\156\1\157\1\156\2\uffff\1\145\1\157\3\uffff\1\141\2\uffff\1\141\1\101\2\uffff\2\0\1\52\2\uffff\1\145\1\uffff\1\156\1\162\1\164\1\143\1\147\2\157\2\165\1\156\1\164\2\uffff\1\154\1\60\3\uffff\1\156\1\170\2\uffff\1\164\5\uffff\1\124\1\171\1\151\1\145\1\147\1\141\1\104\1\154\1\141\1\142\1\155\1\145\1\151\1\155\1\141\1\165\1\uffff\2\60\1\164\1\157\1\124\1\156\1\147\1\60\1\154\2\145\1\164\1\154\1\60\1\104\1\164\1\60\1\164\1\151\1\145\1\uffff\1\145\1\uffff\1\145\1\115\1\157\1\147\1\145\1\uffff\1\104\1\143\1\141\1\60\1\145\1\uffff\1\141\1\171\1\uffff\1\151\1\162\2\156\1\162\1\141\1\156\1\115\1\60\1\162\1\141\1\151\1\156\1\uffff\1\60\1\164\1\60\1\157\1\145\2\147\2\156\1\145\1\156\1\141\1\uffff\1\60\1\164\1\155\1\60\1\uffff\1\145\1\uffff\1\156\1\144\2\164\1\60\1\171\1\60\1\145\1\156\1\uffff\1\145\1\141\1\uffff\1\124\1\163\1\60\2\150\1\uffff\1\60\1\uffff\1\60\1\171\1\60\1\154\1\151\1\150\1\uffff\2\60\2\uffff\1\60\1\uffff\1\60\1\155\1\151\4\uffff\1\145\1\160\2\60\2\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\156\1\141\1\164\1\156\2\157\1\154\1\157\1\156\1\157\1\156\2\uffff\1\145\1\157\1\uffff\1\151\2\uffff\1\141\1\172\2\uffff\2\uffff\1\57\2\uffff\1\145\1\uffff\1\156\1\162\1\164\1\156\1\147\2\157\2\165\1\156\1\165\2\uffff\1\161\1\172\1\uffff\1\156\1\170\2\uffff\1\164\5\uffff\1\124\1\171\1\151\1\145\1\147\1\141\1\104\1\154\1\141\1\142\1\155\1\145\1\151\1\155\1\141\1\165\1\uffff\2\172\1\164\1\157\1\124\1\156\1\147\1\172\1\154\2\145\1\164\1\154\1\172\1\104\1\164\1\172\1\164\1\151\1\145\1\uffff\1\145\1\uffff\1\145\1\117\1\157\1\147\1\145\1\uffff\1\104\1\143\1\141\1\172\1\145\1\uffff\1\141\1\171\1\uffff\1\151\1\162\2\156\1\162\1\141\1\156\1\117\1\172\1\162\1\141\1\151\1\156\1\uffff\1\172\1\164\1\172\1\157\1\145\2\147\2\156\1\145\1\156\1\141\1\uffff\1\172\1\164\1\155\1\172\1\uffff\1\145\1\uffff\1\156\1\144\2\164\1\172\1\171\1\172\1\145\1\156\1\uffff\1\145\1\141\1\uffff\1\124\1\163\1\172\2\150\1\uffff\1\172\1\uffff\1\172\1\171\1\172\1\154\1\151\1\150\1\uffff\2\172\2\uffff\1\172\1\uffff\1\172\1\155\1\151\4\uffff\1\145\1\160\2\172\2\uffff";
+        "\1\uffff\1\156\1\141\1\164\1\156\2\157\1\154\1\157\1\156\1\157\1\156\2\uffff\1\145\1\157\3\uffff\1\151\2\uffff\1\141\1\172\2\uffff\2\uffff\1\57\2\uffff\1\145\1\uffff\1\156\1\162\1\164\1\156\1\147\2\157\2\165\1\156\1\165\2\uffff\1\161\1\172\3\uffff\1\156\1\170\2\uffff\1\164\5\uffff\1\124\1\171\1\151\1\145\1\147\1\141\1\104\1\154\1\141\1\142\1\155\1\145\1\151\1\155\1\141\1\165\1\uffff\2\172\1\164\1\157\1\124\1\156\1\147\1\172\1\154\2\145\1\164\1\154\1\172\1\104\1\164\1\172\1\164\1\151\1\145\1\uffff\1\145\1\uffff\1\145\1\117\1\157\1\147\1\145\1\uffff\1\104\1\143\1\141\1\172\1\145\1\uffff\1\141\1\171\1\uffff\1\151\1\162\2\156\1\162\1\141\1\156\1\117\1\172\1\162\1\141\1\151\1\156\1\uffff\1\172\1\164\1\172\1\157\1\145\2\147\2\156\1\145\1\156\1\141\1\uffff\1\172\1\164\1\155\1\172\1\uffff\1\145\1\uffff\1\156\1\144\2\164\1\172\1\171\1\172\1\145\1\156\1\uffff\1\145\1\141\1\uffff\1\124\1\163\1\172\2\150\1\uffff\1\172\1\uffff\1\172\1\171\1\172\1\154\1\151\1\150\1\uffff\2\172\2\uffff\1\172\1\uffff\1\172\1\155\1\151\4\uffff\1\145\1\160\2\172\2\uffff";
     static final String DFA12_acceptS =
-        "\14\uffff\1\20\1\21\2\uffff\1\25\1\uffff\1\27\1\30\2\uffff\1\36\1\37\3\uffff\1\43\1\44\1\uffff\1\36\13\uffff\1\20\1\21\2\uffff\1\25\2\uffff\1\27\1\30\1\uffff\1\37\1\40\1\41\1\42\1\43\20\uffff\1\23\24\uffff\1\32\1\uffff\1\33\5\uffff\1\7\5\uffff\1\13\2\uffff\1\24\15\uffff\1\11\14\uffff\1\5\4\uffff\1\12\1\uffff\1\17\11\uffff\1\6\2\uffff\1\14\5\uffff\1\34\1\uffff\1\3\6\uffff\1\35\2\uffff\1\1\1\2\1\uffff\1\15\3\uffff\1\26\1\31\1\4\1\10\4\uffff\1\16\1\22";
+        "\14\uffff\1\20\1\21\2\uffff\1\24\1\25\1\27\1\uffff\1\31\1\32\2\uffff\1\40\1\41\3\uffff\1\45\1\46\1\uffff\1\40\13\uffff\1\20\1\21\2\uffff\1\24\1\25\1\27\2\uffff\1\31\1\32\1\uffff\1\41\1\42\1\43\1\44\1\45\20\uffff\1\23\24\uffff\1\34\1\uffff\1\35\5\uffff\1\7\5\uffff\1\13\2\uffff\1\26\15\uffff\1\11\14\uffff\1\5\4\uffff\1\12\1\uffff\1\17\11\uffff\1\6\2\uffff\1\14\5\uffff\1\36\1\uffff\1\3\6\uffff\1\37\2\uffff\1\1\1\2\1\uffff\1\15\3\uffff\1\30\1\33\1\4\1\10\4\uffff\1\16\1\22";
     static final String DFA12_specialS =
-        "\1\2\27\uffff\1\0\1\1\u00a7\uffff}>";
+        "\1\0\31\uffff\1\1\1\2\u00a9\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\34\2\33\2\34\1\33\22\34\1\33\1\34\1\30\4\34\1\31\1\22\1\23\2\34\1\20\2\34\1\32\12\27\7\34\1\26\1\6\1\26\1\10\1\11\1\7\2\26\1\4\2\26\1\5\1\2\1\26\1\1\3\26\1\3\6\26\1\12\3\34\1\25\1\26\1\34\4\26\1\13\7\26\1\21\2\26\1\24\1\26\1\16\1\26\1\17\6\26\1\14\1\34\1\15\uff82\34",
-            "\1\35",
+            "\11\36\2\35\2\36\1\35\22\36\1\35\1\36\1\32\4\36\1\33\1\24\1\25\2\36\1\22\2\36\1\34\12\31\7\36\1\30\1\6\1\30\1\10\1\11\1\7\2\30\1\4\2\30\1\5\1\2\1\30\1\1\3\30\1\3\6\30\1\12\1\20\1\36\1\21\1\27\1\30\1\36\4\30\1\13\7\30\1\23\2\30\1\26\1\30\1\16\1\30\1\17\6\30\1\14\1\36\1\15\uff82\36",
             "\1\37",
-            "\1\40",
             "\1\41",
             "\1\42",
-            "\1\43\5\uffff\1\44",
-            "\1\45",
-            "\1\46",
+            "\1\43",
+            "\1\44",
+            "\1\45\5\uffff\1\46",
             "\1\47",
             "\1\50",
             "\1\51",
+            "\1\52",
+            "\1\53",
             "",
             "",
-            "\1\54",
-            "\1\55",
-            "",
-            "\1\60\7\uffff\1\57",
+            "\1\56",
+            "\1\57",
             "",
             "",
-            "\1\63",
-            "\32\36\4\uffff\1\36\1\uffff\32\36",
+            "",
+            "\1\64\7\uffff\1\63",
             "",
             "",
-            "\0\65",
-            "\0\65",
-            "\1\66\4\uffff\1\67",
+            "\1\67",
+            "\32\40\4\uffff\1\40\1\uffff\32\40",
             "",
             "",
-            "\1\71",
+            "\0\71",
+            "\0\71",
+            "\1\72\4\uffff\1\73",
             "",
-            "\1\72",
-            "\1\73",
-            "\1\74",
-            "\1\76\12\uffff\1\75",
+            "",
+            "\1\75",
+            "",
+            "\1\76",
             "\1\77",
             "\1\100",
-            "\1\101",
-            "\1\102",
+            "\1\102\12\uffff\1\101",
             "\1\103",
             "\1\104",
-            "\1\105\1\106",
+            "\1\105",
+            "\1\106",
+            "\1\107",
+            "\1\110",
+            "\1\111\1\112",
             "",
             "",
-            "\1\107\4\uffff\1\110",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "",
-            "\1\112",
-            "\1\113",
-            "",
-            "",
-            "\1\114",
-            "",
+            "\1\113\4\uffff\1\114",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "",
             "",
             "",
-            "",
-            "\1\115",
             "\1\116",
             "\1\117",
+            "",
+            "",
             "\1\120",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\121",
             "\1\122",
             "\1\123",
@@ -1515,124 +1571,128 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
             "\1\132",
             "\1\133",
             "\1\134",
+            "\1\135",
+            "\1\136",
+            "\1\137",
+            "\1\140",
             "",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\13\36\1\135\16\36",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\13\36\1\137\16\36",
-            "\1\141",
-            "\1\142",
-            "\1\143",
-            "\1\144",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\13\40\1\141\16\40",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\13\40\1\143\16\40",
             "\1\145",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "\1\146",
             "\1\147",
             "\1\150",
             "\1\151",
-            "\1\152",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\153",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "\1\154",
             "\1\155",
             "\1\156",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "\1\160",
+            "\1\157",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\161",
             "\1\162",
-            "",
-            "\1\163",
-            "",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\164",
-            "\1\165\1\uffff\1\166",
-            "\1\167",
-            "\1\170",
-            "\1\171",
+            "\1\165",
+            "\1\166",
             "",
-            "\1\172",
+            "\1\167",
+            "",
+            "\1\170",
+            "\1\171\1\uffff\1\172",
             "\1\173",
             "\1\174",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "\1\176",
+            "\1\175",
             "",
+            "\1\176",
             "\1\177",
             "\1\u0080",
-            "",
-            "\1\u0081",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\u0082",
+            "",
             "\1\u0083",
             "\1\u0084",
+            "",
             "\1\u0085",
             "\1\u0086",
             "\1\u0087",
-            "\1\u0089\1\uffff\1\u0088",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "\1\u0088",
+            "\1\u0089",
+            "\1\u008a",
             "\1\u008b",
-            "\1\u008c",
-            "\1\u008d",
-            "\1\u008e",
-            "",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "\1\u008d\1\uffff\1\u008c",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
+            "\1\u008f",
             "\1\u0090",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "\1\u0091",
             "\1\u0092",
-            "\1\u0093",
+            "",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\u0094",
-            "\1\u0095",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\u0096",
             "\1\u0097",
             "\1\u0098",
             "\1\u0099",
             "\1\u009a",
-            "",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "\1\u009b",
             "\1\u009c",
             "\1\u009d",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "\1\u009e",
             "",
-            "\1\u009f",
-            "",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\u00a0",
             "\1\u00a1",
-            "\1\u00a2",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
+            "",
             "\1\u00a3",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "",
+            "\1\u00a4",
             "\1\u00a5",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "\1\u00a6",
             "\1\u00a7",
-            "\1\u00a8",
-            "",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\u00a9",
-            "\1\u00aa",
-            "",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\u00ab",
             "\1\u00ac",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "",
+            "\1\u00ad",
             "\1\u00ae",
+            "",
             "\1\u00af",
-            "",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "\1\u00b0",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\u00b2",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "\1\u00b4",
-            "\1\u00b5",
+            "\1\u00b3",
+            "",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
+            "",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "\1\u00b6",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
+            "\1\u00b8",
+            "\1\u00b9",
+            "\1\u00ba",
             "",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "",
-            "",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "\1\u00bb",
-            "\1\u00bc",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "",
             "",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
+            "",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
+            "\1\u00bf",
+            "\1\u00c0",
             "",
             "",
-            "\1\u00bd",
-            "\1\u00be",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
-            "\12\36\7\uffff\32\36\4\uffff\1\36\1\uffff\32\36",
+            "",
+            "",
+            "\1\u00c1",
+            "\1\u00c2",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
+            "\12\40\7\uffff\32\40\4\uffff\1\40\1\uffff\32\40",
             "",
             ""
     };
@@ -1667,33 +1727,13 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA12_24 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA12_24>='\u0000' && LA12_24<='\uFFFF')) ) {s = 53;}
-
-                        else s = 28;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA12_25 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA12_25>='\u0000' && LA12_25<='\uFFFF')) ) {s = 53;}
-
-                        else s = 28;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
                         int LA12_0 = input.LA(1);
 
                         s = -1;
@@ -1727,31 +1767,55 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
 
                         else if ( (LA12_0=='t') ) {s = 15;}
 
-                        else if ( (LA12_0==',') ) {s = 16;}
+                        else if ( (LA12_0=='[') ) {s = 16;}
 
-                        else if ( (LA12_0=='m') ) {s = 17;}
+                        else if ( (LA12_0==']') ) {s = 17;}
 
-                        else if ( (LA12_0=='(') ) {s = 18;}
+                        else if ( (LA12_0==',') ) {s = 18;}
 
-                        else if ( (LA12_0==')') ) {s = 19;}
+                        else if ( (LA12_0=='m') ) {s = 19;}
 
-                        else if ( (LA12_0=='p') ) {s = 20;}
+                        else if ( (LA12_0=='(') ) {s = 20;}
 
-                        else if ( (LA12_0=='^') ) {s = 21;}
+                        else if ( (LA12_0==')') ) {s = 21;}
 
-                        else if ( (LA12_0=='A'||LA12_0=='C'||(LA12_0>='G' && LA12_0<='H')||(LA12_0>='J' && LA12_0<='K')||LA12_0=='N'||(LA12_0>='P' && LA12_0<='R')||(LA12_0>='T' && LA12_0<='Y')||LA12_0=='_'||(LA12_0>='a' && LA12_0<='d')||(LA12_0>='f' && LA12_0<='l')||(LA12_0>='n' && LA12_0<='o')||LA12_0=='q'||LA12_0=='s'||(LA12_0>='u' && LA12_0<='z')) ) {s = 22;}
+                        else if ( (LA12_0=='p') ) {s = 22;}
 
-                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 23;}
+                        else if ( (LA12_0=='^') ) {s = 23;}
 
-                        else if ( (LA12_0=='\"') ) {s = 24;}
+                        else if ( (LA12_0=='A'||LA12_0=='C'||(LA12_0>='G' && LA12_0<='H')||(LA12_0>='J' && LA12_0<='K')||LA12_0=='N'||(LA12_0>='P' && LA12_0<='R')||(LA12_0>='T' && LA12_0<='Y')||LA12_0=='_'||(LA12_0>='a' && LA12_0<='d')||(LA12_0>='f' && LA12_0<='l')||(LA12_0>='n' && LA12_0<='o')||LA12_0=='q'||LA12_0=='s'||(LA12_0>='u' && LA12_0<='z')) ) {s = 24;}
 
-                        else if ( (LA12_0=='\'') ) {s = 25;}
+                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 25;}
 
-                        else if ( (LA12_0=='/') ) {s = 26;}
+                        else if ( (LA12_0=='\"') ) {s = 26;}
 
-                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 27;}
+                        else if ( (LA12_0=='\'') ) {s = 27;}
 
-                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='*' && LA12_0<='+')||(LA12_0>='-' && LA12_0<='.')||(LA12_0>=':' && LA12_0<='@')||(LA12_0>='[' && LA12_0<=']')||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFF')) ) {s = 28;}
+                        else if ( (LA12_0=='/') ) {s = 28;}
+
+                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 29;}
+
+                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='*' && LA12_0<='+')||(LA12_0>='-' && LA12_0<='.')||(LA12_0>=':' && LA12_0<='@')||LA12_0=='\\'||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFF')) ) {s = 30;}
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA12_26 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA12_26>='\u0000' && LA12_26<='\uFFFF')) ) {s = 57;}
+
+                        else s = 30;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA12_27 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA12_27>='\u0000' && LA12_27<='\uFFFF')) ) {s = 57;}
+
+                        else s = 30;
 
                         if ( s>=0 ) return s;
                         break;

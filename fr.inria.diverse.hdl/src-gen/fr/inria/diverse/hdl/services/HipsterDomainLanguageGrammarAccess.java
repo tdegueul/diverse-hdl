@@ -113,28 +113,28 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		private final CrossReference cFromEntityCrossReference_3_0 = (CrossReference)cFromAssignment_3.eContents().get(0);
 		private final RuleCall cFromEntityIDTerminalRuleCall_3_0_1 = (RuleCall)cFromEntityCrossReference_3_0.eContents().get(1);
 		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cLeftCurlyBracketKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Keyword cLeftSquareBracketKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
 		private final Assignment cFromRelationNameAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
 		private final RuleCall cFromRelationNameIDTerminalRuleCall_4_1_0 = (RuleCall)cFromRelationNameAssignment_4_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_4_2 = (Keyword)cGroup_4.eContents().get(2);
+		private final Keyword cRightSquareBracketKeyword_4_2 = (Keyword)cGroup_4.eContents().get(2);
 		private final Keyword cToKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		private final Assignment cToAssignment_6 = (Assignment)cGroup.eContents().get(6);
 		private final CrossReference cToEntityCrossReference_6_0 = (CrossReference)cToAssignment_6.eContents().get(0);
 		private final RuleCall cToEntityIDTerminalRuleCall_6_0_1 = (RuleCall)cToEntityCrossReference_6_0.eContents().get(1);
 		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
-		private final Keyword cLeftCurlyBracketKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
+		private final Keyword cLeftSquareBracketKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
 		private final Assignment cToRelationNameAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
 		private final RuleCall cToRelationNameIDTerminalRuleCall_7_1_0 = (RuleCall)cToRelationNameAssignment_7_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_7_2 = (Keyword)cGroup_7.eContents().get(2);
+		private final Keyword cRightSquareBracketKeyword_7_2 = (Keyword)cGroup_7.eContents().get(2);
 		private final Keyword cRightCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Relation:
-		//	"relationship" type=RelationType "{" from=[Entity] ("{" fromRelationName=ID "}") "to" to=[Entity] ("{"
-		//	toRelationName=ID "}") "}";
+		//	"relationship" type=RelationType "{" from=[Entity] ("[" fromRelationName=ID "]") "to" to=[Entity] ("["
+		//	toRelationName=ID "]") "}";
 		@Override public ParserRule getRule() { return rule; }
 
-		//"relationship" type=RelationType "{" from=[Entity] ("{" fromRelationName=ID "}") "to" to=[Entity] ("{" toRelationName=ID
-		//"}") "}"
+		//"relationship" type=RelationType "{" from=[Entity] ("[" fromRelationName=ID "]") "to" to=[Entity] ("[" toRelationName=ID
+		//"]") "}"
 		public Group getGroup() { return cGroup; }
 
 		//"relationship"
@@ -158,11 +158,11 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		//ID
 		public RuleCall getFromEntityIDTerminalRuleCall_3_0_1() { return cFromEntityIDTerminalRuleCall_3_0_1; }
 
-		//"{" fromRelationName=ID "}"
+		//"[" fromRelationName=ID "]"
 		public Group getGroup_4() { return cGroup_4; }
 
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_4_0() { return cLeftCurlyBracketKeyword_4_0; }
+		//"["
+		public Keyword getLeftSquareBracketKeyword_4_0() { return cLeftSquareBracketKeyword_4_0; }
 
 		//fromRelationName=ID
 		public Assignment getFromRelationNameAssignment_4_1() { return cFromRelationNameAssignment_4_1; }
@@ -170,8 +170,8 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		//ID
 		public RuleCall getFromRelationNameIDTerminalRuleCall_4_1_0() { return cFromRelationNameIDTerminalRuleCall_4_1_0; }
 
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_4_2() { return cRightCurlyBracketKeyword_4_2; }
+		//"]"
+		public Keyword getRightSquareBracketKeyword_4_2() { return cRightSquareBracketKeyword_4_2; }
 
 		//"to"
 		public Keyword getToKeyword_5() { return cToKeyword_5; }
@@ -185,11 +185,11 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		//ID
 		public RuleCall getToEntityIDTerminalRuleCall_6_0_1() { return cToEntityIDTerminalRuleCall_6_0_1; }
 
-		//"{" toRelationName=ID "}"
+		//"[" toRelationName=ID "]"
 		public Group getGroup_7() { return cGroup_7; }
 
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_7_0() { return cLeftCurlyBracketKeyword_7_0; }
+		//"["
+		public Keyword getLeftSquareBracketKeyword_7_0() { return cLeftSquareBracketKeyword_7_0; }
 
 		//toRelationName=ID
 		public Assignment getToRelationNameAssignment_7_1() { return cToRelationNameAssignment_7_1; }
@@ -197,8 +197,8 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		//ID
 		public RuleCall getToRelationNameIDTerminalRuleCall_7_1_0() { return cToRelationNameIDTerminalRuleCall_7_1_0; }
 
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_7_2() { return cRightCurlyBracketKeyword_7_2; }
+		//"]"
+		public Keyword getRightSquareBracketKeyword_7_2() { return cRightSquareBracketKeyword_7_2; }
 
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_8() { return cRightCurlyBracketKeyword_8; }
@@ -849,8 +849,8 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	//Relation:
-	//	"relationship" type=RelationType "{" from=[Entity] ("{" fromRelationName=ID "}") "to" to=[Entity] ("{"
-	//	toRelationName=ID "}") "}";
+	//	"relationship" type=RelationType "{" from=[Entity] ("[" fromRelationName=ID "]") "to" to=[Entity] ("["
+	//	toRelationName=ID "]") "}";
 	public RelationElements getRelationAccess() {
 		return pRelation;
 	}
