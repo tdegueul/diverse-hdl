@@ -2,7 +2,13 @@
  */
 package fr.inria.diverse.hdl.hipsterDomainLanguage.util;
 
-import fr.inria.diverse.hdl.hipsterDomainLanguage.*;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Domain;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.DomainElement;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -102,10 +108,25 @@ public class HipsterDomainLanguageSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case HipsterDomainLanguagePackage.ENUM:
+      {
+        fr.inria.diverse.hdl.hipsterDomainLanguage.Enum enum_ = (fr.inria.diverse.hdl.hipsterDomainLanguage.Enum)theEObject;
+        T result = caseEnum(enum_);
+        if (result == null) result = caseDomainElement(enum_);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case HipsterDomainLanguagePackage.FIELD:
       {
         Field field = (Field)theEObject;
         T result = caseField(field);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.HDL_TYPE:
+      {
+        HdlType hdlType = (HdlType)theEObject;
+        T result = caseHdlType(hdlType);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -178,6 +199,22 @@ public class HipsterDomainLanguageSwitch<T> extends Switch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Enum</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Enum</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEnum(fr.inria.diverse.hdl.hipsterDomainLanguage.Enum object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Field</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -189,6 +226,22 @@ public class HipsterDomainLanguageSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseField(Field object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Hdl Type</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Hdl Type</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseHdlType(HdlType object)
   {
     return null;
   }

@@ -2,7 +2,16 @@
  */
 package fr.inria.diverse.hdl.hipsterDomainLanguage.impl;
 
-import fr.inria.diverse.hdl.hipsterDomainLanguage.*;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Domain;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.DomainElement;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguageFactory;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.JHipsterType;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
@@ -69,7 +78,9 @@ public class HipsterDomainLanguageFactoryImpl extends EFactoryImpl implements Hi
       case HipsterDomainLanguagePackage.DOMAIN_ELEMENT: return createDomainElement();
       case HipsterDomainLanguagePackage.ENTITY: return createEntity();
       case HipsterDomainLanguagePackage.RELATION: return createRelation();
+      case HipsterDomainLanguagePackage.ENUM: return createEnum();
       case HipsterDomainLanguagePackage.FIELD: return createField();
+      case HipsterDomainLanguagePackage.HDL_TYPE: return createHdlType();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -162,10 +173,32 @@ public class HipsterDomainLanguageFactoryImpl extends EFactoryImpl implements Hi
    * <!-- end-user-doc -->
    * @generated
    */
+  public fr.inria.diverse.hdl.hipsterDomainLanguage.Enum createEnum()
+  {
+    EnumImpl enum_ = new EnumImpl();
+    return enum_;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public Field createField()
   {
     FieldImpl field = new FieldImpl();
     return field;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public HdlType createHdlType()
+  {
+    HdlTypeImpl hdlType = new HdlTypeImpl();
+    return hdlType;
   }
 
   /**

@@ -6,6 +6,7 @@ import fr.inria.diverse.hdl.hipsterDomainLanguage.Domain;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.DomainElement;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguageFactory;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.JHipsterType;
@@ -61,7 +62,21 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
    * <!-- end-user-doc -->
    * @generated
    */
+  private EClass enumEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   private EClass fieldEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass hdlTypeEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -265,6 +280,36 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
    * <!-- end-user-doc -->
    * @generated
    */
+  public EClass getEnum()
+  {
+    return enumEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getEnum_Name()
+  {
+    return (EAttribute)enumEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getEnum_Literals()
+  {
+    return (EAttribute)enumEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getField()
   {
     return fieldEClass;
@@ -285,9 +330,9 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getField_Type()
+  public EReference getField_Type()
   {
-    return (EAttribute)fieldEClass.getEStructuralFeatures().get(1);
+    return (EReference)fieldEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -298,6 +343,36 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
   public EAttribute getField_Required()
   {
     return (EAttribute)fieldEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getHdlType()
+  {
+    return hdlTypeEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getHdlType_EnumType()
+  {
+    return (EReference)hdlTypeEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getHdlType_PrimitiveType()
+  {
+    return (EAttribute)hdlTypeEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -366,10 +441,18 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
     createEReference(relationEClass, RELATION__TO);
     createEAttribute(relationEClass, RELATION__TO_RELATION);
 
+    enumEClass = createEClass(ENUM);
+    createEAttribute(enumEClass, ENUM__NAME);
+    createEAttribute(enumEClass, ENUM__LITERALS);
+
     fieldEClass = createEClass(FIELD);
     createEAttribute(fieldEClass, FIELD__NAME);
-    createEAttribute(fieldEClass, FIELD__TYPE);
+    createEReference(fieldEClass, FIELD__TYPE);
     createEAttribute(fieldEClass, FIELD__REQUIRED);
+
+    hdlTypeEClass = createEClass(HDL_TYPE);
+    createEReference(hdlTypeEClass, HDL_TYPE__ENUM_TYPE);
+    createEAttribute(hdlTypeEClass, HDL_TYPE__PRIMITIVE_TYPE);
 
     // Create enums
     relationTypeEEnum = createEEnum(RELATION_TYPE);
@@ -407,6 +490,7 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
     // Add supertypes to classes
     entityEClass.getESuperTypes().add(this.getDomainElement());
     relationEClass.getESuperTypes().add(this.getDomainElement());
+    enumEClass.getESuperTypes().add(this.getDomainElement());
 
     // Initialize classes and features; add operations and parameters
     initEClass(domainEClass, Domain.class, "Domain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -425,10 +509,18 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
     initEReference(getRelation_To(), this.getEntity(), null, "to", null, 0, 1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getRelation_ToRelation(), ecorePackage.getEString(), "toRelation", null, 0, 1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+    initEClass(enumEClass, fr.inria.diverse.hdl.hipsterDomainLanguage.Enum.class, "Enum", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getEnum_Name(), ecorePackage.getEString(), "name", null, 0, 1, fr.inria.diverse.hdl.hipsterDomainLanguage.Enum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEnum_Literals(), ecorePackage.getEString(), "literals", null, 0, -1, fr.inria.diverse.hdl.hipsterDomainLanguage.Enum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
     initEClass(fieldEClass, Field.class, "Field", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getField_Name(), ecorePackage.getEString(), "name", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getField_Type(), this.getJHipsterType(), "type", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getField_Type(), this.getHdlType(), null, "type", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getField_Required(), ecorePackage.getEBoolean(), "required", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(hdlTypeEClass, HdlType.class, "HdlType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getHdlType_EnumType(), this.getEnum(), null, "enumType", null, 0, 1, HdlType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getHdlType_PrimitiveType(), this.getJHipsterType(), "primitiveType", null, 0, 1, HdlType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Initialize enums and add enum literals
     initEEnum(relationTypeEEnum, RelationType.class, "RelationType");

@@ -136,6 +136,16 @@ ruleDomainElement returns [EObject current=null]
         $current = $this_Relation_1.current; 
         afterParserOrEnumRuleCall();
     }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getDomainElementAccess().getEnumParserRuleCall_2()); 
+    }
+    this_Enum_2=ruleEnum
+    { 
+        $current = $this_Enum_2.current; 
+        afterParserOrEnumRuleCall();
+    }
 )
 ;
 
@@ -345,6 +355,97 @@ ruleRelation returns [EObject current=null]
 
 
 
+// Entry rule entryRuleEnum
+entryRuleEnum returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getEnumRule()); }
+	 iv_ruleEnum=ruleEnum 
+	 { $current=$iv_ruleEnum.current; } 
+	 EOF 
+;
+
+// Rule Enum
+ruleEnum returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='enum' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getEnumAccess().getEnumKeyword_0());
+    }
+(
+(
+		lv_name_1_0=RULE_ID
+		{
+			newLeafNode(lv_name_1_0, grammarAccess.getEnumAccess().getNameIDTerminalRuleCall_1_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getEnumRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"name",
+        		lv_name_1_0, 
+        		"ID");
+	    }
+
+)
+)	otherlv_2='{' 
+    {
+    	newLeafNode(otherlv_2, grammarAccess.getEnumAccess().getLeftCurlyBracketKeyword_2());
+    }
+(
+(
+		lv_literals_3_0=RULE_ID
+		{
+			newLeafNode(lv_literals_3_0, grammarAccess.getEnumAccess().getLiteralsIDTerminalRuleCall_3_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getEnumRule());
+	        }
+       		addWithLastConsumed(
+       			$current, 
+       			"literals",
+        		lv_literals_3_0, 
+        		"ID");
+	    }
+
+)
+)(	otherlv_4=',' 
+    {
+    	newLeafNode(otherlv_4, grammarAccess.getEnumAccess().getCommaKeyword_4_0());
+    }
+(
+(
+		lv_literals_5_0=RULE_ID
+		{
+			newLeafNode(lv_literals_5_0, grammarAccess.getEnumAccess().getLiteralsIDTerminalRuleCall_4_1_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getEnumRule());
+	        }
+       		addWithLastConsumed(
+       			$current, 
+       			"literals",
+        		lv_literals_5_0, 
+        		"ID");
+	    }
+
+)
+))*	otherlv_6='}' 
+    {
+    	newLeafNode(otherlv_6, grammarAccess.getEnumAccess().getRightCurlyBracketKeyword_5());
+    }
+)
+;
+
+
+
+
+
 // Entry rule entryRuleField
 entryRuleField returns [EObject current=null] 
 	:
@@ -380,9 +481,9 @@ ruleField returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getFieldAccess().getTypeJHipsterTypeEnumRuleCall_1_0()); 
+	        newCompositeNode(grammarAccess.getFieldAccess().getTypeHdlTypeParserRuleCall_1_0()); 
 	    }
-		lv_type_1_0=ruleJHipsterType		{
+		lv_type_1_0=ruleHdlType		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getFieldRule());
 	        }
@@ -390,7 +491,7 @@ ruleField returns [EObject current=null]
        			$current, 
        			"type",
         		lv_type_1_0, 
-        		"JHipsterType");
+        		"HdlType");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -411,6 +512,59 @@ ruleField returns [EObject current=null]
 
 )
 )?)
+;
+
+
+
+
+
+// Entry rule entryRuleHdlType
+entryRuleHdlType returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getHdlTypeRule()); }
+	 iv_ruleHdlType=ruleHdlType 
+	 { $current=$iv_ruleHdlType.current; } 
+	 EOF 
+;
+
+// Rule HdlType
+ruleHdlType returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+((
+(
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getHdlTypeRule());
+	        }
+        }
+	otherlv_0=RULE_ID
+	{
+		newLeafNode(otherlv_0, grammarAccess.getHdlTypeAccess().getEnumTypeEnumCrossReference_0_0()); 
+	}
+
+)
+)
+    |(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getHdlTypeAccess().getPrimitiveTypeJHipsterTypeEnumRuleCall_1_0()); 
+	    }
+		lv_primitiveType_1_0=ruleJHipsterType		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getHdlTypeRule());
+	        }
+       		set(
+       			$current, 
+       			"primitiveType",
+        		lv_primitiveType_1_0, 
+        		"JHipsterType");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))
 ;
 
 

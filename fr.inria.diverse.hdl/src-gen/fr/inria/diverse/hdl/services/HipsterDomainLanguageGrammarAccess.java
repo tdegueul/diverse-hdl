@@ -39,12 +39,13 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cEntityParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cRelationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		private final RuleCall cEnumParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
 		
 		//DomainElement:
-		//	Entity | Relation;
+		//	Entity | Relation | Enum;
 		@Override public ParserRule getRule() { return rule; }
 
-		//Entity | Relation
+		//Entity | Relation | Enum
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//Entity
@@ -52,6 +53,9 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 
 		//Relation
 		public RuleCall getRelationParserRuleCall_1() { return cRelationParserRuleCall_1; }
+
+		//Enum
+		public RuleCall getEnumParserRuleCall_2() { return cEnumParserRuleCall_2; }
 	}
 
 	public class EntityElements extends AbstractParserRuleElementFinder {
@@ -200,21 +204,77 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		public Keyword getRightCurlyBracketKeyword_8() { return cRightCurlyBracketKeyword_8; }
 	}
 
+	public class EnumElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Enum");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cEnumKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Assignment cLiteralsAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cLiteralsIDTerminalRuleCall_3_0 = (RuleCall)cLiteralsAssignment_3.eContents().get(0);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cCommaKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Assignment cLiteralsAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final RuleCall cLiteralsIDTerminalRuleCall_4_1_0 = (RuleCall)cLiteralsAssignment_4_1.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		
+		//Enum:
+		//	"enum" name=ID "{" literals+=ID ("," literals+=ID)* "}";
+		@Override public ParserRule getRule() { return rule; }
+
+		//"enum" name=ID "{" literals+=ID ("," literals+=ID)* "}"
+		public Group getGroup() { return cGroup; }
+
+		//"enum"
+		public Keyword getEnumKeyword_0() { return cEnumKeyword_0; }
+
+		//name=ID
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
+
+		//literals+=ID
+		public Assignment getLiteralsAssignment_3() { return cLiteralsAssignment_3; }
+
+		//ID
+		public RuleCall getLiteralsIDTerminalRuleCall_3_0() { return cLiteralsIDTerminalRuleCall_3_0; }
+
+		//("," literals+=ID)*
+		public Group getGroup_4() { return cGroup_4; }
+
+		//","
+		public Keyword getCommaKeyword_4_0() { return cCommaKeyword_4_0; }
+
+		//literals+=ID
+		public Assignment getLiteralsAssignment_4_1() { return cLiteralsAssignment_4_1; }
+
+		//ID
+		public RuleCall getLiteralsIDTerminalRuleCall_4_1_0() { return cLiteralsIDTerminalRuleCall_4_1_0; }
+
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
+	}
+
 	public class FieldElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Field");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
 		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cTypeJHipsterTypeEnumRuleCall_1_0 = (RuleCall)cTypeAssignment_1.eContents().get(0);
+		private final RuleCall cTypeHdlTypeParserRuleCall_1_0 = (RuleCall)cTypeAssignment_1.eContents().get(0);
 		private final Assignment cRequiredAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final Keyword cRequiredRequiredKeyword_2_0 = (Keyword)cRequiredAssignment_2.eContents().get(0);
 		
 		//Field:
-		//	name=ID type=JHipsterType required?="required"?;
+		//	name=ID type=HdlType required?="required"?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//name=ID type=JHipsterType required?="required"?
+		//name=ID type=HdlType required?="required"?
 		public Group getGroup() { return cGroup; }
 
 		//name=ID
@@ -223,17 +283,49 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_0_0() { return cNameIDTerminalRuleCall_0_0; }
 
-		//type=JHipsterType
+		//type=HdlType
 		public Assignment getTypeAssignment_1() { return cTypeAssignment_1; }
 
-		//JHipsterType
-		public RuleCall getTypeJHipsterTypeEnumRuleCall_1_0() { return cTypeJHipsterTypeEnumRuleCall_1_0; }
+		//HdlType
+		public RuleCall getTypeHdlTypeParserRuleCall_1_0() { return cTypeHdlTypeParserRuleCall_1_0; }
 
 		//required?="required"?
 		public Assignment getRequiredAssignment_2() { return cRequiredAssignment_2; }
 
 		//"required"
 		public Keyword getRequiredRequiredKeyword_2_0() { return cRequiredRequiredKeyword_2_0; }
+	}
+
+	public class HdlTypeElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "HdlType");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final Assignment cEnumTypeAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
+		private final CrossReference cEnumTypeEnumCrossReference_0_0 = (CrossReference)cEnumTypeAssignment_0.eContents().get(0);
+		private final RuleCall cEnumTypeEnumIDTerminalRuleCall_0_0_1 = (RuleCall)cEnumTypeEnumCrossReference_0_0.eContents().get(1);
+		private final Assignment cPrimitiveTypeAssignment_1 = (Assignment)cAlternatives.eContents().get(1);
+		private final RuleCall cPrimitiveTypeJHipsterTypeEnumRuleCall_1_0 = (RuleCall)cPrimitiveTypeAssignment_1.eContents().get(0);
+		
+		//HdlType:
+		//	enumType=[Enum] | primitiveType=JHipsterType;
+		@Override public ParserRule getRule() { return rule; }
+
+		//enumType=[Enum] | primitiveType=JHipsterType
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//enumType=[Enum]
+		public Assignment getEnumTypeAssignment_0() { return cEnumTypeAssignment_0; }
+
+		//[Enum]
+		public CrossReference getEnumTypeEnumCrossReference_0_0() { return cEnumTypeEnumCrossReference_0_0; }
+
+		//ID
+		public RuleCall getEnumTypeEnumIDTerminalRuleCall_0_0_1() { return cEnumTypeEnumIDTerminalRuleCall_0_0_1; }
+
+		//primitiveType=JHipsterType
+		public Assignment getPrimitiveTypeAssignment_1() { return cPrimitiveTypeAssignment_1; }
+
+		//JHipsterType
+		public RuleCall getPrimitiveTypeJHipsterTypeEnumRuleCall_1_0() { return cPrimitiveTypeJHipsterTypeEnumRuleCall_1_0; }
 	}
 	
 	
@@ -379,7 +471,9 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 	private final DomainElementElements pDomainElement;
 	private final EntityElements pEntity;
 	private final RelationElements pRelation;
+	private final EnumElements pEnum;
 	private final FieldElements pField;
+	private final HdlTypeElements pHdlType;
 	private final RelationTypeElements unknownRuleRelationType;
 	private final JHipsterTypeElements unknownRuleJHipsterType;
 	
@@ -396,7 +490,9 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		this.pDomainElement = new DomainElementElements();
 		this.pEntity = new EntityElements();
 		this.pRelation = new RelationElements();
+		this.pEnum = new EnumElements();
 		this.pField = new FieldElements();
+		this.pHdlType = new HdlTypeElements();
 		this.unknownRuleRelationType = new RelationTypeElements();
 		this.unknownRuleJHipsterType = new JHipsterTypeElements();
 	}
@@ -439,7 +535,7 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	//DomainElement:
-	//	Entity | Relation;
+	//	Entity | Relation | Enum;
 	public DomainElementElements getDomainElementAccess() {
 		return pDomainElement;
 	}
@@ -469,14 +565,34 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		return getRelationAccess().getRule();
 	}
 
+	//Enum:
+	//	"enum" name=ID "{" literals+=ID ("," literals+=ID)* "}";
+	public EnumElements getEnumAccess() {
+		return pEnum;
+	}
+	
+	public ParserRule getEnumRule() {
+		return getEnumAccess().getRule();
+	}
+
 	//Field:
-	//	name=ID type=JHipsterType required?="required"?;
+	//	name=ID type=HdlType required?="required"?;
 	public FieldElements getFieldAccess() {
 		return pField;
 	}
 	
 	public ParserRule getFieldRule() {
 		return getFieldAccess().getRule();
+	}
+
+	//HdlType:
+	//	enumType=[Enum] | primitiveType=JHipsterType;
+	public HdlTypeElements getHdlTypeAccess() {
+		return pHdlType;
+	}
+	
+	public ParserRule getHdlTypeRule() {
+		return getHdlTypeAccess().getRule();
 	}
 
 	//enum RelationType:

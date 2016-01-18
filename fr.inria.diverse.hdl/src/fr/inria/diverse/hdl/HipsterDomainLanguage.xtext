@@ -7,7 +7,7 @@ Domain:
 ;
 
 DomainElement:
-	Entity | Relation
+	Entity | Relation | Enum
 ;
 
 Entity:
@@ -18,14 +18,26 @@ Entity:
 
 Relation:
 	'relationship' type=RelationType '{'
-		from=[Entity] ('{' fromRelation=ID '}')
+		from = [Entity] ('{' fromRelation = ID '}')
 		'to'
-		to=[Entity] ('{' toRelation=ID '}')
+		to = [Entity] ('{' toRelation = ID '}')
+	'}'
+;
+
+Enum:
+	'enum' name=ID '{'
+		literals += ID
+		(',' literals += ID)*
 	'}'
 ;
 
 Field:
-	name=ID type=JHipsterType (required ?= 'required')?
+	name = ID type = HdlType (required ?= 'required')?
+;
+
+HdlType:
+	(enumType = [Enum])
+	| (primitiveType = JHipsterType)
 ;
 
 enum RelationType:

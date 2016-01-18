@@ -51,33 +51,30 @@ public interface Field extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Type</b></em>' attribute.
-   * The literals are from the enumeration {@link fr.inria.diverse.hdl.hipsterDomainLanguage.JHipsterType}.
+   * Returns the value of the '<em><b>Type</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Type</em>' attribute isn't clear,
+   * If the meaning of the '<em>Type</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Type</em>' attribute.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.JHipsterType
-   * @see #setType(JHipsterType)
+   * @return the value of the '<em>Type</em>' containment reference.
+   * @see #setType(HdlType)
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getField_Type()
-   * @model
+   * @model containment="true"
    * @generated
    */
-  JHipsterType getType();
+  HdlType getType();
 
   /**
-   * Sets the value of the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#getType <em>Type</em>}' attribute.
+   * Sets the value of the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#getType <em>Type</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Type</em>' attribute.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.JHipsterType
+   * @param value the new value of the '<em>Type</em>' containment reference.
    * @see #getType()
    * @generated
    */
-  void setType(JHipsterType value);
+  void setType(HdlType value);
 
   /**
    * Returns the value of the '<em><b>Required</b></em>' attribute.

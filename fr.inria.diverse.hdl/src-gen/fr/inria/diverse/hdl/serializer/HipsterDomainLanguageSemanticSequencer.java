@@ -8,6 +8,7 @@ import com.google.inject.Provider;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Domain;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation;
 import fr.inria.diverse.hdl.services.HipsterDomainLanguageGrammarAccess;
@@ -38,8 +39,14 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 			case HipsterDomainLanguagePackage.ENTITY:
 				sequence_Entity(context, (Entity) semanticObject); 
 				return; 
+			case HipsterDomainLanguagePackage.ENUM:
+				sequence_Enum(context, (fr.inria.diverse.hdl.hipsterDomainLanguage.Enum) semanticObject); 
+				return; 
 			case HipsterDomainLanguagePackage.FIELD:
 				sequence_Field(context, (Field) semanticObject); 
+				return; 
+			case HipsterDomainLanguagePackage.HDL_TYPE:
+				sequence_HdlType(context, (HdlType) semanticObject); 
 				return; 
 			case HipsterDomainLanguagePackage.RELATION:
 				sequence_Relation(context, (Relation) semanticObject); 
@@ -68,9 +75,27 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (name=ID type=JHipsterType required?='required'?)
+	 *     (name=ID literals+=ID literals+=ID*)
+	 */
+	protected void sequence_Enum(EObject context, fr.inria.diverse.hdl.hipsterDomainLanguage.Enum semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID type=HdlType required?='required'?)
 	 */
 	protected void sequence_Field(EObject context, Field semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (enumType=[Enum|ID] | primitiveType=JHipsterType)
+	 */
+	protected void sequence_HdlType(EObject context, HdlType semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

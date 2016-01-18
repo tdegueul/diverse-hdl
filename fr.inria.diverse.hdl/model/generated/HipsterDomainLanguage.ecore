@@ -19,10 +19,20 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="#//Entity"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="toRelation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Enum" eSuperTypes="#//DomainElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="literals" unique="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Field">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//JHipsterType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//HdlType"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="required" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HdlType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enumType" eType="#//Enum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="primitiveType" eType="#//JHipsterType"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="RelationType">
     <eLiterals name="ONE_TO_MANY" literal="OneToMany"/>

@@ -206,6 +206,43 @@ public interface HipsterDomainLanguagePackage extends EPackage
   int RELATION_FEATURE_COUNT = DOMAIN_ELEMENT_FEATURE_COUNT + 5;
 
   /**
+   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumImpl <em>Enum</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumImpl
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getEnum()
+   * @generated
+   */
+  int ENUM = 4;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ENUM__NAME = DOMAIN_ELEMENT_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Literals</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ENUM__LITERALS = DOMAIN_ELEMENT_FEATURE_COUNT + 1;
+
+  /**
+   * The number of structural features of the '<em>Enum</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ENUM_FEATURE_COUNT = DOMAIN_ELEMENT_FEATURE_COUNT + 2;
+
+  /**
    * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl <em>Field</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -213,7 +250,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getField()
    * @generated
    */
-  int FIELD = 4;
+  int FIELD = 5;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -225,7 +262,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
   int FIELD__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Type</b></em>' attribute.
+   * The feature id for the '<em><b>Type</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -252,6 +289,43 @@ public interface HipsterDomainLanguagePackage extends EPackage
   int FIELD_FEATURE_COUNT = 3;
 
   /**
+   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeImpl <em>Hdl Type</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeImpl
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getHdlType()
+   * @generated
+   */
+  int HDL_TYPE = 6;
+
+  /**
+   * The feature id for the '<em><b>Enum Type</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int HDL_TYPE__ENUM_TYPE = 0;
+
+  /**
+   * The feature id for the '<em><b>Primitive Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int HDL_TYPE__PRIMITIVE_TYPE = 1;
+
+  /**
+   * The number of structural features of the '<em>Hdl Type</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int HDL_TYPE_FEATURE_COUNT = 2;
+
+  /**
    * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType <em>Relation Type</em>}' enum.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -259,7 +333,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getRelationType()
    * @generated
    */
-  int RELATION_TYPE = 5;
+  int RELATION_TYPE = 7;
 
   /**
    * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.JHipsterType <em>JHipster Type</em>}' enum.
@@ -269,7 +343,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getJHipsterType()
    * @generated
    */
-  int JHIPSTER_TYPE = 6;
+  int JHIPSTER_TYPE = 8;
 
 
   /**
@@ -401,6 +475,38 @@ public interface HipsterDomainLanguagePackage extends EPackage
   EAttribute getRelation_ToRelation();
 
   /**
+   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Enum <em>Enum</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Enum</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Enum
+   * @generated
+   */
+  EClass getEnum();
+
+  /**
+   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Enum#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Enum#getName()
+   * @see #getEnum()
+   * @generated
+   */
+  EAttribute getEnum_Name();
+
+  /**
+   * Returns the meta object for the attribute list '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Enum#getLiterals <em>Literals</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Literals</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Enum#getLiterals()
+   * @see #getEnum()
+   * @generated
+   */
+  EAttribute getEnum_Literals();
+
+  /**
    * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field <em>Field</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -422,15 +528,15 @@ public interface HipsterDomainLanguagePackage extends EPackage
   EAttribute getField_Name();
 
   /**
-   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#getType <em>Type</em>}'.
+   * Returns the meta object for the containment reference '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#getType <em>Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Type</em>'.
+   * @return the meta object for the containment reference '<em>Type</em>'.
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Field#getType()
    * @see #getField()
    * @generated
    */
-  EAttribute getField_Type();
+  EReference getField_Type();
 
   /**
    * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#isRequired <em>Required</em>}'.
@@ -442,6 +548,38 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @generated
    */
   EAttribute getField_Required();
+
+  /**
+   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType <em>Hdl Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Hdl Type</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType
+   * @generated
+   */
+  EClass getHdlType();
+
+  /**
+   * Returns the meta object for the reference '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType#getEnumType <em>Enum Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference '<em>Enum Type</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType#getEnumType()
+   * @see #getHdlType()
+   * @generated
+   */
+  EReference getHdlType_EnumType();
+
+  /**
+   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType#getPrimitiveType <em>Primitive Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Primitive Type</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType#getPrimitiveType()
+   * @see #getHdlType()
+   * @generated
+   */
+  EAttribute getHdlType_PrimitiveType();
 
   /**
    * Returns the meta object for enum '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType <em>Relation Type</em>}'.
@@ -591,6 +729,32 @@ public interface HipsterDomainLanguagePackage extends EPackage
     EAttribute RELATION__TO_RELATION = eINSTANCE.getRelation_ToRelation();
 
     /**
+     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumImpl <em>Enum</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumImpl
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getEnum()
+     * @generated
+     */
+    EClass ENUM = eINSTANCE.getEnum();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute ENUM__NAME = eINSTANCE.getEnum_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Literals</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute ENUM__LITERALS = eINSTANCE.getEnum_Literals();
+
+    /**
      * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl <em>Field</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -609,12 +773,12 @@ public interface HipsterDomainLanguagePackage extends EPackage
     EAttribute FIELD__NAME = eINSTANCE.getField_Name();
 
     /**
-     * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Type</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute FIELD__TYPE = eINSTANCE.getField_Type();
+    EReference FIELD__TYPE = eINSTANCE.getField_Type();
 
     /**
      * The meta object literal for the '<em><b>Required</b></em>' attribute feature.
@@ -623,6 +787,32 @@ public interface HipsterDomainLanguagePackage extends EPackage
      * @generated
      */
     EAttribute FIELD__REQUIRED = eINSTANCE.getField_Required();
+
+    /**
+     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeImpl <em>Hdl Type</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeImpl
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getHdlType()
+     * @generated
+     */
+    EClass HDL_TYPE = eINSTANCE.getHdlType();
+
+    /**
+     * The meta object literal for the '<em><b>Enum Type</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference HDL_TYPE__ENUM_TYPE = eINSTANCE.getHdlType_EnumType();
+
+    /**
+     * The meta object literal for the '<em><b>Primitive Type</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute HDL_TYPE__PRIMITIVE_TYPE = eINSTANCE.getHdlType_PrimitiveType();
 
     /**
      * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType <em>Relation Type</em>}' enum.

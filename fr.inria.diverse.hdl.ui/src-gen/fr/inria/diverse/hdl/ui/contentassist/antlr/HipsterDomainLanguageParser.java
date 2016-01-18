@@ -38,6 +38,7 @@ public class HipsterDomainLanguageParser extends AbstractContentAssistParser {
 				private static final long serialVersionUID = 1L;
 				{
 					put(grammarAccess.getDomainElementAccess().getAlternatives(), "rule__DomainElement__Alternatives");
+					put(grammarAccess.getHdlTypeAccess().getAlternatives(), "rule__HdlType__Alternatives");
 					put(grammarAccess.getRelationTypeAccess().getAlternatives(), "rule__RelationType__Alternatives");
 					put(grammarAccess.getJHipsterTypeAccess().getAlternatives(), "rule__JHipsterType__Alternatives");
 					put(grammarAccess.getEntityAccess().getGroup(), "rule__Entity__Group__0");
@@ -45,6 +46,8 @@ public class HipsterDomainLanguageParser extends AbstractContentAssistParser {
 					put(grammarAccess.getRelationAccess().getGroup(), "rule__Relation__Group__0");
 					put(grammarAccess.getRelationAccess().getGroup_4(), "rule__Relation__Group_4__0");
 					put(grammarAccess.getRelationAccess().getGroup_7(), "rule__Relation__Group_7__0");
+					put(grammarAccess.getEnumAccess().getGroup(), "rule__Enum__Group__0");
+					put(grammarAccess.getEnumAccess().getGroup_4(), "rule__Enum__Group_4__0");
 					put(grammarAccess.getFieldAccess().getGroup(), "rule__Field__Group__0");
 					put(grammarAccess.getDomainAccess().getElementsAssignment(), "rule__Domain__ElementsAssignment");
 					put(grammarAccess.getEntityAccess().getNameAssignment_1(), "rule__Entity__NameAssignment_1");
@@ -54,9 +57,14 @@ public class HipsterDomainLanguageParser extends AbstractContentAssistParser {
 					put(grammarAccess.getRelationAccess().getFromRelationAssignment_4_1(), "rule__Relation__FromRelationAssignment_4_1");
 					put(grammarAccess.getRelationAccess().getToAssignment_6(), "rule__Relation__ToAssignment_6");
 					put(grammarAccess.getRelationAccess().getToRelationAssignment_7_1(), "rule__Relation__ToRelationAssignment_7_1");
+					put(grammarAccess.getEnumAccess().getNameAssignment_1(), "rule__Enum__NameAssignment_1");
+					put(grammarAccess.getEnumAccess().getLiteralsAssignment_3(), "rule__Enum__LiteralsAssignment_3");
+					put(grammarAccess.getEnumAccess().getLiteralsAssignment_4_1(), "rule__Enum__LiteralsAssignment_4_1");
 					put(grammarAccess.getFieldAccess().getNameAssignment_0(), "rule__Field__NameAssignment_0");
 					put(grammarAccess.getFieldAccess().getTypeAssignment_1(), "rule__Field__TypeAssignment_1");
 					put(grammarAccess.getFieldAccess().getRequiredAssignment_2(), "rule__Field__RequiredAssignment_2");
+					put(grammarAccess.getHdlTypeAccess().getEnumTypeAssignment_0(), "rule__HdlType__EnumTypeAssignment_0");
+					put(grammarAccess.getHdlTypeAccess().getPrimitiveTypeAssignment_1(), "rule__HdlType__PrimitiveTypeAssignment_1");
 				}
 			};
 		}

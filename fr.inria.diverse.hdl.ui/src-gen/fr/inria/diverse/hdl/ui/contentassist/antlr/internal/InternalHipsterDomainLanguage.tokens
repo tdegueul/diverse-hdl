@@ -1,3 +1,4 @@
+','=31
 'BigDecimal'=18
 'Boolean'=22
 'Double'=20
@@ -13,8 +14,9 @@
 'String'=15
 'ZoneDateTime'=24
 'entity'=25
+'enum'=30
 'relationship'=28
-'required'=30
+'required'=32
 'to'=29
 '{'=26
 '}'=27
@@ -45,3 +47,5 @@ T__27=27
 T__28=28
 T__29=29
 T__30=30
+T__31=31
+T__32=32

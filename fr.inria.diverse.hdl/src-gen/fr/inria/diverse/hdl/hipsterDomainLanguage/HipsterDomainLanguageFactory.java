@@ -59,6 +59,15 @@ public interface HipsterDomainLanguageFactory extends EFactory
   Relation createRelation();
 
   /**
+   * Returns a new object of class '<em>Enum</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Enum</em>'.
+   * @generated
+   */
+  Enum createEnum();
+
+  /**
    * Returns a new object of class '<em>Field</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -66,6 +75,15 @@ public interface HipsterDomainLanguageFactory extends EFactory
    * @generated
    */
   Field createField();
+
+  /**
+   * Returns a new object of class '<em>Hdl Type</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Hdl Type</em>'.
+   * @generated
+   */
+  HdlType createHdlType();
 
   /**
    * Returns the package supported by this factory.
