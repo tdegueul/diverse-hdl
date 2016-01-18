@@ -1,6 +1,11 @@
 package fr.inria.diverse.hdl.ui.labeling
 
 import com.google.inject.Inject
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Domain
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Enum
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Field
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation
 import fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType
 import org.eclipse.emf.edit.ui.provider.AdapterFactoryLabelProvider
@@ -13,6 +18,22 @@ class HipsterDomainLanguageLabelProvider extends DefaultEObjectLabelProvider {
 		super(delegate)
 	}
 
+	def String image(Domain it) {
+		return 'hdl.png'
+	}
+
+	def String image(Entity it) {
+		return 'entity.png'
+	}
+
+	def String text(Field it) {
+		return '''«name» : «type.formatFieldType»'''
+	}
+
+	def String image(Field it) {
+		return 'field.png'
+	}
+
 	def String text(Relation it) {
 		return
 			'''«from.name»(«fromRelation») '''
@@ -20,13 +41,21 @@ class HipsterDomainLanguageLabelProvider extends DefaultEObjectLabelProvider {
 		  + '''«to.name»(«toRelation»)'''
 	}
 
-	def String image(Relation r) {
+	def String image(Relation it) {
 		return 'relation.png'
 	}
 
-	private def String formatRelationCardinalities(RelationType t) {
+	def String image(Enum it) {
+		return 'enum.png'
+	}
+
+	private def String formatFieldType(HdlType it) {
+		return enumType?.name ?: primitiveType.literal
+	}
+
+	private def String formatRelationCardinalities(RelationType it) {
 		return
-			switch t {
+			switch it {
 				case ONE_TO_MANY:  '[1..*]'
 				case MANY_TO_ONE:  '[*..1]'
 				case ONE_TO_ONE:   '[1..1]'
