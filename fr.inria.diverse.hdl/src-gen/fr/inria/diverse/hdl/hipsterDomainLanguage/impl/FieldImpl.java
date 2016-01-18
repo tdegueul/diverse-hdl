@@ -29,13 +29,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl#getName <em>Name</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl#getType <em>Type</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl#isRequired <em>Required</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl#getValidationRules <em>Validation Rules</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

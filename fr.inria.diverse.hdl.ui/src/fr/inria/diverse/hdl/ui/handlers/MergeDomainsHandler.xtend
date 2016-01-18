@@ -36,8 +36,6 @@ class MergeDomainsHandler extends AbstractHandler
 				val domain1 = emfRes1.contents.head as Domain
 				val domain2 = emfRes2.contents.head as Domain
 				val newDomain = merger.merge(domain1, domain2)
-				println(newDomain)
-				println(newDomain.elements)
 				val newURI = p1.substring(0, p1.lastIndexOf("/"))
 				             + "/Merged.hdl"
 				val newRes = rs.createResource(

@@ -11,11 +11,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Enum#getName <em>Name</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Enum#getLiterals <em>Literals</em>}</li>
  * </ul>
+ * </p>
  *
  * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getEnum()
  * @model

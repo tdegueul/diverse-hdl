@@ -10,10 +10,10 @@ package fr.inria.diverse.hdl.hipsterDomainLanguage;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.MinSpecification#getMin <em>Min</em>}</li>
  * </ul>
+ * </p>
  *
  * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getMinSpecification()
  * @model

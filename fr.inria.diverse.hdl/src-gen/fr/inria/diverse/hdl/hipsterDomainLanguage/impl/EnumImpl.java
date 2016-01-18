@@ -22,11 +22,11 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumImpl#getName <em>Name</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumImpl#getLiterals <em>Literals</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

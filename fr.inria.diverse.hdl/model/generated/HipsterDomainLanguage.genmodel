@@ -5,7 +5,7 @@
     forceOverwrite="true" modelName="HipsterDomainLanguage" updateClasspath="false"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" complianceLevel="6.0"
     copyrightFields="false" editPluginID="fr.inria.diverse.hdl.edit" editorPluginID="fr.inria.diverse.hdl.editor"
-    runtimeVersion="2.11">
+    runtimeVersion="2.10">
   <genPackages prefix="HipsterDomainLanguage" basePackage="fr.inria.diverse.hdl" disposableProviderFactory="true"
       fileExtensions="hdl" ecorePackage="HipsterDomainLanguage.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="HipsterDomainLanguage.ecore#//RelationType">

@@ -146,8 +146,6 @@ public enum RelationType implements Enumerator
    * Returns the '<em><b>Relation Type</b></em>' literal with the specified literal value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param literal the literal.
-   * @return the matching enumerator or <code>null</code>.
    * @generated
    */
   public static RelationType get(String literal)
@@ -167,8 +165,6 @@ public enum RelationType implements Enumerator
    * Returns the '<em><b>Relation Type</b></em>' literal with the specified name.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param name the name.
-   * @return the matching enumerator or <code>null</code>.
    * @generated
    */
   public static RelationType getByName(String name)
@@ -188,8 +184,6 @@ public enum RelationType implements Enumerator
    * Returns the '<em><b>Relation Type</b></em>' literal with the specified integer value.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the integer value.
-   * @return the matching enumerator or <code>null</code>.
    * @generated
    */
   public static RelationType get(int value)

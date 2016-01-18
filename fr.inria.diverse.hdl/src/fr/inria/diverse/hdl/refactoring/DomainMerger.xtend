@@ -18,7 +18,6 @@ class DomainMerger
 			HipsterDomainLanguageFactory::eINSTANCE.createDomain => [
 				copyDomainElements(d1)
 				copyDomainElements(d2)
-				println(elements)
 				copyDomainRelations(d1)
 				copyDomainRelations(d2)
 			] 
@@ -75,11 +74,7 @@ class DomainMerger
 					]
 				Relation:
 					d1.elements += fact.createRelation => [
-						val m = d1.elements.filter(Entity).findFirst[name == e.from.name]
-						println("m="+e.from.name)
-						val t = d1.elements.filter(Entity).findFirst[name == e.to.name]
-						println("t="+t)
-						from = m
+						from = d1.elements.filter(Entity).findFirst[name == e.from.name]
 						to = d1.elements.filter(Entity).findFirst[name == e.to.name]
 						type = e.type
 						fromRelationName = e.fromRelationName

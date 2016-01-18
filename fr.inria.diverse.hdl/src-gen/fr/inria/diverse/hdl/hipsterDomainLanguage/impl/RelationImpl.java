@@ -20,7 +20,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getType <em>Type</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getFrom <em>From</em>}</li>
@@ -28,6 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getTo <em>To</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getToRelationName <em>To Relation Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */

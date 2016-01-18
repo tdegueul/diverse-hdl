@@ -10,7 +10,6 @@ package fr.inria.diverse.hdl.hipsterDomainLanguage;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getType <em>Type</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFrom <em>From</em>}</li>
@@ -18,6 +17,7 @@ package fr.inria.diverse.hdl.hipsterDomainLanguage;
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getTo <em>To</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getToRelationName <em>To Relation Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getRelation()
  * @model

@@ -10,10 +10,10 @@ package fr.inria.diverse.hdl.hipsterDomainLanguage;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.MaxSpecification#getMax <em>Max</em>}</li>
  * </ul>
+ * </p>
  *
  * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getMaxSpecification()
  * @model

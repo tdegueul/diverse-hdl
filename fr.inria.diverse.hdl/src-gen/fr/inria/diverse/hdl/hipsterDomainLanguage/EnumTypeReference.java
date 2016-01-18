@@ -10,10 +10,10 @@ package fr.inria.diverse.hdl.hipsterDomainLanguage;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference#getType <em>Type</em>}</li>
  * </ul>
+ * </p>
  *
  * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getEnumTypeReference()
  * @model
