@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hipsterDomainLanguage" nsURI="http://www.inria.fr/diverse/hdl/HipsterDomainLanguage"
+    nsPrefix="hipsterDomainLanguage">
+  <eClassifiers xsi:type="ecore:EClass" name="Domain">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//DomainElement" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Entity" eSuperTypes="#//DomainElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fields" upperBound="-1"
+        eType="#//Field" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Relation" eSuperTypes="#//DomainElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//RelationType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//Entity"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromRelation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="#//Entity"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="toRelation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Field">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//JHipsterType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="required" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RelationType">
+    <eLiterals name="ONE_TO_MANY" literal="OneToMany"/>
+    <eLiterals name="MANY_TO_ONE" value="1" literal="ManyToOne"/>
+    <eLiterals name="ONE_TO_ONE" value="2" literal="OneToOne"/>
+    <eLiterals name="MANY_TO_MANY" value="3" literal="ManyToMany"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="JHipsterType">
+    <eLiterals name="STRING" literal="String"/>
+    <eLiterals name="INTEGER" value="1" literal="Integer"/>
+    <eLiterals name="LONG" value="2" literal="Long"/>
+    <eLiterals name="BIG_DECIMAL" value="3" literal="BigDecimal"/>
+    <eLiterals name="FLOAT" value="4" literal="Float"/>
+    <eLiterals name="DOUBLE" value="5" literal="Double"/>
+    <eLiterals name="ENUM" value="6" literal="Enum"/>
+    <eLiterals name="BOOLEAN" value="7" literal="Boolean"/>
+    <eLiterals name="LOCAL_DATE" value="8" literal="LocalDate"/>
+    <eLiterals name="ZONE_DATE_TIME" value="9" literal="ZoneDateTime"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.inria.diverse.hdl/src-gen" editDirectory="/fr.inria.diverse.hdl.edit/src"
+    editorDirectory="/fr.inria.diverse.hdl.editor/src" modelPluginID="fr.inria.diverse.hdl"
+    forceOverwrite="true" modelName="HipsterDomainLanguage" updateClasspath="false"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" complianceLevel="6.0"
+    copyrightFields="false" editPluginID="fr.inria.diverse.hdl.edit" editorPluginID="fr.inria.diverse.hdl.editor"
+    runtimeVersion="2.11">
+  <genPackages prefix="HipsterDomainLanguage" basePackage="fr.inria.diverse.hdl" disposableProviderFactory="true"
+      fileExtensions="hdl" ecorePackage="HipsterDomainLanguage.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="HipsterDomainLanguage.ecore#//RelationType">
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//RelationType/ONE_TO_MANY"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//RelationType/MANY_TO_ONE"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//RelationType/ONE_TO_ONE"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//RelationType/MANY_TO_MANY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="HipsterDomainLanguage.ecore#//JHipsterType">
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/STRING"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/INTEGER"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/LONG"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/BIG_DECIMAL"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/FLOAT"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/DOUBLE"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/ENUM"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/BOOLEAN"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/LOCAL_DATE"/>
+      <genEnumLiterals ecoreEnumLiteral="HipsterDomainLanguage.ecore#//JHipsterType/ZONE_DATE_TIME"/>
+    </genEnums>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//Domain">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HipsterDomainLanguage.ecore#//Domain/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//DomainElement"/>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//Entity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Entity/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HipsterDomainLanguage.ecore#//Entity/fields"/>
+    </genClasses>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//Relation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Relation/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference HipsterDomainLanguage.ecore#//Relation/from"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Relation/fromRelation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference HipsterDomainLanguage.ecore#//Relation/to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Relation/toRelation"/>
+    </genClasses>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//Field">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Field/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Field/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Field/required"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

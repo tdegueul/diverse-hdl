@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: fr.inria.diverse.hdl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: fr.inria.diverse.hdl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext;visibility:=reexport,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.common,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.common.types,
+ org.objectweb.asm;bundle-version="[5.0.1,6.0.0)";resolution:=optional
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: fr.inria.diverse.hdl,
+ fr.inria.diverse.hdl.services,
+ fr.inria.diverse.hdl.hipsterDomainLanguage,
+ fr.inria.diverse.hdl.hipsterDomainLanguage.impl,
+ fr.inria.diverse.hdl.hipsterDomainLanguage.util,
+ fr.inria.diverse.hdl.serializer,
+ fr.inria.diverse.hdl.parser.antlr,
+ fr.inria.diverse.hdl.parser.antlr.internal,
+ fr.inria.diverse.hdl.validation,
+ fr.inria.diverse.hdl.scoping,
+ fr.inria.diverse.hdl.generator,
+ fr.inria.diverse.hdl.formatting

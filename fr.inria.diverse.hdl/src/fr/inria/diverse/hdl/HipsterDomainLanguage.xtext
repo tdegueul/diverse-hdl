@@ -1,0 +1,49 @@
+grammar fr.inria.diverse.hdl.HipsterDomainLanguage with org.eclipse.xtext.common.Terminals
+
+generate hipsterDomainLanguage "http://www.inria.fr/diverse/hdl/HipsterDomainLanguage"
+
+Domain:
+	elements += DomainElement*
+;
+
+DomainElement:
+	Entity | Relation
+;
+
+Entity:
+	'entity' name=ID ('{'
+		fields += Field*
+	'}')
+;
+
+Relation:
+	'relationship' type=RelationType '{'
+		from=[Entity] ('{' fromRelation=ID '}')
+		'to'
+		to=[Entity] ('{' toRelation=ID '}')
+	'}'
+;
+
+Field:
+	name=ID type=JHipsterType (required ?= 'required')?
+;
+
+enum RelationType:
+	  ONE_TO_MANY  = 'OneToMany'
+	| MANY_TO_ONE  = 'ManyToOne'
+	| ONE_TO_ONE   = 'OneToOne'
+	| MANY_TO_MANY = 'ManyToMany'
+;
+
+enum JHipsterType:
+	  STRING         = 'String'
+	| INTEGER        = 'Integer'
+	| LONG           = 'Long'
+	| BIG_DECIMAL    = 'BigDecimal'
+	| FLOAT          = 'Float'
+	| DOUBLE         = 'Double'
+	| ENUM           = 'Enum'
+	| BOOLEAN        = 'Boolean'
+	| LOCAL_DATE     = 'LocalDate'
+	| ZONE_DATE_TIME = 'ZoneDateTime'
+;

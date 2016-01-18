@@ -1,0 +1,8 @@
+.metadata/
+bin/
+xtend-gen/
+.settings/
+.launch/
+*.launch
+*.jar
+
