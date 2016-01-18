@@ -271,13 +271,22 @@ public interface HipsterDomainLanguagePackage extends EPackage
   int FIELD__TYPE = 1;
 
   /**
+   * The feature id for the '<em><b>Required</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int FIELD__REQUIRED = 2;
+
+  /**
    * The feature id for the '<em><b>Validation Rules</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int FIELD__VALIDATION_RULES = 2;
+  int FIELD__VALIDATION_RULES = 3;
 
   /**
    * The number of structural features of the '<em>Field</em>' class.
@@ -286,7 +295,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @generated
    * @ordered
    */
-  int FIELD_FEATURE_COUNT = 3;
+  int FIELD_FEATURE_COUNT = 4;
 
   /**
    * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.ValidationRuleImpl <em>Validation Rule</em>}' class.
@@ -308,34 +317,6 @@ public interface HipsterDomainLanguagePackage extends EPackage
   int VALIDATION_RULE_FEATURE_COUNT = 0;
 
   /**
-   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RequiredImpl <em>Required</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RequiredImpl
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getRequired()
-   * @generated
-   */
-  int REQUIRED = 7;
-
-  /**
-   * The feature id for the '<em><b>Required</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int REQUIRED__REQUIRED = VALIDATION_RULE_FEATURE_COUNT + 0;
-
-  /**
-   * The number of structural features of the '<em>Required</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int REQUIRED_FEATURE_COUNT = VALIDATION_RULE_FEATURE_COUNT + 1;
-
-  /**
    * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.ValueRangeImpl <em>Value Range</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -343,7 +324,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getValueRange()
    * @generated
    */
-  int VALUE_RANGE = 8;
+  int VALUE_RANGE = 7;
 
   /**
    * The number of structural features of the '<em>Value Range</em>' class.
@@ -362,7 +343,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getMinSpecification()
    * @generated
    */
-  int MIN_SPECIFICATION = 9;
+  int MIN_SPECIFICATION = 8;
 
   /**
    * The feature id for the '<em><b>Min</b></em>' attribute.
@@ -390,7 +371,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getMaxSpecification()
    * @generated
    */
-  int MAX_SPECIFICATION = 10;
+  int MAX_SPECIFICATION = 9;
 
   /**
    * The feature id for the '<em><b>Max</b></em>' attribute.
@@ -411,118 +392,6 @@ public interface HipsterDomainLanguagePackage extends EPackage
   int MAX_SPECIFICATION_FEATURE_COUNT = VALUE_RANGE_FEATURE_COUNT + 1;
 
   /**
-   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.StringMinSpecificationImpl <em>String Min Specification</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.StringMinSpecificationImpl
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getStringMinSpecification()
-   * @generated
-   */
-  int STRING_MIN_SPECIFICATION = 11;
-
-  /**
-   * The feature id for the '<em><b>Min</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int STRING_MIN_SPECIFICATION__MIN = MIN_SPECIFICATION__MIN;
-
-  /**
-   * The number of structural features of the '<em>String Min Specification</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int STRING_MIN_SPECIFICATION_FEATURE_COUNT = MIN_SPECIFICATION_FEATURE_COUNT + 0;
-
-  /**
-   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.StringMaxSpecificationImpl <em>String Max Specification</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.StringMaxSpecificationImpl
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getStringMaxSpecification()
-   * @generated
-   */
-  int STRING_MAX_SPECIFICATION = 12;
-
-  /**
-   * The feature id for the '<em><b>Max</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int STRING_MAX_SPECIFICATION__MAX = MAX_SPECIFICATION__MAX;
-
-  /**
-   * The number of structural features of the '<em>String Max Specification</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int STRING_MAX_SPECIFICATION_FEATURE_COUNT = MAX_SPECIFICATION_FEATURE_COUNT + 0;
-
-  /**
-   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.IntegerMinSpecificationImpl <em>Integer Min Specification</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.IntegerMinSpecificationImpl
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getIntegerMinSpecification()
-   * @generated
-   */
-  int INTEGER_MIN_SPECIFICATION = 13;
-
-  /**
-   * The feature id for the '<em><b>Min</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INTEGER_MIN_SPECIFICATION__MIN = MIN_SPECIFICATION__MIN;
-
-  /**
-   * The number of structural features of the '<em>Integer Min Specification</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INTEGER_MIN_SPECIFICATION_FEATURE_COUNT = MIN_SPECIFICATION_FEATURE_COUNT + 0;
-
-  /**
-   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.IntegerMaxSpecificationImpl <em>Integer Max Specification</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.IntegerMaxSpecificationImpl
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getIntegerMaxSpecification()
-   * @generated
-   */
-  int INTEGER_MAX_SPECIFICATION = 14;
-
-  /**
-   * The feature id for the '<em><b>Max</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INTEGER_MAX_SPECIFICATION__MAX = MAX_SPECIFICATION__MAX;
-
-  /**
-   * The number of structural features of the '<em>Integer Max Specification</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INTEGER_MAX_SPECIFICATION_FEATURE_COUNT = MAX_SPECIFICATION_FEATURE_COUNT + 0;
-
-  /**
    * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.PatternImpl <em>Pattern</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -530,7 +399,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getPattern()
    * @generated
    */
-  int PATTERN = 15;
+  int PATTERN = 10;
 
   /**
    * The feature id for the '<em><b>Regex</b></em>' attribute.
@@ -551,41 +420,79 @@ public interface HipsterDomainLanguagePackage extends EPackage
   int PATTERN_FEATURE_COUNT = VALIDATION_RULE_FEATURE_COUNT + 1;
 
   /**
-   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeImpl <em>Hdl Type</em>}' class.
+   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeReferenceImpl <em>Hdl Type Reference</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeImpl
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getHdlType()
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeReferenceImpl
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getHdlTypeReference()
    * @generated
    */
-  int HDL_TYPE = 16;
+  int HDL_TYPE_REFERENCE = 11;
 
   /**
-   * The feature id for the '<em><b>Enum Type</b></em>' reference.
+   * The number of structural features of the '<em>Hdl Type Reference</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int HDL_TYPE__ENUM_TYPE = 0;
+  int HDL_TYPE_REFERENCE_FEATURE_COUNT = 0;
 
   /**
-   * The feature id for the '<em><b>Primitive Type</b></em>' attribute.
+   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumTypeReferenceImpl <em>Enum Type Reference</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumTypeReferenceImpl
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getEnumTypeReference()
+   * @generated
+   */
+  int ENUM_TYPE_REFERENCE = 12;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int HDL_TYPE__PRIMITIVE_TYPE = 1;
+  int ENUM_TYPE_REFERENCE__TYPE = HDL_TYPE_REFERENCE_FEATURE_COUNT + 0;
 
   /**
-   * The number of structural features of the '<em>Hdl Type</em>' class.
+   * The number of structural features of the '<em>Enum Type Reference</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int HDL_TYPE_FEATURE_COUNT = 2;
+  int ENUM_TYPE_REFERENCE_FEATURE_COUNT = HDL_TYPE_REFERENCE_FEATURE_COUNT + 1;
+
+  /**
+   * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.PrimitiveTypeReferenceImpl <em>Primitive Type Reference</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.PrimitiveTypeReferenceImpl
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getPrimitiveTypeReference()
+   * @generated
+   */
+  int PRIMITIVE_TYPE_REFERENCE = 13;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PRIMITIVE_TYPE_REFERENCE__TYPE = HDL_TYPE_REFERENCE_FEATURE_COUNT + 0;
+
+  /**
+   * The number of structural features of the '<em>Primitive Type Reference</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PRIMITIVE_TYPE_REFERENCE_FEATURE_COUNT = HDL_TYPE_REFERENCE_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType <em>Relation Type</em>}' enum.
@@ -595,7 +502,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getRelationType()
    * @generated
    */
-  int RELATION_TYPE = 17;
+  int RELATION_TYPE = 14;
 
   /**
    * The meta object id for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.JHipsterType <em>JHipster Type</em>}' enum.
@@ -605,7 +512,7 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getJHipsterType()
    * @generated
    */
-  int JHIPSTER_TYPE = 18;
+  int JHIPSTER_TYPE = 15;
 
 
   /**
@@ -801,6 +708,17 @@ public interface HipsterDomainLanguagePackage extends EPackage
   EReference getField_Type();
 
   /**
+   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#isRequired <em>Required</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Required</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Field#isRequired()
+   * @see #getField()
+   * @generated
+   */
+  EAttribute getField_Required();
+
+  /**
    * Returns the meta object for the containment reference list '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#getValidationRules <em>Validation Rules</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -820,27 +738,6 @@ public interface HipsterDomainLanguagePackage extends EPackage
    * @generated
    */
   EClass getValidationRule();
-
-  /**
-   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Required <em>Required</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Required</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Required
-   * @generated
-   */
-  EClass getRequired();
-
-  /**
-   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Required#isRequired <em>Required</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Required</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Required#isRequired()
-   * @see #getRequired()
-   * @generated
-   */
-  EAttribute getRequired_Required();
 
   /**
    * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.ValueRange <em>Value Range</em>}'.
@@ -895,46 +792,6 @@ public interface HipsterDomainLanguagePackage extends EPackage
   EAttribute getMaxSpecification_Max();
 
   /**
-   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.StringMinSpecification <em>String Min Specification</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>String Min Specification</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.StringMinSpecification
-   * @generated
-   */
-  EClass getStringMinSpecification();
-
-  /**
-   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.StringMaxSpecification <em>String Max Specification</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>String Max Specification</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.StringMaxSpecification
-   * @generated
-   */
-  EClass getStringMaxSpecification();
-
-  /**
-   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMinSpecification <em>Integer Min Specification</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Integer Min Specification</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMinSpecification
-   * @generated
-   */
-  EClass getIntegerMinSpecification();
-
-  /**
-   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMaxSpecification <em>Integer Max Specification</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Integer Max Specification</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMaxSpecification
-   * @generated
-   */
-  EClass getIntegerMaxSpecification();
-
-  /**
    * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Pattern <em>Pattern</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -956,36 +813,56 @@ public interface HipsterDomainLanguagePackage extends EPackage
   EAttribute getPattern_Regex();
 
   /**
-   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType <em>Hdl Type</em>}'.
+   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.HdlTypeReference <em>Hdl Type Reference</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Hdl Type</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType
+   * @return the meta object for class '<em>Hdl Type Reference</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HdlTypeReference
    * @generated
    */
-  EClass getHdlType();
+  EClass getHdlTypeReference();
 
   /**
-   * Returns the meta object for the reference '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType#getEnumType <em>Enum Type</em>}'.
+   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference <em>Enum Type Reference</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Enum Type</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType#getEnumType()
-   * @see #getHdlType()
+   * @return the meta object for class '<em>Enum Type Reference</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference
    * @generated
    */
-  EReference getHdlType_EnumType();
+  EClass getEnumTypeReference();
 
   /**
-   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType#getPrimitiveType <em>Primitive Type</em>}'.
+   * Returns the meta object for the reference '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference#getType <em>Type</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Primitive Type</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType#getPrimitiveType()
-   * @see #getHdlType()
+   * @return the meta object for the reference '<em>Type</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference#getType()
+   * @see #getEnumTypeReference()
    * @generated
    */
-  EAttribute getHdlType_PrimitiveType();
+  EReference getEnumTypeReference_Type();
+
+  /**
+   * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference <em>Primitive Type Reference</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Primitive Type Reference</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference
+   * @generated
+   */
+  EClass getPrimitiveTypeReference();
+
+  /**
+   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference#getType <em>Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Type</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference#getType()
+   * @see #getPrimitiveTypeReference()
+   * @generated
+   */
+  EAttribute getPrimitiveTypeReference_Type();
 
   /**
    * Returns the meta object for enum '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType <em>Relation Type</em>}'.
@@ -1187,6 +1064,14 @@ public interface HipsterDomainLanguagePackage extends EPackage
     EReference FIELD__TYPE = eINSTANCE.getField_Type();
 
     /**
+     * The meta object literal for the '<em><b>Required</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute FIELD__REQUIRED = eINSTANCE.getField_Required();
+
+    /**
      * The meta object literal for the '<em><b>Validation Rules</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1203,24 +1088,6 @@ public interface HipsterDomainLanguagePackage extends EPackage
      * @generated
      */
     EClass VALIDATION_RULE = eINSTANCE.getValidationRule();
-
-    /**
-     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RequiredImpl <em>Required</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RequiredImpl
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getRequired()
-     * @generated
-     */
-    EClass REQUIRED = eINSTANCE.getRequired();
-
-    /**
-     * The meta object literal for the '<em><b>Required</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute REQUIRED__REQUIRED = eINSTANCE.getRequired_Required();
 
     /**
      * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.ValueRangeImpl <em>Value Range</em>}' class.
@@ -1269,46 +1136,6 @@ public interface HipsterDomainLanguagePackage extends EPackage
     EAttribute MAX_SPECIFICATION__MAX = eINSTANCE.getMaxSpecification_Max();
 
     /**
-     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.StringMinSpecificationImpl <em>String Min Specification</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.StringMinSpecificationImpl
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getStringMinSpecification()
-     * @generated
-     */
-    EClass STRING_MIN_SPECIFICATION = eINSTANCE.getStringMinSpecification();
-
-    /**
-     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.StringMaxSpecificationImpl <em>String Max Specification</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.StringMaxSpecificationImpl
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getStringMaxSpecification()
-     * @generated
-     */
-    EClass STRING_MAX_SPECIFICATION = eINSTANCE.getStringMaxSpecification();
-
-    /**
-     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.IntegerMinSpecificationImpl <em>Integer Min Specification</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.IntegerMinSpecificationImpl
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getIntegerMinSpecification()
-     * @generated
-     */
-    EClass INTEGER_MIN_SPECIFICATION = eINSTANCE.getIntegerMinSpecification();
-
-    /**
-     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.IntegerMaxSpecificationImpl <em>Integer Max Specification</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.IntegerMaxSpecificationImpl
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getIntegerMaxSpecification()
-     * @generated
-     */
-    EClass INTEGER_MAX_SPECIFICATION = eINSTANCE.getIntegerMaxSpecification();
-
-    /**
      * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.PatternImpl <em>Pattern</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1327,30 +1154,50 @@ public interface HipsterDomainLanguagePackage extends EPackage
     EAttribute PATTERN__REGEX = eINSTANCE.getPattern_Regex();
 
     /**
-     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeImpl <em>Hdl Type</em>}' class.
+     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeReferenceImpl <em>Hdl Type Reference</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeImpl
-     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getHdlType()
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HdlTypeReferenceImpl
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getHdlTypeReference()
      * @generated
      */
-    EClass HDL_TYPE = eINSTANCE.getHdlType();
+    EClass HDL_TYPE_REFERENCE = eINSTANCE.getHdlTypeReference();
 
     /**
-     * The meta object literal for the '<em><b>Enum Type</b></em>' reference feature.
+     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumTypeReferenceImpl <em>Enum Type Reference</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumTypeReferenceImpl
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getEnumTypeReference()
      * @generated
      */
-    EReference HDL_TYPE__ENUM_TYPE = eINSTANCE.getHdlType_EnumType();
+    EClass ENUM_TYPE_REFERENCE = eINSTANCE.getEnumTypeReference();
 
     /**
-     * The meta object literal for the '<em><b>Primitive Type</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Type</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute HDL_TYPE__PRIMITIVE_TYPE = eINSTANCE.getHdlType_PrimitiveType();
+    EReference ENUM_TYPE_REFERENCE__TYPE = eINSTANCE.getEnumTypeReference_Type();
+
+    /**
+     * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.PrimitiveTypeReferenceImpl <em>Primitive Type Reference</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.PrimitiveTypeReferenceImpl
+     * @see fr.inria.diverse.hdl.hipsterDomainLanguage.impl.HipsterDomainLanguagePackageImpl#getPrimitiveTypeReference()
+     * @generated
+     */
+    EClass PRIMITIVE_TYPE_REFERENCE = eINSTANCE.getPrimitiveTypeReference();
+
+    /**
+     * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PRIMITIVE_TYPE_REFERENCE__TYPE = eINSTANCE.getPrimitiveTypeReference_Type();
 
     /**
      * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType <em>Relation Type</em>}' enum.

@@ -2,26 +2,28 @@
  */
 package fr.inria.diverse.hdl.hipsterDomainLanguage.impl;
 
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlTypeReference;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.StringMinSpecification;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>String Min Specification</b></em>'.
+ * An implementation of the model object '<em><b>Hdl Type Reference</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class StringMinSpecificationImpl extends MinSpecificationImpl implements StringMinSpecification
+public class HdlTypeReferenceImpl extends MinimalEObjectImpl.Container implements HdlTypeReference
 {
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected StringMinSpecificationImpl()
+  protected HdlTypeReferenceImpl()
   {
     super();
   }
@@ -34,7 +36,7 @@ public class StringMinSpecificationImpl extends MinSpecificationImpl implements 
   @Override
   protected EClass eStaticClass()
   {
-    return HipsterDomainLanguagePackage.Literals.STRING_MIN_SPECIFICATION;
+    return HipsterDomainLanguagePackage.Literals.HDL_TYPE_REFERENCE;
   }
 
-} //StringMinSpecificationImpl
+} //HdlTypeReferenceImpl

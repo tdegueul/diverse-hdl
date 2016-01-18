@@ -672,10 +672,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1136:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1136:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1165:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1165:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1136:11: ( '^' )?
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1165:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -684,7 +684,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1136:11: '^'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1165:11: '^'
                     {
                     match('^'); 
 
@@ -702,7 +702,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1136:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1165:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -751,10 +751,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1138:10: ( ( '0' .. '9' )+ )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1138:12: ( '0' .. '9' )+
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1167:10: ( ( '0' .. '9' )+ )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1167:12: ( '0' .. '9' )+
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1138:12: ( '0' .. '9' )+
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1167:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -768,7 +768,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1138:13: '0' .. '9'
+            	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1167:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -800,10 +800,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -821,10 +821,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -840,7 +840,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:21: '\\\\' .
+                    	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -848,7 +848,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -873,10 +873,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -892,7 +892,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:54: '\\\\' .
+                    	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -900,7 +900,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1140:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1169:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -943,12 +943,12 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1142:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1142:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1171:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1171:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1142:24: ( options {greedy=false; } : . )*
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1171:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -973,7 +973,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1142:52: .
+            	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1171:52: .
             	    {
             	    matchAny(); 
 
@@ -1003,12 +1003,12 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1173:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1173:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1173:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1021,7 +1021,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1173:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1041,7 +1041,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
                 }
             } while (true);
 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:40: ( ( '\\r' )? '\\n' )?
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1173:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1050,9 +1050,9 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:41: ( '\\r' )? '\\n'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1173:41: ( '\\r' )? '\\n'
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:41: ( '\\r' )?
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1173:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1061,7 +1061,7 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1144:41: '\\r'
+                            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1173:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1093,10 +1093,10 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1146:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1146:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1175:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1175:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1146:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1175:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1150,8 +1150,8 @@ public class InternalHipsterDomainLanguageLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1148:16: ( . )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1148:18: .
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1177:16: ( . )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1177:18: .
             {
             matchAny(); 
 

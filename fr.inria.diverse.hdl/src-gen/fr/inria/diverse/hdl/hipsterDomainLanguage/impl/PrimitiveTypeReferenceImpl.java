@@ -3,7 +3,8 @@
 package fr.inria.diverse.hdl.hipsterDomainLanguage.impl;
 
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Required;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.JHipsterType;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -13,45 +14,45 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Required</b></em>'.
+ * An implementation of the model object '<em><b>Primitive Type Reference</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RequiredImpl#isRequired <em>Required</em>}</li>
+ *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.PrimitiveTypeReferenceImpl#getType <em>Type</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class RequiredImpl extends ValidationRuleImpl implements Required
+public class PrimitiveTypeReferenceImpl extends HdlTypeReferenceImpl implements PrimitiveTypeReference
 {
   /**
-   * The default value of the '{@link #isRequired() <em>Required</em>}' attribute.
+   * The default value of the '{@link #getType() <em>Type</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #isRequired()
+   * @see #getType()
    * @generated
    * @ordered
    */
-  protected static final boolean REQUIRED_EDEFAULT = false;
+  protected static final JHipsterType TYPE_EDEFAULT = JHipsterType.STRING;
 
   /**
-   * The cached value of the '{@link #isRequired() <em>Required</em>}' attribute.
+   * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #isRequired()
+   * @see #getType()
    * @generated
    * @ordered
    */
-  protected boolean required = REQUIRED_EDEFAULT;
+  protected JHipsterType type = TYPE_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected RequiredImpl()
+  protected PrimitiveTypeReferenceImpl()
   {
     super();
   }
@@ -64,7 +65,7 @@ public class RequiredImpl extends ValidationRuleImpl implements Required
   @Override
   protected EClass eStaticClass()
   {
-    return HipsterDomainLanguagePackage.Literals.REQUIRED;
+    return HipsterDomainLanguagePackage.Literals.PRIMITIVE_TYPE_REFERENCE;
   }
 
   /**
@@ -72,9 +73,9 @@ public class RequiredImpl extends ValidationRuleImpl implements Required
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean isRequired()
+  public JHipsterType getType()
   {
-    return required;
+    return type;
   }
 
   /**
@@ -82,12 +83,12 @@ public class RequiredImpl extends ValidationRuleImpl implements Required
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setRequired(boolean newRequired)
+  public void setType(JHipsterType newType)
   {
-    boolean oldRequired = required;
-    required = newRequired;
+    JHipsterType oldType = type;
+    type = newType == null ? TYPE_EDEFAULT : newType;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, HipsterDomainLanguagePackage.REQUIRED__REQUIRED, oldRequired, required));
+      eNotify(new ENotificationImpl(this, Notification.SET, HipsterDomainLanguagePackage.PRIMITIVE_TYPE_REFERENCE__TYPE, oldType, type));
   }
 
   /**
@@ -100,8 +101,8 @@ public class RequiredImpl extends ValidationRuleImpl implements Required
   {
     switch (featureID)
     {
-      case HipsterDomainLanguagePackage.REQUIRED__REQUIRED:
-        return isRequired();
+      case HipsterDomainLanguagePackage.PRIMITIVE_TYPE_REFERENCE__TYPE:
+        return getType();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -116,8 +117,8 @@ public class RequiredImpl extends ValidationRuleImpl implements Required
   {
     switch (featureID)
     {
-      case HipsterDomainLanguagePackage.REQUIRED__REQUIRED:
-        setRequired((Boolean)newValue);
+      case HipsterDomainLanguagePackage.PRIMITIVE_TYPE_REFERENCE__TYPE:
+        setType((JHipsterType)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -133,8 +134,8 @@ public class RequiredImpl extends ValidationRuleImpl implements Required
   {
     switch (featureID)
     {
-      case HipsterDomainLanguagePackage.REQUIRED__REQUIRED:
-        setRequired(REQUIRED_EDEFAULT);
+      case HipsterDomainLanguagePackage.PRIMITIVE_TYPE_REFERENCE__TYPE:
+        setType(TYPE_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -150,8 +151,8 @@ public class RequiredImpl extends ValidationRuleImpl implements Required
   {
     switch (featureID)
     {
-      case HipsterDomainLanguagePackage.REQUIRED__REQUIRED:
-        return required != REQUIRED_EDEFAULT;
+      case HipsterDomainLanguagePackage.PRIMITIVE_TYPE_REFERENCE__TYPE:
+        return type != TYPE_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
@@ -167,10 +168,10 @@ public class RequiredImpl extends ValidationRuleImpl implements Required
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (required: ");
-    result.append(required);
+    result.append(" (type: ");
+    result.append(type);
     result.append(')');
     return result.toString();
   }
 
-} //RequiredImpl
+} //PrimitiveTypeReferenceImpl

@@ -481,9 +481,9 @@ ruleField returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getFieldAccess().getTypeHdlTypeParserRuleCall_1_0()); 
+	        newCompositeNode(grammarAccess.getFieldAccess().getTypeHdlTypeReferenceParserRuleCall_1_0()); 
 	    }
-		lv_type_1_0=ruleHdlType		{
+		lv_type_1_0=ruleHdlTypeReference		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getFieldRule());
 	        }
@@ -491,24 +491,39 @@ ruleField returns [EObject current=null]
        			$current, 
        			"type",
         		lv_type_1_0, 
-        		"HdlType");
+        		"HdlTypeReference");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
 )(
 (
-		{ 
-	        newCompositeNode(grammarAccess.getFieldAccess().getValidationRulesValidationRuleParserRuleCall_2_0()); 
+		lv_required_2_0=	'required' 
+    {
+        newLeafNode(lv_required_2_0, grammarAccess.getFieldAccess().getRequiredRequiredKeyword_2_0());
+    }
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getFieldRule());
+	        }
+       		setWithLastConsumed($current, "required", true, "required");
 	    }
-		lv_validationRules_2_0=ruleValidationRule		{
+
+)
+)?(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getFieldAccess().getValidationRulesValidationRuleParserRuleCall_3_0()); 
+	    }
+		lv_validationRules_3_0=ruleValidationRule		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getFieldRule());
 	        }
        		add(
        			$current, 
        			"validationRules",
-        		lv_validationRules_2_0, 
+        		lv_validationRules_3_0, 
         		"ValidationRule");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -537,69 +552,23 @@ ruleValidationRule returns [EObject current=null]
     @after { leaveRule(); }:
 (
     { 
-        newCompositeNode(grammarAccess.getValidationRuleAccess().getRequiredParserRuleCall_0()); 
+        newCompositeNode(grammarAccess.getValidationRuleAccess().getValueRangeParserRuleCall_0()); 
     }
-    this_Required_0=ruleRequired
+    this_ValueRange_0=ruleValueRange
     { 
-        $current = $this_Required_0.current; 
+        $current = $this_ValueRange_0.current; 
         afterParserOrEnumRuleCall();
     }
 
     |
     { 
-        newCompositeNode(grammarAccess.getValidationRuleAccess().getValueRangeParserRuleCall_1()); 
+        newCompositeNode(grammarAccess.getValidationRuleAccess().getPatternParserRuleCall_1()); 
     }
-    this_ValueRange_1=ruleValueRange
+    this_Pattern_1=rulePattern
     { 
-        $current = $this_ValueRange_1.current; 
+        $current = $this_Pattern_1.current; 
         afterParserOrEnumRuleCall();
     }
-
-    |
-    { 
-        newCompositeNode(grammarAccess.getValidationRuleAccess().getPatternParserRuleCall_2()); 
-    }
-    this_Pattern_2=rulePattern
-    { 
-        $current = $this_Pattern_2.current; 
-        afterParserOrEnumRuleCall();
-    }
-)
-;
-
-
-
-
-
-// Entry rule entryRuleRequired
-entryRuleRequired returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getRequiredRule()); }
-	 iv_ruleRequired=ruleRequired 
-	 { $current=$iv_ruleRequired.current; } 
-	 EOF 
-;
-
-// Rule Required
-ruleRequired returns [EObject current=null] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule(); }:
-(
-(
-		lv_required_0_0=	'required' 
-    {
-        newLeafNode(lv_required_0_0, grammarAccess.getRequiredAccess().getRequiredRequiredKeyword_0());
-    }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getRequiredRule());
-	        }
-       		setWithLastConsumed($current, "required", true, "required");
-	    }
-
-)
 )
 ;
 
@@ -982,53 +951,113 @@ rulePattern returns [EObject current=null]
 
 
 
-// Entry rule entryRuleHdlType
-entryRuleHdlType returns [EObject current=null] 
+// Entry rule entryRuleHdlTypeReference
+entryRuleHdlTypeReference returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getHdlTypeRule()); }
-	 iv_ruleHdlType=ruleHdlType 
-	 { $current=$iv_ruleHdlType.current; } 
+	{ newCompositeNode(grammarAccess.getHdlTypeReferenceRule()); }
+	 iv_ruleHdlTypeReference=ruleHdlTypeReference 
+	 { $current=$iv_ruleHdlTypeReference.current; } 
 	 EOF 
 ;
 
-// Rule HdlType
-ruleHdlType returns [EObject current=null] 
+// Rule HdlTypeReference
+ruleHdlTypeReference returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-((
+(
+    { 
+        newCompositeNode(grammarAccess.getHdlTypeReferenceAccess().getEnumTypeReferenceParserRuleCall_0()); 
+    }
+    this_EnumTypeReference_0=ruleEnumTypeReference
+    { 
+        $current = $this_EnumTypeReference_0.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getHdlTypeReferenceAccess().getPrimitiveTypeReferenceParserRuleCall_1()); 
+    }
+    this_PrimitiveTypeReference_1=rulePrimitiveTypeReference
+    { 
+        $current = $this_PrimitiveTypeReference_1.current; 
+        afterParserOrEnumRuleCall();
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleEnumTypeReference
+entryRuleEnumTypeReference returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getEnumTypeReferenceRule()); }
+	 iv_ruleEnumTypeReference=ruleEnumTypeReference 
+	 { $current=$iv_ruleEnumTypeReference.current; } 
+	 EOF 
+;
+
+// Rule EnumTypeReference
+ruleEnumTypeReference returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getHdlTypeRule());
+	            $current = createModelElement(grammarAccess.getEnumTypeReferenceRule());
 	        }
         }
 	otherlv_0=RULE_ID
 	{
-		newLeafNode(otherlv_0, grammarAccess.getHdlTypeAccess().getEnumTypeEnumCrossReference_0_0()); 
+		newLeafNode(otherlv_0, grammarAccess.getEnumTypeReferenceAccess().getTypeEnumCrossReference_0()); 
 	}
 
 )
 )
-    |(
+;
+
+
+
+
+
+// Entry rule entryRulePrimitiveTypeReference
+entryRulePrimitiveTypeReference returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getPrimitiveTypeReferenceRule()); }
+	 iv_rulePrimitiveTypeReference=rulePrimitiveTypeReference 
+	 { $current=$iv_rulePrimitiveTypeReference.current; } 
+	 EOF 
+;
+
+// Rule PrimitiveTypeReference
+rulePrimitiveTypeReference returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getHdlTypeAccess().getPrimitiveTypeJHipsterTypeEnumRuleCall_1_0()); 
+	        newCompositeNode(grammarAccess.getPrimitiveTypeReferenceAccess().getTypeJHipsterTypeEnumRuleCall_0()); 
 	    }
-		lv_primitiveType_1_0=ruleJHipsterType		{
+		lv_type_0_0=ruleJHipsterType		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getHdlTypeRule());
+	            $current = createModelElementForParent(grammarAccess.getPrimitiveTypeReferenceRule());
 	        }
        		set(
        			$current, 
-       			"primitiveType",
-        		lv_primitiveType_1_0, 
+       			"type",
+        		lv_type_0_0, 
         		"JHipsterType");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))
+)
 ;
 
 

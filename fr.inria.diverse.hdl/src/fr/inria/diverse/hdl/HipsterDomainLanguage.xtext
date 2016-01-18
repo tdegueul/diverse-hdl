@@ -32,16 +32,13 @@ Enum:
 ;
 
 Field:
-	name = ID type = HdlType
+	name = ID type = HdlTypeReference
+	(required ?= 'required')?
 	(validationRules += ValidationRule)*
 ;
 
 ValidationRule:
-	Required | ValueRange | Pattern
-;
-
-Required:
-	required ?= 'required'
+	ValueRange | Pattern
 ;
 
 ValueRange:
@@ -56,19 +53,19 @@ MaxSpecification:
 	StringMaxSpecification | IntegerMaxSpecification
 ;
 
-StringMinSpecification:
+StringMinSpecification returns MinSpecification:
 	'minlength' '(' min = INT ')'
 ;
 
-StringMaxSpecification:
+StringMaxSpecification returns MaxSpecification:
 	'maxlength' '(' max = INT ')'
 ;
 
-IntegerMinSpecification:
+IntegerMinSpecification returns MinSpecification:
 	'min' '(' min = INT ')'
 ;
 
-IntegerMaxSpecification:
+IntegerMaxSpecification returns MaxSpecification:
 	'max' '(' max = INT ')'
 ;
 
@@ -76,9 +73,16 @@ Pattern:
 	'pattern' '(' regex = STRING ')'
 ;
 
-HdlType:
-	(enumType = [Enum])
-	| (primitiveType = JHipsterType)
+HdlTypeReference:
+	EnumTypeReference | PrimitiveTypeReference
+;
+
+EnumTypeReference:
+	type = [Enum]
+;
+
+PrimitiveTypeReference:
+	type = JHipsterType
 ;
 
 enum RelationType:

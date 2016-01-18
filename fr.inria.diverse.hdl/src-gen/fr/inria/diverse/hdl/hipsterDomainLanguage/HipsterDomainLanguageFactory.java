@@ -86,15 +86,6 @@ public interface HipsterDomainLanguageFactory extends EFactory
   ValidationRule createValidationRule();
 
   /**
-   * Returns a new object of class '<em>Required</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Required</em>'.
-   * @generated
-   */
-  Required createRequired();
-
-  /**
    * Returns a new object of class '<em>Value Range</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -122,42 +113,6 @@ public interface HipsterDomainLanguageFactory extends EFactory
   MaxSpecification createMaxSpecification();
 
   /**
-   * Returns a new object of class '<em>String Min Specification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>String Min Specification</em>'.
-   * @generated
-   */
-  StringMinSpecification createStringMinSpecification();
-
-  /**
-   * Returns a new object of class '<em>String Max Specification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>String Max Specification</em>'.
-   * @generated
-   */
-  StringMaxSpecification createStringMaxSpecification();
-
-  /**
-   * Returns a new object of class '<em>Integer Min Specification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Integer Min Specification</em>'.
-   * @generated
-   */
-  IntegerMinSpecification createIntegerMinSpecification();
-
-  /**
-   * Returns a new object of class '<em>Integer Max Specification</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Integer Max Specification</em>'.
-   * @generated
-   */
-  IntegerMaxSpecification createIntegerMaxSpecification();
-
-  /**
    * Returns a new object of class '<em>Pattern</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -167,13 +122,31 @@ public interface HipsterDomainLanguageFactory extends EFactory
   Pattern createPattern();
 
   /**
-   * Returns a new object of class '<em>Hdl Type</em>'.
+   * Returns a new object of class '<em>Hdl Type Reference</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Hdl Type</em>'.
+   * @return a new object of class '<em>Hdl Type Reference</em>'.
    * @generated
    */
-  HdlType createHdlType();
+  HdlTypeReference createHdlTypeReference();
+
+  /**
+   * Returns a new object of class '<em>Enum Type Reference</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Enum Type Reference</em>'.
+   * @generated
+   */
+  EnumTypeReference createEnumTypeReference();
+
+  /**
+   * Returns a new object of class '<em>Primitive Type Reference</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Primitive Type Reference</em>'.
+   * @generated
+   */
+  PrimitiveTypeReference createPrimitiveTypeReference();
 
   /**
    * Returns the package supported by this factory.

@@ -3,7 +3,7 @@
 package fr.inria.diverse.hdl.hipsterDomainLanguage.impl;
 
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlTypeReference;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.ValidationRule;
 
@@ -33,6 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl#getName <em>Name</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl#getType <em>Type</em>}</li>
+ *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl#isRequired <em>Required</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.FieldImpl#getValidationRules <em>Validation Rules</em>}</li>
  * </ul>
  *
@@ -68,7 +69,27 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
    * @generated
    * @ordered
    */
-  protected HdlType type;
+  protected HdlTypeReference type;
+
+  /**
+   * The default value of the '{@link #isRequired() <em>Required</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #isRequired()
+   * @generated
+   * @ordered
+   */
+  protected static final boolean REQUIRED_EDEFAULT = false;
+
+  /**
+   * The cached value of the '{@link #isRequired() <em>Required</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #isRequired()
+   * @generated
+   * @ordered
+   */
+  protected boolean required = REQUIRED_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getValidationRules() <em>Validation Rules</em>}' containment reference list.
@@ -129,7 +150,7 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
    * <!-- end-user-doc -->
    * @generated
    */
-  public HdlType getType()
+  public HdlTypeReference getType()
   {
     return type;
   }
@@ -139,9 +160,9 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetType(HdlType newType, NotificationChain msgs)
+  public NotificationChain basicSetType(HdlTypeReference newType, NotificationChain msgs)
   {
-    HdlType oldType = type;
+    HdlTypeReference oldType = type;
     type = newType;
     if (eNotificationRequired())
     {
@@ -156,7 +177,7 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setType(HdlType newType)
+  public void setType(HdlTypeReference newType)
   {
     if (newType != type)
     {
@@ -170,6 +191,29 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
     }
     else if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, HipsterDomainLanguagePackage.FIELD__TYPE, newType, newType));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean isRequired()
+  {
+    return required;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setRequired(boolean newRequired)
+  {
+    boolean oldRequired = required;
+    required = newRequired;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, HipsterDomainLanguagePackage.FIELD__REQUIRED, oldRequired, required));
   }
 
   /**
@@ -218,6 +262,8 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
         return getName();
       case HipsterDomainLanguagePackage.FIELD__TYPE:
         return getType();
+      case HipsterDomainLanguagePackage.FIELD__REQUIRED:
+        return isRequired();
       case HipsterDomainLanguagePackage.FIELD__VALIDATION_RULES:
         return getValidationRules();
     }
@@ -239,7 +285,10 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
         setName((String)newValue);
         return;
       case HipsterDomainLanguagePackage.FIELD__TYPE:
-        setType((HdlType)newValue);
+        setType((HdlTypeReference)newValue);
+        return;
+      case HipsterDomainLanguagePackage.FIELD__REQUIRED:
+        setRequired((Boolean)newValue);
         return;
       case HipsterDomainLanguagePackage.FIELD__VALIDATION_RULES:
         getValidationRules().clear();
@@ -263,7 +312,10 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
         setName(NAME_EDEFAULT);
         return;
       case HipsterDomainLanguagePackage.FIELD__TYPE:
-        setType((HdlType)null);
+        setType((HdlTypeReference)null);
+        return;
+      case HipsterDomainLanguagePackage.FIELD__REQUIRED:
+        setRequired(REQUIRED_EDEFAULT);
         return;
       case HipsterDomainLanguagePackage.FIELD__VALIDATION_RULES:
         getValidationRules().clear();
@@ -286,6 +338,8 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case HipsterDomainLanguagePackage.FIELD__TYPE:
         return type != null;
+      case HipsterDomainLanguagePackage.FIELD__REQUIRED:
+        return required != REQUIRED_EDEFAULT;
       case HipsterDomainLanguagePackage.FIELD__VALIDATION_RULES:
         return validationRules != null && !validationRules.isEmpty();
     }
@@ -305,6 +359,8 @@ public class FieldImpl extends MinimalEObjectImpl.Container implements Field
     StringBuffer result = new StringBuffer(super.toString());
     result.append(" (name: ");
     result.append(name);
+    result.append(", required: ");
+    result.append(required);
     result.append(')');
     return result.toString();
   }

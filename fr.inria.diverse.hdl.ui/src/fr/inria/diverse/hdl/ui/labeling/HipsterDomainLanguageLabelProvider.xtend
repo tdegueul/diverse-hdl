@@ -2,10 +2,11 @@ package fr.inria.diverse.hdl.ui.labeling
 
 import com.google.inject.Inject
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Domain
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Enum
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Enum
+import fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Field
-import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType
+import fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation
 import fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType
 import org.eclipse.emf.edit.ui.provider.AdapterFactoryLabelProvider
@@ -27,7 +28,9 @@ class HipsterDomainLanguageLabelProvider extends DefaultEObjectLabelProvider {
 	}
 
 	def String text(Field it) {
-		return '''«name» : «type.formatFieldType»'''
+		return
+			'''«name» : «type.formatFieldType»'''
+		  + '''«IF required» [R]«ENDIF»'''
 	}
 
 	def String image(Field it) {
@@ -49,8 +52,12 @@ class HipsterDomainLanguageLabelProvider extends DefaultEObjectLabelProvider {
 		return 'enum.png'
 	}
 
-	private def String formatFieldType(HdlType it) {
-		return enumType?.name ?: primitiveType.literal
+	private dispatch def String formatFieldType(EnumTypeReference it) {
+		return type.name
+	}
+
+	private dispatch def String formatFieldType(PrimitiveTypeReference it) {
+		return type.literal
 	}
 
 	private def String formatRelationCardinalities(RelationType it) {

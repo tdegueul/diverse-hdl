@@ -656,98 +656,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     // $ANTLR end "ruleValidationRule"
 
 
-    // $ANTLR start "entryRuleRequired"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:256:1: entryRuleRequired : ruleRequired EOF ;
-    public final void entryRuleRequired() throws RecognitionException {
-        try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:257:1: ( ruleRequired EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:258:1: ruleRequired EOF
-            {
-             before(grammarAccess.getRequiredRule()); 
-            pushFollow(FOLLOW_ruleRequired_in_entryRuleRequired482);
-            ruleRequired();
-
-            state._fsp--;
-
-             after(grammarAccess.getRequiredRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRequired489); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleRequired"
-
-
-    // $ANTLR start "ruleRequired"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:265:1: ruleRequired : ( ( rule__Required__RequiredAssignment ) ) ;
-    public final void ruleRequired() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:269:2: ( ( ( rule__Required__RequiredAssignment ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:270:1: ( ( rule__Required__RequiredAssignment ) )
-            {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:270:1: ( ( rule__Required__RequiredAssignment ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:271:1: ( rule__Required__RequiredAssignment )
-            {
-             before(grammarAccess.getRequiredAccess().getRequiredAssignment()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:272:1: ( rule__Required__RequiredAssignment )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:272:2: rule__Required__RequiredAssignment
-            {
-            pushFollow(FOLLOW_rule__Required__RequiredAssignment_in_ruleRequired515);
-            rule__Required__RequiredAssignment();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRequiredAccess().getRequiredAssignment()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "ruleRequired"
-
-
     // $ANTLR start "entryRuleValueRange"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:284:1: entryRuleValueRange : ruleValueRange EOF ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:256:1: entryRuleValueRange : ruleValueRange EOF ;
     public final void entryRuleValueRange() throws RecognitionException {
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:285:1: ( ruleValueRange EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:286:1: ruleValueRange EOF
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:257:1: ( ruleValueRange EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:258:1: ruleValueRange EOF
             {
              before(grammarAccess.getValueRangeRule()); 
-            pushFollow(FOLLOW_ruleValueRange_in_entryRuleValueRange542);
+            pushFollow(FOLLOW_ruleValueRange_in_entryRuleValueRange482);
             ruleValueRange();
 
             state._fsp--;
 
              after(grammarAccess.getValueRangeRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleValueRange549); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleValueRange489); 
 
             }
 
@@ -764,23 +687,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "ruleValueRange"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:293:1: ruleValueRange : ( ( rule__ValueRange__Alternatives ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:265:1: ruleValueRange : ( ( rule__ValueRange__Alternatives ) ) ;
     public final void ruleValueRange() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:297:2: ( ( ( rule__ValueRange__Alternatives ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:298:1: ( ( rule__ValueRange__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:269:2: ( ( ( rule__ValueRange__Alternatives ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:270:1: ( ( rule__ValueRange__Alternatives ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:298:1: ( ( rule__ValueRange__Alternatives ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:299:1: ( rule__ValueRange__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:270:1: ( ( rule__ValueRange__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:271:1: ( rule__ValueRange__Alternatives )
             {
              before(grammarAccess.getValueRangeAccess().getAlternatives()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:300:1: ( rule__ValueRange__Alternatives )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:300:2: rule__ValueRange__Alternatives
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:272:1: ( rule__ValueRange__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:272:2: rule__ValueRange__Alternatives
             {
-            pushFollow(FOLLOW_rule__ValueRange__Alternatives_in_ruleValueRange575);
+            pushFollow(FOLLOW_rule__ValueRange__Alternatives_in_ruleValueRange515);
             rule__ValueRange__Alternatives();
 
             state._fsp--;
@@ -811,20 +734,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "entryRuleMinSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:312:1: entryRuleMinSpecification : ruleMinSpecification EOF ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:284:1: entryRuleMinSpecification : ruleMinSpecification EOF ;
     public final void entryRuleMinSpecification() throws RecognitionException {
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:313:1: ( ruleMinSpecification EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:314:1: ruleMinSpecification EOF
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:285:1: ( ruleMinSpecification EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:286:1: ruleMinSpecification EOF
             {
              before(grammarAccess.getMinSpecificationRule()); 
-            pushFollow(FOLLOW_ruleMinSpecification_in_entryRuleMinSpecification602);
+            pushFollow(FOLLOW_ruleMinSpecification_in_entryRuleMinSpecification542);
             ruleMinSpecification();
 
             state._fsp--;
 
              after(grammarAccess.getMinSpecificationRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleMinSpecification609); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMinSpecification549); 
 
             }
 
@@ -841,23 +764,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "ruleMinSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:321:1: ruleMinSpecification : ( ( rule__MinSpecification__Alternatives ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:293:1: ruleMinSpecification : ( ( rule__MinSpecification__Alternatives ) ) ;
     public final void ruleMinSpecification() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:325:2: ( ( ( rule__MinSpecification__Alternatives ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:326:1: ( ( rule__MinSpecification__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:297:2: ( ( ( rule__MinSpecification__Alternatives ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:298:1: ( ( rule__MinSpecification__Alternatives ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:326:1: ( ( rule__MinSpecification__Alternatives ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:327:1: ( rule__MinSpecification__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:298:1: ( ( rule__MinSpecification__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:299:1: ( rule__MinSpecification__Alternatives )
             {
              before(grammarAccess.getMinSpecificationAccess().getAlternatives()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:328:1: ( rule__MinSpecification__Alternatives )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:328:2: rule__MinSpecification__Alternatives
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:300:1: ( rule__MinSpecification__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:300:2: rule__MinSpecification__Alternatives
             {
-            pushFollow(FOLLOW_rule__MinSpecification__Alternatives_in_ruleMinSpecification635);
+            pushFollow(FOLLOW_rule__MinSpecification__Alternatives_in_ruleMinSpecification575);
             rule__MinSpecification__Alternatives();
 
             state._fsp--;
@@ -888,20 +811,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "entryRuleMaxSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:340:1: entryRuleMaxSpecification : ruleMaxSpecification EOF ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:312:1: entryRuleMaxSpecification : ruleMaxSpecification EOF ;
     public final void entryRuleMaxSpecification() throws RecognitionException {
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:341:1: ( ruleMaxSpecification EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:342:1: ruleMaxSpecification EOF
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:313:1: ( ruleMaxSpecification EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:314:1: ruleMaxSpecification EOF
             {
              before(grammarAccess.getMaxSpecificationRule()); 
-            pushFollow(FOLLOW_ruleMaxSpecification_in_entryRuleMaxSpecification662);
+            pushFollow(FOLLOW_ruleMaxSpecification_in_entryRuleMaxSpecification602);
             ruleMaxSpecification();
 
             state._fsp--;
 
              after(grammarAccess.getMaxSpecificationRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleMaxSpecification669); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMaxSpecification609); 
 
             }
 
@@ -918,23 +841,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "ruleMaxSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:349:1: ruleMaxSpecification : ( ( rule__MaxSpecification__Alternatives ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:321:1: ruleMaxSpecification : ( ( rule__MaxSpecification__Alternatives ) ) ;
     public final void ruleMaxSpecification() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:353:2: ( ( ( rule__MaxSpecification__Alternatives ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:354:1: ( ( rule__MaxSpecification__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:325:2: ( ( ( rule__MaxSpecification__Alternatives ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:326:1: ( ( rule__MaxSpecification__Alternatives ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:354:1: ( ( rule__MaxSpecification__Alternatives ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:355:1: ( rule__MaxSpecification__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:326:1: ( ( rule__MaxSpecification__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:327:1: ( rule__MaxSpecification__Alternatives )
             {
              before(grammarAccess.getMaxSpecificationAccess().getAlternatives()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:356:1: ( rule__MaxSpecification__Alternatives )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:356:2: rule__MaxSpecification__Alternatives
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:328:1: ( rule__MaxSpecification__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:328:2: rule__MaxSpecification__Alternatives
             {
-            pushFollow(FOLLOW_rule__MaxSpecification__Alternatives_in_ruleMaxSpecification695);
+            pushFollow(FOLLOW_rule__MaxSpecification__Alternatives_in_ruleMaxSpecification635);
             rule__MaxSpecification__Alternatives();
 
             state._fsp--;
@@ -965,20 +888,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "entryRuleStringMinSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:368:1: entryRuleStringMinSpecification : ruleStringMinSpecification EOF ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:340:1: entryRuleStringMinSpecification : ruleStringMinSpecification EOF ;
     public final void entryRuleStringMinSpecification() throws RecognitionException {
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:369:1: ( ruleStringMinSpecification EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:370:1: ruleStringMinSpecification EOF
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:341:1: ( ruleStringMinSpecification EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:342:1: ruleStringMinSpecification EOF
             {
              before(grammarAccess.getStringMinSpecificationRule()); 
-            pushFollow(FOLLOW_ruleStringMinSpecification_in_entryRuleStringMinSpecification722);
+            pushFollow(FOLLOW_ruleStringMinSpecification_in_entryRuleStringMinSpecification662);
             ruleStringMinSpecification();
 
             state._fsp--;
 
              after(grammarAccess.getStringMinSpecificationRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleStringMinSpecification729); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleStringMinSpecification669); 
 
             }
 
@@ -995,23 +918,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "ruleStringMinSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:377:1: ruleStringMinSpecification : ( ( rule__StringMinSpecification__Group__0 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:349:1: ruleStringMinSpecification : ( ( rule__StringMinSpecification__Group__0 ) ) ;
     public final void ruleStringMinSpecification() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:381:2: ( ( ( rule__StringMinSpecification__Group__0 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:382:1: ( ( rule__StringMinSpecification__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:353:2: ( ( ( rule__StringMinSpecification__Group__0 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:354:1: ( ( rule__StringMinSpecification__Group__0 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:382:1: ( ( rule__StringMinSpecification__Group__0 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:383:1: ( rule__StringMinSpecification__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:354:1: ( ( rule__StringMinSpecification__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:355:1: ( rule__StringMinSpecification__Group__0 )
             {
              before(grammarAccess.getStringMinSpecificationAccess().getGroup()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:384:1: ( rule__StringMinSpecification__Group__0 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:384:2: rule__StringMinSpecification__Group__0
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:356:1: ( rule__StringMinSpecification__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:356:2: rule__StringMinSpecification__Group__0
             {
-            pushFollow(FOLLOW_rule__StringMinSpecification__Group__0_in_ruleStringMinSpecification755);
+            pushFollow(FOLLOW_rule__StringMinSpecification__Group__0_in_ruleStringMinSpecification695);
             rule__StringMinSpecification__Group__0();
 
             state._fsp--;
@@ -1042,20 +965,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "entryRuleStringMaxSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:396:1: entryRuleStringMaxSpecification : ruleStringMaxSpecification EOF ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:368:1: entryRuleStringMaxSpecification : ruleStringMaxSpecification EOF ;
     public final void entryRuleStringMaxSpecification() throws RecognitionException {
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:397:1: ( ruleStringMaxSpecification EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:398:1: ruleStringMaxSpecification EOF
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:369:1: ( ruleStringMaxSpecification EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:370:1: ruleStringMaxSpecification EOF
             {
              before(grammarAccess.getStringMaxSpecificationRule()); 
-            pushFollow(FOLLOW_ruleStringMaxSpecification_in_entryRuleStringMaxSpecification782);
+            pushFollow(FOLLOW_ruleStringMaxSpecification_in_entryRuleStringMaxSpecification722);
             ruleStringMaxSpecification();
 
             state._fsp--;
 
              after(grammarAccess.getStringMaxSpecificationRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleStringMaxSpecification789); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleStringMaxSpecification729); 
 
             }
 
@@ -1072,23 +995,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "ruleStringMaxSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:405:1: ruleStringMaxSpecification : ( ( rule__StringMaxSpecification__Group__0 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:377:1: ruleStringMaxSpecification : ( ( rule__StringMaxSpecification__Group__0 ) ) ;
     public final void ruleStringMaxSpecification() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:409:2: ( ( ( rule__StringMaxSpecification__Group__0 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:410:1: ( ( rule__StringMaxSpecification__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:381:2: ( ( ( rule__StringMaxSpecification__Group__0 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:382:1: ( ( rule__StringMaxSpecification__Group__0 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:410:1: ( ( rule__StringMaxSpecification__Group__0 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:411:1: ( rule__StringMaxSpecification__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:382:1: ( ( rule__StringMaxSpecification__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:383:1: ( rule__StringMaxSpecification__Group__0 )
             {
              before(grammarAccess.getStringMaxSpecificationAccess().getGroup()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:412:1: ( rule__StringMaxSpecification__Group__0 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:412:2: rule__StringMaxSpecification__Group__0
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:384:1: ( rule__StringMaxSpecification__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:384:2: rule__StringMaxSpecification__Group__0
             {
-            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__0_in_ruleStringMaxSpecification815);
+            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__0_in_ruleStringMaxSpecification755);
             rule__StringMaxSpecification__Group__0();
 
             state._fsp--;
@@ -1119,20 +1042,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "entryRuleIntegerMinSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:424:1: entryRuleIntegerMinSpecification : ruleIntegerMinSpecification EOF ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:396:1: entryRuleIntegerMinSpecification : ruleIntegerMinSpecification EOF ;
     public final void entryRuleIntegerMinSpecification() throws RecognitionException {
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:425:1: ( ruleIntegerMinSpecification EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:426:1: ruleIntegerMinSpecification EOF
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:397:1: ( ruleIntegerMinSpecification EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:398:1: ruleIntegerMinSpecification EOF
             {
              before(grammarAccess.getIntegerMinSpecificationRule()); 
-            pushFollow(FOLLOW_ruleIntegerMinSpecification_in_entryRuleIntegerMinSpecification842);
+            pushFollow(FOLLOW_ruleIntegerMinSpecification_in_entryRuleIntegerMinSpecification782);
             ruleIntegerMinSpecification();
 
             state._fsp--;
 
              after(grammarAccess.getIntegerMinSpecificationRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleIntegerMinSpecification849); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleIntegerMinSpecification789); 
 
             }
 
@@ -1149,23 +1072,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "ruleIntegerMinSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:433:1: ruleIntegerMinSpecification : ( ( rule__IntegerMinSpecification__Group__0 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:405:1: ruleIntegerMinSpecification : ( ( rule__IntegerMinSpecification__Group__0 ) ) ;
     public final void ruleIntegerMinSpecification() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:437:2: ( ( ( rule__IntegerMinSpecification__Group__0 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:438:1: ( ( rule__IntegerMinSpecification__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:409:2: ( ( ( rule__IntegerMinSpecification__Group__0 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:410:1: ( ( rule__IntegerMinSpecification__Group__0 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:438:1: ( ( rule__IntegerMinSpecification__Group__0 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:439:1: ( rule__IntegerMinSpecification__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:410:1: ( ( rule__IntegerMinSpecification__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:411:1: ( rule__IntegerMinSpecification__Group__0 )
             {
              before(grammarAccess.getIntegerMinSpecificationAccess().getGroup()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:440:1: ( rule__IntegerMinSpecification__Group__0 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:440:2: rule__IntegerMinSpecification__Group__0
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:412:1: ( rule__IntegerMinSpecification__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:412:2: rule__IntegerMinSpecification__Group__0
             {
-            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__0_in_ruleIntegerMinSpecification875);
+            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__0_in_ruleIntegerMinSpecification815);
             rule__IntegerMinSpecification__Group__0();
 
             state._fsp--;
@@ -1196,20 +1119,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "entryRuleIntegerMaxSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:452:1: entryRuleIntegerMaxSpecification : ruleIntegerMaxSpecification EOF ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:424:1: entryRuleIntegerMaxSpecification : ruleIntegerMaxSpecification EOF ;
     public final void entryRuleIntegerMaxSpecification() throws RecognitionException {
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:453:1: ( ruleIntegerMaxSpecification EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:454:1: ruleIntegerMaxSpecification EOF
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:425:1: ( ruleIntegerMaxSpecification EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:426:1: ruleIntegerMaxSpecification EOF
             {
              before(grammarAccess.getIntegerMaxSpecificationRule()); 
-            pushFollow(FOLLOW_ruleIntegerMaxSpecification_in_entryRuleIntegerMaxSpecification902);
+            pushFollow(FOLLOW_ruleIntegerMaxSpecification_in_entryRuleIntegerMaxSpecification842);
             ruleIntegerMaxSpecification();
 
             state._fsp--;
 
              after(grammarAccess.getIntegerMaxSpecificationRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleIntegerMaxSpecification909); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleIntegerMaxSpecification849); 
 
             }
 
@@ -1226,23 +1149,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "ruleIntegerMaxSpecification"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:461:1: ruleIntegerMaxSpecification : ( ( rule__IntegerMaxSpecification__Group__0 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:433:1: ruleIntegerMaxSpecification : ( ( rule__IntegerMaxSpecification__Group__0 ) ) ;
     public final void ruleIntegerMaxSpecification() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:465:2: ( ( ( rule__IntegerMaxSpecification__Group__0 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:466:1: ( ( rule__IntegerMaxSpecification__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:437:2: ( ( ( rule__IntegerMaxSpecification__Group__0 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:438:1: ( ( rule__IntegerMaxSpecification__Group__0 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:466:1: ( ( rule__IntegerMaxSpecification__Group__0 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:467:1: ( rule__IntegerMaxSpecification__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:438:1: ( ( rule__IntegerMaxSpecification__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:439:1: ( rule__IntegerMaxSpecification__Group__0 )
             {
              before(grammarAccess.getIntegerMaxSpecificationAccess().getGroup()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:468:1: ( rule__IntegerMaxSpecification__Group__0 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:468:2: rule__IntegerMaxSpecification__Group__0
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:440:1: ( rule__IntegerMaxSpecification__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:440:2: rule__IntegerMaxSpecification__Group__0
             {
-            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__0_in_ruleIntegerMaxSpecification935);
+            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__0_in_ruleIntegerMaxSpecification875);
             rule__IntegerMaxSpecification__Group__0();
 
             state._fsp--;
@@ -1273,20 +1196,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "entryRulePattern"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:480:1: entryRulePattern : rulePattern EOF ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:452:1: entryRulePattern : rulePattern EOF ;
     public final void entryRulePattern() throws RecognitionException {
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:481:1: ( rulePattern EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:482:1: rulePattern EOF
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:453:1: ( rulePattern EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:454:1: rulePattern EOF
             {
              before(grammarAccess.getPatternRule()); 
-            pushFollow(FOLLOW_rulePattern_in_entryRulePattern962);
+            pushFollow(FOLLOW_rulePattern_in_entryRulePattern902);
             rulePattern();
 
             state._fsp--;
 
              after(grammarAccess.getPatternRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePattern969); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePattern909); 
 
             }
 
@@ -1303,23 +1226,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rulePattern"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:489:1: rulePattern : ( ( rule__Pattern__Group__0 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:461:1: rulePattern : ( ( rule__Pattern__Group__0 ) ) ;
     public final void rulePattern() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:493:2: ( ( ( rule__Pattern__Group__0 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:494:1: ( ( rule__Pattern__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:465:2: ( ( ( rule__Pattern__Group__0 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:466:1: ( ( rule__Pattern__Group__0 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:494:1: ( ( rule__Pattern__Group__0 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:495:1: ( rule__Pattern__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:466:1: ( ( rule__Pattern__Group__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:467:1: ( rule__Pattern__Group__0 )
             {
              before(grammarAccess.getPatternAccess().getGroup()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:496:1: ( rule__Pattern__Group__0 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:496:2: rule__Pattern__Group__0
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:468:1: ( rule__Pattern__Group__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:468:2: rule__Pattern__Group__0
             {
-            pushFollow(FOLLOW_rule__Pattern__Group__0_in_rulePattern995);
+            pushFollow(FOLLOW_rule__Pattern__Group__0_in_rulePattern935);
             rule__Pattern__Group__0();
 
             state._fsp--;
@@ -1349,21 +1272,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     // $ANTLR end "rulePattern"
 
 
-    // $ANTLR start "entryRuleHdlType"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:508:1: entryRuleHdlType : ruleHdlType EOF ;
-    public final void entryRuleHdlType() throws RecognitionException {
+    // $ANTLR start "entryRuleHdlTypeReference"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:480:1: entryRuleHdlTypeReference : ruleHdlTypeReference EOF ;
+    public final void entryRuleHdlTypeReference() throws RecognitionException {
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:509:1: ( ruleHdlType EOF )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:510:1: ruleHdlType EOF
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:481:1: ( ruleHdlTypeReference EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:482:1: ruleHdlTypeReference EOF
             {
-             before(grammarAccess.getHdlTypeRule()); 
-            pushFollow(FOLLOW_ruleHdlType_in_entryRuleHdlType1022);
-            ruleHdlType();
+             before(grammarAccess.getHdlTypeReferenceRule()); 
+            pushFollow(FOLLOW_ruleHdlTypeReference_in_entryRuleHdlTypeReference962);
+            ruleHdlTypeReference();
 
             state._fsp--;
 
-             after(grammarAccess.getHdlTypeRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleHdlType1029); 
+             after(grammarAccess.getHdlTypeReferenceRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleHdlTypeReference969); 
 
             }
 
@@ -1376,35 +1299,35 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
         }
         return ;
     }
-    // $ANTLR end "entryRuleHdlType"
+    // $ANTLR end "entryRuleHdlTypeReference"
 
 
-    // $ANTLR start "ruleHdlType"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:517:1: ruleHdlType : ( ( rule__HdlType__Alternatives ) ) ;
-    public final void ruleHdlType() throws RecognitionException {
+    // $ANTLR start "ruleHdlTypeReference"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:489:1: ruleHdlTypeReference : ( ( rule__HdlTypeReference__Alternatives ) ) ;
+    public final void ruleHdlTypeReference() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:521:2: ( ( ( rule__HdlType__Alternatives ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:522:1: ( ( rule__HdlType__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:493:2: ( ( ( rule__HdlTypeReference__Alternatives ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:494:1: ( ( rule__HdlTypeReference__Alternatives ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:522:1: ( ( rule__HdlType__Alternatives ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:523:1: ( rule__HdlType__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:494:1: ( ( rule__HdlTypeReference__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:495:1: ( rule__HdlTypeReference__Alternatives )
             {
-             before(grammarAccess.getHdlTypeAccess().getAlternatives()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:524:1: ( rule__HdlType__Alternatives )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:524:2: rule__HdlType__Alternatives
+             before(grammarAccess.getHdlTypeReferenceAccess().getAlternatives()); 
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:496:1: ( rule__HdlTypeReference__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:496:2: rule__HdlTypeReference__Alternatives
             {
-            pushFollow(FOLLOW_rule__HdlType__Alternatives_in_ruleHdlType1055);
-            rule__HdlType__Alternatives();
+            pushFollow(FOLLOW_rule__HdlTypeReference__Alternatives_in_ruleHdlTypeReference995);
+            rule__HdlTypeReference__Alternatives();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getHdlTypeAccess().getAlternatives()); 
+             after(grammarAccess.getHdlTypeReferenceAccess().getAlternatives()); 
 
             }
 
@@ -1423,27 +1346,181 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
         }
         return ;
     }
-    // $ANTLR end "ruleHdlType"
+    // $ANTLR end "ruleHdlTypeReference"
+
+
+    // $ANTLR start "entryRuleEnumTypeReference"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:508:1: entryRuleEnumTypeReference : ruleEnumTypeReference EOF ;
+    public final void entryRuleEnumTypeReference() throws RecognitionException {
+        try {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:509:1: ( ruleEnumTypeReference EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:510:1: ruleEnumTypeReference EOF
+            {
+             before(grammarAccess.getEnumTypeReferenceRule()); 
+            pushFollow(FOLLOW_ruleEnumTypeReference_in_entryRuleEnumTypeReference1022);
+            ruleEnumTypeReference();
+
+            state._fsp--;
+
+             after(grammarAccess.getEnumTypeReferenceRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEnumTypeReference1029); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRuleEnumTypeReference"
+
+
+    // $ANTLR start "ruleEnumTypeReference"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:517:1: ruleEnumTypeReference : ( ( rule__EnumTypeReference__TypeAssignment ) ) ;
+    public final void ruleEnumTypeReference() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:521:2: ( ( ( rule__EnumTypeReference__TypeAssignment ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:522:1: ( ( rule__EnumTypeReference__TypeAssignment ) )
+            {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:522:1: ( ( rule__EnumTypeReference__TypeAssignment ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:523:1: ( rule__EnumTypeReference__TypeAssignment )
+            {
+             before(grammarAccess.getEnumTypeReferenceAccess().getTypeAssignment()); 
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:524:1: ( rule__EnumTypeReference__TypeAssignment )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:524:2: rule__EnumTypeReference__TypeAssignment
+            {
+            pushFollow(FOLLOW_rule__EnumTypeReference__TypeAssignment_in_ruleEnumTypeReference1055);
+            rule__EnumTypeReference__TypeAssignment();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getEnumTypeReferenceAccess().getTypeAssignment()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "ruleEnumTypeReference"
+
+
+    // $ANTLR start "entryRulePrimitiveTypeReference"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:536:1: entryRulePrimitiveTypeReference : rulePrimitiveTypeReference EOF ;
+    public final void entryRulePrimitiveTypeReference() throws RecognitionException {
+        try {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:537:1: ( rulePrimitiveTypeReference EOF )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:538:1: rulePrimitiveTypeReference EOF
+            {
+             before(grammarAccess.getPrimitiveTypeReferenceRule()); 
+            pushFollow(FOLLOW_rulePrimitiveTypeReference_in_entryRulePrimitiveTypeReference1082);
+            rulePrimitiveTypeReference();
+
+            state._fsp--;
+
+             after(grammarAccess.getPrimitiveTypeReferenceRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePrimitiveTypeReference1089); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRulePrimitiveTypeReference"
+
+
+    // $ANTLR start "rulePrimitiveTypeReference"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:545:1: rulePrimitiveTypeReference : ( ( rule__PrimitiveTypeReference__TypeAssignment ) ) ;
+    public final void rulePrimitiveTypeReference() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:549:2: ( ( ( rule__PrimitiveTypeReference__TypeAssignment ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:550:1: ( ( rule__PrimitiveTypeReference__TypeAssignment ) )
+            {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:550:1: ( ( rule__PrimitiveTypeReference__TypeAssignment ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:551:1: ( rule__PrimitiveTypeReference__TypeAssignment )
+            {
+             before(grammarAccess.getPrimitiveTypeReferenceAccess().getTypeAssignment()); 
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:552:1: ( rule__PrimitiveTypeReference__TypeAssignment )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:552:2: rule__PrimitiveTypeReference__TypeAssignment
+            {
+            pushFollow(FOLLOW_rule__PrimitiveTypeReference__TypeAssignment_in_rulePrimitiveTypeReference1115);
+            rule__PrimitiveTypeReference__TypeAssignment();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getPrimitiveTypeReferenceAccess().getTypeAssignment()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rulePrimitiveTypeReference"
 
 
     // $ANTLR start "ruleRelationType"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:537:1: ruleRelationType : ( ( rule__RelationType__Alternatives ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:565:1: ruleRelationType : ( ( rule__RelationType__Alternatives ) ) ;
     public final void ruleRelationType() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:541:1: ( ( ( rule__RelationType__Alternatives ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:542:1: ( ( rule__RelationType__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:569:1: ( ( ( rule__RelationType__Alternatives ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:570:1: ( ( rule__RelationType__Alternatives ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:542:1: ( ( rule__RelationType__Alternatives ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:543:1: ( rule__RelationType__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:570:1: ( ( rule__RelationType__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:571:1: ( rule__RelationType__Alternatives )
             {
              before(grammarAccess.getRelationTypeAccess().getAlternatives()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:544:1: ( rule__RelationType__Alternatives )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:544:2: rule__RelationType__Alternatives
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:572:1: ( rule__RelationType__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:572:2: rule__RelationType__Alternatives
             {
-            pushFollow(FOLLOW_rule__RelationType__Alternatives_in_ruleRelationType1092);
+            pushFollow(FOLLOW_rule__RelationType__Alternatives_in_ruleRelationType1152);
             rule__RelationType__Alternatives();
 
             state._fsp--;
@@ -1474,23 +1551,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "ruleJHipsterType"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:556:1: ruleJHipsterType : ( ( rule__JHipsterType__Alternatives ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:584:1: ruleJHipsterType : ( ( rule__JHipsterType__Alternatives ) ) ;
     public final void ruleJHipsterType() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:560:1: ( ( ( rule__JHipsterType__Alternatives ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:561:1: ( ( rule__JHipsterType__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:588:1: ( ( ( rule__JHipsterType__Alternatives ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:589:1: ( ( rule__JHipsterType__Alternatives ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:561:1: ( ( rule__JHipsterType__Alternatives ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:562:1: ( rule__JHipsterType__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:589:1: ( ( rule__JHipsterType__Alternatives ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:590:1: ( rule__JHipsterType__Alternatives )
             {
              before(grammarAccess.getJHipsterTypeAccess().getAlternatives()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:563:1: ( rule__JHipsterType__Alternatives )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:563:2: rule__JHipsterType__Alternatives
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:591:1: ( rule__JHipsterType__Alternatives )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:591:2: rule__JHipsterType__Alternatives
             {
-            pushFollow(FOLLOW_rule__JHipsterType__Alternatives_in_ruleJHipsterType1128);
+            pushFollow(FOLLOW_rule__JHipsterType__Alternatives_in_ruleJHipsterType1188);
             rule__JHipsterType__Alternatives();
 
             state._fsp--;
@@ -1521,13 +1598,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__DomainElement__Alternatives"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:574:1: rule__DomainElement__Alternatives : ( ( ruleEntity ) | ( ruleRelation ) | ( ruleEnum ) );
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:602:1: rule__DomainElement__Alternatives : ( ( ruleEntity ) | ( ruleRelation ) | ( ruleEnum ) );
     public final void rule__DomainElement__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:578:1: ( ( ruleEntity ) | ( ruleRelation ) | ( ruleEnum ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:606:1: ( ( ruleEntity ) | ( ruleRelation ) | ( ruleEnum ) )
             int alt2=3;
             switch ( input.LA(1) ) {
             case 25:
@@ -1554,13 +1631,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
             switch (alt2) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:579:1: ( ruleEntity )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:607:1: ( ruleEntity )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:579:1: ( ruleEntity )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:580:1: ruleEntity
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:607:1: ( ruleEntity )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:608:1: ruleEntity
                     {
                      before(grammarAccess.getDomainElementAccess().getEntityParserRuleCall_0()); 
-                    pushFollow(FOLLOW_ruleEntity_in_rule__DomainElement__Alternatives1163);
+                    pushFollow(FOLLOW_ruleEntity_in_rule__DomainElement__Alternatives1223);
                     ruleEntity();
 
                     state._fsp--;
@@ -1573,13 +1650,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:585:6: ( ruleRelation )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:613:6: ( ruleRelation )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:585:6: ( ruleRelation )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:586:1: ruleRelation
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:613:6: ( ruleRelation )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:614:1: ruleRelation
                     {
                      before(grammarAccess.getDomainElementAccess().getRelationParserRuleCall_1()); 
-                    pushFollow(FOLLOW_ruleRelation_in_rule__DomainElement__Alternatives1180);
+                    pushFollow(FOLLOW_ruleRelation_in_rule__DomainElement__Alternatives1240);
                     ruleRelation();
 
                     state._fsp--;
@@ -1592,13 +1669,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 3 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:591:6: ( ruleEnum )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:619:6: ( ruleEnum )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:591:6: ( ruleEnum )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:592:1: ruleEnum
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:619:6: ( ruleEnum )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:620:1: ruleEnum
                     {
                      before(grammarAccess.getDomainElementAccess().getEnumParserRuleCall_2()); 
-                    pushFollow(FOLLOW_ruleEnum_in_rule__DomainElement__Alternatives1197);
+                    pushFollow(FOLLOW_ruleEnum_in_rule__DomainElement__Alternatives1257);
                     ruleEnum();
 
                     state._fsp--;
@@ -1628,54 +1705,42 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__ValidationRule__Alternatives"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:602:1: rule__ValidationRule__Alternatives : ( ( ruleRequired ) | ( ruleValueRange ) | ( rulePattern ) );
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:630:1: rule__ValidationRule__Alternatives : ( ( ruleValueRange ) | ( rulePattern ) );
     public final void rule__ValidationRule__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:606:1: ( ( ruleRequired ) | ( ruleValueRange ) | ( rulePattern ) )
-            int alt3=3;
-            switch ( input.LA(1) ) {
-            case 39:
-                {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:634:1: ( ( ruleValueRange ) | ( rulePattern ) )
+            int alt3=2;
+            int LA3_0 = input.LA(1);
+
+            if ( (LA3_0==32||(LA3_0>=35 && LA3_0<=37)) ) {
                 alt3=1;
-                }
-                break;
-            case 32:
-            case 35:
-            case 36:
-            case 37:
-                {
+            }
+            else if ( (LA3_0==38) ) {
                 alt3=2;
-                }
-                break;
-            case 38:
-                {
-                alt3=3;
-                }
-                break;
-            default:
+            }
+            else {
                 NoViableAltException nvae =
                     new NoViableAltException("", 3, 0, input);
 
                 throw nvae;
             }
-
             switch (alt3) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:607:1: ( ruleRequired )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:635:1: ( ruleValueRange )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:607:1: ( ruleRequired )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:608:1: ruleRequired
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:635:1: ( ruleValueRange )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:636:1: ruleValueRange
                     {
-                     before(grammarAccess.getValidationRuleAccess().getRequiredParserRuleCall_0()); 
-                    pushFollow(FOLLOW_ruleRequired_in_rule__ValidationRule__Alternatives1229);
-                    ruleRequired();
+                     before(grammarAccess.getValidationRuleAccess().getValueRangeParserRuleCall_0()); 
+                    pushFollow(FOLLOW_ruleValueRange_in_rule__ValidationRule__Alternatives1289);
+                    ruleValueRange();
 
                     state._fsp--;
 
-                     after(grammarAccess.getValidationRuleAccess().getRequiredParserRuleCall_0()); 
+                     after(grammarAccess.getValidationRuleAccess().getValueRangeParserRuleCall_0()); 
 
                     }
 
@@ -1683,37 +1748,18 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:613:6: ( ruleValueRange )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:641:6: ( rulePattern )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:613:6: ( ruleValueRange )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:614:1: ruleValueRange
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:641:6: ( rulePattern )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:642:1: rulePattern
                     {
-                     before(grammarAccess.getValidationRuleAccess().getValueRangeParserRuleCall_1()); 
-                    pushFollow(FOLLOW_ruleValueRange_in_rule__ValidationRule__Alternatives1246);
-                    ruleValueRange();
-
-                    state._fsp--;
-
-                     after(grammarAccess.getValidationRuleAccess().getValueRangeParserRuleCall_1()); 
-
-                    }
-
-
-                    }
-                    break;
-                case 3 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:619:6: ( rulePattern )
-                    {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:619:6: ( rulePattern )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:620:1: rulePattern
-                    {
-                     before(grammarAccess.getValidationRuleAccess().getPatternParserRuleCall_2()); 
-                    pushFollow(FOLLOW_rulePattern_in_rule__ValidationRule__Alternatives1263);
+                     before(grammarAccess.getValidationRuleAccess().getPatternParserRuleCall_1()); 
+                    pushFollow(FOLLOW_rulePattern_in_rule__ValidationRule__Alternatives1306);
                     rulePattern();
 
                     state._fsp--;
 
-                     after(grammarAccess.getValidationRuleAccess().getPatternParserRuleCall_2()); 
+                     after(grammarAccess.getValidationRuleAccess().getPatternParserRuleCall_1()); 
 
                     }
 
@@ -1738,13 +1784,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__ValueRange__Alternatives"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:630:1: rule__ValueRange__Alternatives : ( ( ruleMinSpecification ) | ( ruleMaxSpecification ) );
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:652:1: rule__ValueRange__Alternatives : ( ( ruleMinSpecification ) | ( ruleMaxSpecification ) );
     public final void rule__ValueRange__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:634:1: ( ( ruleMinSpecification ) | ( ruleMaxSpecification ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:656:1: ( ( ruleMinSpecification ) | ( ruleMaxSpecification ) )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -1762,13 +1808,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
             }
             switch (alt4) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:635:1: ( ruleMinSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:657:1: ( ruleMinSpecification )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:635:1: ( ruleMinSpecification )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:636:1: ruleMinSpecification
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:657:1: ( ruleMinSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:658:1: ruleMinSpecification
                     {
                      before(grammarAccess.getValueRangeAccess().getMinSpecificationParserRuleCall_0()); 
-                    pushFollow(FOLLOW_ruleMinSpecification_in_rule__ValueRange__Alternatives1295);
+                    pushFollow(FOLLOW_ruleMinSpecification_in_rule__ValueRange__Alternatives1338);
                     ruleMinSpecification();
 
                     state._fsp--;
@@ -1781,13 +1827,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:641:6: ( ruleMaxSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:663:6: ( ruleMaxSpecification )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:641:6: ( ruleMaxSpecification )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:642:1: ruleMaxSpecification
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:663:6: ( ruleMaxSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:664:1: ruleMaxSpecification
                     {
                      before(grammarAccess.getValueRangeAccess().getMaxSpecificationParserRuleCall_1()); 
-                    pushFollow(FOLLOW_ruleMaxSpecification_in_rule__ValueRange__Alternatives1312);
+                    pushFollow(FOLLOW_ruleMaxSpecification_in_rule__ValueRange__Alternatives1355);
                     ruleMaxSpecification();
 
                     state._fsp--;
@@ -1817,13 +1863,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__MinSpecification__Alternatives"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:652:1: rule__MinSpecification__Alternatives : ( ( ruleStringMinSpecification ) | ( ruleIntegerMinSpecification ) );
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:674:1: rule__MinSpecification__Alternatives : ( ( ruleStringMinSpecification ) | ( ruleIntegerMinSpecification ) );
     public final void rule__MinSpecification__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:656:1: ( ( ruleStringMinSpecification ) | ( ruleIntegerMinSpecification ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:678:1: ( ( ruleStringMinSpecification ) | ( ruleIntegerMinSpecification ) )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -1841,13 +1887,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
             }
             switch (alt5) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:657:1: ( ruleStringMinSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:679:1: ( ruleStringMinSpecification )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:657:1: ( ruleStringMinSpecification )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:658:1: ruleStringMinSpecification
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:679:1: ( ruleStringMinSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:680:1: ruleStringMinSpecification
                     {
                      before(grammarAccess.getMinSpecificationAccess().getStringMinSpecificationParserRuleCall_0()); 
-                    pushFollow(FOLLOW_ruleStringMinSpecification_in_rule__MinSpecification__Alternatives1344);
+                    pushFollow(FOLLOW_ruleStringMinSpecification_in_rule__MinSpecification__Alternatives1387);
                     ruleStringMinSpecification();
 
                     state._fsp--;
@@ -1860,13 +1906,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:663:6: ( ruleIntegerMinSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:685:6: ( ruleIntegerMinSpecification )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:663:6: ( ruleIntegerMinSpecification )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:664:1: ruleIntegerMinSpecification
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:685:6: ( ruleIntegerMinSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:686:1: ruleIntegerMinSpecification
                     {
                      before(grammarAccess.getMinSpecificationAccess().getIntegerMinSpecificationParserRuleCall_1()); 
-                    pushFollow(FOLLOW_ruleIntegerMinSpecification_in_rule__MinSpecification__Alternatives1361);
+                    pushFollow(FOLLOW_ruleIntegerMinSpecification_in_rule__MinSpecification__Alternatives1404);
                     ruleIntegerMinSpecification();
 
                     state._fsp--;
@@ -1896,13 +1942,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__MaxSpecification__Alternatives"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:674:1: rule__MaxSpecification__Alternatives : ( ( ruleStringMaxSpecification ) | ( ruleIntegerMaxSpecification ) );
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:696:1: rule__MaxSpecification__Alternatives : ( ( ruleStringMaxSpecification ) | ( ruleIntegerMaxSpecification ) );
     public final void rule__MaxSpecification__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:678:1: ( ( ruleStringMaxSpecification ) | ( ruleIntegerMaxSpecification ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:700:1: ( ( ruleStringMaxSpecification ) | ( ruleIntegerMaxSpecification ) )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1920,13 +1966,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
             }
             switch (alt6) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:679:1: ( ruleStringMaxSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:701:1: ( ruleStringMaxSpecification )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:679:1: ( ruleStringMaxSpecification )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:680:1: ruleStringMaxSpecification
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:701:1: ( ruleStringMaxSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:702:1: ruleStringMaxSpecification
                     {
                      before(grammarAccess.getMaxSpecificationAccess().getStringMaxSpecificationParserRuleCall_0()); 
-                    pushFollow(FOLLOW_ruleStringMaxSpecification_in_rule__MaxSpecification__Alternatives1393);
+                    pushFollow(FOLLOW_ruleStringMaxSpecification_in_rule__MaxSpecification__Alternatives1436);
                     ruleStringMaxSpecification();
 
                     state._fsp--;
@@ -1939,13 +1985,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:685:6: ( ruleIntegerMaxSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:707:6: ( ruleIntegerMaxSpecification )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:685:6: ( ruleIntegerMaxSpecification )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:686:1: ruleIntegerMaxSpecification
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:707:6: ( ruleIntegerMaxSpecification )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:708:1: ruleIntegerMaxSpecification
                     {
                      before(grammarAccess.getMaxSpecificationAccess().getIntegerMaxSpecificationParserRuleCall_1()); 
-                    pushFollow(FOLLOW_ruleIntegerMaxSpecification_in_rule__MaxSpecification__Alternatives1410);
+                    pushFollow(FOLLOW_ruleIntegerMaxSpecification_in_rule__MaxSpecification__Alternatives1453);
                     ruleIntegerMaxSpecification();
 
                     state._fsp--;
@@ -1974,14 +2020,14 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     // $ANTLR end "rule__MaxSpecification__Alternatives"
 
 
-    // $ANTLR start "rule__HdlType__Alternatives"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:696:1: rule__HdlType__Alternatives : ( ( ( rule__HdlType__EnumTypeAssignment_0 ) ) | ( ( rule__HdlType__PrimitiveTypeAssignment_1 ) ) );
-    public final void rule__HdlType__Alternatives() throws RecognitionException {
+    // $ANTLR start "rule__HdlTypeReference__Alternatives"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:718:1: rule__HdlTypeReference__Alternatives : ( ( ruleEnumTypeReference ) | ( rulePrimitiveTypeReference ) );
+    public final void rule__HdlTypeReference__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:700:1: ( ( ( rule__HdlType__EnumTypeAssignment_0 ) ) | ( ( rule__HdlType__PrimitiveTypeAssignment_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:722:1: ( ( ruleEnumTypeReference ) | ( rulePrimitiveTypeReference ) )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1999,24 +2045,18 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
             }
             switch (alt7) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:701:1: ( ( rule__HdlType__EnumTypeAssignment_0 ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:723:1: ( ruleEnumTypeReference )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:701:1: ( ( rule__HdlType__EnumTypeAssignment_0 ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:702:1: ( rule__HdlType__EnumTypeAssignment_0 )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:723:1: ( ruleEnumTypeReference )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:724:1: ruleEnumTypeReference
                     {
-                     before(grammarAccess.getHdlTypeAccess().getEnumTypeAssignment_0()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:703:1: ( rule__HdlType__EnumTypeAssignment_0 )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:703:2: rule__HdlType__EnumTypeAssignment_0
-                    {
-                    pushFollow(FOLLOW_rule__HdlType__EnumTypeAssignment_0_in_rule__HdlType__Alternatives1442);
-                    rule__HdlType__EnumTypeAssignment_0();
+                     before(grammarAccess.getHdlTypeReferenceAccess().getEnumTypeReferenceParserRuleCall_0()); 
+                    pushFollow(FOLLOW_ruleEnumTypeReference_in_rule__HdlTypeReference__Alternatives1485);
+                    ruleEnumTypeReference();
 
                     state._fsp--;
 
-
-                    }
-
-                     after(grammarAccess.getHdlTypeAccess().getEnumTypeAssignment_0()); 
+                     after(grammarAccess.getHdlTypeReferenceAccess().getEnumTypeReferenceParserRuleCall_0()); 
 
                     }
 
@@ -2024,24 +2064,18 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:707:6: ( ( rule__HdlType__PrimitiveTypeAssignment_1 ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:729:6: ( rulePrimitiveTypeReference )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:707:6: ( ( rule__HdlType__PrimitiveTypeAssignment_1 ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:708:1: ( rule__HdlType__PrimitiveTypeAssignment_1 )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:729:6: ( rulePrimitiveTypeReference )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:730:1: rulePrimitiveTypeReference
                     {
-                     before(grammarAccess.getHdlTypeAccess().getPrimitiveTypeAssignment_1()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:709:1: ( rule__HdlType__PrimitiveTypeAssignment_1 )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:709:2: rule__HdlType__PrimitiveTypeAssignment_1
-                    {
-                    pushFollow(FOLLOW_rule__HdlType__PrimitiveTypeAssignment_1_in_rule__HdlType__Alternatives1460);
-                    rule__HdlType__PrimitiveTypeAssignment_1();
+                     before(grammarAccess.getHdlTypeReferenceAccess().getPrimitiveTypeReferenceParserRuleCall_1()); 
+                    pushFollow(FOLLOW_rulePrimitiveTypeReference_in_rule__HdlTypeReference__Alternatives1502);
+                    rulePrimitiveTypeReference();
 
                     state._fsp--;
 
-
-                    }
-
-                     after(grammarAccess.getHdlTypeAccess().getPrimitiveTypeAssignment_1()); 
+                     after(grammarAccess.getHdlTypeReferenceAccess().getPrimitiveTypeReferenceParserRuleCall_1()); 
 
                     }
 
@@ -2062,17 +2096,17 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
         }
         return ;
     }
-    // $ANTLR end "rule__HdlType__Alternatives"
+    // $ANTLR end "rule__HdlTypeReference__Alternatives"
 
 
     // $ANTLR start "rule__RelationType__Alternatives"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:718:1: rule__RelationType__Alternatives : ( ( ( 'OneToMany' ) ) | ( ( 'ManyToOne' ) ) | ( ( 'OneToOne' ) ) | ( ( 'ManyToMany' ) ) );
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:740:1: rule__RelationType__Alternatives : ( ( ( 'OneToMany' ) ) | ( ( 'ManyToOne' ) ) | ( ( 'OneToOne' ) ) | ( ( 'ManyToMany' ) ) );
     public final void rule__RelationType__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:722:1: ( ( ( 'OneToMany' ) ) | ( ( 'ManyToOne' ) ) | ( ( 'OneToOne' ) ) | ( ( 'ManyToMany' ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:744:1: ( ( ( 'OneToMany' ) ) | ( ( 'ManyToOne' ) ) | ( ( 'OneToOne' ) ) | ( ( 'ManyToMany' ) ) )
             int alt8=4;
             switch ( input.LA(1) ) {
             case 11:
@@ -2104,16 +2138,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
             switch (alt8) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:723:1: ( ( 'OneToMany' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:745:1: ( ( 'OneToMany' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:723:1: ( ( 'OneToMany' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:724:1: ( 'OneToMany' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:745:1: ( ( 'OneToMany' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:746:1: ( 'OneToMany' )
                     {
                      before(grammarAccess.getRelationTypeAccess().getONE_TO_MANYEnumLiteralDeclaration_0()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:725:1: ( 'OneToMany' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:725:3: 'OneToMany'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:747:1: ( 'OneToMany' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:747:3: 'OneToMany'
                     {
-                    match(input,11,FOLLOW_11_in_rule__RelationType__Alternatives1494); 
+                    match(input,11,FOLLOW_11_in_rule__RelationType__Alternatives1535); 
 
                     }
 
@@ -2125,16 +2159,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:730:6: ( ( 'ManyToOne' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:752:6: ( ( 'ManyToOne' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:730:6: ( ( 'ManyToOne' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:731:1: ( 'ManyToOne' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:752:6: ( ( 'ManyToOne' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:753:1: ( 'ManyToOne' )
                     {
                      before(grammarAccess.getRelationTypeAccess().getMANY_TO_ONEEnumLiteralDeclaration_1()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:732:1: ( 'ManyToOne' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:732:3: 'ManyToOne'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:754:1: ( 'ManyToOne' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:754:3: 'ManyToOne'
                     {
-                    match(input,12,FOLLOW_12_in_rule__RelationType__Alternatives1515); 
+                    match(input,12,FOLLOW_12_in_rule__RelationType__Alternatives1556); 
 
                     }
 
@@ -2146,16 +2180,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 3 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:737:6: ( ( 'OneToOne' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:759:6: ( ( 'OneToOne' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:737:6: ( ( 'OneToOne' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:738:1: ( 'OneToOne' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:759:6: ( ( 'OneToOne' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:760:1: ( 'OneToOne' )
                     {
                      before(grammarAccess.getRelationTypeAccess().getONE_TO_ONEEnumLiteralDeclaration_2()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:739:1: ( 'OneToOne' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:739:3: 'OneToOne'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:761:1: ( 'OneToOne' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:761:3: 'OneToOne'
                     {
-                    match(input,13,FOLLOW_13_in_rule__RelationType__Alternatives1536); 
+                    match(input,13,FOLLOW_13_in_rule__RelationType__Alternatives1577); 
 
                     }
 
@@ -2167,16 +2201,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 4 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:744:6: ( ( 'ManyToMany' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:766:6: ( ( 'ManyToMany' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:744:6: ( ( 'ManyToMany' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:745:1: ( 'ManyToMany' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:766:6: ( ( 'ManyToMany' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:767:1: ( 'ManyToMany' )
                     {
                      before(grammarAccess.getRelationTypeAccess().getMANY_TO_MANYEnumLiteralDeclaration_3()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:746:1: ( 'ManyToMany' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:746:3: 'ManyToMany'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:768:1: ( 'ManyToMany' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:768:3: 'ManyToMany'
                     {
-                    match(input,14,FOLLOW_14_in_rule__RelationType__Alternatives1557); 
+                    match(input,14,FOLLOW_14_in_rule__RelationType__Alternatives1598); 
 
                     }
 
@@ -2205,13 +2239,13 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__JHipsterType__Alternatives"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:756:1: rule__JHipsterType__Alternatives : ( ( ( 'String' ) ) | ( ( 'Integer' ) ) | ( ( 'Long' ) ) | ( ( 'BigDecimal' ) ) | ( ( 'Float' ) ) | ( ( 'Double' ) ) | ( ( 'Enum' ) ) | ( ( 'Boolean' ) ) | ( ( 'LocalDate' ) ) | ( ( 'ZoneDateTime' ) ) );
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:778:1: rule__JHipsterType__Alternatives : ( ( ( 'String' ) ) | ( ( 'Integer' ) ) | ( ( 'Long' ) ) | ( ( 'BigDecimal' ) ) | ( ( 'Float' ) ) | ( ( 'Double' ) ) | ( ( 'Enum' ) ) | ( ( 'Boolean' ) ) | ( ( 'LocalDate' ) ) | ( ( 'ZoneDateTime' ) ) );
     public final void rule__JHipsterType__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:760:1: ( ( ( 'String' ) ) | ( ( 'Integer' ) ) | ( ( 'Long' ) ) | ( ( 'BigDecimal' ) ) | ( ( 'Float' ) ) | ( ( 'Double' ) ) | ( ( 'Enum' ) ) | ( ( 'Boolean' ) ) | ( ( 'LocalDate' ) ) | ( ( 'ZoneDateTime' ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:782:1: ( ( ( 'String' ) ) | ( ( 'Integer' ) ) | ( ( 'Long' ) ) | ( ( 'BigDecimal' ) ) | ( ( 'Float' ) ) | ( ( 'Double' ) ) | ( ( 'Enum' ) ) | ( ( 'Boolean' ) ) | ( ( 'LocalDate' ) ) | ( ( 'ZoneDateTime' ) ) )
             int alt9=10;
             switch ( input.LA(1) ) {
             case 15:
@@ -2273,16 +2307,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
             switch (alt9) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:761:1: ( ( 'String' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:783:1: ( ( 'String' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:761:1: ( ( 'String' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:762:1: ( 'String' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:783:1: ( ( 'String' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:784:1: ( 'String' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getSTRINGEnumLiteralDeclaration_0()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:763:1: ( 'String' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:763:3: 'String'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:785:1: ( 'String' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:785:3: 'String'
                     {
-                    match(input,15,FOLLOW_15_in_rule__JHipsterType__Alternatives1593); 
+                    match(input,15,FOLLOW_15_in_rule__JHipsterType__Alternatives1634); 
 
                     }
 
@@ -2294,16 +2328,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:768:6: ( ( 'Integer' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:790:6: ( ( 'Integer' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:768:6: ( ( 'Integer' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:769:1: ( 'Integer' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:790:6: ( ( 'Integer' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:791:1: ( 'Integer' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getINTEGEREnumLiteralDeclaration_1()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:770:1: ( 'Integer' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:770:3: 'Integer'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:792:1: ( 'Integer' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:792:3: 'Integer'
                     {
-                    match(input,16,FOLLOW_16_in_rule__JHipsterType__Alternatives1614); 
+                    match(input,16,FOLLOW_16_in_rule__JHipsterType__Alternatives1655); 
 
                     }
 
@@ -2315,16 +2349,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 3 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:775:6: ( ( 'Long' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:797:6: ( ( 'Long' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:775:6: ( ( 'Long' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:776:1: ( 'Long' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:797:6: ( ( 'Long' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:798:1: ( 'Long' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getLONGEnumLiteralDeclaration_2()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:777:1: ( 'Long' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:777:3: 'Long'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:799:1: ( 'Long' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:799:3: 'Long'
                     {
-                    match(input,17,FOLLOW_17_in_rule__JHipsterType__Alternatives1635); 
+                    match(input,17,FOLLOW_17_in_rule__JHipsterType__Alternatives1676); 
 
                     }
 
@@ -2336,16 +2370,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 4 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:782:6: ( ( 'BigDecimal' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:804:6: ( ( 'BigDecimal' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:782:6: ( ( 'BigDecimal' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:783:1: ( 'BigDecimal' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:804:6: ( ( 'BigDecimal' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:805:1: ( 'BigDecimal' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getBIG_DECIMALEnumLiteralDeclaration_3()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:784:1: ( 'BigDecimal' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:784:3: 'BigDecimal'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:806:1: ( 'BigDecimal' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:806:3: 'BigDecimal'
                     {
-                    match(input,18,FOLLOW_18_in_rule__JHipsterType__Alternatives1656); 
+                    match(input,18,FOLLOW_18_in_rule__JHipsterType__Alternatives1697); 
 
                     }
 
@@ -2357,16 +2391,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 5 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:789:6: ( ( 'Float' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:811:6: ( ( 'Float' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:789:6: ( ( 'Float' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:790:1: ( 'Float' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:811:6: ( ( 'Float' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:812:1: ( 'Float' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getFLOATEnumLiteralDeclaration_4()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:791:1: ( 'Float' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:791:3: 'Float'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:813:1: ( 'Float' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:813:3: 'Float'
                     {
-                    match(input,19,FOLLOW_19_in_rule__JHipsterType__Alternatives1677); 
+                    match(input,19,FOLLOW_19_in_rule__JHipsterType__Alternatives1718); 
 
                     }
 
@@ -2378,16 +2412,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 6 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:796:6: ( ( 'Double' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:818:6: ( ( 'Double' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:796:6: ( ( 'Double' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:797:1: ( 'Double' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:818:6: ( ( 'Double' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:819:1: ( 'Double' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getDOUBLEEnumLiteralDeclaration_5()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:798:1: ( 'Double' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:798:3: 'Double'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:820:1: ( 'Double' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:820:3: 'Double'
                     {
-                    match(input,20,FOLLOW_20_in_rule__JHipsterType__Alternatives1698); 
+                    match(input,20,FOLLOW_20_in_rule__JHipsterType__Alternatives1739); 
 
                     }
 
@@ -2399,16 +2433,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 7 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:803:6: ( ( 'Enum' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:825:6: ( ( 'Enum' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:803:6: ( ( 'Enum' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:804:1: ( 'Enum' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:825:6: ( ( 'Enum' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:826:1: ( 'Enum' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getENUMEnumLiteralDeclaration_6()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:805:1: ( 'Enum' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:805:3: 'Enum'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:827:1: ( 'Enum' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:827:3: 'Enum'
                     {
-                    match(input,21,FOLLOW_21_in_rule__JHipsterType__Alternatives1719); 
+                    match(input,21,FOLLOW_21_in_rule__JHipsterType__Alternatives1760); 
 
                     }
 
@@ -2420,16 +2454,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 8 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:810:6: ( ( 'Boolean' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:832:6: ( ( 'Boolean' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:810:6: ( ( 'Boolean' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:811:1: ( 'Boolean' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:832:6: ( ( 'Boolean' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:833:1: ( 'Boolean' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getBOOLEANEnumLiteralDeclaration_7()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:812:1: ( 'Boolean' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:812:3: 'Boolean'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:834:1: ( 'Boolean' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:834:3: 'Boolean'
                     {
-                    match(input,22,FOLLOW_22_in_rule__JHipsterType__Alternatives1740); 
+                    match(input,22,FOLLOW_22_in_rule__JHipsterType__Alternatives1781); 
 
                     }
 
@@ -2441,16 +2475,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 9 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:817:6: ( ( 'LocalDate' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:839:6: ( ( 'LocalDate' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:817:6: ( ( 'LocalDate' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:818:1: ( 'LocalDate' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:839:6: ( ( 'LocalDate' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:840:1: ( 'LocalDate' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getLOCAL_DATEEnumLiteralDeclaration_8()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:819:1: ( 'LocalDate' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:819:3: 'LocalDate'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:841:1: ( 'LocalDate' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:841:3: 'LocalDate'
                     {
-                    match(input,23,FOLLOW_23_in_rule__JHipsterType__Alternatives1761); 
+                    match(input,23,FOLLOW_23_in_rule__JHipsterType__Alternatives1802); 
 
                     }
 
@@ -2462,16 +2496,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
                     }
                     break;
                 case 10 :
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:824:6: ( ( 'ZoneDateTime' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:846:6: ( ( 'ZoneDateTime' ) )
                     {
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:824:6: ( ( 'ZoneDateTime' ) )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:825:1: ( 'ZoneDateTime' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:846:6: ( ( 'ZoneDateTime' ) )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:847:1: ( 'ZoneDateTime' )
                     {
                      before(grammarAccess.getJHipsterTypeAccess().getZONE_DATE_TIMEEnumLiteralDeclaration_9()); 
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:826:1: ( 'ZoneDateTime' )
-                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:826:3: 'ZoneDateTime'
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:848:1: ( 'ZoneDateTime' )
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:848:3: 'ZoneDateTime'
                     {
-                    match(input,24,FOLLOW_24_in_rule__JHipsterType__Alternatives1782); 
+                    match(input,24,FOLLOW_24_in_rule__JHipsterType__Alternatives1823); 
 
                     }
 
@@ -2500,21 +2534,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:838:1: rule__Entity__Group__0 : rule__Entity__Group__0__Impl rule__Entity__Group__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:860:1: rule__Entity__Group__0 : rule__Entity__Group__0__Impl rule__Entity__Group__1 ;
     public final void rule__Entity__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:842:1: ( rule__Entity__Group__0__Impl rule__Entity__Group__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:843:2: rule__Entity__Group__0__Impl rule__Entity__Group__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:864:1: ( rule__Entity__Group__0__Impl rule__Entity__Group__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:865:2: rule__Entity__Group__0__Impl rule__Entity__Group__1
             {
-            pushFollow(FOLLOW_rule__Entity__Group__0__Impl_in_rule__Entity__Group__01815);
+            pushFollow(FOLLOW_rule__Entity__Group__0__Impl_in_rule__Entity__Group__01856);
             rule__Entity__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Entity__Group__1_in_rule__Entity__Group__01818);
+            pushFollow(FOLLOW_rule__Entity__Group__1_in_rule__Entity__Group__01859);
             rule__Entity__Group__1();
 
             state._fsp--;
@@ -2538,20 +2572,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:850:1: rule__Entity__Group__0__Impl : ( 'entity' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:872:1: rule__Entity__Group__0__Impl : ( 'entity' ) ;
     public final void rule__Entity__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:854:1: ( ( 'entity' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:855:1: ( 'entity' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:876:1: ( ( 'entity' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:877:1: ( 'entity' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:855:1: ( 'entity' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:856:1: 'entity'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:877:1: ( 'entity' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:878:1: 'entity'
             {
              before(grammarAccess.getEntityAccess().getEntityKeyword_0()); 
-            match(input,25,FOLLOW_25_in_rule__Entity__Group__0__Impl1846); 
+            match(input,25,FOLLOW_25_in_rule__Entity__Group__0__Impl1887); 
              after(grammarAccess.getEntityAccess().getEntityKeyword_0()); 
 
             }
@@ -2575,21 +2609,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:869:1: rule__Entity__Group__1 : rule__Entity__Group__1__Impl rule__Entity__Group__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:891:1: rule__Entity__Group__1 : rule__Entity__Group__1__Impl rule__Entity__Group__2 ;
     public final void rule__Entity__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:873:1: ( rule__Entity__Group__1__Impl rule__Entity__Group__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:874:2: rule__Entity__Group__1__Impl rule__Entity__Group__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:895:1: ( rule__Entity__Group__1__Impl rule__Entity__Group__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:896:2: rule__Entity__Group__1__Impl rule__Entity__Group__2
             {
-            pushFollow(FOLLOW_rule__Entity__Group__1__Impl_in_rule__Entity__Group__11877);
+            pushFollow(FOLLOW_rule__Entity__Group__1__Impl_in_rule__Entity__Group__11918);
             rule__Entity__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Entity__Group__2_in_rule__Entity__Group__11880);
+            pushFollow(FOLLOW_rule__Entity__Group__2_in_rule__Entity__Group__11921);
             rule__Entity__Group__2();
 
             state._fsp--;
@@ -2613,23 +2647,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:881:1: rule__Entity__Group__1__Impl : ( ( rule__Entity__NameAssignment_1 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:903:1: rule__Entity__Group__1__Impl : ( ( rule__Entity__NameAssignment_1 ) ) ;
     public final void rule__Entity__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:885:1: ( ( ( rule__Entity__NameAssignment_1 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:886:1: ( ( rule__Entity__NameAssignment_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:907:1: ( ( ( rule__Entity__NameAssignment_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:908:1: ( ( rule__Entity__NameAssignment_1 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:886:1: ( ( rule__Entity__NameAssignment_1 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:887:1: ( rule__Entity__NameAssignment_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:908:1: ( ( rule__Entity__NameAssignment_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:909:1: ( rule__Entity__NameAssignment_1 )
             {
              before(grammarAccess.getEntityAccess().getNameAssignment_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:888:1: ( rule__Entity__NameAssignment_1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:888:2: rule__Entity__NameAssignment_1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:910:1: ( rule__Entity__NameAssignment_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:910:2: rule__Entity__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Entity__NameAssignment_1_in_rule__Entity__Group__1__Impl1907);
+            pushFollow(FOLLOW_rule__Entity__NameAssignment_1_in_rule__Entity__Group__1__Impl1948);
             rule__Entity__NameAssignment_1();
 
             state._fsp--;
@@ -2660,16 +2694,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:898:1: rule__Entity__Group__2 : rule__Entity__Group__2__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:920:1: rule__Entity__Group__2 : rule__Entity__Group__2__Impl ;
     public final void rule__Entity__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:902:1: ( rule__Entity__Group__2__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:903:2: rule__Entity__Group__2__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:924:1: ( rule__Entity__Group__2__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:925:2: rule__Entity__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__Entity__Group__2__Impl_in_rule__Entity__Group__21937);
+            pushFollow(FOLLOW_rule__Entity__Group__2__Impl_in_rule__Entity__Group__21978);
             rule__Entity__Group__2__Impl();
 
             state._fsp--;
@@ -2693,23 +2727,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:909:1: rule__Entity__Group__2__Impl : ( ( rule__Entity__Group_2__0 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:931:1: rule__Entity__Group__2__Impl : ( ( rule__Entity__Group_2__0 ) ) ;
     public final void rule__Entity__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:913:1: ( ( ( rule__Entity__Group_2__0 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:914:1: ( ( rule__Entity__Group_2__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:935:1: ( ( ( rule__Entity__Group_2__0 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:936:1: ( ( rule__Entity__Group_2__0 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:914:1: ( ( rule__Entity__Group_2__0 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:915:1: ( rule__Entity__Group_2__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:936:1: ( ( rule__Entity__Group_2__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:937:1: ( rule__Entity__Group_2__0 )
             {
              before(grammarAccess.getEntityAccess().getGroup_2()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:916:1: ( rule__Entity__Group_2__0 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:916:2: rule__Entity__Group_2__0
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:938:1: ( rule__Entity__Group_2__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:938:2: rule__Entity__Group_2__0
             {
-            pushFollow(FOLLOW_rule__Entity__Group_2__0_in_rule__Entity__Group__2__Impl1964);
+            pushFollow(FOLLOW_rule__Entity__Group_2__0_in_rule__Entity__Group__2__Impl2005);
             rule__Entity__Group_2__0();
 
             state._fsp--;
@@ -2740,21 +2774,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group_2__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:932:1: rule__Entity__Group_2__0 : rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:954:1: rule__Entity__Group_2__0 : rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1 ;
     public final void rule__Entity__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:936:1: ( rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:937:2: rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:958:1: ( rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:959:2: rule__Entity__Group_2__0__Impl rule__Entity__Group_2__1
             {
-            pushFollow(FOLLOW_rule__Entity__Group_2__0__Impl_in_rule__Entity__Group_2__02000);
+            pushFollow(FOLLOW_rule__Entity__Group_2__0__Impl_in_rule__Entity__Group_2__02041);
             rule__Entity__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Entity__Group_2__1_in_rule__Entity__Group_2__02003);
+            pushFollow(FOLLOW_rule__Entity__Group_2__1_in_rule__Entity__Group_2__02044);
             rule__Entity__Group_2__1();
 
             state._fsp--;
@@ -2778,20 +2812,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group_2__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:944:1: rule__Entity__Group_2__0__Impl : ( '{' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:966:1: rule__Entity__Group_2__0__Impl : ( '{' ) ;
     public final void rule__Entity__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:948:1: ( ( '{' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:949:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:970:1: ( ( '{' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:971:1: ( '{' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:949:1: ( '{' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:950:1: '{'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:971:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:972:1: '{'
             {
              before(grammarAccess.getEntityAccess().getLeftCurlyBracketKeyword_2_0()); 
-            match(input,26,FOLLOW_26_in_rule__Entity__Group_2__0__Impl2031); 
+            match(input,26,FOLLOW_26_in_rule__Entity__Group_2__0__Impl2072); 
              after(grammarAccess.getEntityAccess().getLeftCurlyBracketKeyword_2_0()); 
 
             }
@@ -2815,21 +2849,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group_2__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:963:1: rule__Entity__Group_2__1 : rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:985:1: rule__Entity__Group_2__1 : rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2 ;
     public final void rule__Entity__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:967:1: ( rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:968:2: rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:989:1: ( rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:990:2: rule__Entity__Group_2__1__Impl rule__Entity__Group_2__2
             {
-            pushFollow(FOLLOW_rule__Entity__Group_2__1__Impl_in_rule__Entity__Group_2__12062);
+            pushFollow(FOLLOW_rule__Entity__Group_2__1__Impl_in_rule__Entity__Group_2__12103);
             rule__Entity__Group_2__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Entity__Group_2__2_in_rule__Entity__Group_2__12065);
+            pushFollow(FOLLOW_rule__Entity__Group_2__2_in_rule__Entity__Group_2__12106);
             rule__Entity__Group_2__2();
 
             state._fsp--;
@@ -2853,20 +2887,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group_2__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:975:1: rule__Entity__Group_2__1__Impl : ( ( rule__Entity__FieldsAssignment_2_1 )* ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:997:1: rule__Entity__Group_2__1__Impl : ( ( rule__Entity__FieldsAssignment_2_1 )* ) ;
     public final void rule__Entity__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:979:1: ( ( ( rule__Entity__FieldsAssignment_2_1 )* ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:980:1: ( ( rule__Entity__FieldsAssignment_2_1 )* )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1001:1: ( ( ( rule__Entity__FieldsAssignment_2_1 )* ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1002:1: ( ( rule__Entity__FieldsAssignment_2_1 )* )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:980:1: ( ( rule__Entity__FieldsAssignment_2_1 )* )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:981:1: ( rule__Entity__FieldsAssignment_2_1 )*
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1002:1: ( ( rule__Entity__FieldsAssignment_2_1 )* )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1003:1: ( rule__Entity__FieldsAssignment_2_1 )*
             {
              before(grammarAccess.getEntityAccess().getFieldsAssignment_2_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:982:1: ( rule__Entity__FieldsAssignment_2_1 )*
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1004:1: ( rule__Entity__FieldsAssignment_2_1 )*
             loop10:
             do {
                 int alt10=2;
@@ -2879,9 +2913,9 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
                 switch (alt10) {
             	case 1 :
-            	    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:982:2: rule__Entity__FieldsAssignment_2_1
+            	    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1004:2: rule__Entity__FieldsAssignment_2_1
             	    {
-            	    pushFollow(FOLLOW_rule__Entity__FieldsAssignment_2_1_in_rule__Entity__Group_2__1__Impl2092);
+            	    pushFollow(FOLLOW_rule__Entity__FieldsAssignment_2_1_in_rule__Entity__Group_2__1__Impl2133);
             	    rule__Entity__FieldsAssignment_2_1();
 
             	    state._fsp--;
@@ -2918,16 +2952,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group_2__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:992:1: rule__Entity__Group_2__2 : rule__Entity__Group_2__2__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1014:1: rule__Entity__Group_2__2 : rule__Entity__Group_2__2__Impl ;
     public final void rule__Entity__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:996:1: ( rule__Entity__Group_2__2__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:997:2: rule__Entity__Group_2__2__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1018:1: ( rule__Entity__Group_2__2__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1019:2: rule__Entity__Group_2__2__Impl
             {
-            pushFollow(FOLLOW_rule__Entity__Group_2__2__Impl_in_rule__Entity__Group_2__22123);
+            pushFollow(FOLLOW_rule__Entity__Group_2__2__Impl_in_rule__Entity__Group_2__22164);
             rule__Entity__Group_2__2__Impl();
 
             state._fsp--;
@@ -2951,20 +2985,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__Group_2__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1003:1: rule__Entity__Group_2__2__Impl : ( '}' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1025:1: rule__Entity__Group_2__2__Impl : ( '}' ) ;
     public final void rule__Entity__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1007:1: ( ( '}' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1008:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1029:1: ( ( '}' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1030:1: ( '}' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1008:1: ( '}' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1009:1: '}'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1030:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1031:1: '}'
             {
              before(grammarAccess.getEntityAccess().getRightCurlyBracketKeyword_2_2()); 
-            match(input,27,FOLLOW_27_in_rule__Entity__Group_2__2__Impl2151); 
+            match(input,27,FOLLOW_27_in_rule__Entity__Group_2__2__Impl2192); 
              after(grammarAccess.getEntityAccess().getRightCurlyBracketKeyword_2_2()); 
 
             }
@@ -2988,21 +3022,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1028:1: rule__Relation__Group__0 : rule__Relation__Group__0__Impl rule__Relation__Group__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1050:1: rule__Relation__Group__0 : rule__Relation__Group__0__Impl rule__Relation__Group__1 ;
     public final void rule__Relation__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1032:1: ( rule__Relation__Group__0__Impl rule__Relation__Group__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1033:2: rule__Relation__Group__0__Impl rule__Relation__Group__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1054:1: ( rule__Relation__Group__0__Impl rule__Relation__Group__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1055:2: rule__Relation__Group__0__Impl rule__Relation__Group__1
             {
-            pushFollow(FOLLOW_rule__Relation__Group__0__Impl_in_rule__Relation__Group__02188);
+            pushFollow(FOLLOW_rule__Relation__Group__0__Impl_in_rule__Relation__Group__02229);
             rule__Relation__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group__1_in_rule__Relation__Group__02191);
+            pushFollow(FOLLOW_rule__Relation__Group__1_in_rule__Relation__Group__02232);
             rule__Relation__Group__1();
 
             state._fsp--;
@@ -3026,20 +3060,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1040:1: rule__Relation__Group__0__Impl : ( 'relationship' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1062:1: rule__Relation__Group__0__Impl : ( 'relationship' ) ;
     public final void rule__Relation__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1044:1: ( ( 'relationship' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1045:1: ( 'relationship' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1066:1: ( ( 'relationship' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1067:1: ( 'relationship' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1045:1: ( 'relationship' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1046:1: 'relationship'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1067:1: ( 'relationship' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1068:1: 'relationship'
             {
              before(grammarAccess.getRelationAccess().getRelationshipKeyword_0()); 
-            match(input,28,FOLLOW_28_in_rule__Relation__Group__0__Impl2219); 
+            match(input,28,FOLLOW_28_in_rule__Relation__Group__0__Impl2260); 
              after(grammarAccess.getRelationAccess().getRelationshipKeyword_0()); 
 
             }
@@ -3063,21 +3097,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1059:1: rule__Relation__Group__1 : rule__Relation__Group__1__Impl rule__Relation__Group__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1081:1: rule__Relation__Group__1 : rule__Relation__Group__1__Impl rule__Relation__Group__2 ;
     public final void rule__Relation__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1063:1: ( rule__Relation__Group__1__Impl rule__Relation__Group__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1064:2: rule__Relation__Group__1__Impl rule__Relation__Group__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1085:1: ( rule__Relation__Group__1__Impl rule__Relation__Group__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1086:2: rule__Relation__Group__1__Impl rule__Relation__Group__2
             {
-            pushFollow(FOLLOW_rule__Relation__Group__1__Impl_in_rule__Relation__Group__12250);
+            pushFollow(FOLLOW_rule__Relation__Group__1__Impl_in_rule__Relation__Group__12291);
             rule__Relation__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group__2_in_rule__Relation__Group__12253);
+            pushFollow(FOLLOW_rule__Relation__Group__2_in_rule__Relation__Group__12294);
             rule__Relation__Group__2();
 
             state._fsp--;
@@ -3101,23 +3135,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1071:1: rule__Relation__Group__1__Impl : ( ( rule__Relation__TypeAssignment_1 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1093:1: rule__Relation__Group__1__Impl : ( ( rule__Relation__TypeAssignment_1 ) ) ;
     public final void rule__Relation__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1075:1: ( ( ( rule__Relation__TypeAssignment_1 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1076:1: ( ( rule__Relation__TypeAssignment_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1097:1: ( ( ( rule__Relation__TypeAssignment_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1098:1: ( ( rule__Relation__TypeAssignment_1 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1076:1: ( ( rule__Relation__TypeAssignment_1 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1077:1: ( rule__Relation__TypeAssignment_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1098:1: ( ( rule__Relation__TypeAssignment_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1099:1: ( rule__Relation__TypeAssignment_1 )
             {
              before(grammarAccess.getRelationAccess().getTypeAssignment_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1078:1: ( rule__Relation__TypeAssignment_1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1078:2: rule__Relation__TypeAssignment_1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1100:1: ( rule__Relation__TypeAssignment_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1100:2: rule__Relation__TypeAssignment_1
             {
-            pushFollow(FOLLOW_rule__Relation__TypeAssignment_1_in_rule__Relation__Group__1__Impl2280);
+            pushFollow(FOLLOW_rule__Relation__TypeAssignment_1_in_rule__Relation__Group__1__Impl2321);
             rule__Relation__TypeAssignment_1();
 
             state._fsp--;
@@ -3148,21 +3182,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1088:1: rule__Relation__Group__2 : rule__Relation__Group__2__Impl rule__Relation__Group__3 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1110:1: rule__Relation__Group__2 : rule__Relation__Group__2__Impl rule__Relation__Group__3 ;
     public final void rule__Relation__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1092:1: ( rule__Relation__Group__2__Impl rule__Relation__Group__3 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1093:2: rule__Relation__Group__2__Impl rule__Relation__Group__3
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1114:1: ( rule__Relation__Group__2__Impl rule__Relation__Group__3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1115:2: rule__Relation__Group__2__Impl rule__Relation__Group__3
             {
-            pushFollow(FOLLOW_rule__Relation__Group__2__Impl_in_rule__Relation__Group__22310);
+            pushFollow(FOLLOW_rule__Relation__Group__2__Impl_in_rule__Relation__Group__22351);
             rule__Relation__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group__3_in_rule__Relation__Group__22313);
+            pushFollow(FOLLOW_rule__Relation__Group__3_in_rule__Relation__Group__22354);
             rule__Relation__Group__3();
 
             state._fsp--;
@@ -3186,20 +3220,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1100:1: rule__Relation__Group__2__Impl : ( '{' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1122:1: rule__Relation__Group__2__Impl : ( '{' ) ;
     public final void rule__Relation__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1104:1: ( ( '{' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1105:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1126:1: ( ( '{' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1127:1: ( '{' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1105:1: ( '{' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1106:1: '{'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1127:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1128:1: '{'
             {
              before(grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,26,FOLLOW_26_in_rule__Relation__Group__2__Impl2341); 
+            match(input,26,FOLLOW_26_in_rule__Relation__Group__2__Impl2382); 
              after(grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -3223,21 +3257,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__3"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1119:1: rule__Relation__Group__3 : rule__Relation__Group__3__Impl rule__Relation__Group__4 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1141:1: rule__Relation__Group__3 : rule__Relation__Group__3__Impl rule__Relation__Group__4 ;
     public final void rule__Relation__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1123:1: ( rule__Relation__Group__3__Impl rule__Relation__Group__4 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1124:2: rule__Relation__Group__3__Impl rule__Relation__Group__4
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1145:1: ( rule__Relation__Group__3__Impl rule__Relation__Group__4 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1146:2: rule__Relation__Group__3__Impl rule__Relation__Group__4
             {
-            pushFollow(FOLLOW_rule__Relation__Group__3__Impl_in_rule__Relation__Group__32372);
+            pushFollow(FOLLOW_rule__Relation__Group__3__Impl_in_rule__Relation__Group__32413);
             rule__Relation__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group__4_in_rule__Relation__Group__32375);
+            pushFollow(FOLLOW_rule__Relation__Group__4_in_rule__Relation__Group__32416);
             rule__Relation__Group__4();
 
             state._fsp--;
@@ -3261,23 +3295,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__3__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1131:1: rule__Relation__Group__3__Impl : ( ( rule__Relation__FromAssignment_3 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1153:1: rule__Relation__Group__3__Impl : ( ( rule__Relation__FromAssignment_3 ) ) ;
     public final void rule__Relation__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1135:1: ( ( ( rule__Relation__FromAssignment_3 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1136:1: ( ( rule__Relation__FromAssignment_3 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1157:1: ( ( ( rule__Relation__FromAssignment_3 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1158:1: ( ( rule__Relation__FromAssignment_3 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1136:1: ( ( rule__Relation__FromAssignment_3 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1137:1: ( rule__Relation__FromAssignment_3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1158:1: ( ( rule__Relation__FromAssignment_3 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1159:1: ( rule__Relation__FromAssignment_3 )
             {
              before(grammarAccess.getRelationAccess().getFromAssignment_3()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1138:1: ( rule__Relation__FromAssignment_3 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1138:2: rule__Relation__FromAssignment_3
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1160:1: ( rule__Relation__FromAssignment_3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1160:2: rule__Relation__FromAssignment_3
             {
-            pushFollow(FOLLOW_rule__Relation__FromAssignment_3_in_rule__Relation__Group__3__Impl2402);
+            pushFollow(FOLLOW_rule__Relation__FromAssignment_3_in_rule__Relation__Group__3__Impl2443);
             rule__Relation__FromAssignment_3();
 
             state._fsp--;
@@ -3308,21 +3342,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__4"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1148:1: rule__Relation__Group__4 : rule__Relation__Group__4__Impl rule__Relation__Group__5 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1170:1: rule__Relation__Group__4 : rule__Relation__Group__4__Impl rule__Relation__Group__5 ;
     public final void rule__Relation__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1152:1: ( rule__Relation__Group__4__Impl rule__Relation__Group__5 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1153:2: rule__Relation__Group__4__Impl rule__Relation__Group__5
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1174:1: ( rule__Relation__Group__4__Impl rule__Relation__Group__5 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1175:2: rule__Relation__Group__4__Impl rule__Relation__Group__5
             {
-            pushFollow(FOLLOW_rule__Relation__Group__4__Impl_in_rule__Relation__Group__42432);
+            pushFollow(FOLLOW_rule__Relation__Group__4__Impl_in_rule__Relation__Group__42473);
             rule__Relation__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group__5_in_rule__Relation__Group__42435);
+            pushFollow(FOLLOW_rule__Relation__Group__5_in_rule__Relation__Group__42476);
             rule__Relation__Group__5();
 
             state._fsp--;
@@ -3346,23 +3380,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__4__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1160:1: rule__Relation__Group__4__Impl : ( ( rule__Relation__Group_4__0 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1182:1: rule__Relation__Group__4__Impl : ( ( rule__Relation__Group_4__0 ) ) ;
     public final void rule__Relation__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1164:1: ( ( ( rule__Relation__Group_4__0 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1165:1: ( ( rule__Relation__Group_4__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1186:1: ( ( ( rule__Relation__Group_4__0 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1187:1: ( ( rule__Relation__Group_4__0 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1165:1: ( ( rule__Relation__Group_4__0 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1166:1: ( rule__Relation__Group_4__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1187:1: ( ( rule__Relation__Group_4__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1188:1: ( rule__Relation__Group_4__0 )
             {
              before(grammarAccess.getRelationAccess().getGroup_4()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1167:1: ( rule__Relation__Group_4__0 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1167:2: rule__Relation__Group_4__0
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1189:1: ( rule__Relation__Group_4__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1189:2: rule__Relation__Group_4__0
             {
-            pushFollow(FOLLOW_rule__Relation__Group_4__0_in_rule__Relation__Group__4__Impl2462);
+            pushFollow(FOLLOW_rule__Relation__Group_4__0_in_rule__Relation__Group__4__Impl2503);
             rule__Relation__Group_4__0();
 
             state._fsp--;
@@ -3393,21 +3427,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__5"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1177:1: rule__Relation__Group__5 : rule__Relation__Group__5__Impl rule__Relation__Group__6 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1199:1: rule__Relation__Group__5 : rule__Relation__Group__5__Impl rule__Relation__Group__6 ;
     public final void rule__Relation__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1181:1: ( rule__Relation__Group__5__Impl rule__Relation__Group__6 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1182:2: rule__Relation__Group__5__Impl rule__Relation__Group__6
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1203:1: ( rule__Relation__Group__5__Impl rule__Relation__Group__6 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1204:2: rule__Relation__Group__5__Impl rule__Relation__Group__6
             {
-            pushFollow(FOLLOW_rule__Relation__Group__5__Impl_in_rule__Relation__Group__52492);
+            pushFollow(FOLLOW_rule__Relation__Group__5__Impl_in_rule__Relation__Group__52533);
             rule__Relation__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group__6_in_rule__Relation__Group__52495);
+            pushFollow(FOLLOW_rule__Relation__Group__6_in_rule__Relation__Group__52536);
             rule__Relation__Group__6();
 
             state._fsp--;
@@ -3431,20 +3465,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__5__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1189:1: rule__Relation__Group__5__Impl : ( 'to' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1211:1: rule__Relation__Group__5__Impl : ( 'to' ) ;
     public final void rule__Relation__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1193:1: ( ( 'to' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1194:1: ( 'to' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1215:1: ( ( 'to' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1216:1: ( 'to' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1194:1: ( 'to' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1195:1: 'to'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1216:1: ( 'to' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1217:1: 'to'
             {
              before(grammarAccess.getRelationAccess().getToKeyword_5()); 
-            match(input,29,FOLLOW_29_in_rule__Relation__Group__5__Impl2523); 
+            match(input,29,FOLLOW_29_in_rule__Relation__Group__5__Impl2564); 
              after(grammarAccess.getRelationAccess().getToKeyword_5()); 
 
             }
@@ -3468,21 +3502,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__6"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1208:1: rule__Relation__Group__6 : rule__Relation__Group__6__Impl rule__Relation__Group__7 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1230:1: rule__Relation__Group__6 : rule__Relation__Group__6__Impl rule__Relation__Group__7 ;
     public final void rule__Relation__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1212:1: ( rule__Relation__Group__6__Impl rule__Relation__Group__7 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1213:2: rule__Relation__Group__6__Impl rule__Relation__Group__7
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1234:1: ( rule__Relation__Group__6__Impl rule__Relation__Group__7 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1235:2: rule__Relation__Group__6__Impl rule__Relation__Group__7
             {
-            pushFollow(FOLLOW_rule__Relation__Group__6__Impl_in_rule__Relation__Group__62554);
+            pushFollow(FOLLOW_rule__Relation__Group__6__Impl_in_rule__Relation__Group__62595);
             rule__Relation__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group__7_in_rule__Relation__Group__62557);
+            pushFollow(FOLLOW_rule__Relation__Group__7_in_rule__Relation__Group__62598);
             rule__Relation__Group__7();
 
             state._fsp--;
@@ -3506,23 +3540,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__6__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1220:1: rule__Relation__Group__6__Impl : ( ( rule__Relation__ToAssignment_6 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1242:1: rule__Relation__Group__6__Impl : ( ( rule__Relation__ToAssignment_6 ) ) ;
     public final void rule__Relation__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1224:1: ( ( ( rule__Relation__ToAssignment_6 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1225:1: ( ( rule__Relation__ToAssignment_6 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1246:1: ( ( ( rule__Relation__ToAssignment_6 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1247:1: ( ( rule__Relation__ToAssignment_6 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1225:1: ( ( rule__Relation__ToAssignment_6 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1226:1: ( rule__Relation__ToAssignment_6 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1247:1: ( ( rule__Relation__ToAssignment_6 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1248:1: ( rule__Relation__ToAssignment_6 )
             {
              before(grammarAccess.getRelationAccess().getToAssignment_6()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1227:1: ( rule__Relation__ToAssignment_6 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1227:2: rule__Relation__ToAssignment_6
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1249:1: ( rule__Relation__ToAssignment_6 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1249:2: rule__Relation__ToAssignment_6
             {
-            pushFollow(FOLLOW_rule__Relation__ToAssignment_6_in_rule__Relation__Group__6__Impl2584);
+            pushFollow(FOLLOW_rule__Relation__ToAssignment_6_in_rule__Relation__Group__6__Impl2625);
             rule__Relation__ToAssignment_6();
 
             state._fsp--;
@@ -3553,21 +3587,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__7"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1237:1: rule__Relation__Group__7 : rule__Relation__Group__7__Impl rule__Relation__Group__8 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1259:1: rule__Relation__Group__7 : rule__Relation__Group__7__Impl rule__Relation__Group__8 ;
     public final void rule__Relation__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1241:1: ( rule__Relation__Group__7__Impl rule__Relation__Group__8 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1242:2: rule__Relation__Group__7__Impl rule__Relation__Group__8
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1263:1: ( rule__Relation__Group__7__Impl rule__Relation__Group__8 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1264:2: rule__Relation__Group__7__Impl rule__Relation__Group__8
             {
-            pushFollow(FOLLOW_rule__Relation__Group__7__Impl_in_rule__Relation__Group__72614);
+            pushFollow(FOLLOW_rule__Relation__Group__7__Impl_in_rule__Relation__Group__72655);
             rule__Relation__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group__8_in_rule__Relation__Group__72617);
+            pushFollow(FOLLOW_rule__Relation__Group__8_in_rule__Relation__Group__72658);
             rule__Relation__Group__8();
 
             state._fsp--;
@@ -3591,23 +3625,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__7__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1249:1: rule__Relation__Group__7__Impl : ( ( rule__Relation__Group_7__0 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1271:1: rule__Relation__Group__7__Impl : ( ( rule__Relation__Group_7__0 ) ) ;
     public final void rule__Relation__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1253:1: ( ( ( rule__Relation__Group_7__0 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1254:1: ( ( rule__Relation__Group_7__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1275:1: ( ( ( rule__Relation__Group_7__0 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1276:1: ( ( rule__Relation__Group_7__0 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1254:1: ( ( rule__Relation__Group_7__0 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1255:1: ( rule__Relation__Group_7__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1276:1: ( ( rule__Relation__Group_7__0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1277:1: ( rule__Relation__Group_7__0 )
             {
              before(grammarAccess.getRelationAccess().getGroup_7()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1256:1: ( rule__Relation__Group_7__0 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1256:2: rule__Relation__Group_7__0
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1278:1: ( rule__Relation__Group_7__0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1278:2: rule__Relation__Group_7__0
             {
-            pushFollow(FOLLOW_rule__Relation__Group_7__0_in_rule__Relation__Group__7__Impl2644);
+            pushFollow(FOLLOW_rule__Relation__Group_7__0_in_rule__Relation__Group__7__Impl2685);
             rule__Relation__Group_7__0();
 
             state._fsp--;
@@ -3638,16 +3672,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__8"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1266:1: rule__Relation__Group__8 : rule__Relation__Group__8__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1288:1: rule__Relation__Group__8 : rule__Relation__Group__8__Impl ;
     public final void rule__Relation__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1270:1: ( rule__Relation__Group__8__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1271:2: rule__Relation__Group__8__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1292:1: ( rule__Relation__Group__8__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1293:2: rule__Relation__Group__8__Impl
             {
-            pushFollow(FOLLOW_rule__Relation__Group__8__Impl_in_rule__Relation__Group__82674);
+            pushFollow(FOLLOW_rule__Relation__Group__8__Impl_in_rule__Relation__Group__82715);
             rule__Relation__Group__8__Impl();
 
             state._fsp--;
@@ -3671,20 +3705,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group__8__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1277:1: rule__Relation__Group__8__Impl : ( '}' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1299:1: rule__Relation__Group__8__Impl : ( '}' ) ;
     public final void rule__Relation__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1281:1: ( ( '}' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1282:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1303:1: ( ( '}' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1304:1: ( '}' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1282:1: ( '}' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1283:1: '}'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1304:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1305:1: '}'
             {
              before(grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_8()); 
-            match(input,27,FOLLOW_27_in_rule__Relation__Group__8__Impl2702); 
+            match(input,27,FOLLOW_27_in_rule__Relation__Group__8__Impl2743); 
              after(grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_8()); 
 
             }
@@ -3708,21 +3742,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_4__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1314:1: rule__Relation__Group_4__0 : rule__Relation__Group_4__0__Impl rule__Relation__Group_4__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1336:1: rule__Relation__Group_4__0 : rule__Relation__Group_4__0__Impl rule__Relation__Group_4__1 ;
     public final void rule__Relation__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1318:1: ( rule__Relation__Group_4__0__Impl rule__Relation__Group_4__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1319:2: rule__Relation__Group_4__0__Impl rule__Relation__Group_4__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1340:1: ( rule__Relation__Group_4__0__Impl rule__Relation__Group_4__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1341:2: rule__Relation__Group_4__0__Impl rule__Relation__Group_4__1
             {
-            pushFollow(FOLLOW_rule__Relation__Group_4__0__Impl_in_rule__Relation__Group_4__02751);
+            pushFollow(FOLLOW_rule__Relation__Group_4__0__Impl_in_rule__Relation__Group_4__02792);
             rule__Relation__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group_4__1_in_rule__Relation__Group_4__02754);
+            pushFollow(FOLLOW_rule__Relation__Group_4__1_in_rule__Relation__Group_4__02795);
             rule__Relation__Group_4__1();
 
             state._fsp--;
@@ -3746,20 +3780,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_4__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1326:1: rule__Relation__Group_4__0__Impl : ( '{' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1348:1: rule__Relation__Group_4__0__Impl : ( '{' ) ;
     public final void rule__Relation__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1330:1: ( ( '{' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1331:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1352:1: ( ( '{' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1353:1: ( '{' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1331:1: ( '{' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1332:1: '{'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1353:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1354:1: '{'
             {
              before(grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_4_0()); 
-            match(input,26,FOLLOW_26_in_rule__Relation__Group_4__0__Impl2782); 
+            match(input,26,FOLLOW_26_in_rule__Relation__Group_4__0__Impl2823); 
              after(grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_4_0()); 
 
             }
@@ -3783,21 +3817,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_4__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1345:1: rule__Relation__Group_4__1 : rule__Relation__Group_4__1__Impl rule__Relation__Group_4__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1367:1: rule__Relation__Group_4__1 : rule__Relation__Group_4__1__Impl rule__Relation__Group_4__2 ;
     public final void rule__Relation__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1349:1: ( rule__Relation__Group_4__1__Impl rule__Relation__Group_4__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1350:2: rule__Relation__Group_4__1__Impl rule__Relation__Group_4__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1371:1: ( rule__Relation__Group_4__1__Impl rule__Relation__Group_4__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1372:2: rule__Relation__Group_4__1__Impl rule__Relation__Group_4__2
             {
-            pushFollow(FOLLOW_rule__Relation__Group_4__1__Impl_in_rule__Relation__Group_4__12813);
+            pushFollow(FOLLOW_rule__Relation__Group_4__1__Impl_in_rule__Relation__Group_4__12854);
             rule__Relation__Group_4__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group_4__2_in_rule__Relation__Group_4__12816);
+            pushFollow(FOLLOW_rule__Relation__Group_4__2_in_rule__Relation__Group_4__12857);
             rule__Relation__Group_4__2();
 
             state._fsp--;
@@ -3821,23 +3855,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_4__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1357:1: rule__Relation__Group_4__1__Impl : ( ( rule__Relation__FromRelationAssignment_4_1 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1379:1: rule__Relation__Group_4__1__Impl : ( ( rule__Relation__FromRelationAssignment_4_1 ) ) ;
     public final void rule__Relation__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1361:1: ( ( ( rule__Relation__FromRelationAssignment_4_1 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1362:1: ( ( rule__Relation__FromRelationAssignment_4_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1383:1: ( ( ( rule__Relation__FromRelationAssignment_4_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1384:1: ( ( rule__Relation__FromRelationAssignment_4_1 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1362:1: ( ( rule__Relation__FromRelationAssignment_4_1 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1363:1: ( rule__Relation__FromRelationAssignment_4_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1384:1: ( ( rule__Relation__FromRelationAssignment_4_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1385:1: ( rule__Relation__FromRelationAssignment_4_1 )
             {
              before(grammarAccess.getRelationAccess().getFromRelationAssignment_4_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1364:1: ( rule__Relation__FromRelationAssignment_4_1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1364:2: rule__Relation__FromRelationAssignment_4_1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1386:1: ( rule__Relation__FromRelationAssignment_4_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1386:2: rule__Relation__FromRelationAssignment_4_1
             {
-            pushFollow(FOLLOW_rule__Relation__FromRelationAssignment_4_1_in_rule__Relation__Group_4__1__Impl2843);
+            pushFollow(FOLLOW_rule__Relation__FromRelationAssignment_4_1_in_rule__Relation__Group_4__1__Impl2884);
             rule__Relation__FromRelationAssignment_4_1();
 
             state._fsp--;
@@ -3868,16 +3902,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_4__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1374:1: rule__Relation__Group_4__2 : rule__Relation__Group_4__2__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1396:1: rule__Relation__Group_4__2 : rule__Relation__Group_4__2__Impl ;
     public final void rule__Relation__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1378:1: ( rule__Relation__Group_4__2__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1379:2: rule__Relation__Group_4__2__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1400:1: ( rule__Relation__Group_4__2__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1401:2: rule__Relation__Group_4__2__Impl
             {
-            pushFollow(FOLLOW_rule__Relation__Group_4__2__Impl_in_rule__Relation__Group_4__22873);
+            pushFollow(FOLLOW_rule__Relation__Group_4__2__Impl_in_rule__Relation__Group_4__22914);
             rule__Relation__Group_4__2__Impl();
 
             state._fsp--;
@@ -3901,20 +3935,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_4__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1385:1: rule__Relation__Group_4__2__Impl : ( '}' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1407:1: rule__Relation__Group_4__2__Impl : ( '}' ) ;
     public final void rule__Relation__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1389:1: ( ( '}' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1390:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1411:1: ( ( '}' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1412:1: ( '}' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1390:1: ( '}' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1391:1: '}'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1412:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1413:1: '}'
             {
              before(grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_4_2()); 
-            match(input,27,FOLLOW_27_in_rule__Relation__Group_4__2__Impl2901); 
+            match(input,27,FOLLOW_27_in_rule__Relation__Group_4__2__Impl2942); 
              after(grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_4_2()); 
 
             }
@@ -3938,21 +3972,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_7__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1410:1: rule__Relation__Group_7__0 : rule__Relation__Group_7__0__Impl rule__Relation__Group_7__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1432:1: rule__Relation__Group_7__0 : rule__Relation__Group_7__0__Impl rule__Relation__Group_7__1 ;
     public final void rule__Relation__Group_7__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1414:1: ( rule__Relation__Group_7__0__Impl rule__Relation__Group_7__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1415:2: rule__Relation__Group_7__0__Impl rule__Relation__Group_7__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1436:1: ( rule__Relation__Group_7__0__Impl rule__Relation__Group_7__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1437:2: rule__Relation__Group_7__0__Impl rule__Relation__Group_7__1
             {
-            pushFollow(FOLLOW_rule__Relation__Group_7__0__Impl_in_rule__Relation__Group_7__02938);
+            pushFollow(FOLLOW_rule__Relation__Group_7__0__Impl_in_rule__Relation__Group_7__02979);
             rule__Relation__Group_7__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group_7__1_in_rule__Relation__Group_7__02941);
+            pushFollow(FOLLOW_rule__Relation__Group_7__1_in_rule__Relation__Group_7__02982);
             rule__Relation__Group_7__1();
 
             state._fsp--;
@@ -3976,20 +4010,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_7__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1422:1: rule__Relation__Group_7__0__Impl : ( '{' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1444:1: rule__Relation__Group_7__0__Impl : ( '{' ) ;
     public final void rule__Relation__Group_7__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1426:1: ( ( '{' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1427:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1448:1: ( ( '{' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1449:1: ( '{' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1427:1: ( '{' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1428:1: '{'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1449:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1450:1: '{'
             {
              before(grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_7_0()); 
-            match(input,26,FOLLOW_26_in_rule__Relation__Group_7__0__Impl2969); 
+            match(input,26,FOLLOW_26_in_rule__Relation__Group_7__0__Impl3010); 
              after(grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_7_0()); 
 
             }
@@ -4013,21 +4047,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_7__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1441:1: rule__Relation__Group_7__1 : rule__Relation__Group_7__1__Impl rule__Relation__Group_7__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1463:1: rule__Relation__Group_7__1 : rule__Relation__Group_7__1__Impl rule__Relation__Group_7__2 ;
     public final void rule__Relation__Group_7__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1445:1: ( rule__Relation__Group_7__1__Impl rule__Relation__Group_7__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1446:2: rule__Relation__Group_7__1__Impl rule__Relation__Group_7__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1467:1: ( rule__Relation__Group_7__1__Impl rule__Relation__Group_7__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1468:2: rule__Relation__Group_7__1__Impl rule__Relation__Group_7__2
             {
-            pushFollow(FOLLOW_rule__Relation__Group_7__1__Impl_in_rule__Relation__Group_7__13000);
+            pushFollow(FOLLOW_rule__Relation__Group_7__1__Impl_in_rule__Relation__Group_7__13041);
             rule__Relation__Group_7__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Relation__Group_7__2_in_rule__Relation__Group_7__13003);
+            pushFollow(FOLLOW_rule__Relation__Group_7__2_in_rule__Relation__Group_7__13044);
             rule__Relation__Group_7__2();
 
             state._fsp--;
@@ -4051,23 +4085,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_7__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1453:1: rule__Relation__Group_7__1__Impl : ( ( rule__Relation__ToRelationAssignment_7_1 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1475:1: rule__Relation__Group_7__1__Impl : ( ( rule__Relation__ToRelationAssignment_7_1 ) ) ;
     public final void rule__Relation__Group_7__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1457:1: ( ( ( rule__Relation__ToRelationAssignment_7_1 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1458:1: ( ( rule__Relation__ToRelationAssignment_7_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1479:1: ( ( ( rule__Relation__ToRelationAssignment_7_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1480:1: ( ( rule__Relation__ToRelationAssignment_7_1 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1458:1: ( ( rule__Relation__ToRelationAssignment_7_1 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1459:1: ( rule__Relation__ToRelationAssignment_7_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1480:1: ( ( rule__Relation__ToRelationAssignment_7_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1481:1: ( rule__Relation__ToRelationAssignment_7_1 )
             {
              before(grammarAccess.getRelationAccess().getToRelationAssignment_7_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1460:1: ( rule__Relation__ToRelationAssignment_7_1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1460:2: rule__Relation__ToRelationAssignment_7_1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1482:1: ( rule__Relation__ToRelationAssignment_7_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1482:2: rule__Relation__ToRelationAssignment_7_1
             {
-            pushFollow(FOLLOW_rule__Relation__ToRelationAssignment_7_1_in_rule__Relation__Group_7__1__Impl3030);
+            pushFollow(FOLLOW_rule__Relation__ToRelationAssignment_7_1_in_rule__Relation__Group_7__1__Impl3071);
             rule__Relation__ToRelationAssignment_7_1();
 
             state._fsp--;
@@ -4098,16 +4132,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_7__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1470:1: rule__Relation__Group_7__2 : rule__Relation__Group_7__2__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1492:1: rule__Relation__Group_7__2 : rule__Relation__Group_7__2__Impl ;
     public final void rule__Relation__Group_7__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1474:1: ( rule__Relation__Group_7__2__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1475:2: rule__Relation__Group_7__2__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1496:1: ( rule__Relation__Group_7__2__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1497:2: rule__Relation__Group_7__2__Impl
             {
-            pushFollow(FOLLOW_rule__Relation__Group_7__2__Impl_in_rule__Relation__Group_7__23060);
+            pushFollow(FOLLOW_rule__Relation__Group_7__2__Impl_in_rule__Relation__Group_7__23101);
             rule__Relation__Group_7__2__Impl();
 
             state._fsp--;
@@ -4131,20 +4165,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_7__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1481:1: rule__Relation__Group_7__2__Impl : ( '}' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1503:1: rule__Relation__Group_7__2__Impl : ( '}' ) ;
     public final void rule__Relation__Group_7__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1485:1: ( ( '}' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1486:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1507:1: ( ( '}' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1508:1: ( '}' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1486:1: ( '}' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1487:1: '}'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1508:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1509:1: '}'
             {
              before(grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_7_2()); 
-            match(input,27,FOLLOW_27_in_rule__Relation__Group_7__2__Impl3088); 
+            match(input,27,FOLLOW_27_in_rule__Relation__Group_7__2__Impl3129); 
              after(grammarAccess.getRelationAccess().getRightCurlyBracketKeyword_7_2()); 
 
             }
@@ -4168,21 +4202,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1506:1: rule__Enum__Group__0 : rule__Enum__Group__0__Impl rule__Enum__Group__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1528:1: rule__Enum__Group__0 : rule__Enum__Group__0__Impl rule__Enum__Group__1 ;
     public final void rule__Enum__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1510:1: ( rule__Enum__Group__0__Impl rule__Enum__Group__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1511:2: rule__Enum__Group__0__Impl rule__Enum__Group__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1532:1: ( rule__Enum__Group__0__Impl rule__Enum__Group__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1533:2: rule__Enum__Group__0__Impl rule__Enum__Group__1
             {
-            pushFollow(FOLLOW_rule__Enum__Group__0__Impl_in_rule__Enum__Group__03125);
+            pushFollow(FOLLOW_rule__Enum__Group__0__Impl_in_rule__Enum__Group__03166);
             rule__Enum__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enum__Group__1_in_rule__Enum__Group__03128);
+            pushFollow(FOLLOW_rule__Enum__Group__1_in_rule__Enum__Group__03169);
             rule__Enum__Group__1();
 
             state._fsp--;
@@ -4206,20 +4240,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1518:1: rule__Enum__Group__0__Impl : ( 'enum' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1540:1: rule__Enum__Group__0__Impl : ( 'enum' ) ;
     public final void rule__Enum__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1522:1: ( ( 'enum' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1523:1: ( 'enum' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1544:1: ( ( 'enum' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1545:1: ( 'enum' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1523:1: ( 'enum' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1524:1: 'enum'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1545:1: ( 'enum' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1546:1: 'enum'
             {
              before(grammarAccess.getEnumAccess().getEnumKeyword_0()); 
-            match(input,30,FOLLOW_30_in_rule__Enum__Group__0__Impl3156); 
+            match(input,30,FOLLOW_30_in_rule__Enum__Group__0__Impl3197); 
              after(grammarAccess.getEnumAccess().getEnumKeyword_0()); 
 
             }
@@ -4243,21 +4277,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1537:1: rule__Enum__Group__1 : rule__Enum__Group__1__Impl rule__Enum__Group__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1559:1: rule__Enum__Group__1 : rule__Enum__Group__1__Impl rule__Enum__Group__2 ;
     public final void rule__Enum__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1541:1: ( rule__Enum__Group__1__Impl rule__Enum__Group__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1542:2: rule__Enum__Group__1__Impl rule__Enum__Group__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1563:1: ( rule__Enum__Group__1__Impl rule__Enum__Group__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1564:2: rule__Enum__Group__1__Impl rule__Enum__Group__2
             {
-            pushFollow(FOLLOW_rule__Enum__Group__1__Impl_in_rule__Enum__Group__13187);
+            pushFollow(FOLLOW_rule__Enum__Group__1__Impl_in_rule__Enum__Group__13228);
             rule__Enum__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enum__Group__2_in_rule__Enum__Group__13190);
+            pushFollow(FOLLOW_rule__Enum__Group__2_in_rule__Enum__Group__13231);
             rule__Enum__Group__2();
 
             state._fsp--;
@@ -4281,23 +4315,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1549:1: rule__Enum__Group__1__Impl : ( ( rule__Enum__NameAssignment_1 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1571:1: rule__Enum__Group__1__Impl : ( ( rule__Enum__NameAssignment_1 ) ) ;
     public final void rule__Enum__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1553:1: ( ( ( rule__Enum__NameAssignment_1 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1554:1: ( ( rule__Enum__NameAssignment_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1575:1: ( ( ( rule__Enum__NameAssignment_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1576:1: ( ( rule__Enum__NameAssignment_1 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1554:1: ( ( rule__Enum__NameAssignment_1 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1555:1: ( rule__Enum__NameAssignment_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1576:1: ( ( rule__Enum__NameAssignment_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1577:1: ( rule__Enum__NameAssignment_1 )
             {
              before(grammarAccess.getEnumAccess().getNameAssignment_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1556:1: ( rule__Enum__NameAssignment_1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1556:2: rule__Enum__NameAssignment_1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1578:1: ( rule__Enum__NameAssignment_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1578:2: rule__Enum__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Enum__NameAssignment_1_in_rule__Enum__Group__1__Impl3217);
+            pushFollow(FOLLOW_rule__Enum__NameAssignment_1_in_rule__Enum__Group__1__Impl3258);
             rule__Enum__NameAssignment_1();
 
             state._fsp--;
@@ -4328,21 +4362,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1566:1: rule__Enum__Group__2 : rule__Enum__Group__2__Impl rule__Enum__Group__3 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1588:1: rule__Enum__Group__2 : rule__Enum__Group__2__Impl rule__Enum__Group__3 ;
     public final void rule__Enum__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1570:1: ( rule__Enum__Group__2__Impl rule__Enum__Group__3 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1571:2: rule__Enum__Group__2__Impl rule__Enum__Group__3
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1592:1: ( rule__Enum__Group__2__Impl rule__Enum__Group__3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1593:2: rule__Enum__Group__2__Impl rule__Enum__Group__3
             {
-            pushFollow(FOLLOW_rule__Enum__Group__2__Impl_in_rule__Enum__Group__23247);
+            pushFollow(FOLLOW_rule__Enum__Group__2__Impl_in_rule__Enum__Group__23288);
             rule__Enum__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enum__Group__3_in_rule__Enum__Group__23250);
+            pushFollow(FOLLOW_rule__Enum__Group__3_in_rule__Enum__Group__23291);
             rule__Enum__Group__3();
 
             state._fsp--;
@@ -4366,20 +4400,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1578:1: rule__Enum__Group__2__Impl : ( '{' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1600:1: rule__Enum__Group__2__Impl : ( '{' ) ;
     public final void rule__Enum__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1582:1: ( ( '{' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1583:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1604:1: ( ( '{' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1605:1: ( '{' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1583:1: ( '{' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1584:1: '{'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1605:1: ( '{' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1606:1: '{'
             {
              before(grammarAccess.getEnumAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,26,FOLLOW_26_in_rule__Enum__Group__2__Impl3278); 
+            match(input,26,FOLLOW_26_in_rule__Enum__Group__2__Impl3319); 
              after(grammarAccess.getEnumAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -4403,21 +4437,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__3"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1597:1: rule__Enum__Group__3 : rule__Enum__Group__3__Impl rule__Enum__Group__4 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1619:1: rule__Enum__Group__3 : rule__Enum__Group__3__Impl rule__Enum__Group__4 ;
     public final void rule__Enum__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1601:1: ( rule__Enum__Group__3__Impl rule__Enum__Group__4 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1602:2: rule__Enum__Group__3__Impl rule__Enum__Group__4
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1623:1: ( rule__Enum__Group__3__Impl rule__Enum__Group__4 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1624:2: rule__Enum__Group__3__Impl rule__Enum__Group__4
             {
-            pushFollow(FOLLOW_rule__Enum__Group__3__Impl_in_rule__Enum__Group__33309);
+            pushFollow(FOLLOW_rule__Enum__Group__3__Impl_in_rule__Enum__Group__33350);
             rule__Enum__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enum__Group__4_in_rule__Enum__Group__33312);
+            pushFollow(FOLLOW_rule__Enum__Group__4_in_rule__Enum__Group__33353);
             rule__Enum__Group__4();
 
             state._fsp--;
@@ -4441,23 +4475,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__3__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1609:1: rule__Enum__Group__3__Impl : ( ( rule__Enum__LiteralsAssignment_3 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1631:1: rule__Enum__Group__3__Impl : ( ( rule__Enum__LiteralsAssignment_3 ) ) ;
     public final void rule__Enum__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1613:1: ( ( ( rule__Enum__LiteralsAssignment_3 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1614:1: ( ( rule__Enum__LiteralsAssignment_3 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1635:1: ( ( ( rule__Enum__LiteralsAssignment_3 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1636:1: ( ( rule__Enum__LiteralsAssignment_3 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1614:1: ( ( rule__Enum__LiteralsAssignment_3 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1615:1: ( rule__Enum__LiteralsAssignment_3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1636:1: ( ( rule__Enum__LiteralsAssignment_3 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1637:1: ( rule__Enum__LiteralsAssignment_3 )
             {
              before(grammarAccess.getEnumAccess().getLiteralsAssignment_3()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1616:1: ( rule__Enum__LiteralsAssignment_3 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1616:2: rule__Enum__LiteralsAssignment_3
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1638:1: ( rule__Enum__LiteralsAssignment_3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1638:2: rule__Enum__LiteralsAssignment_3
             {
-            pushFollow(FOLLOW_rule__Enum__LiteralsAssignment_3_in_rule__Enum__Group__3__Impl3339);
+            pushFollow(FOLLOW_rule__Enum__LiteralsAssignment_3_in_rule__Enum__Group__3__Impl3380);
             rule__Enum__LiteralsAssignment_3();
 
             state._fsp--;
@@ -4488,21 +4522,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__4"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1626:1: rule__Enum__Group__4 : rule__Enum__Group__4__Impl rule__Enum__Group__5 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1648:1: rule__Enum__Group__4 : rule__Enum__Group__4__Impl rule__Enum__Group__5 ;
     public final void rule__Enum__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1630:1: ( rule__Enum__Group__4__Impl rule__Enum__Group__5 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1631:2: rule__Enum__Group__4__Impl rule__Enum__Group__5
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1652:1: ( rule__Enum__Group__4__Impl rule__Enum__Group__5 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1653:2: rule__Enum__Group__4__Impl rule__Enum__Group__5
             {
-            pushFollow(FOLLOW_rule__Enum__Group__4__Impl_in_rule__Enum__Group__43369);
+            pushFollow(FOLLOW_rule__Enum__Group__4__Impl_in_rule__Enum__Group__43410);
             rule__Enum__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enum__Group__5_in_rule__Enum__Group__43372);
+            pushFollow(FOLLOW_rule__Enum__Group__5_in_rule__Enum__Group__43413);
             rule__Enum__Group__5();
 
             state._fsp--;
@@ -4526,20 +4560,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__4__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1638:1: rule__Enum__Group__4__Impl : ( ( rule__Enum__Group_4__0 )* ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1660:1: rule__Enum__Group__4__Impl : ( ( rule__Enum__Group_4__0 )* ) ;
     public final void rule__Enum__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1642:1: ( ( ( rule__Enum__Group_4__0 )* ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1643:1: ( ( rule__Enum__Group_4__0 )* )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1664:1: ( ( ( rule__Enum__Group_4__0 )* ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1665:1: ( ( rule__Enum__Group_4__0 )* )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1643:1: ( ( rule__Enum__Group_4__0 )* )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1644:1: ( rule__Enum__Group_4__0 )*
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1665:1: ( ( rule__Enum__Group_4__0 )* )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1666:1: ( rule__Enum__Group_4__0 )*
             {
              before(grammarAccess.getEnumAccess().getGroup_4()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1645:1: ( rule__Enum__Group_4__0 )*
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1667:1: ( rule__Enum__Group_4__0 )*
             loop11:
             do {
                 int alt11=2;
@@ -4552,9 +4586,9 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
                 switch (alt11) {
             	case 1 :
-            	    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1645:2: rule__Enum__Group_4__0
+            	    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1667:2: rule__Enum__Group_4__0
             	    {
-            	    pushFollow(FOLLOW_rule__Enum__Group_4__0_in_rule__Enum__Group__4__Impl3399);
+            	    pushFollow(FOLLOW_rule__Enum__Group_4__0_in_rule__Enum__Group__4__Impl3440);
             	    rule__Enum__Group_4__0();
 
             	    state._fsp--;
@@ -4591,16 +4625,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__5"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1655:1: rule__Enum__Group__5 : rule__Enum__Group__5__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1677:1: rule__Enum__Group__5 : rule__Enum__Group__5__Impl ;
     public final void rule__Enum__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1659:1: ( rule__Enum__Group__5__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1660:2: rule__Enum__Group__5__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1681:1: ( rule__Enum__Group__5__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1682:2: rule__Enum__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__Enum__Group__5__Impl_in_rule__Enum__Group__53430);
+            pushFollow(FOLLOW_rule__Enum__Group__5__Impl_in_rule__Enum__Group__53471);
             rule__Enum__Group__5__Impl();
 
             state._fsp--;
@@ -4624,20 +4658,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group__5__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1666:1: rule__Enum__Group__5__Impl : ( '}' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1688:1: rule__Enum__Group__5__Impl : ( '}' ) ;
     public final void rule__Enum__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1670:1: ( ( '}' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1671:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1692:1: ( ( '}' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1693:1: ( '}' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1671:1: ( '}' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1672:1: '}'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1693:1: ( '}' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1694:1: '}'
             {
              before(grammarAccess.getEnumAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,27,FOLLOW_27_in_rule__Enum__Group__5__Impl3458); 
+            match(input,27,FOLLOW_27_in_rule__Enum__Group__5__Impl3499); 
              after(grammarAccess.getEnumAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -4661,21 +4695,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group_4__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1697:1: rule__Enum__Group_4__0 : rule__Enum__Group_4__0__Impl rule__Enum__Group_4__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1719:1: rule__Enum__Group_4__0 : rule__Enum__Group_4__0__Impl rule__Enum__Group_4__1 ;
     public final void rule__Enum__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1701:1: ( rule__Enum__Group_4__0__Impl rule__Enum__Group_4__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1702:2: rule__Enum__Group_4__0__Impl rule__Enum__Group_4__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1723:1: ( rule__Enum__Group_4__0__Impl rule__Enum__Group_4__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1724:2: rule__Enum__Group_4__0__Impl rule__Enum__Group_4__1
             {
-            pushFollow(FOLLOW_rule__Enum__Group_4__0__Impl_in_rule__Enum__Group_4__03501);
+            pushFollow(FOLLOW_rule__Enum__Group_4__0__Impl_in_rule__Enum__Group_4__03542);
             rule__Enum__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Enum__Group_4__1_in_rule__Enum__Group_4__03504);
+            pushFollow(FOLLOW_rule__Enum__Group_4__1_in_rule__Enum__Group_4__03545);
             rule__Enum__Group_4__1();
 
             state._fsp--;
@@ -4699,20 +4733,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group_4__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1709:1: rule__Enum__Group_4__0__Impl : ( ',' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1731:1: rule__Enum__Group_4__0__Impl : ( ',' ) ;
     public final void rule__Enum__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1713:1: ( ( ',' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1714:1: ( ',' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1735:1: ( ( ',' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1736:1: ( ',' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1714:1: ( ',' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1715:1: ','
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1736:1: ( ',' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1737:1: ','
             {
              before(grammarAccess.getEnumAccess().getCommaKeyword_4_0()); 
-            match(input,31,FOLLOW_31_in_rule__Enum__Group_4__0__Impl3532); 
+            match(input,31,FOLLOW_31_in_rule__Enum__Group_4__0__Impl3573); 
              after(grammarAccess.getEnumAccess().getCommaKeyword_4_0()); 
 
             }
@@ -4736,16 +4770,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group_4__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1728:1: rule__Enum__Group_4__1 : rule__Enum__Group_4__1__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1750:1: rule__Enum__Group_4__1 : rule__Enum__Group_4__1__Impl ;
     public final void rule__Enum__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1732:1: ( rule__Enum__Group_4__1__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1733:2: rule__Enum__Group_4__1__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1754:1: ( rule__Enum__Group_4__1__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1755:2: rule__Enum__Group_4__1__Impl
             {
-            pushFollow(FOLLOW_rule__Enum__Group_4__1__Impl_in_rule__Enum__Group_4__13563);
+            pushFollow(FOLLOW_rule__Enum__Group_4__1__Impl_in_rule__Enum__Group_4__13604);
             rule__Enum__Group_4__1__Impl();
 
             state._fsp--;
@@ -4769,23 +4803,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__Group_4__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1739:1: rule__Enum__Group_4__1__Impl : ( ( rule__Enum__LiteralsAssignment_4_1 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1761:1: rule__Enum__Group_4__1__Impl : ( ( rule__Enum__LiteralsAssignment_4_1 ) ) ;
     public final void rule__Enum__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1743:1: ( ( ( rule__Enum__LiteralsAssignment_4_1 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1744:1: ( ( rule__Enum__LiteralsAssignment_4_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1765:1: ( ( ( rule__Enum__LiteralsAssignment_4_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1766:1: ( ( rule__Enum__LiteralsAssignment_4_1 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1744:1: ( ( rule__Enum__LiteralsAssignment_4_1 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1745:1: ( rule__Enum__LiteralsAssignment_4_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1766:1: ( ( rule__Enum__LiteralsAssignment_4_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1767:1: ( rule__Enum__LiteralsAssignment_4_1 )
             {
              before(grammarAccess.getEnumAccess().getLiteralsAssignment_4_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1746:1: ( rule__Enum__LiteralsAssignment_4_1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1746:2: rule__Enum__LiteralsAssignment_4_1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1768:1: ( rule__Enum__LiteralsAssignment_4_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1768:2: rule__Enum__LiteralsAssignment_4_1
             {
-            pushFollow(FOLLOW_rule__Enum__LiteralsAssignment_4_1_in_rule__Enum__Group_4__1__Impl3590);
+            pushFollow(FOLLOW_rule__Enum__LiteralsAssignment_4_1_in_rule__Enum__Group_4__1__Impl3631);
             rule__Enum__LiteralsAssignment_4_1();
 
             state._fsp--;
@@ -4816,21 +4850,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Field__Group__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1760:1: rule__Field__Group__0 : rule__Field__Group__0__Impl rule__Field__Group__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1782:1: rule__Field__Group__0 : rule__Field__Group__0__Impl rule__Field__Group__1 ;
     public final void rule__Field__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1764:1: ( rule__Field__Group__0__Impl rule__Field__Group__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1765:2: rule__Field__Group__0__Impl rule__Field__Group__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1786:1: ( rule__Field__Group__0__Impl rule__Field__Group__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1787:2: rule__Field__Group__0__Impl rule__Field__Group__1
             {
-            pushFollow(FOLLOW_rule__Field__Group__0__Impl_in_rule__Field__Group__03624);
+            pushFollow(FOLLOW_rule__Field__Group__0__Impl_in_rule__Field__Group__03665);
             rule__Field__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Field__Group__1_in_rule__Field__Group__03627);
+            pushFollow(FOLLOW_rule__Field__Group__1_in_rule__Field__Group__03668);
             rule__Field__Group__1();
 
             state._fsp--;
@@ -4854,23 +4888,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Field__Group__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1772:1: rule__Field__Group__0__Impl : ( ( rule__Field__NameAssignment_0 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1794:1: rule__Field__Group__0__Impl : ( ( rule__Field__NameAssignment_0 ) ) ;
     public final void rule__Field__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1776:1: ( ( ( rule__Field__NameAssignment_0 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1777:1: ( ( rule__Field__NameAssignment_0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1798:1: ( ( ( rule__Field__NameAssignment_0 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1799:1: ( ( rule__Field__NameAssignment_0 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1777:1: ( ( rule__Field__NameAssignment_0 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1778:1: ( rule__Field__NameAssignment_0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1799:1: ( ( rule__Field__NameAssignment_0 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1800:1: ( rule__Field__NameAssignment_0 )
             {
              before(grammarAccess.getFieldAccess().getNameAssignment_0()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1779:1: ( rule__Field__NameAssignment_0 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1779:2: rule__Field__NameAssignment_0
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1801:1: ( rule__Field__NameAssignment_0 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1801:2: rule__Field__NameAssignment_0
             {
-            pushFollow(FOLLOW_rule__Field__NameAssignment_0_in_rule__Field__Group__0__Impl3654);
+            pushFollow(FOLLOW_rule__Field__NameAssignment_0_in_rule__Field__Group__0__Impl3695);
             rule__Field__NameAssignment_0();
 
             state._fsp--;
@@ -4901,21 +4935,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Field__Group__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1789:1: rule__Field__Group__1 : rule__Field__Group__1__Impl rule__Field__Group__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1811:1: rule__Field__Group__1 : rule__Field__Group__1__Impl rule__Field__Group__2 ;
     public final void rule__Field__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1793:1: ( rule__Field__Group__1__Impl rule__Field__Group__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1794:2: rule__Field__Group__1__Impl rule__Field__Group__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1815:1: ( rule__Field__Group__1__Impl rule__Field__Group__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1816:2: rule__Field__Group__1__Impl rule__Field__Group__2
             {
-            pushFollow(FOLLOW_rule__Field__Group__1__Impl_in_rule__Field__Group__13684);
+            pushFollow(FOLLOW_rule__Field__Group__1__Impl_in_rule__Field__Group__13725);
             rule__Field__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Field__Group__2_in_rule__Field__Group__13687);
+            pushFollow(FOLLOW_rule__Field__Group__2_in_rule__Field__Group__13728);
             rule__Field__Group__2();
 
             state._fsp--;
@@ -4939,23 +4973,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Field__Group__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1801:1: rule__Field__Group__1__Impl : ( ( rule__Field__TypeAssignment_1 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1823:1: rule__Field__Group__1__Impl : ( ( rule__Field__TypeAssignment_1 ) ) ;
     public final void rule__Field__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1805:1: ( ( ( rule__Field__TypeAssignment_1 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1806:1: ( ( rule__Field__TypeAssignment_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1827:1: ( ( ( rule__Field__TypeAssignment_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1828:1: ( ( rule__Field__TypeAssignment_1 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1806:1: ( ( rule__Field__TypeAssignment_1 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1807:1: ( rule__Field__TypeAssignment_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1828:1: ( ( rule__Field__TypeAssignment_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1829:1: ( rule__Field__TypeAssignment_1 )
             {
              before(grammarAccess.getFieldAccess().getTypeAssignment_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1808:1: ( rule__Field__TypeAssignment_1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1808:2: rule__Field__TypeAssignment_1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1830:1: ( rule__Field__TypeAssignment_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1830:2: rule__Field__TypeAssignment_1
             {
-            pushFollow(FOLLOW_rule__Field__TypeAssignment_1_in_rule__Field__Group__1__Impl3714);
+            pushFollow(FOLLOW_rule__Field__TypeAssignment_1_in_rule__Field__Group__1__Impl3755);
             rule__Field__TypeAssignment_1();
 
             state._fsp--;
@@ -4986,17 +5020,22 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Field__Group__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1818:1: rule__Field__Group__2 : rule__Field__Group__2__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1840:1: rule__Field__Group__2 : rule__Field__Group__2__Impl rule__Field__Group__3 ;
     public final void rule__Field__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1822:1: ( rule__Field__Group__2__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1823:2: rule__Field__Group__2__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1844:1: ( rule__Field__Group__2__Impl rule__Field__Group__3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1845:2: rule__Field__Group__2__Impl rule__Field__Group__3
             {
-            pushFollow(FOLLOW_rule__Field__Group__2__Impl_in_rule__Field__Group__23744);
+            pushFollow(FOLLOW_rule__Field__Group__2__Impl_in_rule__Field__Group__23785);
             rule__Field__Group__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__Field__Group__3_in_rule__Field__Group__23788);
+            rule__Field__Group__3();
 
             state._fsp--;
 
@@ -5019,49 +5058,42 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Field__Group__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1829:1: rule__Field__Group__2__Impl : ( ( rule__Field__ValidationRulesAssignment_2 )* ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1852:1: rule__Field__Group__2__Impl : ( ( rule__Field__RequiredAssignment_2 )? ) ;
     public final void rule__Field__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1833:1: ( ( ( rule__Field__ValidationRulesAssignment_2 )* ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1834:1: ( ( rule__Field__ValidationRulesAssignment_2 )* )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1856:1: ( ( ( rule__Field__RequiredAssignment_2 )? ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1857:1: ( ( rule__Field__RequiredAssignment_2 )? )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1834:1: ( ( rule__Field__ValidationRulesAssignment_2 )* )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1835:1: ( rule__Field__ValidationRulesAssignment_2 )*
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1857:1: ( ( rule__Field__RequiredAssignment_2 )? )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1858:1: ( rule__Field__RequiredAssignment_2 )?
             {
-             before(grammarAccess.getFieldAccess().getValidationRulesAssignment_2()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1836:1: ( rule__Field__ValidationRulesAssignment_2 )*
-            loop12:
-            do {
-                int alt12=2;
-                int LA12_0 = input.LA(1);
+             before(grammarAccess.getFieldAccess().getRequiredAssignment_2()); 
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1859:1: ( rule__Field__RequiredAssignment_2 )?
+            int alt12=2;
+            int LA12_0 = input.LA(1);
 
-                if ( (LA12_0==32||(LA12_0>=35 && LA12_0<=39)) ) {
-                    alt12=1;
-                }
+            if ( (LA12_0==39) ) {
+                alt12=1;
+            }
+            switch (alt12) {
+                case 1 :
+                    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1859:2: rule__Field__RequiredAssignment_2
+                    {
+                    pushFollow(FOLLOW_rule__Field__RequiredAssignment_2_in_rule__Field__Group__2__Impl3815);
+                    rule__Field__RequiredAssignment_2();
 
-
-                switch (alt12) {
-            	case 1 :
-            	    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1836:2: rule__Field__ValidationRulesAssignment_2
-            	    {
-            	    pushFollow(FOLLOW_rule__Field__ValidationRulesAssignment_2_in_rule__Field__Group__2__Impl3771);
-            	    rule__Field__ValidationRulesAssignment_2();
-
-            	    state._fsp--;
+                    state._fsp--;
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop12;
-                }
-            } while (true);
+            }
 
-             after(grammarAccess.getFieldAccess().getValidationRulesAssignment_2()); 
+             after(grammarAccess.getFieldAccess().getRequiredAssignment_2()); 
 
             }
 
@@ -5083,22 +5115,120 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     // $ANTLR end "rule__Field__Group__2__Impl"
 
 
+    // $ANTLR start "rule__Field__Group__3"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1869:1: rule__Field__Group__3 : rule__Field__Group__3__Impl ;
+    public final void rule__Field__Group__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1873:1: ( rule__Field__Group__3__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1874:2: rule__Field__Group__3__Impl
+            {
+            pushFollow(FOLLOW_rule__Field__Group__3__Impl_in_rule__Field__Group__33846);
+            rule__Field__Group__3__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Field__Group__3"
+
+
+    // $ANTLR start "rule__Field__Group__3__Impl"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1880:1: rule__Field__Group__3__Impl : ( ( rule__Field__ValidationRulesAssignment_3 )* ) ;
+    public final void rule__Field__Group__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1884:1: ( ( ( rule__Field__ValidationRulesAssignment_3 )* ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1885:1: ( ( rule__Field__ValidationRulesAssignment_3 )* )
+            {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1885:1: ( ( rule__Field__ValidationRulesAssignment_3 )* )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1886:1: ( rule__Field__ValidationRulesAssignment_3 )*
+            {
+             before(grammarAccess.getFieldAccess().getValidationRulesAssignment_3()); 
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1887:1: ( rule__Field__ValidationRulesAssignment_3 )*
+            loop13:
+            do {
+                int alt13=2;
+                int LA13_0 = input.LA(1);
+
+                if ( (LA13_0==32||(LA13_0>=35 && LA13_0<=38)) ) {
+                    alt13=1;
+                }
+
+
+                switch (alt13) {
+            	case 1 :
+            	    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1887:2: rule__Field__ValidationRulesAssignment_3
+            	    {
+            	    pushFollow(FOLLOW_rule__Field__ValidationRulesAssignment_3_in_rule__Field__Group__3__Impl3873);
+            	    rule__Field__ValidationRulesAssignment_3();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop13;
+                }
+            } while (true);
+
+             after(grammarAccess.getFieldAccess().getValidationRulesAssignment_3()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Field__Group__3__Impl"
+
+
     // $ANTLR start "rule__StringMinSpecification__Group__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1852:1: rule__StringMinSpecification__Group__0 : rule__StringMinSpecification__Group__0__Impl rule__StringMinSpecification__Group__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1905:1: rule__StringMinSpecification__Group__0 : rule__StringMinSpecification__Group__0__Impl rule__StringMinSpecification__Group__1 ;
     public final void rule__StringMinSpecification__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1856:1: ( rule__StringMinSpecification__Group__0__Impl rule__StringMinSpecification__Group__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1857:2: rule__StringMinSpecification__Group__0__Impl rule__StringMinSpecification__Group__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1909:1: ( rule__StringMinSpecification__Group__0__Impl rule__StringMinSpecification__Group__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1910:2: rule__StringMinSpecification__Group__0__Impl rule__StringMinSpecification__Group__1
             {
-            pushFollow(FOLLOW_rule__StringMinSpecification__Group__0__Impl_in_rule__StringMinSpecification__Group__03808);
+            pushFollow(FOLLOW_rule__StringMinSpecification__Group__0__Impl_in_rule__StringMinSpecification__Group__03912);
             rule__StringMinSpecification__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__StringMinSpecification__Group__1_in_rule__StringMinSpecification__Group__03811);
+            pushFollow(FOLLOW_rule__StringMinSpecification__Group__1_in_rule__StringMinSpecification__Group__03915);
             rule__StringMinSpecification__Group__1();
 
             state._fsp--;
@@ -5122,20 +5252,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMinSpecification__Group__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1864:1: rule__StringMinSpecification__Group__0__Impl : ( 'minlength' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1917:1: rule__StringMinSpecification__Group__0__Impl : ( 'minlength' ) ;
     public final void rule__StringMinSpecification__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1868:1: ( ( 'minlength' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1869:1: ( 'minlength' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1921:1: ( ( 'minlength' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1922:1: ( 'minlength' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1869:1: ( 'minlength' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1870:1: 'minlength'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1922:1: ( 'minlength' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1923:1: 'minlength'
             {
              before(grammarAccess.getStringMinSpecificationAccess().getMinlengthKeyword_0()); 
-            match(input,32,FOLLOW_32_in_rule__StringMinSpecification__Group__0__Impl3839); 
+            match(input,32,FOLLOW_32_in_rule__StringMinSpecification__Group__0__Impl3943); 
              after(grammarAccess.getStringMinSpecificationAccess().getMinlengthKeyword_0()); 
 
             }
@@ -5159,21 +5289,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMinSpecification__Group__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1883:1: rule__StringMinSpecification__Group__1 : rule__StringMinSpecification__Group__1__Impl rule__StringMinSpecification__Group__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1936:1: rule__StringMinSpecification__Group__1 : rule__StringMinSpecification__Group__1__Impl rule__StringMinSpecification__Group__2 ;
     public final void rule__StringMinSpecification__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1887:1: ( rule__StringMinSpecification__Group__1__Impl rule__StringMinSpecification__Group__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1888:2: rule__StringMinSpecification__Group__1__Impl rule__StringMinSpecification__Group__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1940:1: ( rule__StringMinSpecification__Group__1__Impl rule__StringMinSpecification__Group__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1941:2: rule__StringMinSpecification__Group__1__Impl rule__StringMinSpecification__Group__2
             {
-            pushFollow(FOLLOW_rule__StringMinSpecification__Group__1__Impl_in_rule__StringMinSpecification__Group__13870);
+            pushFollow(FOLLOW_rule__StringMinSpecification__Group__1__Impl_in_rule__StringMinSpecification__Group__13974);
             rule__StringMinSpecification__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__StringMinSpecification__Group__2_in_rule__StringMinSpecification__Group__13873);
+            pushFollow(FOLLOW_rule__StringMinSpecification__Group__2_in_rule__StringMinSpecification__Group__13977);
             rule__StringMinSpecification__Group__2();
 
             state._fsp--;
@@ -5197,20 +5327,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMinSpecification__Group__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1895:1: rule__StringMinSpecification__Group__1__Impl : ( '(' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1948:1: rule__StringMinSpecification__Group__1__Impl : ( '(' ) ;
     public final void rule__StringMinSpecification__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1899:1: ( ( '(' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1900:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1952:1: ( ( '(' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1953:1: ( '(' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1900:1: ( '(' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1901:1: '('
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1953:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1954:1: '('
             {
              before(grammarAccess.getStringMinSpecificationAccess().getLeftParenthesisKeyword_1()); 
-            match(input,33,FOLLOW_33_in_rule__StringMinSpecification__Group__1__Impl3901); 
+            match(input,33,FOLLOW_33_in_rule__StringMinSpecification__Group__1__Impl4005); 
              after(grammarAccess.getStringMinSpecificationAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -5234,21 +5364,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMinSpecification__Group__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1914:1: rule__StringMinSpecification__Group__2 : rule__StringMinSpecification__Group__2__Impl rule__StringMinSpecification__Group__3 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1967:1: rule__StringMinSpecification__Group__2 : rule__StringMinSpecification__Group__2__Impl rule__StringMinSpecification__Group__3 ;
     public final void rule__StringMinSpecification__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1918:1: ( rule__StringMinSpecification__Group__2__Impl rule__StringMinSpecification__Group__3 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1919:2: rule__StringMinSpecification__Group__2__Impl rule__StringMinSpecification__Group__3
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1971:1: ( rule__StringMinSpecification__Group__2__Impl rule__StringMinSpecification__Group__3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1972:2: rule__StringMinSpecification__Group__2__Impl rule__StringMinSpecification__Group__3
             {
-            pushFollow(FOLLOW_rule__StringMinSpecification__Group__2__Impl_in_rule__StringMinSpecification__Group__23932);
+            pushFollow(FOLLOW_rule__StringMinSpecification__Group__2__Impl_in_rule__StringMinSpecification__Group__24036);
             rule__StringMinSpecification__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__StringMinSpecification__Group__3_in_rule__StringMinSpecification__Group__23935);
+            pushFollow(FOLLOW_rule__StringMinSpecification__Group__3_in_rule__StringMinSpecification__Group__24039);
             rule__StringMinSpecification__Group__3();
 
             state._fsp--;
@@ -5272,23 +5402,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMinSpecification__Group__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1926:1: rule__StringMinSpecification__Group__2__Impl : ( ( rule__StringMinSpecification__MinAssignment_2 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1979:1: rule__StringMinSpecification__Group__2__Impl : ( ( rule__StringMinSpecification__MinAssignment_2 ) ) ;
     public final void rule__StringMinSpecification__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1930:1: ( ( ( rule__StringMinSpecification__MinAssignment_2 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1931:1: ( ( rule__StringMinSpecification__MinAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1983:1: ( ( ( rule__StringMinSpecification__MinAssignment_2 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1984:1: ( ( rule__StringMinSpecification__MinAssignment_2 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1931:1: ( ( rule__StringMinSpecification__MinAssignment_2 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1932:1: ( rule__StringMinSpecification__MinAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1984:1: ( ( rule__StringMinSpecification__MinAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1985:1: ( rule__StringMinSpecification__MinAssignment_2 )
             {
              before(grammarAccess.getStringMinSpecificationAccess().getMinAssignment_2()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1933:1: ( rule__StringMinSpecification__MinAssignment_2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1933:2: rule__StringMinSpecification__MinAssignment_2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1986:1: ( rule__StringMinSpecification__MinAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1986:2: rule__StringMinSpecification__MinAssignment_2
             {
-            pushFollow(FOLLOW_rule__StringMinSpecification__MinAssignment_2_in_rule__StringMinSpecification__Group__2__Impl3962);
+            pushFollow(FOLLOW_rule__StringMinSpecification__MinAssignment_2_in_rule__StringMinSpecification__Group__2__Impl4066);
             rule__StringMinSpecification__MinAssignment_2();
 
             state._fsp--;
@@ -5319,16 +5449,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMinSpecification__Group__3"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1943:1: rule__StringMinSpecification__Group__3 : rule__StringMinSpecification__Group__3__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1996:1: rule__StringMinSpecification__Group__3 : rule__StringMinSpecification__Group__3__Impl ;
     public final void rule__StringMinSpecification__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1947:1: ( rule__StringMinSpecification__Group__3__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1948:2: rule__StringMinSpecification__Group__3__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2000:1: ( rule__StringMinSpecification__Group__3__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2001:2: rule__StringMinSpecification__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__StringMinSpecification__Group__3__Impl_in_rule__StringMinSpecification__Group__33992);
+            pushFollow(FOLLOW_rule__StringMinSpecification__Group__3__Impl_in_rule__StringMinSpecification__Group__34096);
             rule__StringMinSpecification__Group__3__Impl();
 
             state._fsp--;
@@ -5352,20 +5482,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMinSpecification__Group__3__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1954:1: rule__StringMinSpecification__Group__3__Impl : ( ')' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2007:1: rule__StringMinSpecification__Group__3__Impl : ( ')' ) ;
     public final void rule__StringMinSpecification__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1958:1: ( ( ')' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1959:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2011:1: ( ( ')' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2012:1: ( ')' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1959:1: ( ')' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1960:1: ')'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2012:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2013:1: ')'
             {
              before(grammarAccess.getStringMinSpecificationAccess().getRightParenthesisKeyword_3()); 
-            match(input,34,FOLLOW_34_in_rule__StringMinSpecification__Group__3__Impl4020); 
+            match(input,34,FOLLOW_34_in_rule__StringMinSpecification__Group__3__Impl4124); 
              after(grammarAccess.getStringMinSpecificationAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -5389,21 +5519,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMaxSpecification__Group__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1981:1: rule__StringMaxSpecification__Group__0 : rule__StringMaxSpecification__Group__0__Impl rule__StringMaxSpecification__Group__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2034:1: rule__StringMaxSpecification__Group__0 : rule__StringMaxSpecification__Group__0__Impl rule__StringMaxSpecification__Group__1 ;
     public final void rule__StringMaxSpecification__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1985:1: ( rule__StringMaxSpecification__Group__0__Impl rule__StringMaxSpecification__Group__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1986:2: rule__StringMaxSpecification__Group__0__Impl rule__StringMaxSpecification__Group__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2038:1: ( rule__StringMaxSpecification__Group__0__Impl rule__StringMaxSpecification__Group__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2039:2: rule__StringMaxSpecification__Group__0__Impl rule__StringMaxSpecification__Group__1
             {
-            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__0__Impl_in_rule__StringMaxSpecification__Group__04059);
+            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__0__Impl_in_rule__StringMaxSpecification__Group__04163);
             rule__StringMaxSpecification__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__1_in_rule__StringMaxSpecification__Group__04062);
+            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__1_in_rule__StringMaxSpecification__Group__04166);
             rule__StringMaxSpecification__Group__1();
 
             state._fsp--;
@@ -5427,20 +5557,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMaxSpecification__Group__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1993:1: rule__StringMaxSpecification__Group__0__Impl : ( 'maxlength' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2046:1: rule__StringMaxSpecification__Group__0__Impl : ( 'maxlength' ) ;
     public final void rule__StringMaxSpecification__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1997:1: ( ( 'maxlength' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1998:1: ( 'maxlength' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2050:1: ( ( 'maxlength' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2051:1: ( 'maxlength' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1998:1: ( 'maxlength' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1999:1: 'maxlength'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2051:1: ( 'maxlength' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2052:1: 'maxlength'
             {
              before(grammarAccess.getStringMaxSpecificationAccess().getMaxlengthKeyword_0()); 
-            match(input,35,FOLLOW_35_in_rule__StringMaxSpecification__Group__0__Impl4090); 
+            match(input,35,FOLLOW_35_in_rule__StringMaxSpecification__Group__0__Impl4194); 
              after(grammarAccess.getStringMaxSpecificationAccess().getMaxlengthKeyword_0()); 
 
             }
@@ -5464,21 +5594,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMaxSpecification__Group__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2012:1: rule__StringMaxSpecification__Group__1 : rule__StringMaxSpecification__Group__1__Impl rule__StringMaxSpecification__Group__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2065:1: rule__StringMaxSpecification__Group__1 : rule__StringMaxSpecification__Group__1__Impl rule__StringMaxSpecification__Group__2 ;
     public final void rule__StringMaxSpecification__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2016:1: ( rule__StringMaxSpecification__Group__1__Impl rule__StringMaxSpecification__Group__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2017:2: rule__StringMaxSpecification__Group__1__Impl rule__StringMaxSpecification__Group__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2069:1: ( rule__StringMaxSpecification__Group__1__Impl rule__StringMaxSpecification__Group__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2070:2: rule__StringMaxSpecification__Group__1__Impl rule__StringMaxSpecification__Group__2
             {
-            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__1__Impl_in_rule__StringMaxSpecification__Group__14121);
+            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__1__Impl_in_rule__StringMaxSpecification__Group__14225);
             rule__StringMaxSpecification__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__2_in_rule__StringMaxSpecification__Group__14124);
+            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__2_in_rule__StringMaxSpecification__Group__14228);
             rule__StringMaxSpecification__Group__2();
 
             state._fsp--;
@@ -5502,20 +5632,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMaxSpecification__Group__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2024:1: rule__StringMaxSpecification__Group__1__Impl : ( '(' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2077:1: rule__StringMaxSpecification__Group__1__Impl : ( '(' ) ;
     public final void rule__StringMaxSpecification__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2028:1: ( ( '(' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2029:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2081:1: ( ( '(' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2082:1: ( '(' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2029:1: ( '(' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2030:1: '('
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2082:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2083:1: '('
             {
              before(grammarAccess.getStringMaxSpecificationAccess().getLeftParenthesisKeyword_1()); 
-            match(input,33,FOLLOW_33_in_rule__StringMaxSpecification__Group__1__Impl4152); 
+            match(input,33,FOLLOW_33_in_rule__StringMaxSpecification__Group__1__Impl4256); 
              after(grammarAccess.getStringMaxSpecificationAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -5539,21 +5669,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMaxSpecification__Group__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2043:1: rule__StringMaxSpecification__Group__2 : rule__StringMaxSpecification__Group__2__Impl rule__StringMaxSpecification__Group__3 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2096:1: rule__StringMaxSpecification__Group__2 : rule__StringMaxSpecification__Group__2__Impl rule__StringMaxSpecification__Group__3 ;
     public final void rule__StringMaxSpecification__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2047:1: ( rule__StringMaxSpecification__Group__2__Impl rule__StringMaxSpecification__Group__3 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2048:2: rule__StringMaxSpecification__Group__2__Impl rule__StringMaxSpecification__Group__3
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2100:1: ( rule__StringMaxSpecification__Group__2__Impl rule__StringMaxSpecification__Group__3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2101:2: rule__StringMaxSpecification__Group__2__Impl rule__StringMaxSpecification__Group__3
             {
-            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__2__Impl_in_rule__StringMaxSpecification__Group__24183);
+            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__2__Impl_in_rule__StringMaxSpecification__Group__24287);
             rule__StringMaxSpecification__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__3_in_rule__StringMaxSpecification__Group__24186);
+            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__3_in_rule__StringMaxSpecification__Group__24290);
             rule__StringMaxSpecification__Group__3();
 
             state._fsp--;
@@ -5577,23 +5707,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMaxSpecification__Group__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2055:1: rule__StringMaxSpecification__Group__2__Impl : ( ( rule__StringMaxSpecification__MaxAssignment_2 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2108:1: rule__StringMaxSpecification__Group__2__Impl : ( ( rule__StringMaxSpecification__MaxAssignment_2 ) ) ;
     public final void rule__StringMaxSpecification__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2059:1: ( ( ( rule__StringMaxSpecification__MaxAssignment_2 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2060:1: ( ( rule__StringMaxSpecification__MaxAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2112:1: ( ( ( rule__StringMaxSpecification__MaxAssignment_2 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2113:1: ( ( rule__StringMaxSpecification__MaxAssignment_2 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2060:1: ( ( rule__StringMaxSpecification__MaxAssignment_2 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2061:1: ( rule__StringMaxSpecification__MaxAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2113:1: ( ( rule__StringMaxSpecification__MaxAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2114:1: ( rule__StringMaxSpecification__MaxAssignment_2 )
             {
              before(grammarAccess.getStringMaxSpecificationAccess().getMaxAssignment_2()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2062:1: ( rule__StringMaxSpecification__MaxAssignment_2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2062:2: rule__StringMaxSpecification__MaxAssignment_2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2115:1: ( rule__StringMaxSpecification__MaxAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2115:2: rule__StringMaxSpecification__MaxAssignment_2
             {
-            pushFollow(FOLLOW_rule__StringMaxSpecification__MaxAssignment_2_in_rule__StringMaxSpecification__Group__2__Impl4213);
+            pushFollow(FOLLOW_rule__StringMaxSpecification__MaxAssignment_2_in_rule__StringMaxSpecification__Group__2__Impl4317);
             rule__StringMaxSpecification__MaxAssignment_2();
 
             state._fsp--;
@@ -5624,16 +5754,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMaxSpecification__Group__3"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2072:1: rule__StringMaxSpecification__Group__3 : rule__StringMaxSpecification__Group__3__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2125:1: rule__StringMaxSpecification__Group__3 : rule__StringMaxSpecification__Group__3__Impl ;
     public final void rule__StringMaxSpecification__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2076:1: ( rule__StringMaxSpecification__Group__3__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2077:2: rule__StringMaxSpecification__Group__3__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2129:1: ( rule__StringMaxSpecification__Group__3__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2130:2: rule__StringMaxSpecification__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__3__Impl_in_rule__StringMaxSpecification__Group__34243);
+            pushFollow(FOLLOW_rule__StringMaxSpecification__Group__3__Impl_in_rule__StringMaxSpecification__Group__34347);
             rule__StringMaxSpecification__Group__3__Impl();
 
             state._fsp--;
@@ -5657,20 +5787,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMaxSpecification__Group__3__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2083:1: rule__StringMaxSpecification__Group__3__Impl : ( ')' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2136:1: rule__StringMaxSpecification__Group__3__Impl : ( ')' ) ;
     public final void rule__StringMaxSpecification__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2087:1: ( ( ')' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2088:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2140:1: ( ( ')' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2141:1: ( ')' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2088:1: ( ')' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2089:1: ')'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2141:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2142:1: ')'
             {
              before(grammarAccess.getStringMaxSpecificationAccess().getRightParenthesisKeyword_3()); 
-            match(input,34,FOLLOW_34_in_rule__StringMaxSpecification__Group__3__Impl4271); 
+            match(input,34,FOLLOW_34_in_rule__StringMaxSpecification__Group__3__Impl4375); 
              after(grammarAccess.getStringMaxSpecificationAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -5694,21 +5824,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMinSpecification__Group__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2110:1: rule__IntegerMinSpecification__Group__0 : rule__IntegerMinSpecification__Group__0__Impl rule__IntegerMinSpecification__Group__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2163:1: rule__IntegerMinSpecification__Group__0 : rule__IntegerMinSpecification__Group__0__Impl rule__IntegerMinSpecification__Group__1 ;
     public final void rule__IntegerMinSpecification__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2114:1: ( rule__IntegerMinSpecification__Group__0__Impl rule__IntegerMinSpecification__Group__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2115:2: rule__IntegerMinSpecification__Group__0__Impl rule__IntegerMinSpecification__Group__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2167:1: ( rule__IntegerMinSpecification__Group__0__Impl rule__IntegerMinSpecification__Group__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2168:2: rule__IntegerMinSpecification__Group__0__Impl rule__IntegerMinSpecification__Group__1
             {
-            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__0__Impl_in_rule__IntegerMinSpecification__Group__04310);
+            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__0__Impl_in_rule__IntegerMinSpecification__Group__04414);
             rule__IntegerMinSpecification__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__1_in_rule__IntegerMinSpecification__Group__04313);
+            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__1_in_rule__IntegerMinSpecification__Group__04417);
             rule__IntegerMinSpecification__Group__1();
 
             state._fsp--;
@@ -5732,20 +5862,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMinSpecification__Group__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2122:1: rule__IntegerMinSpecification__Group__0__Impl : ( 'min' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2175:1: rule__IntegerMinSpecification__Group__0__Impl : ( 'min' ) ;
     public final void rule__IntegerMinSpecification__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2126:1: ( ( 'min' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2127:1: ( 'min' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2179:1: ( ( 'min' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2180:1: ( 'min' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2127:1: ( 'min' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2128:1: 'min'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2180:1: ( 'min' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2181:1: 'min'
             {
              before(grammarAccess.getIntegerMinSpecificationAccess().getMinKeyword_0()); 
-            match(input,36,FOLLOW_36_in_rule__IntegerMinSpecification__Group__0__Impl4341); 
+            match(input,36,FOLLOW_36_in_rule__IntegerMinSpecification__Group__0__Impl4445); 
              after(grammarAccess.getIntegerMinSpecificationAccess().getMinKeyword_0()); 
 
             }
@@ -5769,21 +5899,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMinSpecification__Group__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2141:1: rule__IntegerMinSpecification__Group__1 : rule__IntegerMinSpecification__Group__1__Impl rule__IntegerMinSpecification__Group__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2194:1: rule__IntegerMinSpecification__Group__1 : rule__IntegerMinSpecification__Group__1__Impl rule__IntegerMinSpecification__Group__2 ;
     public final void rule__IntegerMinSpecification__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2145:1: ( rule__IntegerMinSpecification__Group__1__Impl rule__IntegerMinSpecification__Group__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2146:2: rule__IntegerMinSpecification__Group__1__Impl rule__IntegerMinSpecification__Group__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2198:1: ( rule__IntegerMinSpecification__Group__1__Impl rule__IntegerMinSpecification__Group__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2199:2: rule__IntegerMinSpecification__Group__1__Impl rule__IntegerMinSpecification__Group__2
             {
-            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__1__Impl_in_rule__IntegerMinSpecification__Group__14372);
+            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__1__Impl_in_rule__IntegerMinSpecification__Group__14476);
             rule__IntegerMinSpecification__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__2_in_rule__IntegerMinSpecification__Group__14375);
+            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__2_in_rule__IntegerMinSpecification__Group__14479);
             rule__IntegerMinSpecification__Group__2();
 
             state._fsp--;
@@ -5807,20 +5937,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMinSpecification__Group__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2153:1: rule__IntegerMinSpecification__Group__1__Impl : ( '(' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2206:1: rule__IntegerMinSpecification__Group__1__Impl : ( '(' ) ;
     public final void rule__IntegerMinSpecification__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2157:1: ( ( '(' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2158:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2210:1: ( ( '(' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2211:1: ( '(' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2158:1: ( '(' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2159:1: '('
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2211:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2212:1: '('
             {
              before(grammarAccess.getIntegerMinSpecificationAccess().getLeftParenthesisKeyword_1()); 
-            match(input,33,FOLLOW_33_in_rule__IntegerMinSpecification__Group__1__Impl4403); 
+            match(input,33,FOLLOW_33_in_rule__IntegerMinSpecification__Group__1__Impl4507); 
              after(grammarAccess.getIntegerMinSpecificationAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -5844,21 +5974,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMinSpecification__Group__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2172:1: rule__IntegerMinSpecification__Group__2 : rule__IntegerMinSpecification__Group__2__Impl rule__IntegerMinSpecification__Group__3 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2225:1: rule__IntegerMinSpecification__Group__2 : rule__IntegerMinSpecification__Group__2__Impl rule__IntegerMinSpecification__Group__3 ;
     public final void rule__IntegerMinSpecification__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2176:1: ( rule__IntegerMinSpecification__Group__2__Impl rule__IntegerMinSpecification__Group__3 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2177:2: rule__IntegerMinSpecification__Group__2__Impl rule__IntegerMinSpecification__Group__3
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2229:1: ( rule__IntegerMinSpecification__Group__2__Impl rule__IntegerMinSpecification__Group__3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2230:2: rule__IntegerMinSpecification__Group__2__Impl rule__IntegerMinSpecification__Group__3
             {
-            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__2__Impl_in_rule__IntegerMinSpecification__Group__24434);
+            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__2__Impl_in_rule__IntegerMinSpecification__Group__24538);
             rule__IntegerMinSpecification__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__3_in_rule__IntegerMinSpecification__Group__24437);
+            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__3_in_rule__IntegerMinSpecification__Group__24541);
             rule__IntegerMinSpecification__Group__3();
 
             state._fsp--;
@@ -5882,23 +6012,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMinSpecification__Group__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2184:1: rule__IntegerMinSpecification__Group__2__Impl : ( ( rule__IntegerMinSpecification__MinAssignment_2 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2237:1: rule__IntegerMinSpecification__Group__2__Impl : ( ( rule__IntegerMinSpecification__MinAssignment_2 ) ) ;
     public final void rule__IntegerMinSpecification__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2188:1: ( ( ( rule__IntegerMinSpecification__MinAssignment_2 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2189:1: ( ( rule__IntegerMinSpecification__MinAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2241:1: ( ( ( rule__IntegerMinSpecification__MinAssignment_2 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2242:1: ( ( rule__IntegerMinSpecification__MinAssignment_2 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2189:1: ( ( rule__IntegerMinSpecification__MinAssignment_2 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2190:1: ( rule__IntegerMinSpecification__MinAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2242:1: ( ( rule__IntegerMinSpecification__MinAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2243:1: ( rule__IntegerMinSpecification__MinAssignment_2 )
             {
              before(grammarAccess.getIntegerMinSpecificationAccess().getMinAssignment_2()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2191:1: ( rule__IntegerMinSpecification__MinAssignment_2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2191:2: rule__IntegerMinSpecification__MinAssignment_2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2244:1: ( rule__IntegerMinSpecification__MinAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2244:2: rule__IntegerMinSpecification__MinAssignment_2
             {
-            pushFollow(FOLLOW_rule__IntegerMinSpecification__MinAssignment_2_in_rule__IntegerMinSpecification__Group__2__Impl4464);
+            pushFollow(FOLLOW_rule__IntegerMinSpecification__MinAssignment_2_in_rule__IntegerMinSpecification__Group__2__Impl4568);
             rule__IntegerMinSpecification__MinAssignment_2();
 
             state._fsp--;
@@ -5929,16 +6059,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMinSpecification__Group__3"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2201:1: rule__IntegerMinSpecification__Group__3 : rule__IntegerMinSpecification__Group__3__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2254:1: rule__IntegerMinSpecification__Group__3 : rule__IntegerMinSpecification__Group__3__Impl ;
     public final void rule__IntegerMinSpecification__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2205:1: ( rule__IntegerMinSpecification__Group__3__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2206:2: rule__IntegerMinSpecification__Group__3__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2258:1: ( rule__IntegerMinSpecification__Group__3__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2259:2: rule__IntegerMinSpecification__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__3__Impl_in_rule__IntegerMinSpecification__Group__34494);
+            pushFollow(FOLLOW_rule__IntegerMinSpecification__Group__3__Impl_in_rule__IntegerMinSpecification__Group__34598);
             rule__IntegerMinSpecification__Group__3__Impl();
 
             state._fsp--;
@@ -5962,20 +6092,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMinSpecification__Group__3__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2212:1: rule__IntegerMinSpecification__Group__3__Impl : ( ')' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2265:1: rule__IntegerMinSpecification__Group__3__Impl : ( ')' ) ;
     public final void rule__IntegerMinSpecification__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2216:1: ( ( ')' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2217:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2269:1: ( ( ')' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2270:1: ( ')' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2217:1: ( ')' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2218:1: ')'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2270:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2271:1: ')'
             {
              before(grammarAccess.getIntegerMinSpecificationAccess().getRightParenthesisKeyword_3()); 
-            match(input,34,FOLLOW_34_in_rule__IntegerMinSpecification__Group__3__Impl4522); 
+            match(input,34,FOLLOW_34_in_rule__IntegerMinSpecification__Group__3__Impl4626); 
              after(grammarAccess.getIntegerMinSpecificationAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -5999,21 +6129,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMaxSpecification__Group__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2239:1: rule__IntegerMaxSpecification__Group__0 : rule__IntegerMaxSpecification__Group__0__Impl rule__IntegerMaxSpecification__Group__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2292:1: rule__IntegerMaxSpecification__Group__0 : rule__IntegerMaxSpecification__Group__0__Impl rule__IntegerMaxSpecification__Group__1 ;
     public final void rule__IntegerMaxSpecification__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2243:1: ( rule__IntegerMaxSpecification__Group__0__Impl rule__IntegerMaxSpecification__Group__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2244:2: rule__IntegerMaxSpecification__Group__0__Impl rule__IntegerMaxSpecification__Group__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2296:1: ( rule__IntegerMaxSpecification__Group__0__Impl rule__IntegerMaxSpecification__Group__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2297:2: rule__IntegerMaxSpecification__Group__0__Impl rule__IntegerMaxSpecification__Group__1
             {
-            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__0__Impl_in_rule__IntegerMaxSpecification__Group__04561);
+            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__0__Impl_in_rule__IntegerMaxSpecification__Group__04665);
             rule__IntegerMaxSpecification__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__1_in_rule__IntegerMaxSpecification__Group__04564);
+            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__1_in_rule__IntegerMaxSpecification__Group__04668);
             rule__IntegerMaxSpecification__Group__1();
 
             state._fsp--;
@@ -6037,20 +6167,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMaxSpecification__Group__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2251:1: rule__IntegerMaxSpecification__Group__0__Impl : ( 'max' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2304:1: rule__IntegerMaxSpecification__Group__0__Impl : ( 'max' ) ;
     public final void rule__IntegerMaxSpecification__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2255:1: ( ( 'max' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2256:1: ( 'max' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2308:1: ( ( 'max' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2309:1: ( 'max' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2256:1: ( 'max' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2257:1: 'max'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2309:1: ( 'max' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2310:1: 'max'
             {
              before(grammarAccess.getIntegerMaxSpecificationAccess().getMaxKeyword_0()); 
-            match(input,37,FOLLOW_37_in_rule__IntegerMaxSpecification__Group__0__Impl4592); 
+            match(input,37,FOLLOW_37_in_rule__IntegerMaxSpecification__Group__0__Impl4696); 
              after(grammarAccess.getIntegerMaxSpecificationAccess().getMaxKeyword_0()); 
 
             }
@@ -6074,21 +6204,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMaxSpecification__Group__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2270:1: rule__IntegerMaxSpecification__Group__1 : rule__IntegerMaxSpecification__Group__1__Impl rule__IntegerMaxSpecification__Group__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2323:1: rule__IntegerMaxSpecification__Group__1 : rule__IntegerMaxSpecification__Group__1__Impl rule__IntegerMaxSpecification__Group__2 ;
     public final void rule__IntegerMaxSpecification__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2274:1: ( rule__IntegerMaxSpecification__Group__1__Impl rule__IntegerMaxSpecification__Group__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2275:2: rule__IntegerMaxSpecification__Group__1__Impl rule__IntegerMaxSpecification__Group__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2327:1: ( rule__IntegerMaxSpecification__Group__1__Impl rule__IntegerMaxSpecification__Group__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2328:2: rule__IntegerMaxSpecification__Group__1__Impl rule__IntegerMaxSpecification__Group__2
             {
-            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__1__Impl_in_rule__IntegerMaxSpecification__Group__14623);
+            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__1__Impl_in_rule__IntegerMaxSpecification__Group__14727);
             rule__IntegerMaxSpecification__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__2_in_rule__IntegerMaxSpecification__Group__14626);
+            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__2_in_rule__IntegerMaxSpecification__Group__14730);
             rule__IntegerMaxSpecification__Group__2();
 
             state._fsp--;
@@ -6112,20 +6242,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMaxSpecification__Group__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2282:1: rule__IntegerMaxSpecification__Group__1__Impl : ( '(' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2335:1: rule__IntegerMaxSpecification__Group__1__Impl : ( '(' ) ;
     public final void rule__IntegerMaxSpecification__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2286:1: ( ( '(' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2287:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2339:1: ( ( '(' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2340:1: ( '(' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2287:1: ( '(' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2288:1: '('
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2340:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2341:1: '('
             {
              before(grammarAccess.getIntegerMaxSpecificationAccess().getLeftParenthesisKeyword_1()); 
-            match(input,33,FOLLOW_33_in_rule__IntegerMaxSpecification__Group__1__Impl4654); 
+            match(input,33,FOLLOW_33_in_rule__IntegerMaxSpecification__Group__1__Impl4758); 
              after(grammarAccess.getIntegerMaxSpecificationAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -6149,21 +6279,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMaxSpecification__Group__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2301:1: rule__IntegerMaxSpecification__Group__2 : rule__IntegerMaxSpecification__Group__2__Impl rule__IntegerMaxSpecification__Group__3 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2354:1: rule__IntegerMaxSpecification__Group__2 : rule__IntegerMaxSpecification__Group__2__Impl rule__IntegerMaxSpecification__Group__3 ;
     public final void rule__IntegerMaxSpecification__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2305:1: ( rule__IntegerMaxSpecification__Group__2__Impl rule__IntegerMaxSpecification__Group__3 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2306:2: rule__IntegerMaxSpecification__Group__2__Impl rule__IntegerMaxSpecification__Group__3
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2358:1: ( rule__IntegerMaxSpecification__Group__2__Impl rule__IntegerMaxSpecification__Group__3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2359:2: rule__IntegerMaxSpecification__Group__2__Impl rule__IntegerMaxSpecification__Group__3
             {
-            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__2__Impl_in_rule__IntegerMaxSpecification__Group__24685);
+            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__2__Impl_in_rule__IntegerMaxSpecification__Group__24789);
             rule__IntegerMaxSpecification__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__3_in_rule__IntegerMaxSpecification__Group__24688);
+            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__3_in_rule__IntegerMaxSpecification__Group__24792);
             rule__IntegerMaxSpecification__Group__3();
 
             state._fsp--;
@@ -6187,23 +6317,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMaxSpecification__Group__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2313:1: rule__IntegerMaxSpecification__Group__2__Impl : ( ( rule__IntegerMaxSpecification__MaxAssignment_2 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2366:1: rule__IntegerMaxSpecification__Group__2__Impl : ( ( rule__IntegerMaxSpecification__MaxAssignment_2 ) ) ;
     public final void rule__IntegerMaxSpecification__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2317:1: ( ( ( rule__IntegerMaxSpecification__MaxAssignment_2 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2318:1: ( ( rule__IntegerMaxSpecification__MaxAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2370:1: ( ( ( rule__IntegerMaxSpecification__MaxAssignment_2 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2371:1: ( ( rule__IntegerMaxSpecification__MaxAssignment_2 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2318:1: ( ( rule__IntegerMaxSpecification__MaxAssignment_2 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2319:1: ( rule__IntegerMaxSpecification__MaxAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2371:1: ( ( rule__IntegerMaxSpecification__MaxAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2372:1: ( rule__IntegerMaxSpecification__MaxAssignment_2 )
             {
              before(grammarAccess.getIntegerMaxSpecificationAccess().getMaxAssignment_2()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2320:1: ( rule__IntegerMaxSpecification__MaxAssignment_2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2320:2: rule__IntegerMaxSpecification__MaxAssignment_2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2373:1: ( rule__IntegerMaxSpecification__MaxAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2373:2: rule__IntegerMaxSpecification__MaxAssignment_2
             {
-            pushFollow(FOLLOW_rule__IntegerMaxSpecification__MaxAssignment_2_in_rule__IntegerMaxSpecification__Group__2__Impl4715);
+            pushFollow(FOLLOW_rule__IntegerMaxSpecification__MaxAssignment_2_in_rule__IntegerMaxSpecification__Group__2__Impl4819);
             rule__IntegerMaxSpecification__MaxAssignment_2();
 
             state._fsp--;
@@ -6234,16 +6364,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMaxSpecification__Group__3"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2330:1: rule__IntegerMaxSpecification__Group__3 : rule__IntegerMaxSpecification__Group__3__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2383:1: rule__IntegerMaxSpecification__Group__3 : rule__IntegerMaxSpecification__Group__3__Impl ;
     public final void rule__IntegerMaxSpecification__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2334:1: ( rule__IntegerMaxSpecification__Group__3__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2335:2: rule__IntegerMaxSpecification__Group__3__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2387:1: ( rule__IntegerMaxSpecification__Group__3__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2388:2: rule__IntegerMaxSpecification__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__3__Impl_in_rule__IntegerMaxSpecification__Group__34745);
+            pushFollow(FOLLOW_rule__IntegerMaxSpecification__Group__3__Impl_in_rule__IntegerMaxSpecification__Group__34849);
             rule__IntegerMaxSpecification__Group__3__Impl();
 
             state._fsp--;
@@ -6267,20 +6397,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMaxSpecification__Group__3__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2341:1: rule__IntegerMaxSpecification__Group__3__Impl : ( ')' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2394:1: rule__IntegerMaxSpecification__Group__3__Impl : ( ')' ) ;
     public final void rule__IntegerMaxSpecification__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2345:1: ( ( ')' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2346:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2398:1: ( ( ')' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2399:1: ( ')' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2346:1: ( ')' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2347:1: ')'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2399:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2400:1: ')'
             {
              before(grammarAccess.getIntegerMaxSpecificationAccess().getRightParenthesisKeyword_3()); 
-            match(input,34,FOLLOW_34_in_rule__IntegerMaxSpecification__Group__3__Impl4773); 
+            match(input,34,FOLLOW_34_in_rule__IntegerMaxSpecification__Group__3__Impl4877); 
              after(grammarAccess.getIntegerMaxSpecificationAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -6304,21 +6434,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Pattern__Group__0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2368:1: rule__Pattern__Group__0 : rule__Pattern__Group__0__Impl rule__Pattern__Group__1 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2421:1: rule__Pattern__Group__0 : rule__Pattern__Group__0__Impl rule__Pattern__Group__1 ;
     public final void rule__Pattern__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2372:1: ( rule__Pattern__Group__0__Impl rule__Pattern__Group__1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2373:2: rule__Pattern__Group__0__Impl rule__Pattern__Group__1
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2425:1: ( rule__Pattern__Group__0__Impl rule__Pattern__Group__1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2426:2: rule__Pattern__Group__0__Impl rule__Pattern__Group__1
             {
-            pushFollow(FOLLOW_rule__Pattern__Group__0__Impl_in_rule__Pattern__Group__04812);
+            pushFollow(FOLLOW_rule__Pattern__Group__0__Impl_in_rule__Pattern__Group__04916);
             rule__Pattern__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Pattern__Group__1_in_rule__Pattern__Group__04815);
+            pushFollow(FOLLOW_rule__Pattern__Group__1_in_rule__Pattern__Group__04919);
             rule__Pattern__Group__1();
 
             state._fsp--;
@@ -6342,20 +6472,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Pattern__Group__0__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2380:1: rule__Pattern__Group__0__Impl : ( 'pattern' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2433:1: rule__Pattern__Group__0__Impl : ( 'pattern' ) ;
     public final void rule__Pattern__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2384:1: ( ( 'pattern' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2385:1: ( 'pattern' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2437:1: ( ( 'pattern' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2438:1: ( 'pattern' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2385:1: ( 'pattern' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2386:1: 'pattern'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2438:1: ( 'pattern' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2439:1: 'pattern'
             {
              before(grammarAccess.getPatternAccess().getPatternKeyword_0()); 
-            match(input,38,FOLLOW_38_in_rule__Pattern__Group__0__Impl4843); 
+            match(input,38,FOLLOW_38_in_rule__Pattern__Group__0__Impl4947); 
              after(grammarAccess.getPatternAccess().getPatternKeyword_0()); 
 
             }
@@ -6379,21 +6509,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Pattern__Group__1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2399:1: rule__Pattern__Group__1 : rule__Pattern__Group__1__Impl rule__Pattern__Group__2 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2452:1: rule__Pattern__Group__1 : rule__Pattern__Group__1__Impl rule__Pattern__Group__2 ;
     public final void rule__Pattern__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2403:1: ( rule__Pattern__Group__1__Impl rule__Pattern__Group__2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2404:2: rule__Pattern__Group__1__Impl rule__Pattern__Group__2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2456:1: ( rule__Pattern__Group__1__Impl rule__Pattern__Group__2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2457:2: rule__Pattern__Group__1__Impl rule__Pattern__Group__2
             {
-            pushFollow(FOLLOW_rule__Pattern__Group__1__Impl_in_rule__Pattern__Group__14874);
+            pushFollow(FOLLOW_rule__Pattern__Group__1__Impl_in_rule__Pattern__Group__14978);
             rule__Pattern__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Pattern__Group__2_in_rule__Pattern__Group__14877);
+            pushFollow(FOLLOW_rule__Pattern__Group__2_in_rule__Pattern__Group__14981);
             rule__Pattern__Group__2();
 
             state._fsp--;
@@ -6417,20 +6547,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Pattern__Group__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2411:1: rule__Pattern__Group__1__Impl : ( '(' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2464:1: rule__Pattern__Group__1__Impl : ( '(' ) ;
     public final void rule__Pattern__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2415:1: ( ( '(' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2416:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2468:1: ( ( '(' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2469:1: ( '(' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2416:1: ( '(' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2417:1: '('
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2469:1: ( '(' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2470:1: '('
             {
              before(grammarAccess.getPatternAccess().getLeftParenthesisKeyword_1()); 
-            match(input,33,FOLLOW_33_in_rule__Pattern__Group__1__Impl4905); 
+            match(input,33,FOLLOW_33_in_rule__Pattern__Group__1__Impl5009); 
              after(grammarAccess.getPatternAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -6454,21 +6584,21 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Pattern__Group__2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2430:1: rule__Pattern__Group__2 : rule__Pattern__Group__2__Impl rule__Pattern__Group__3 ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2483:1: rule__Pattern__Group__2 : rule__Pattern__Group__2__Impl rule__Pattern__Group__3 ;
     public final void rule__Pattern__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2434:1: ( rule__Pattern__Group__2__Impl rule__Pattern__Group__3 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2435:2: rule__Pattern__Group__2__Impl rule__Pattern__Group__3
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2487:1: ( rule__Pattern__Group__2__Impl rule__Pattern__Group__3 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2488:2: rule__Pattern__Group__2__Impl rule__Pattern__Group__3
             {
-            pushFollow(FOLLOW_rule__Pattern__Group__2__Impl_in_rule__Pattern__Group__24936);
+            pushFollow(FOLLOW_rule__Pattern__Group__2__Impl_in_rule__Pattern__Group__25040);
             rule__Pattern__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Pattern__Group__3_in_rule__Pattern__Group__24939);
+            pushFollow(FOLLOW_rule__Pattern__Group__3_in_rule__Pattern__Group__25043);
             rule__Pattern__Group__3();
 
             state._fsp--;
@@ -6492,23 +6622,23 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Pattern__Group__2__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2442:1: rule__Pattern__Group__2__Impl : ( ( rule__Pattern__RegexAssignment_2 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2495:1: rule__Pattern__Group__2__Impl : ( ( rule__Pattern__RegexAssignment_2 ) ) ;
     public final void rule__Pattern__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2446:1: ( ( ( rule__Pattern__RegexAssignment_2 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2447:1: ( ( rule__Pattern__RegexAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2499:1: ( ( ( rule__Pattern__RegexAssignment_2 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2500:1: ( ( rule__Pattern__RegexAssignment_2 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2447:1: ( ( rule__Pattern__RegexAssignment_2 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2448:1: ( rule__Pattern__RegexAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2500:1: ( ( rule__Pattern__RegexAssignment_2 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2501:1: ( rule__Pattern__RegexAssignment_2 )
             {
              before(grammarAccess.getPatternAccess().getRegexAssignment_2()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2449:1: ( rule__Pattern__RegexAssignment_2 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2449:2: rule__Pattern__RegexAssignment_2
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2502:1: ( rule__Pattern__RegexAssignment_2 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2502:2: rule__Pattern__RegexAssignment_2
             {
-            pushFollow(FOLLOW_rule__Pattern__RegexAssignment_2_in_rule__Pattern__Group__2__Impl4966);
+            pushFollow(FOLLOW_rule__Pattern__RegexAssignment_2_in_rule__Pattern__Group__2__Impl5070);
             rule__Pattern__RegexAssignment_2();
 
             state._fsp--;
@@ -6539,16 +6669,16 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Pattern__Group__3"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2459:1: rule__Pattern__Group__3 : rule__Pattern__Group__3__Impl ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2512:1: rule__Pattern__Group__3 : rule__Pattern__Group__3__Impl ;
     public final void rule__Pattern__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2463:1: ( rule__Pattern__Group__3__Impl )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2464:2: rule__Pattern__Group__3__Impl
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2516:1: ( rule__Pattern__Group__3__Impl )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2517:2: rule__Pattern__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__Pattern__Group__3__Impl_in_rule__Pattern__Group__34996);
+            pushFollow(FOLLOW_rule__Pattern__Group__3__Impl_in_rule__Pattern__Group__35100);
             rule__Pattern__Group__3__Impl();
 
             state._fsp--;
@@ -6572,20 +6702,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Pattern__Group__3__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2470:1: rule__Pattern__Group__3__Impl : ( ')' ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2523:1: rule__Pattern__Group__3__Impl : ( ')' ) ;
     public final void rule__Pattern__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2474:1: ( ( ')' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2475:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2527:1: ( ( ')' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2528:1: ( ')' )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2475:1: ( ')' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2476:1: ')'
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2528:1: ( ')' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2529:1: ')'
             {
              before(grammarAccess.getPatternAccess().getRightParenthesisKeyword_3()); 
-            match(input,34,FOLLOW_34_in_rule__Pattern__Group__3__Impl5024); 
+            match(input,34,FOLLOW_34_in_rule__Pattern__Group__3__Impl5128); 
              after(grammarAccess.getPatternAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -6609,20 +6739,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Domain__ElementsAssignment"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2498:1: rule__Domain__ElementsAssignment : ( ruleDomainElement ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2551:1: rule__Domain__ElementsAssignment : ( ruleDomainElement ) ;
     public final void rule__Domain__ElementsAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2502:1: ( ( ruleDomainElement ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2503:1: ( ruleDomainElement )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2555:1: ( ( ruleDomainElement ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2556:1: ( ruleDomainElement )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2503:1: ( ruleDomainElement )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2504:1: ruleDomainElement
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2556:1: ( ruleDomainElement )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2557:1: ruleDomainElement
             {
              before(grammarAccess.getDomainAccess().getElementsDomainElementParserRuleCall_0()); 
-            pushFollow(FOLLOW_ruleDomainElement_in_rule__Domain__ElementsAssignment5068);
+            pushFollow(FOLLOW_ruleDomainElement_in_rule__Domain__ElementsAssignment5172);
             ruleDomainElement();
 
             state._fsp--;
@@ -6650,20 +6780,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__NameAssignment_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2513:1: rule__Entity__NameAssignment_1 : ( RULE_ID ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2566:1: rule__Entity__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Entity__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2517:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2518:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2570:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2571:1: ( RULE_ID )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2518:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2519:1: RULE_ID
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2571:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2572:1: RULE_ID
             {
              before(grammarAccess.getEntityAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Entity__NameAssignment_15099); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Entity__NameAssignment_15203); 
              after(grammarAccess.getEntityAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -6687,20 +6817,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Entity__FieldsAssignment_2_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2528:1: rule__Entity__FieldsAssignment_2_1 : ( ruleField ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2581:1: rule__Entity__FieldsAssignment_2_1 : ( ruleField ) ;
     public final void rule__Entity__FieldsAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2532:1: ( ( ruleField ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2533:1: ( ruleField )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2585:1: ( ( ruleField ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2586:1: ( ruleField )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2533:1: ( ruleField )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2534:1: ruleField
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2586:1: ( ruleField )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2587:1: ruleField
             {
              before(grammarAccess.getEntityAccess().getFieldsFieldParserRuleCall_2_1_0()); 
-            pushFollow(FOLLOW_ruleField_in_rule__Entity__FieldsAssignment_2_15130);
+            pushFollow(FOLLOW_ruleField_in_rule__Entity__FieldsAssignment_2_15234);
             ruleField();
 
             state._fsp--;
@@ -6728,20 +6858,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__TypeAssignment_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2543:1: rule__Relation__TypeAssignment_1 : ( ruleRelationType ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2596:1: rule__Relation__TypeAssignment_1 : ( ruleRelationType ) ;
     public final void rule__Relation__TypeAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2547:1: ( ( ruleRelationType ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2548:1: ( ruleRelationType )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2600:1: ( ( ruleRelationType ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2601:1: ( ruleRelationType )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2548:1: ( ruleRelationType )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2549:1: ruleRelationType
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2601:1: ( ruleRelationType )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2602:1: ruleRelationType
             {
              before(grammarAccess.getRelationAccess().getTypeRelationTypeEnumRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleRelationType_in_rule__Relation__TypeAssignment_15161);
+            pushFollow(FOLLOW_ruleRelationType_in_rule__Relation__TypeAssignment_15265);
             ruleRelationType();
 
             state._fsp--;
@@ -6769,24 +6899,24 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__FromAssignment_3"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2558:1: rule__Relation__FromAssignment_3 : ( ( RULE_ID ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2611:1: rule__Relation__FromAssignment_3 : ( ( RULE_ID ) ) ;
     public final void rule__Relation__FromAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2562:1: ( ( ( RULE_ID ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2563:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2615:1: ( ( ( RULE_ID ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2616:1: ( ( RULE_ID ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2563:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2564:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2616:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2617:1: ( RULE_ID )
             {
              before(grammarAccess.getRelationAccess().getFromEntityCrossReference_3_0()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2565:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2566:1: RULE_ID
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2618:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2619:1: RULE_ID
             {
              before(grammarAccess.getRelationAccess().getFromEntityIDTerminalRuleCall_3_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__FromAssignment_35196); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__FromAssignment_35300); 
              after(grammarAccess.getRelationAccess().getFromEntityIDTerminalRuleCall_3_0_1()); 
 
             }
@@ -6814,20 +6944,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__FromRelationAssignment_4_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2577:1: rule__Relation__FromRelationAssignment_4_1 : ( RULE_ID ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2630:1: rule__Relation__FromRelationAssignment_4_1 : ( RULE_ID ) ;
     public final void rule__Relation__FromRelationAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2581:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2582:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2634:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2635:1: ( RULE_ID )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2582:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2583:1: RULE_ID
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2635:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2636:1: RULE_ID
             {
              before(grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__FromRelationAssignment_4_15231); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__FromRelationAssignment_4_15335); 
              after(grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0()); 
 
             }
@@ -6851,24 +6981,24 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__ToAssignment_6"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2592:1: rule__Relation__ToAssignment_6 : ( ( RULE_ID ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2645:1: rule__Relation__ToAssignment_6 : ( ( RULE_ID ) ) ;
     public final void rule__Relation__ToAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2596:1: ( ( ( RULE_ID ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2597:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2649:1: ( ( ( RULE_ID ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2650:1: ( ( RULE_ID ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2597:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2598:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2650:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2651:1: ( RULE_ID )
             {
              before(grammarAccess.getRelationAccess().getToEntityCrossReference_6_0()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2599:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2600:1: RULE_ID
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2652:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2653:1: RULE_ID
             {
              before(grammarAccess.getRelationAccess().getToEntityIDTerminalRuleCall_6_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__ToAssignment_65266); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__ToAssignment_65370); 
              after(grammarAccess.getRelationAccess().getToEntityIDTerminalRuleCall_6_0_1()); 
 
             }
@@ -6896,20 +7026,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__ToRelationAssignment_7_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2611:1: rule__Relation__ToRelationAssignment_7_1 : ( RULE_ID ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2664:1: rule__Relation__ToRelationAssignment_7_1 : ( RULE_ID ) ;
     public final void rule__Relation__ToRelationAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2615:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2616:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2668:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2669:1: ( RULE_ID )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2616:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2617:1: RULE_ID
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2669:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2670:1: RULE_ID
             {
              before(grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__ToRelationAssignment_7_15301); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__ToRelationAssignment_7_15405); 
              after(grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0()); 
 
             }
@@ -6933,20 +7063,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__NameAssignment_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2626:1: rule__Enum__NameAssignment_1 : ( RULE_ID ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2679:1: rule__Enum__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Enum__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2630:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2631:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2683:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2684:1: ( RULE_ID )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2631:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2632:1: RULE_ID
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2684:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2685:1: RULE_ID
             {
              before(grammarAccess.getEnumAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enum__NameAssignment_15332); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enum__NameAssignment_15436); 
              after(grammarAccess.getEnumAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -6970,20 +7100,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__LiteralsAssignment_3"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2641:1: rule__Enum__LiteralsAssignment_3 : ( RULE_ID ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2694:1: rule__Enum__LiteralsAssignment_3 : ( RULE_ID ) ;
     public final void rule__Enum__LiteralsAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2645:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2646:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2698:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2699:1: ( RULE_ID )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2646:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2647:1: RULE_ID
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2699:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2700:1: RULE_ID
             {
              before(grammarAccess.getEnumAccess().getLiteralsIDTerminalRuleCall_3_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_35363); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_35467); 
              after(grammarAccess.getEnumAccess().getLiteralsIDTerminalRuleCall_3_0()); 
 
             }
@@ -7007,20 +7137,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Enum__LiteralsAssignment_4_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2656:1: rule__Enum__LiteralsAssignment_4_1 : ( RULE_ID ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2709:1: rule__Enum__LiteralsAssignment_4_1 : ( RULE_ID ) ;
     public final void rule__Enum__LiteralsAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2660:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2661:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2713:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2714:1: ( RULE_ID )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2661:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2662:1: RULE_ID
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2714:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2715:1: RULE_ID
             {
              before(grammarAccess.getEnumAccess().getLiteralsIDTerminalRuleCall_4_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_4_15394); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_4_15498); 
              after(grammarAccess.getEnumAccess().getLiteralsIDTerminalRuleCall_4_1_0()); 
 
             }
@@ -7044,20 +7174,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Field__NameAssignment_0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2671:1: rule__Field__NameAssignment_0 : ( RULE_ID ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2724:1: rule__Field__NameAssignment_0 : ( RULE_ID ) ;
     public final void rule__Field__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2675:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2676:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2728:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2729:1: ( RULE_ID )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2676:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2677:1: RULE_ID
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2729:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2730:1: RULE_ID
             {
              before(grammarAccess.getFieldAccess().getNameIDTerminalRuleCall_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Field__NameAssignment_05425); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Field__NameAssignment_05529); 
              after(grammarAccess.getFieldAccess().getNameIDTerminalRuleCall_0_0()); 
 
             }
@@ -7081,25 +7211,25 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Field__TypeAssignment_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2686:1: rule__Field__TypeAssignment_1 : ( ruleHdlType ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2739:1: rule__Field__TypeAssignment_1 : ( ruleHdlTypeReference ) ;
     public final void rule__Field__TypeAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2690:1: ( ( ruleHdlType ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2691:1: ( ruleHdlType )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2743:1: ( ( ruleHdlTypeReference ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2744:1: ( ruleHdlTypeReference )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2691:1: ( ruleHdlType )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2692:1: ruleHdlType
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2744:1: ( ruleHdlTypeReference )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2745:1: ruleHdlTypeReference
             {
-             before(grammarAccess.getFieldAccess().getTypeHdlTypeParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleHdlType_in_rule__Field__TypeAssignment_15456);
-            ruleHdlType();
+             before(grammarAccess.getFieldAccess().getTypeHdlTypeReferenceParserRuleCall_1_0()); 
+            pushFollow(FOLLOW_ruleHdlTypeReference_in_rule__Field__TypeAssignment_15560);
+            ruleHdlTypeReference();
 
             state._fsp--;
 
-             after(grammarAccess.getFieldAccess().getTypeHdlTypeParserRuleCall_1_0()); 
+             after(grammarAccess.getFieldAccess().getTypeHdlTypeReferenceParserRuleCall_1_0()); 
 
             }
 
@@ -7121,26 +7251,71 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     // $ANTLR end "rule__Field__TypeAssignment_1"
 
 
-    // $ANTLR start "rule__Field__ValidationRulesAssignment_2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2701:1: rule__Field__ValidationRulesAssignment_2 : ( ruleValidationRule ) ;
-    public final void rule__Field__ValidationRulesAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__Field__RequiredAssignment_2"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2754:1: rule__Field__RequiredAssignment_2 : ( ( 'required' ) ) ;
+    public final void rule__Field__RequiredAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2705:1: ( ( ruleValidationRule ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2706:1: ( ruleValidationRule )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2758:1: ( ( ( 'required' ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2759:1: ( ( 'required' ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2706:1: ( ruleValidationRule )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2707:1: ruleValidationRule
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2759:1: ( ( 'required' ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2760:1: ( 'required' )
             {
-             before(grammarAccess.getFieldAccess().getValidationRulesValidationRuleParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleValidationRule_in_rule__Field__ValidationRulesAssignment_25487);
+             before(grammarAccess.getFieldAccess().getRequiredRequiredKeyword_2_0()); 
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2761:1: ( 'required' )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2762:1: 'required'
+            {
+             before(grammarAccess.getFieldAccess().getRequiredRequiredKeyword_2_0()); 
+            match(input,39,FOLLOW_39_in_rule__Field__RequiredAssignment_25596); 
+             after(grammarAccess.getFieldAccess().getRequiredRequiredKeyword_2_0()); 
+
+            }
+
+             after(grammarAccess.getFieldAccess().getRequiredRequiredKeyword_2_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Field__RequiredAssignment_2"
+
+
+    // $ANTLR start "rule__Field__ValidationRulesAssignment_3"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2777:1: rule__Field__ValidationRulesAssignment_3 : ( ruleValidationRule ) ;
+    public final void rule__Field__ValidationRulesAssignment_3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2781:1: ( ( ruleValidationRule ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2782:1: ( ruleValidationRule )
+            {
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2782:1: ( ruleValidationRule )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2783:1: ruleValidationRule
+            {
+             before(grammarAccess.getFieldAccess().getValidationRulesValidationRuleParserRuleCall_3_0()); 
+            pushFollow(FOLLOW_ruleValidationRule_in_rule__Field__ValidationRulesAssignment_35635);
             ruleValidationRule();
 
             state._fsp--;
 
-             after(grammarAccess.getFieldAccess().getValidationRulesValidationRuleParserRuleCall_2_0()); 
+             after(grammarAccess.getFieldAccess().getValidationRulesValidationRuleParserRuleCall_3_0()); 
 
             }
 
@@ -7159,69 +7334,24 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
         }
         return ;
     }
-    // $ANTLR end "rule__Field__ValidationRulesAssignment_2"
-
-
-    // $ANTLR start "rule__Required__RequiredAssignment"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2716:1: rule__Required__RequiredAssignment : ( ( 'required' ) ) ;
-    public final void rule__Required__RequiredAssignment() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2720:1: ( ( ( 'required' ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2721:1: ( ( 'required' ) )
-            {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2721:1: ( ( 'required' ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2722:1: ( 'required' )
-            {
-             before(grammarAccess.getRequiredAccess().getRequiredRequiredKeyword_0()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2723:1: ( 'required' )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2724:1: 'required'
-            {
-             before(grammarAccess.getRequiredAccess().getRequiredRequiredKeyword_0()); 
-            match(input,39,FOLLOW_39_in_rule__Required__RequiredAssignment5523); 
-             after(grammarAccess.getRequiredAccess().getRequiredRequiredKeyword_0()); 
-
-            }
-
-             after(grammarAccess.getRequiredAccess().getRequiredRequiredKeyword_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Required__RequiredAssignment"
+    // $ANTLR end "rule__Field__ValidationRulesAssignment_3"
 
 
     // $ANTLR start "rule__StringMinSpecification__MinAssignment_2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2739:1: rule__StringMinSpecification__MinAssignment_2 : ( RULE_INT ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2792:1: rule__StringMinSpecification__MinAssignment_2 : ( RULE_INT ) ;
     public final void rule__StringMinSpecification__MinAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2743:1: ( ( RULE_INT ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2744:1: ( RULE_INT )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2796:1: ( ( RULE_INT ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2797:1: ( RULE_INT )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2744:1: ( RULE_INT )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2745:1: RULE_INT
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2797:1: ( RULE_INT )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2798:1: RULE_INT
             {
              before(grammarAccess.getStringMinSpecificationAccess().getMinINTTerminalRuleCall_2_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__StringMinSpecification__MinAssignment_25562); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__StringMinSpecification__MinAssignment_25666); 
              after(grammarAccess.getStringMinSpecificationAccess().getMinINTTerminalRuleCall_2_0()); 
 
             }
@@ -7245,20 +7375,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__StringMaxSpecification__MaxAssignment_2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2754:1: rule__StringMaxSpecification__MaxAssignment_2 : ( RULE_INT ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2807:1: rule__StringMaxSpecification__MaxAssignment_2 : ( RULE_INT ) ;
     public final void rule__StringMaxSpecification__MaxAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2758:1: ( ( RULE_INT ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2759:1: ( RULE_INT )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2811:1: ( ( RULE_INT ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2812:1: ( RULE_INT )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2759:1: ( RULE_INT )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2760:1: RULE_INT
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2812:1: ( RULE_INT )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2813:1: RULE_INT
             {
              before(grammarAccess.getStringMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__StringMaxSpecification__MaxAssignment_25593); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__StringMaxSpecification__MaxAssignment_25697); 
              after(grammarAccess.getStringMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0()); 
 
             }
@@ -7282,20 +7412,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMinSpecification__MinAssignment_2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2769:1: rule__IntegerMinSpecification__MinAssignment_2 : ( RULE_INT ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2822:1: rule__IntegerMinSpecification__MinAssignment_2 : ( RULE_INT ) ;
     public final void rule__IntegerMinSpecification__MinAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2773:1: ( ( RULE_INT ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2774:1: ( RULE_INT )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2826:1: ( ( RULE_INT ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2827:1: ( RULE_INT )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2774:1: ( RULE_INT )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2775:1: RULE_INT
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2827:1: ( RULE_INT )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2828:1: RULE_INT
             {
              before(grammarAccess.getIntegerMinSpecificationAccess().getMinINTTerminalRuleCall_2_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__IntegerMinSpecification__MinAssignment_25624); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__IntegerMinSpecification__MinAssignment_25728); 
              after(grammarAccess.getIntegerMinSpecificationAccess().getMinINTTerminalRuleCall_2_0()); 
 
             }
@@ -7319,20 +7449,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__IntegerMaxSpecification__MaxAssignment_2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2784:1: rule__IntegerMaxSpecification__MaxAssignment_2 : ( RULE_INT ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2837:1: rule__IntegerMaxSpecification__MaxAssignment_2 : ( RULE_INT ) ;
     public final void rule__IntegerMaxSpecification__MaxAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2788:1: ( ( RULE_INT ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2789:1: ( RULE_INT )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2841:1: ( ( RULE_INT ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2842:1: ( RULE_INT )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2789:1: ( RULE_INT )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2790:1: RULE_INT
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2842:1: ( RULE_INT )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2843:1: RULE_INT
             {
              before(grammarAccess.getIntegerMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__IntegerMaxSpecification__MaxAssignment_25655); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__IntegerMaxSpecification__MaxAssignment_25759); 
              after(grammarAccess.getIntegerMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0()); 
 
             }
@@ -7356,20 +7486,20 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Pattern__RegexAssignment_2"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2799:1: rule__Pattern__RegexAssignment_2 : ( RULE_STRING ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2852:1: rule__Pattern__RegexAssignment_2 : ( RULE_STRING ) ;
     public final void rule__Pattern__RegexAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2803:1: ( ( RULE_STRING ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2804:1: ( RULE_STRING )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2856:1: ( ( RULE_STRING ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2857:1: ( RULE_STRING )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2804:1: ( RULE_STRING )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2805:1: RULE_STRING
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2857:1: ( RULE_STRING )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2858:1: RULE_STRING
             {
              before(grammarAccess.getPatternAccess().getRegexSTRINGTerminalRuleCall_2_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Pattern__RegexAssignment_25686); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Pattern__RegexAssignment_25790); 
              after(grammarAccess.getPatternAccess().getRegexSTRINGTerminalRuleCall_2_0()); 
 
             }
@@ -7392,30 +7522,30 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     // $ANTLR end "rule__Pattern__RegexAssignment_2"
 
 
-    // $ANTLR start "rule__HdlType__EnumTypeAssignment_0"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2814:1: rule__HdlType__EnumTypeAssignment_0 : ( ( RULE_ID ) ) ;
-    public final void rule__HdlType__EnumTypeAssignment_0() throws RecognitionException {
+    // $ANTLR start "rule__EnumTypeReference__TypeAssignment"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2867:1: rule__EnumTypeReference__TypeAssignment : ( ( RULE_ID ) ) ;
+    public final void rule__EnumTypeReference__TypeAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2818:1: ( ( ( RULE_ID ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2819:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2871:1: ( ( ( RULE_ID ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2872:1: ( ( RULE_ID ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2819:1: ( ( RULE_ID ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2820:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2872:1: ( ( RULE_ID ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2873:1: ( RULE_ID )
             {
-             before(grammarAccess.getHdlTypeAccess().getEnumTypeEnumCrossReference_0_0()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2821:1: ( RULE_ID )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2822:1: RULE_ID
+             before(grammarAccess.getEnumTypeReferenceAccess().getTypeEnumCrossReference_0()); 
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2874:1: ( RULE_ID )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2875:1: RULE_ID
             {
-             before(grammarAccess.getHdlTypeAccess().getEnumTypeEnumIDTerminalRuleCall_0_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__HdlType__EnumTypeAssignment_05721); 
-             after(grammarAccess.getHdlTypeAccess().getEnumTypeEnumIDTerminalRuleCall_0_0_1()); 
+             before(grammarAccess.getEnumTypeReferenceAccess().getTypeEnumIDTerminalRuleCall_0_1()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__EnumTypeReference__TypeAssignment5825); 
+             after(grammarAccess.getEnumTypeReferenceAccess().getTypeEnumIDTerminalRuleCall_0_1()); 
 
             }
 
-             after(grammarAccess.getHdlTypeAccess().getEnumTypeEnumCrossReference_0_0()); 
+             after(grammarAccess.getEnumTypeReferenceAccess().getTypeEnumCrossReference_0()); 
 
             }
 
@@ -7434,29 +7564,29 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
         }
         return ;
     }
-    // $ANTLR end "rule__HdlType__EnumTypeAssignment_0"
+    // $ANTLR end "rule__EnumTypeReference__TypeAssignment"
 
 
-    // $ANTLR start "rule__HdlType__PrimitiveTypeAssignment_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2833:1: rule__HdlType__PrimitiveTypeAssignment_1 : ( ruleJHipsterType ) ;
-    public final void rule__HdlType__PrimitiveTypeAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__PrimitiveTypeReference__TypeAssignment"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2886:1: rule__PrimitiveTypeReference__TypeAssignment : ( ruleJHipsterType ) ;
+    public final void rule__PrimitiveTypeReference__TypeAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2837:1: ( ( ruleJHipsterType ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2838:1: ( ruleJHipsterType )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2890:1: ( ( ruleJHipsterType ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2891:1: ( ruleJHipsterType )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2838:1: ( ruleJHipsterType )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2839:1: ruleJHipsterType
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2891:1: ( ruleJHipsterType )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2892:1: ruleJHipsterType
             {
-             before(grammarAccess.getHdlTypeAccess().getPrimitiveTypeJHipsterTypeEnumRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleJHipsterType_in_rule__HdlType__PrimitiveTypeAssignment_15756);
+             before(grammarAccess.getPrimitiveTypeReferenceAccess().getTypeJHipsterTypeEnumRuleCall_0()); 
+            pushFollow(FOLLOW_ruleJHipsterType_in_rule__PrimitiveTypeReference__TypeAssignment5860);
             ruleJHipsterType();
 
             state._fsp--;
 
-             after(grammarAccess.getHdlTypeAccess().getPrimitiveTypeJHipsterTypeEnumRuleCall_1_0()); 
+             after(grammarAccess.getPrimitiveTypeReferenceAccess().getTypeJHipsterTypeEnumRuleCall_0()); 
 
             }
 
@@ -7475,7 +7605,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
         }
         return ;
     }
-    // $ANTLR end "rule__HdlType__PrimitiveTypeAssignment_1"
+    // $ANTLR end "rule__PrimitiveTypeReference__TypeAssignment"
 
     // Delegated rules
 
@@ -7503,230 +7633,235 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     public static final BitSet FOLLOW_ruleValidationRule_in_entryRuleValidationRule422 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleValidationRule429 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ValidationRule__Alternatives_in_ruleValidationRule455 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRequired_in_entryRuleRequired482 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRequired489 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Required__RequiredAssignment_in_ruleRequired515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValueRange_in_entryRuleValueRange542 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleValueRange549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ValueRange__Alternatives_in_ruleValueRange575 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMinSpecification_in_entryRuleMinSpecification602 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleMinSpecification609 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__MinSpecification__Alternatives_in_ruleMinSpecification635 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMaxSpecification_in_entryRuleMaxSpecification662 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleMaxSpecification669 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__MaxSpecification__Alternatives_in_ruleMaxSpecification695 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStringMinSpecification_in_entryRuleStringMinSpecification722 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleStringMinSpecification729 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__0_in_ruleStringMinSpecification755 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStringMaxSpecification_in_entryRuleStringMaxSpecification782 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleStringMaxSpecification789 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__0_in_ruleStringMaxSpecification815 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntegerMinSpecification_in_entryRuleIntegerMinSpecification842 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleIntegerMinSpecification849 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__0_in_ruleIntegerMinSpecification875 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntegerMaxSpecification_in_entryRuleIntegerMaxSpecification902 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleIntegerMaxSpecification909 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__0_in_ruleIntegerMaxSpecification935 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePattern_in_entryRulePattern962 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePattern969 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Pattern__Group__0_in_rulePattern995 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleHdlType_in_entryRuleHdlType1022 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleHdlType1029 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__HdlType__Alternatives_in_ruleHdlType1055 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__RelationType__Alternatives_in_ruleRelationType1092 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JHipsterType__Alternatives_in_ruleJHipsterType1128 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEntity_in_rule__DomainElement__Alternatives1163 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRelation_in_rule__DomainElement__Alternatives1180 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEnum_in_rule__DomainElement__Alternatives1197 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRequired_in_rule__ValidationRule__Alternatives1229 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValueRange_in_rule__ValidationRule__Alternatives1246 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePattern_in_rule__ValidationRule__Alternatives1263 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMinSpecification_in_rule__ValueRange__Alternatives1295 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMaxSpecification_in_rule__ValueRange__Alternatives1312 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStringMinSpecification_in_rule__MinSpecification__Alternatives1344 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntegerMinSpecification_in_rule__MinSpecification__Alternatives1361 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStringMaxSpecification_in_rule__MaxSpecification__Alternatives1393 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntegerMaxSpecification_in_rule__MaxSpecification__Alternatives1410 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__HdlType__EnumTypeAssignment_0_in_rule__HdlType__Alternatives1442 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__HdlType__PrimitiveTypeAssignment_1_in_rule__HdlType__Alternatives1460 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_rule__RelationType__Alternatives1494 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_rule__RelationType__Alternatives1515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__RelationType__Alternatives1536 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__RelationType__Alternatives1557 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__JHipsterType__Alternatives1593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__JHipsterType__Alternatives1614 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__JHipsterType__Alternatives1635 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__JHipsterType__Alternatives1656 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__JHipsterType__Alternatives1677 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__JHipsterType__Alternatives1698 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__JHipsterType__Alternatives1719 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__JHipsterType__Alternatives1740 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__JHipsterType__Alternatives1761 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_rule__JHipsterType__Alternatives1782 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Entity__Group__0__Impl_in_rule__Entity__Group__01815 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Entity__Group__1_in_rule__Entity__Group__01818 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__Entity__Group__0__Impl1846 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Entity__Group__1__Impl_in_rule__Entity__Group__11877 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_rule__Entity__Group__2_in_rule__Entity__Group__11880 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Entity__NameAssignment_1_in_rule__Entity__Group__1__Impl1907 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Entity__Group__2__Impl_in_rule__Entity__Group__21937 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Entity__Group_2__0_in_rule__Entity__Group__2__Impl1964 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Entity__Group_2__0__Impl_in_rule__Entity__Group_2__02000 = new BitSet(new long[]{0x0000000008000010L});
-    public static final BitSet FOLLOW_rule__Entity__Group_2__1_in_rule__Entity__Group_2__02003 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__Entity__Group_2__0__Impl2031 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Entity__Group_2__1__Impl_in_rule__Entity__Group_2__12062 = new BitSet(new long[]{0x0000000008000010L});
-    public static final BitSet FOLLOW_rule__Entity__Group_2__2_in_rule__Entity__Group_2__12065 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Entity__FieldsAssignment_2_1_in_rule__Entity__Group_2__1__Impl2092 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_rule__Entity__Group_2__2__Impl_in_rule__Entity__Group_2__22123 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Entity__Group_2__2__Impl2151 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group__0__Impl_in_rule__Relation__Group__02188 = new BitSet(new long[]{0x0000000000007800L});
-    public static final BitSet FOLLOW_rule__Relation__Group__1_in_rule__Relation__Group__02191 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__Relation__Group__0__Impl2219 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group__1__Impl_in_rule__Relation__Group__12250 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_rule__Relation__Group__2_in_rule__Relation__Group__12253 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__TypeAssignment_1_in_rule__Relation__Group__1__Impl2280 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group__2__Impl_in_rule__Relation__Group__22310 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Relation__Group__3_in_rule__Relation__Group__22313 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__Relation__Group__2__Impl2341 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group__3__Impl_in_rule__Relation__Group__32372 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_rule__Relation__Group__4_in_rule__Relation__Group__32375 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__FromAssignment_3_in_rule__Relation__Group__3__Impl2402 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group__4__Impl_in_rule__Relation__Group__42432 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_rule__Relation__Group__5_in_rule__Relation__Group__42435 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group_4__0_in_rule__Relation__Group__4__Impl2462 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group__5__Impl_in_rule__Relation__Group__52492 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Relation__Group__6_in_rule__Relation__Group__52495 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__Relation__Group__5__Impl2523 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group__6__Impl_in_rule__Relation__Group__62554 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_rule__Relation__Group__7_in_rule__Relation__Group__62557 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__ToAssignment_6_in_rule__Relation__Group__6__Impl2584 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group__7__Impl_in_rule__Relation__Group__72614 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_rule__Relation__Group__8_in_rule__Relation__Group__72617 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group_7__0_in_rule__Relation__Group__7__Impl2644 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group__8__Impl_in_rule__Relation__Group__82674 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Relation__Group__8__Impl2702 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group_4__0__Impl_in_rule__Relation__Group_4__02751 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Relation__Group_4__1_in_rule__Relation__Group_4__02754 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__Relation__Group_4__0__Impl2782 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group_4__1__Impl_in_rule__Relation__Group_4__12813 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_rule__Relation__Group_4__2_in_rule__Relation__Group_4__12816 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__FromRelationAssignment_4_1_in_rule__Relation__Group_4__1__Impl2843 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group_4__2__Impl_in_rule__Relation__Group_4__22873 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Relation__Group_4__2__Impl2901 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group_7__0__Impl_in_rule__Relation__Group_7__02938 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Relation__Group_7__1_in_rule__Relation__Group_7__02941 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__Relation__Group_7__0__Impl2969 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group_7__1__Impl_in_rule__Relation__Group_7__13000 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_rule__Relation__Group_7__2_in_rule__Relation__Group_7__13003 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__ToRelationAssignment_7_1_in_rule__Relation__Group_7__1__Impl3030 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__Group_7__2__Impl_in_rule__Relation__Group_7__23060 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Relation__Group_7__2__Impl3088 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__Group__0__Impl_in_rule__Enum__Group__03125 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Enum__Group__1_in_rule__Enum__Group__03128 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Enum__Group__0__Impl3156 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__Group__1__Impl_in_rule__Enum__Group__13187 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_rule__Enum__Group__2_in_rule__Enum__Group__13190 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__NameAssignment_1_in_rule__Enum__Group__1__Impl3217 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__Group__2__Impl_in_rule__Enum__Group__23247 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Enum__Group__3_in_rule__Enum__Group__23250 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__Enum__Group__2__Impl3278 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__Group__3__Impl_in_rule__Enum__Group__33309 = new BitSet(new long[]{0x0000000088000000L});
-    public static final BitSet FOLLOW_rule__Enum__Group__4_in_rule__Enum__Group__33312 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__LiteralsAssignment_3_in_rule__Enum__Group__3__Impl3339 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__Group__4__Impl_in_rule__Enum__Group__43369 = new BitSet(new long[]{0x0000000088000000L});
-    public static final BitSet FOLLOW_rule__Enum__Group__5_in_rule__Enum__Group__43372 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__Group_4__0_in_rule__Enum__Group__4__Impl3399 = new BitSet(new long[]{0x0000000080000002L});
-    public static final BitSet FOLLOW_rule__Enum__Group__5__Impl_in_rule__Enum__Group__53430 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Enum__Group__5__Impl3458 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__Group_4__0__Impl_in_rule__Enum__Group_4__03501 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Enum__Group_4__1_in_rule__Enum__Group_4__03504 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_rule__Enum__Group_4__0__Impl3532 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__Group_4__1__Impl_in_rule__Enum__Group_4__13563 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Enum__LiteralsAssignment_4_1_in_rule__Enum__Group_4__1__Impl3590 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Field__Group__0__Impl_in_rule__Field__Group__03624 = new BitSet(new long[]{0x0000000001FF8010L});
-    public static final BitSet FOLLOW_rule__Field__Group__1_in_rule__Field__Group__03627 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Field__NameAssignment_0_in_rule__Field__Group__0__Impl3654 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Field__Group__1__Impl_in_rule__Field__Group__13684 = new BitSet(new long[]{0x000000F900000000L});
-    public static final BitSet FOLLOW_rule__Field__Group__2_in_rule__Field__Group__13687 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Field__TypeAssignment_1_in_rule__Field__Group__1__Impl3714 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Field__Group__2__Impl_in_rule__Field__Group__23744 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Field__ValidationRulesAssignment_2_in_rule__Field__Group__2__Impl3771 = new BitSet(new long[]{0x000000F900000002L});
-    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__0__Impl_in_rule__StringMinSpecification__Group__03808 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__1_in_rule__StringMinSpecification__Group__03811 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_rule__StringMinSpecification__Group__0__Impl3839 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__1__Impl_in_rule__StringMinSpecification__Group__13870 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__2_in_rule__StringMinSpecification__Group__13873 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__StringMinSpecification__Group__1__Impl3901 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__2__Impl_in_rule__StringMinSpecification__Group__23932 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__3_in_rule__StringMinSpecification__Group__23935 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMinSpecification__MinAssignment_2_in_rule__StringMinSpecification__Group__2__Impl3962 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__3__Impl_in_rule__StringMinSpecification__Group__33992 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__StringMinSpecification__Group__3__Impl4020 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__0__Impl_in_rule__StringMaxSpecification__Group__04059 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__1_in_rule__StringMaxSpecification__Group__04062 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_35_in_rule__StringMaxSpecification__Group__0__Impl4090 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__1__Impl_in_rule__StringMaxSpecification__Group__14121 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__2_in_rule__StringMaxSpecification__Group__14124 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__StringMaxSpecification__Group__1__Impl4152 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__2__Impl_in_rule__StringMaxSpecification__Group__24183 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__3_in_rule__StringMaxSpecification__Group__24186 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMaxSpecification__MaxAssignment_2_in_rule__StringMaxSpecification__Group__2__Impl4213 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__3__Impl_in_rule__StringMaxSpecification__Group__34243 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__StringMaxSpecification__Group__3__Impl4271 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__0__Impl_in_rule__IntegerMinSpecification__Group__04310 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__1_in_rule__IntegerMinSpecification__Group__04313 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_rule__IntegerMinSpecification__Group__0__Impl4341 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__1__Impl_in_rule__IntegerMinSpecification__Group__14372 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__2_in_rule__IntegerMinSpecification__Group__14375 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__IntegerMinSpecification__Group__1__Impl4403 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__2__Impl_in_rule__IntegerMinSpecification__Group__24434 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__3_in_rule__IntegerMinSpecification__Group__24437 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMinSpecification__MinAssignment_2_in_rule__IntegerMinSpecification__Group__2__Impl4464 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__3__Impl_in_rule__IntegerMinSpecification__Group__34494 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__IntegerMinSpecification__Group__3__Impl4522 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__0__Impl_in_rule__IntegerMaxSpecification__Group__04561 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__1_in_rule__IntegerMaxSpecification__Group__04564 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_rule__IntegerMaxSpecification__Group__0__Impl4592 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__1__Impl_in_rule__IntegerMaxSpecification__Group__14623 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__2_in_rule__IntegerMaxSpecification__Group__14626 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__IntegerMaxSpecification__Group__1__Impl4654 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__2__Impl_in_rule__IntegerMaxSpecification__Group__24685 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__3_in_rule__IntegerMaxSpecification__Group__24688 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__MaxAssignment_2_in_rule__IntegerMaxSpecification__Group__2__Impl4715 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__3__Impl_in_rule__IntegerMaxSpecification__Group__34745 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__IntegerMaxSpecification__Group__3__Impl4773 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Pattern__Group__0__Impl_in_rule__Pattern__Group__04812 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_rule__Pattern__Group__1_in_rule__Pattern__Group__04815 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_rule__Pattern__Group__0__Impl4843 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Pattern__Group__1__Impl_in_rule__Pattern__Group__14874 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__Pattern__Group__2_in_rule__Pattern__Group__14877 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__Pattern__Group__1__Impl4905 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Pattern__Group__2__Impl_in_rule__Pattern__Group__24936 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_rule__Pattern__Group__3_in_rule__Pattern__Group__24939 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Pattern__RegexAssignment_2_in_rule__Pattern__Group__2__Impl4966 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Pattern__Group__3__Impl_in_rule__Pattern__Group__34996 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__Pattern__Group__3__Impl5024 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDomainElement_in_rule__Domain__ElementsAssignment5068 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Entity__NameAssignment_15099 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleField_in_rule__Entity__FieldsAssignment_2_15130 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRelationType_in_rule__Relation__TypeAssignment_15161 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__FromAssignment_35196 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__FromRelationAssignment_4_15231 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__ToAssignment_65266 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__ToRelationAssignment_7_15301 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Enum__NameAssignment_15332 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_35363 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_4_15394 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Field__NameAssignment_05425 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleHdlType_in_rule__Field__TypeAssignment_15456 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidationRule_in_rule__Field__ValidationRulesAssignment_25487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_rule__Required__RequiredAssignment5523 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__StringMinSpecification__MinAssignment_25562 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__StringMaxSpecification__MaxAssignment_25593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__IntegerMinSpecification__MinAssignment_25624 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__IntegerMaxSpecification__MaxAssignment_25655 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Pattern__RegexAssignment_25686 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__HdlType__EnumTypeAssignment_05721 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJHipsterType_in_rule__HdlType__PrimitiveTypeAssignment_15756 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValueRange_in_entryRuleValueRange482 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleValueRange489 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ValueRange__Alternatives_in_ruleValueRange515 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMinSpecification_in_entryRuleMinSpecification542 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMinSpecification549 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__MinSpecification__Alternatives_in_ruleMinSpecification575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMaxSpecification_in_entryRuleMaxSpecification602 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMaxSpecification609 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__MaxSpecification__Alternatives_in_ruleMaxSpecification635 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringMinSpecification_in_entryRuleStringMinSpecification662 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleStringMinSpecification669 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__0_in_ruleStringMinSpecification695 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringMaxSpecification_in_entryRuleStringMaxSpecification722 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleStringMaxSpecification729 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__0_in_ruleStringMaxSpecification755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntegerMinSpecification_in_entryRuleIntegerMinSpecification782 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleIntegerMinSpecification789 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__0_in_ruleIntegerMinSpecification815 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntegerMaxSpecification_in_entryRuleIntegerMaxSpecification842 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleIntegerMaxSpecification849 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__0_in_ruleIntegerMaxSpecification875 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePattern_in_entryRulePattern902 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePattern909 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Pattern__Group__0_in_rulePattern935 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleHdlTypeReference_in_entryRuleHdlTypeReference962 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleHdlTypeReference969 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__HdlTypeReference__Alternatives_in_ruleHdlTypeReference995 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEnumTypeReference_in_entryRuleEnumTypeReference1022 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEnumTypeReference1029 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EnumTypeReference__TypeAssignment_in_ruleEnumTypeReference1055 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePrimitiveTypeReference_in_entryRulePrimitiveTypeReference1082 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePrimitiveTypeReference1089 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PrimitiveTypeReference__TypeAssignment_in_rulePrimitiveTypeReference1115 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__RelationType__Alternatives_in_ruleRelationType1152 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JHipsterType__Alternatives_in_ruleJHipsterType1188 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEntity_in_rule__DomainElement__Alternatives1223 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRelation_in_rule__DomainElement__Alternatives1240 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEnum_in_rule__DomainElement__Alternatives1257 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValueRange_in_rule__ValidationRule__Alternatives1289 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePattern_in_rule__ValidationRule__Alternatives1306 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMinSpecification_in_rule__ValueRange__Alternatives1338 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMaxSpecification_in_rule__ValueRange__Alternatives1355 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringMinSpecification_in_rule__MinSpecification__Alternatives1387 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntegerMinSpecification_in_rule__MinSpecification__Alternatives1404 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringMaxSpecification_in_rule__MaxSpecification__Alternatives1436 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntegerMaxSpecification_in_rule__MaxSpecification__Alternatives1453 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEnumTypeReference_in_rule__HdlTypeReference__Alternatives1485 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePrimitiveTypeReference_in_rule__HdlTypeReference__Alternatives1502 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_rule__RelationType__Alternatives1535 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_rule__RelationType__Alternatives1556 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__RelationType__Alternatives1577 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__RelationType__Alternatives1598 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__JHipsterType__Alternatives1634 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__JHipsterType__Alternatives1655 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__JHipsterType__Alternatives1676 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__JHipsterType__Alternatives1697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__JHipsterType__Alternatives1718 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__JHipsterType__Alternatives1739 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__JHipsterType__Alternatives1760 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__JHipsterType__Alternatives1781 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__JHipsterType__Alternatives1802 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__JHipsterType__Alternatives1823 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Entity__Group__0__Impl_in_rule__Entity__Group__01856 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Entity__Group__1_in_rule__Entity__Group__01859 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__Entity__Group__0__Impl1887 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Entity__Group__1__Impl_in_rule__Entity__Group__11918 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__Entity__Group__2_in_rule__Entity__Group__11921 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Entity__NameAssignment_1_in_rule__Entity__Group__1__Impl1948 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Entity__Group__2__Impl_in_rule__Entity__Group__21978 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Entity__Group_2__0_in_rule__Entity__Group__2__Impl2005 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Entity__Group_2__0__Impl_in_rule__Entity__Group_2__02041 = new BitSet(new long[]{0x0000000008000010L});
+    public static final BitSet FOLLOW_rule__Entity__Group_2__1_in_rule__Entity__Group_2__02044 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__Entity__Group_2__0__Impl2072 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Entity__Group_2__1__Impl_in_rule__Entity__Group_2__12103 = new BitSet(new long[]{0x0000000008000010L});
+    public static final BitSet FOLLOW_rule__Entity__Group_2__2_in_rule__Entity__Group_2__12106 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Entity__FieldsAssignment_2_1_in_rule__Entity__Group_2__1__Impl2133 = new BitSet(new long[]{0x0000000000000012L});
+    public static final BitSet FOLLOW_rule__Entity__Group_2__2__Impl_in_rule__Entity__Group_2__22164 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Entity__Group_2__2__Impl2192 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group__0__Impl_in_rule__Relation__Group__02229 = new BitSet(new long[]{0x0000000000007800L});
+    public static final BitSet FOLLOW_rule__Relation__Group__1_in_rule__Relation__Group__02232 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__Relation__Group__0__Impl2260 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group__1__Impl_in_rule__Relation__Group__12291 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__Relation__Group__2_in_rule__Relation__Group__12294 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__TypeAssignment_1_in_rule__Relation__Group__1__Impl2321 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group__2__Impl_in_rule__Relation__Group__22351 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Relation__Group__3_in_rule__Relation__Group__22354 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__Relation__Group__2__Impl2382 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group__3__Impl_in_rule__Relation__Group__32413 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__Relation__Group__4_in_rule__Relation__Group__32416 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__FromAssignment_3_in_rule__Relation__Group__3__Impl2443 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group__4__Impl_in_rule__Relation__Group__42473 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Relation__Group__5_in_rule__Relation__Group__42476 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group_4__0_in_rule__Relation__Group__4__Impl2503 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group__5__Impl_in_rule__Relation__Group__52533 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Relation__Group__6_in_rule__Relation__Group__52536 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Relation__Group__5__Impl2564 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group__6__Impl_in_rule__Relation__Group__62595 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__Relation__Group__7_in_rule__Relation__Group__62598 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__ToAssignment_6_in_rule__Relation__Group__6__Impl2625 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group__7__Impl_in_rule__Relation__Group__72655 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_rule__Relation__Group__8_in_rule__Relation__Group__72658 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group_7__0_in_rule__Relation__Group__7__Impl2685 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group__8__Impl_in_rule__Relation__Group__82715 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Relation__Group__8__Impl2743 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group_4__0__Impl_in_rule__Relation__Group_4__02792 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Relation__Group_4__1_in_rule__Relation__Group_4__02795 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__Relation__Group_4__0__Impl2823 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group_4__1__Impl_in_rule__Relation__Group_4__12854 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_rule__Relation__Group_4__2_in_rule__Relation__Group_4__12857 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__FromRelationAssignment_4_1_in_rule__Relation__Group_4__1__Impl2884 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group_4__2__Impl_in_rule__Relation__Group_4__22914 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Relation__Group_4__2__Impl2942 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group_7__0__Impl_in_rule__Relation__Group_7__02979 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Relation__Group_7__1_in_rule__Relation__Group_7__02982 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__Relation__Group_7__0__Impl3010 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group_7__1__Impl_in_rule__Relation__Group_7__13041 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_rule__Relation__Group_7__2_in_rule__Relation__Group_7__13044 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__ToRelationAssignment_7_1_in_rule__Relation__Group_7__1__Impl3071 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__Group_7__2__Impl_in_rule__Relation__Group_7__23101 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Relation__Group_7__2__Impl3129 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__Group__0__Impl_in_rule__Enum__Group__03166 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Enum__Group__1_in_rule__Enum__Group__03169 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__Enum__Group__0__Impl3197 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__Group__1__Impl_in_rule__Enum__Group__13228 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__Enum__Group__2_in_rule__Enum__Group__13231 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__NameAssignment_1_in_rule__Enum__Group__1__Impl3258 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__Group__2__Impl_in_rule__Enum__Group__23288 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Enum__Group__3_in_rule__Enum__Group__23291 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__Enum__Group__2__Impl3319 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__Group__3__Impl_in_rule__Enum__Group__33350 = new BitSet(new long[]{0x0000000088000000L});
+    public static final BitSet FOLLOW_rule__Enum__Group__4_in_rule__Enum__Group__33353 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__LiteralsAssignment_3_in_rule__Enum__Group__3__Impl3380 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__Group__4__Impl_in_rule__Enum__Group__43410 = new BitSet(new long[]{0x0000000088000000L});
+    public static final BitSet FOLLOW_rule__Enum__Group__5_in_rule__Enum__Group__43413 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__Group_4__0_in_rule__Enum__Group__4__Impl3440 = new BitSet(new long[]{0x0000000080000002L});
+    public static final BitSet FOLLOW_rule__Enum__Group__5__Impl_in_rule__Enum__Group__53471 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Enum__Group__5__Impl3499 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__Group_4__0__Impl_in_rule__Enum__Group_4__03542 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Enum__Group_4__1_in_rule__Enum__Group_4__03545 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_rule__Enum__Group_4__0__Impl3573 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__Group_4__1__Impl_in_rule__Enum__Group_4__13604 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Enum__LiteralsAssignment_4_1_in_rule__Enum__Group_4__1__Impl3631 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Field__Group__0__Impl_in_rule__Field__Group__03665 = new BitSet(new long[]{0x0000000001FF8010L});
+    public static final BitSet FOLLOW_rule__Field__Group__1_in_rule__Field__Group__03668 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Field__NameAssignment_0_in_rule__Field__Group__0__Impl3695 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Field__Group__1__Impl_in_rule__Field__Group__13725 = new BitSet(new long[]{0x000000F900000000L});
+    public static final BitSet FOLLOW_rule__Field__Group__2_in_rule__Field__Group__13728 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Field__TypeAssignment_1_in_rule__Field__Group__1__Impl3755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Field__Group__2__Impl_in_rule__Field__Group__23785 = new BitSet(new long[]{0x000000F900000000L});
+    public static final BitSet FOLLOW_rule__Field__Group__3_in_rule__Field__Group__23788 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Field__RequiredAssignment_2_in_rule__Field__Group__2__Impl3815 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Field__Group__3__Impl_in_rule__Field__Group__33846 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Field__ValidationRulesAssignment_3_in_rule__Field__Group__3__Impl3873 = new BitSet(new long[]{0x0000007900000002L});
+    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__0__Impl_in_rule__StringMinSpecification__Group__03912 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__1_in_rule__StringMinSpecification__Group__03915 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_rule__StringMinSpecification__Group__0__Impl3943 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__1__Impl_in_rule__StringMinSpecification__Group__13974 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__2_in_rule__StringMinSpecification__Group__13977 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__StringMinSpecification__Group__1__Impl4005 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__2__Impl_in_rule__StringMinSpecification__Group__24036 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__3_in_rule__StringMinSpecification__Group__24039 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMinSpecification__MinAssignment_2_in_rule__StringMinSpecification__Group__2__Impl4066 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMinSpecification__Group__3__Impl_in_rule__StringMinSpecification__Group__34096 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__StringMinSpecification__Group__3__Impl4124 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__0__Impl_in_rule__StringMaxSpecification__Group__04163 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__1_in_rule__StringMaxSpecification__Group__04166 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_rule__StringMaxSpecification__Group__0__Impl4194 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__1__Impl_in_rule__StringMaxSpecification__Group__14225 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__2_in_rule__StringMaxSpecification__Group__14228 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__StringMaxSpecification__Group__1__Impl4256 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__2__Impl_in_rule__StringMaxSpecification__Group__24287 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__3_in_rule__StringMaxSpecification__Group__24290 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMaxSpecification__MaxAssignment_2_in_rule__StringMaxSpecification__Group__2__Impl4317 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__StringMaxSpecification__Group__3__Impl_in_rule__StringMaxSpecification__Group__34347 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__StringMaxSpecification__Group__3__Impl4375 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__0__Impl_in_rule__IntegerMinSpecification__Group__04414 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__1_in_rule__IntegerMinSpecification__Group__04417 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rule__IntegerMinSpecification__Group__0__Impl4445 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__1__Impl_in_rule__IntegerMinSpecification__Group__14476 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__2_in_rule__IntegerMinSpecification__Group__14479 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__IntegerMinSpecification__Group__1__Impl4507 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__2__Impl_in_rule__IntegerMinSpecification__Group__24538 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__3_in_rule__IntegerMinSpecification__Group__24541 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMinSpecification__MinAssignment_2_in_rule__IntegerMinSpecification__Group__2__Impl4568 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMinSpecification__Group__3__Impl_in_rule__IntegerMinSpecification__Group__34598 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__IntegerMinSpecification__Group__3__Impl4626 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__0__Impl_in_rule__IntegerMaxSpecification__Group__04665 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__1_in_rule__IntegerMaxSpecification__Group__04668 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_rule__IntegerMaxSpecification__Group__0__Impl4696 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__1__Impl_in_rule__IntegerMaxSpecification__Group__14727 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__2_in_rule__IntegerMaxSpecification__Group__14730 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__IntegerMaxSpecification__Group__1__Impl4758 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__2__Impl_in_rule__IntegerMaxSpecification__Group__24789 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__3_in_rule__IntegerMaxSpecification__Group__24792 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__MaxAssignment_2_in_rule__IntegerMaxSpecification__Group__2__Impl4819 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntegerMaxSpecification__Group__3__Impl_in_rule__IntegerMaxSpecification__Group__34849 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__IntegerMaxSpecification__Group__3__Impl4877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Pattern__Group__0__Impl_in_rule__Pattern__Group__04916 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_rule__Pattern__Group__1_in_rule__Pattern__Group__04919 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_rule__Pattern__Group__0__Impl4947 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Pattern__Group__1__Impl_in_rule__Pattern__Group__14978 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Pattern__Group__2_in_rule__Pattern__Group__14981 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__Pattern__Group__1__Impl5009 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Pattern__Group__2__Impl_in_rule__Pattern__Group__25040 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_rule__Pattern__Group__3_in_rule__Pattern__Group__25043 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Pattern__RegexAssignment_2_in_rule__Pattern__Group__2__Impl5070 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Pattern__Group__3__Impl_in_rule__Pattern__Group__35100 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__Pattern__Group__3__Impl5128 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDomainElement_in_rule__Domain__ElementsAssignment5172 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Entity__NameAssignment_15203 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleField_in_rule__Entity__FieldsAssignment_2_15234 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRelationType_in_rule__Relation__TypeAssignment_15265 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__FromAssignment_35300 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__FromRelationAssignment_4_15335 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__ToAssignment_65370 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__ToRelationAssignment_7_15405 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Enum__NameAssignment_15436 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_35467 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_4_15498 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Field__NameAssignment_05529 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleHdlTypeReference_in_rule__Field__TypeAssignment_15560 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_rule__Field__RequiredAssignment_25596 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidationRule_in_rule__Field__ValidationRulesAssignment_35635 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__StringMinSpecification__MinAssignment_25666 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__StringMaxSpecification__MaxAssignment_25697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__IntegerMinSpecification__MinAssignment_25728 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__IntegerMaxSpecification__MaxAssignment_25759 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Pattern__RegexAssignment_25790 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__EnumTypeReference__TypeAssignment5825 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJHipsterType_in_rule__PrimitiveTypeReference__TypeAssignment5860 = new BitSet(new long[]{0x0000000000000002L});
 
 }

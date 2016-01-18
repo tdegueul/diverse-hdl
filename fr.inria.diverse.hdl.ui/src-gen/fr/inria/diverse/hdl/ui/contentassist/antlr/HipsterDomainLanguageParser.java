@@ -42,7 +42,7 @@ public class HipsterDomainLanguageParser extends AbstractContentAssistParser {
 					put(grammarAccess.getValueRangeAccess().getAlternatives(), "rule__ValueRange__Alternatives");
 					put(grammarAccess.getMinSpecificationAccess().getAlternatives(), "rule__MinSpecification__Alternatives");
 					put(grammarAccess.getMaxSpecificationAccess().getAlternatives(), "rule__MaxSpecification__Alternatives");
-					put(grammarAccess.getHdlTypeAccess().getAlternatives(), "rule__HdlType__Alternatives");
+					put(grammarAccess.getHdlTypeReferenceAccess().getAlternatives(), "rule__HdlTypeReference__Alternatives");
 					put(grammarAccess.getRelationTypeAccess().getAlternatives(), "rule__RelationType__Alternatives");
 					put(grammarAccess.getJHipsterTypeAccess().getAlternatives(), "rule__JHipsterType__Alternatives");
 					put(grammarAccess.getEntityAccess().getGroup(), "rule__Entity__Group__0");
@@ -71,15 +71,15 @@ public class HipsterDomainLanguageParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEnumAccess().getLiteralsAssignment_4_1(), "rule__Enum__LiteralsAssignment_4_1");
 					put(grammarAccess.getFieldAccess().getNameAssignment_0(), "rule__Field__NameAssignment_0");
 					put(grammarAccess.getFieldAccess().getTypeAssignment_1(), "rule__Field__TypeAssignment_1");
-					put(grammarAccess.getFieldAccess().getValidationRulesAssignment_2(), "rule__Field__ValidationRulesAssignment_2");
-					put(grammarAccess.getRequiredAccess().getRequiredAssignment(), "rule__Required__RequiredAssignment");
+					put(grammarAccess.getFieldAccess().getRequiredAssignment_2(), "rule__Field__RequiredAssignment_2");
+					put(grammarAccess.getFieldAccess().getValidationRulesAssignment_3(), "rule__Field__ValidationRulesAssignment_3");
 					put(grammarAccess.getStringMinSpecificationAccess().getMinAssignment_2(), "rule__StringMinSpecification__MinAssignment_2");
 					put(grammarAccess.getStringMaxSpecificationAccess().getMaxAssignment_2(), "rule__StringMaxSpecification__MaxAssignment_2");
 					put(grammarAccess.getIntegerMinSpecificationAccess().getMinAssignment_2(), "rule__IntegerMinSpecification__MinAssignment_2");
 					put(grammarAccess.getIntegerMaxSpecificationAccess().getMaxAssignment_2(), "rule__IntegerMaxSpecification__MaxAssignment_2");
 					put(grammarAccess.getPatternAccess().getRegexAssignment_2(), "rule__Pattern__RegexAssignment_2");
-					put(grammarAccess.getHdlTypeAccess().getEnumTypeAssignment_0(), "rule__HdlType__EnumTypeAssignment_0");
-					put(grammarAccess.getHdlTypeAccess().getPrimitiveTypeAssignment_1(), "rule__HdlType__PrimitiveTypeAssignment_1");
+					put(grammarAccess.getEnumTypeReferenceAccess().getTypeAssignment(), "rule__EnumTypeReference__TypeAssignment");
+					put(grammarAccess.getPrimitiveTypeReferenceAccess().getTypeAssignment(), "rule__PrimitiveTypeReference__TypeAssignment");
 				}
 			};
 		}
