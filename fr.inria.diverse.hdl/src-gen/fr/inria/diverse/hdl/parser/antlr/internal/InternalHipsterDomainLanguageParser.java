@@ -22,19 +22,26 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'entity'", "'{'", "'}'", "'relationship'", "'to'", "'enum'", "','", "'required'", "'OneToMany'", "'ManyToOne'", "'OneToOne'", "'ManyToMany'", "'String'", "'Integer'", "'Long'", "'BigDecimal'", "'Float'", "'Double'", "'Enum'", "'Boolean'", "'LocalDate'", "'ZoneDateTime'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'entity'", "'{'", "'}'", "'relationship'", "'to'", "'enum'", "','", "'required'", "'minlength'", "'('", "')'", "'maxlength'", "'min'", "'max'", "'pattern'", "'OneToMany'", "'ManyToOne'", "'OneToOne'", "'ManyToMany'", "'String'", "'Integer'", "'Long'", "'BigDecimal'", "'Float'", "'Double'", "'Enum'", "'Boolean'", "'LocalDate'", "'ZoneDateTime'"
     };
     public static final int RULE_STRING=6;
     public static final int RULE_SL_COMMENT=8;
     public static final int T__19=19;
     public static final int T__15=15;
+    public static final int T__37=37;
     public static final int T__16=16;
+    public static final int T__38=38;
     public static final int T__17=17;
+    public static final int T__39=39;
     public static final int T__18=18;
     public static final int T__11=11;
+    public static final int T__33=33;
     public static final int T__12=12;
+    public static final int T__34=34;
     public static final int T__13=13;
+    public static final int T__35=35;
     public static final int T__14=14;
+    public static final int T__36=36;
     public static final int EOF=-1;
     public static final int T__30=30;
     public static final int T__31=31;
@@ -1020,23 +1027,24 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
 
     // $ANTLR start "ruleField"
-    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:459:1: ruleField returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_required_2_0= 'required' ) )? ) ;
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:459:1: ruleField returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_validationRules_2_0= ruleValidationRule ) )* ) ;
     public final EObject ruleField() throws RecognitionException {
         EObject current = null;
 
         Token lv_name_0_0=null;
-        Token lv_required_2_0=null;
         EObject lv_type_1_0 = null;
+
+        EObject lv_validationRules_2_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:462:28: ( ( ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_required_2_0= 'required' ) )? ) )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:463:1: ( ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_required_2_0= 'required' ) )? )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:462:28: ( ( ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_validationRules_2_0= ruleValidationRule ) )* ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:463:1: ( ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_validationRules_2_0= ruleValidationRule ) )* )
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:463:1: ( ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_required_2_0= 'required' ) )? )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:463:2: ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_required_2_0= 'required' ) )?
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:463:1: ( ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_validationRules_2_0= ruleValidationRule ) )* )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:463:2: ( (lv_name_0_0= RULE_ID ) ) ( (lv_type_1_0= ruleHdlType ) ) ( (lv_validationRules_2_0= ruleValidationRule ) )*
             {
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:463:2: ( (lv_name_0_0= RULE_ID ) )
             // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:464:1: (lv_name_0_0= RULE_ID )
@@ -1095,38 +1103,54 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:499:2: ( (lv_required_2_0= 'required' ) )?
-            int alt5=2;
-            int LA5_0 = input.LA(1);
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:499:2: ( (lv_validationRules_2_0= ruleValidationRule ) )*
+            loop5:
+            do {
+                int alt5=2;
+                int LA5_0 = input.LA(1);
 
-            if ( (LA5_0==18) ) {
-                alt5=1;
-            }
-            switch (alt5) {
-                case 1 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:500:1: (lv_required_2_0= 'required' )
-                    {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:500:1: (lv_required_2_0= 'required' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:501:3: lv_required_2_0= 'required'
-                    {
-                    lv_required_2_0=(Token)match(input,18,FOLLOW_18_in_ruleField1025); 
-
-                            newLeafNode(lv_required_2_0, grammarAccess.getFieldAccess().getRequiredRequiredKeyword_2_0());
-                        
-
-                    	        if (current==null) {
-                    	            current = createModelElement(grammarAccess.getFieldRule());
-                    	        }
-                           		setWithLastConsumed(current, "required", true, "required");
-                    	    
-
-                    }
+                if ( ((LA5_0>=18 && LA5_0<=19)||(LA5_0>=22 && LA5_0<=25)) ) {
+                    alt5=1;
+                }
 
 
-                    }
-                    break;
+                switch (alt5) {
+            	case 1 :
+            	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:500:1: (lv_validationRules_2_0= ruleValidationRule )
+            	    {
+            	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:500:1: (lv_validationRules_2_0= ruleValidationRule )
+            	    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:501:3: lv_validationRules_2_0= ruleValidationRule
+            	    {
+            	     
+            	    	        newCompositeNode(grammarAccess.getFieldAccess().getValidationRulesValidationRuleParserRuleCall_2_0()); 
+            	    	    
+            	    pushFollow(FOLLOW_ruleValidationRule_in_ruleField1028);
+            	    lv_validationRules_2_0=ruleValidationRule();
 
-            }
+            	    state._fsp--;
+
+
+            	    	        if (current==null) {
+            	    	            current = createModelElementForParent(grammarAccess.getFieldRule());
+            	    	        }
+            	           		add(
+            	           			current, 
+            	           			"validationRules",
+            	            		lv_validationRules_2_0, 
+            	            		"ValidationRule");
+            	    	        afterParserOrEnumRuleCall();
+            	    	    
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop5;
+                }
+            } while (true);
 
 
             }
@@ -1148,8 +1172,1193 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
     // $ANTLR end "ruleField"
 
 
+    // $ANTLR start "entryRuleValidationRule"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:525:1: entryRuleValidationRule returns [EObject current=null] : iv_ruleValidationRule= ruleValidationRule EOF ;
+    public final EObject entryRuleValidationRule() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleValidationRule = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:526:2: (iv_ruleValidationRule= ruleValidationRule EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:527:2: iv_ruleValidationRule= ruleValidationRule EOF
+            {
+             newCompositeNode(grammarAccess.getValidationRuleRule()); 
+            pushFollow(FOLLOW_ruleValidationRule_in_entryRuleValidationRule1065);
+            iv_ruleValidationRule=ruleValidationRule();
+
+            state._fsp--;
+
+             current =iv_ruleValidationRule; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleValidationRule1075); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleValidationRule"
+
+
+    // $ANTLR start "ruleValidationRule"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:534:1: ruleValidationRule returns [EObject current=null] : (this_Required_0= ruleRequired | this_ValueRange_1= ruleValueRange | this_Pattern_2= rulePattern ) ;
+    public final EObject ruleValidationRule() throws RecognitionException {
+        EObject current = null;
+
+        EObject this_Required_0 = null;
+
+        EObject this_ValueRange_1 = null;
+
+        EObject this_Pattern_2 = null;
+
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:537:28: ( (this_Required_0= ruleRequired | this_ValueRange_1= ruleValueRange | this_Pattern_2= rulePattern ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:538:1: (this_Required_0= ruleRequired | this_ValueRange_1= ruleValueRange | this_Pattern_2= rulePattern )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:538:1: (this_Required_0= ruleRequired | this_ValueRange_1= ruleValueRange | this_Pattern_2= rulePattern )
+            int alt6=3;
+            switch ( input.LA(1) ) {
+            case 18:
+                {
+                alt6=1;
+                }
+                break;
+            case 19:
+            case 22:
+            case 23:
+            case 24:
+                {
+                alt6=2;
+                }
+                break;
+            case 25:
+                {
+                alt6=3;
+                }
+                break;
+            default:
+                NoViableAltException nvae =
+                    new NoViableAltException("", 6, 0, input);
+
+                throw nvae;
+            }
+
+            switch (alt6) {
+                case 1 :
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:539:5: this_Required_0= ruleRequired
+                    {
+                     
+                            newCompositeNode(grammarAccess.getValidationRuleAccess().getRequiredParserRuleCall_0()); 
+                        
+                    pushFollow(FOLLOW_ruleRequired_in_ruleValidationRule1122);
+                    this_Required_0=ruleRequired();
+
+                    state._fsp--;
+
+                     
+                            current = this_Required_0; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+                case 2 :
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:549:5: this_ValueRange_1= ruleValueRange
+                    {
+                     
+                            newCompositeNode(grammarAccess.getValidationRuleAccess().getValueRangeParserRuleCall_1()); 
+                        
+                    pushFollow(FOLLOW_ruleValueRange_in_ruleValidationRule1149);
+                    this_ValueRange_1=ruleValueRange();
+
+                    state._fsp--;
+
+                     
+                            current = this_ValueRange_1; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+                case 3 :
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:559:5: this_Pattern_2= rulePattern
+                    {
+                     
+                            newCompositeNode(grammarAccess.getValidationRuleAccess().getPatternParserRuleCall_2()); 
+                        
+                    pushFollow(FOLLOW_rulePattern_in_ruleValidationRule1176);
+                    this_Pattern_2=rulePattern();
+
+                    state._fsp--;
+
+                     
+                            current = this_Pattern_2; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleValidationRule"
+
+
+    // $ANTLR start "entryRuleRequired"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:575:1: entryRuleRequired returns [EObject current=null] : iv_ruleRequired= ruleRequired EOF ;
+    public final EObject entryRuleRequired() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleRequired = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:576:2: (iv_ruleRequired= ruleRequired EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:577:2: iv_ruleRequired= ruleRequired EOF
+            {
+             newCompositeNode(grammarAccess.getRequiredRule()); 
+            pushFollow(FOLLOW_ruleRequired_in_entryRuleRequired1211);
+            iv_ruleRequired=ruleRequired();
+
+            state._fsp--;
+
+             current =iv_ruleRequired; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRequired1221); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleRequired"
+
+
+    // $ANTLR start "ruleRequired"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:584:1: ruleRequired returns [EObject current=null] : ( (lv_required_0_0= 'required' ) ) ;
+    public final EObject ruleRequired() throws RecognitionException {
+        EObject current = null;
+
+        Token lv_required_0_0=null;
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:587:28: ( ( (lv_required_0_0= 'required' ) ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:588:1: ( (lv_required_0_0= 'required' ) )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:588:1: ( (lv_required_0_0= 'required' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:589:1: (lv_required_0_0= 'required' )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:589:1: (lv_required_0_0= 'required' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:590:3: lv_required_0_0= 'required'
+            {
+            lv_required_0_0=(Token)match(input,18,FOLLOW_18_in_ruleRequired1263); 
+
+                    newLeafNode(lv_required_0_0, grammarAccess.getRequiredAccess().getRequiredRequiredKeyword_0());
+                
+
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getRequiredRule());
+            	        }
+                   		setWithLastConsumed(current, "required", true, "required");
+            	    
+
+            }
+
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleRequired"
+
+
+    // $ANTLR start "entryRuleValueRange"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:611:1: entryRuleValueRange returns [EObject current=null] : iv_ruleValueRange= ruleValueRange EOF ;
+    public final EObject entryRuleValueRange() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleValueRange = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:612:2: (iv_ruleValueRange= ruleValueRange EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:613:2: iv_ruleValueRange= ruleValueRange EOF
+            {
+             newCompositeNode(grammarAccess.getValueRangeRule()); 
+            pushFollow(FOLLOW_ruleValueRange_in_entryRuleValueRange1311);
+            iv_ruleValueRange=ruleValueRange();
+
+            state._fsp--;
+
+             current =iv_ruleValueRange; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleValueRange1321); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleValueRange"
+
+
+    // $ANTLR start "ruleValueRange"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:620:1: ruleValueRange returns [EObject current=null] : (this_MinSpecification_0= ruleMinSpecification | this_MaxSpecification_1= ruleMaxSpecification ) ;
+    public final EObject ruleValueRange() throws RecognitionException {
+        EObject current = null;
+
+        EObject this_MinSpecification_0 = null;
+
+        EObject this_MaxSpecification_1 = null;
+
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:623:28: ( (this_MinSpecification_0= ruleMinSpecification | this_MaxSpecification_1= ruleMaxSpecification ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:624:1: (this_MinSpecification_0= ruleMinSpecification | this_MaxSpecification_1= ruleMaxSpecification )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:624:1: (this_MinSpecification_0= ruleMinSpecification | this_MaxSpecification_1= ruleMaxSpecification )
+            int alt7=2;
+            int LA7_0 = input.LA(1);
+
+            if ( (LA7_0==19||LA7_0==23) ) {
+                alt7=1;
+            }
+            else if ( (LA7_0==22||LA7_0==24) ) {
+                alt7=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 7, 0, input);
+
+                throw nvae;
+            }
+            switch (alt7) {
+                case 1 :
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:625:5: this_MinSpecification_0= ruleMinSpecification
+                    {
+                     
+                            newCompositeNode(grammarAccess.getValueRangeAccess().getMinSpecificationParserRuleCall_0()); 
+                        
+                    pushFollow(FOLLOW_ruleMinSpecification_in_ruleValueRange1368);
+                    this_MinSpecification_0=ruleMinSpecification();
+
+                    state._fsp--;
+
+                     
+                            current = this_MinSpecification_0; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+                case 2 :
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:635:5: this_MaxSpecification_1= ruleMaxSpecification
+                    {
+                     
+                            newCompositeNode(grammarAccess.getValueRangeAccess().getMaxSpecificationParserRuleCall_1()); 
+                        
+                    pushFollow(FOLLOW_ruleMaxSpecification_in_ruleValueRange1395);
+                    this_MaxSpecification_1=ruleMaxSpecification();
+
+                    state._fsp--;
+
+                     
+                            current = this_MaxSpecification_1; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleValueRange"
+
+
+    // $ANTLR start "entryRuleMinSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:651:1: entryRuleMinSpecification returns [EObject current=null] : iv_ruleMinSpecification= ruleMinSpecification EOF ;
+    public final EObject entryRuleMinSpecification() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleMinSpecification = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:652:2: (iv_ruleMinSpecification= ruleMinSpecification EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:653:2: iv_ruleMinSpecification= ruleMinSpecification EOF
+            {
+             newCompositeNode(grammarAccess.getMinSpecificationRule()); 
+            pushFollow(FOLLOW_ruleMinSpecification_in_entryRuleMinSpecification1430);
+            iv_ruleMinSpecification=ruleMinSpecification();
+
+            state._fsp--;
+
+             current =iv_ruleMinSpecification; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMinSpecification1440); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleMinSpecification"
+
+
+    // $ANTLR start "ruleMinSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:660:1: ruleMinSpecification returns [EObject current=null] : (this_StringMinSpecification_0= ruleStringMinSpecification | this_IntegerMinSpecification_1= ruleIntegerMinSpecification ) ;
+    public final EObject ruleMinSpecification() throws RecognitionException {
+        EObject current = null;
+
+        EObject this_StringMinSpecification_0 = null;
+
+        EObject this_IntegerMinSpecification_1 = null;
+
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:663:28: ( (this_StringMinSpecification_0= ruleStringMinSpecification | this_IntegerMinSpecification_1= ruleIntegerMinSpecification ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:664:1: (this_StringMinSpecification_0= ruleStringMinSpecification | this_IntegerMinSpecification_1= ruleIntegerMinSpecification )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:664:1: (this_StringMinSpecification_0= ruleStringMinSpecification | this_IntegerMinSpecification_1= ruleIntegerMinSpecification )
+            int alt8=2;
+            int LA8_0 = input.LA(1);
+
+            if ( (LA8_0==19) ) {
+                alt8=1;
+            }
+            else if ( (LA8_0==23) ) {
+                alt8=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 8, 0, input);
+
+                throw nvae;
+            }
+            switch (alt8) {
+                case 1 :
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:665:5: this_StringMinSpecification_0= ruleStringMinSpecification
+                    {
+                     
+                            newCompositeNode(grammarAccess.getMinSpecificationAccess().getStringMinSpecificationParserRuleCall_0()); 
+                        
+                    pushFollow(FOLLOW_ruleStringMinSpecification_in_ruleMinSpecification1487);
+                    this_StringMinSpecification_0=ruleStringMinSpecification();
+
+                    state._fsp--;
+
+                     
+                            current = this_StringMinSpecification_0; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+                case 2 :
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:675:5: this_IntegerMinSpecification_1= ruleIntegerMinSpecification
+                    {
+                     
+                            newCompositeNode(grammarAccess.getMinSpecificationAccess().getIntegerMinSpecificationParserRuleCall_1()); 
+                        
+                    pushFollow(FOLLOW_ruleIntegerMinSpecification_in_ruleMinSpecification1514);
+                    this_IntegerMinSpecification_1=ruleIntegerMinSpecification();
+
+                    state._fsp--;
+
+                     
+                            current = this_IntegerMinSpecification_1; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleMinSpecification"
+
+
+    // $ANTLR start "entryRuleMaxSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:691:1: entryRuleMaxSpecification returns [EObject current=null] : iv_ruleMaxSpecification= ruleMaxSpecification EOF ;
+    public final EObject entryRuleMaxSpecification() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleMaxSpecification = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:692:2: (iv_ruleMaxSpecification= ruleMaxSpecification EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:693:2: iv_ruleMaxSpecification= ruleMaxSpecification EOF
+            {
+             newCompositeNode(grammarAccess.getMaxSpecificationRule()); 
+            pushFollow(FOLLOW_ruleMaxSpecification_in_entryRuleMaxSpecification1549);
+            iv_ruleMaxSpecification=ruleMaxSpecification();
+
+            state._fsp--;
+
+             current =iv_ruleMaxSpecification; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMaxSpecification1559); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleMaxSpecification"
+
+
+    // $ANTLR start "ruleMaxSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:700:1: ruleMaxSpecification returns [EObject current=null] : (this_StringMaxSpecification_0= ruleStringMaxSpecification | this_IntegerMaxSpecification_1= ruleIntegerMaxSpecification ) ;
+    public final EObject ruleMaxSpecification() throws RecognitionException {
+        EObject current = null;
+
+        EObject this_StringMaxSpecification_0 = null;
+
+        EObject this_IntegerMaxSpecification_1 = null;
+
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:703:28: ( (this_StringMaxSpecification_0= ruleStringMaxSpecification | this_IntegerMaxSpecification_1= ruleIntegerMaxSpecification ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:704:1: (this_StringMaxSpecification_0= ruleStringMaxSpecification | this_IntegerMaxSpecification_1= ruleIntegerMaxSpecification )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:704:1: (this_StringMaxSpecification_0= ruleStringMaxSpecification | this_IntegerMaxSpecification_1= ruleIntegerMaxSpecification )
+            int alt9=2;
+            int LA9_0 = input.LA(1);
+
+            if ( (LA9_0==22) ) {
+                alt9=1;
+            }
+            else if ( (LA9_0==24) ) {
+                alt9=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 9, 0, input);
+
+                throw nvae;
+            }
+            switch (alt9) {
+                case 1 :
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:705:5: this_StringMaxSpecification_0= ruleStringMaxSpecification
+                    {
+                     
+                            newCompositeNode(grammarAccess.getMaxSpecificationAccess().getStringMaxSpecificationParserRuleCall_0()); 
+                        
+                    pushFollow(FOLLOW_ruleStringMaxSpecification_in_ruleMaxSpecification1606);
+                    this_StringMaxSpecification_0=ruleStringMaxSpecification();
+
+                    state._fsp--;
+
+                     
+                            current = this_StringMaxSpecification_0; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+                case 2 :
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:715:5: this_IntegerMaxSpecification_1= ruleIntegerMaxSpecification
+                    {
+                     
+                            newCompositeNode(grammarAccess.getMaxSpecificationAccess().getIntegerMaxSpecificationParserRuleCall_1()); 
+                        
+                    pushFollow(FOLLOW_ruleIntegerMaxSpecification_in_ruleMaxSpecification1633);
+                    this_IntegerMaxSpecification_1=ruleIntegerMaxSpecification();
+
+                    state._fsp--;
+
+                     
+                            current = this_IntegerMaxSpecification_1; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleMaxSpecification"
+
+
+    // $ANTLR start "entryRuleStringMinSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:731:1: entryRuleStringMinSpecification returns [EObject current=null] : iv_ruleStringMinSpecification= ruleStringMinSpecification EOF ;
+    public final EObject entryRuleStringMinSpecification() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleStringMinSpecification = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:732:2: (iv_ruleStringMinSpecification= ruleStringMinSpecification EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:733:2: iv_ruleStringMinSpecification= ruleStringMinSpecification EOF
+            {
+             newCompositeNode(grammarAccess.getStringMinSpecificationRule()); 
+            pushFollow(FOLLOW_ruleStringMinSpecification_in_entryRuleStringMinSpecification1668);
+            iv_ruleStringMinSpecification=ruleStringMinSpecification();
+
+            state._fsp--;
+
+             current =iv_ruleStringMinSpecification; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleStringMinSpecification1678); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleStringMinSpecification"
+
+
+    // $ANTLR start "ruleStringMinSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:740:1: ruleStringMinSpecification returns [EObject current=null] : (otherlv_0= 'minlength' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' ) ;
+    public final EObject ruleStringMinSpecification() throws RecognitionException {
+        EObject current = null;
+
+        Token otherlv_0=null;
+        Token otherlv_1=null;
+        Token lv_min_2_0=null;
+        Token otherlv_3=null;
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:743:28: ( (otherlv_0= 'minlength' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:744:1: (otherlv_0= 'minlength' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:744:1: (otherlv_0= 'minlength' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:744:3: otherlv_0= 'minlength' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')'
+            {
+            otherlv_0=(Token)match(input,19,FOLLOW_19_in_ruleStringMinSpecification1715); 
+
+                	newLeafNode(otherlv_0, grammarAccess.getStringMinSpecificationAccess().getMinlengthKeyword_0());
+                
+            otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleStringMinSpecification1727); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getStringMinSpecificationAccess().getLeftParenthesisKeyword_1());
+                
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:752:1: ( (lv_min_2_0= RULE_INT ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:753:1: (lv_min_2_0= RULE_INT )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:753:1: (lv_min_2_0= RULE_INT )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:754:3: lv_min_2_0= RULE_INT
+            {
+            lv_min_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleStringMinSpecification1744); 
+
+            			newLeafNode(lv_min_2_0, grammarAccess.getStringMinSpecificationAccess().getMinINTTerminalRuleCall_2_0()); 
+            		
+
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getStringMinSpecificationRule());
+            	        }
+                   		setWithLastConsumed(
+                   			current, 
+                   			"min",
+                    		lv_min_2_0, 
+                    		"INT");
+            	    
+
+            }
+
+
+            }
+
+            otherlv_3=(Token)match(input,21,FOLLOW_21_in_ruleStringMinSpecification1761); 
+
+                	newLeafNode(otherlv_3, grammarAccess.getStringMinSpecificationAccess().getRightParenthesisKeyword_3());
+                
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleStringMinSpecification"
+
+
+    // $ANTLR start "entryRuleStringMaxSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:782:1: entryRuleStringMaxSpecification returns [EObject current=null] : iv_ruleStringMaxSpecification= ruleStringMaxSpecification EOF ;
+    public final EObject entryRuleStringMaxSpecification() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleStringMaxSpecification = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:783:2: (iv_ruleStringMaxSpecification= ruleStringMaxSpecification EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:784:2: iv_ruleStringMaxSpecification= ruleStringMaxSpecification EOF
+            {
+             newCompositeNode(grammarAccess.getStringMaxSpecificationRule()); 
+            pushFollow(FOLLOW_ruleStringMaxSpecification_in_entryRuleStringMaxSpecification1797);
+            iv_ruleStringMaxSpecification=ruleStringMaxSpecification();
+
+            state._fsp--;
+
+             current =iv_ruleStringMaxSpecification; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleStringMaxSpecification1807); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleStringMaxSpecification"
+
+
+    // $ANTLR start "ruleStringMaxSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:791:1: ruleStringMaxSpecification returns [EObject current=null] : (otherlv_0= 'maxlength' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' ) ;
+    public final EObject ruleStringMaxSpecification() throws RecognitionException {
+        EObject current = null;
+
+        Token otherlv_0=null;
+        Token otherlv_1=null;
+        Token lv_max_2_0=null;
+        Token otherlv_3=null;
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:794:28: ( (otherlv_0= 'maxlength' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:795:1: (otherlv_0= 'maxlength' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:795:1: (otherlv_0= 'maxlength' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:795:3: otherlv_0= 'maxlength' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')'
+            {
+            otherlv_0=(Token)match(input,22,FOLLOW_22_in_ruleStringMaxSpecification1844); 
+
+                	newLeafNode(otherlv_0, grammarAccess.getStringMaxSpecificationAccess().getMaxlengthKeyword_0());
+                
+            otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleStringMaxSpecification1856); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getStringMaxSpecificationAccess().getLeftParenthesisKeyword_1());
+                
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:803:1: ( (lv_max_2_0= RULE_INT ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:804:1: (lv_max_2_0= RULE_INT )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:804:1: (lv_max_2_0= RULE_INT )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:805:3: lv_max_2_0= RULE_INT
+            {
+            lv_max_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleStringMaxSpecification1873); 
+
+            			newLeafNode(lv_max_2_0, grammarAccess.getStringMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0()); 
+            		
+
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getStringMaxSpecificationRule());
+            	        }
+                   		setWithLastConsumed(
+                   			current, 
+                   			"max",
+                    		lv_max_2_0, 
+                    		"INT");
+            	    
+
+            }
+
+
+            }
+
+            otherlv_3=(Token)match(input,21,FOLLOW_21_in_ruleStringMaxSpecification1890); 
+
+                	newLeafNode(otherlv_3, grammarAccess.getStringMaxSpecificationAccess().getRightParenthesisKeyword_3());
+                
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleStringMaxSpecification"
+
+
+    // $ANTLR start "entryRuleIntegerMinSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:833:1: entryRuleIntegerMinSpecification returns [EObject current=null] : iv_ruleIntegerMinSpecification= ruleIntegerMinSpecification EOF ;
+    public final EObject entryRuleIntegerMinSpecification() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleIntegerMinSpecification = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:834:2: (iv_ruleIntegerMinSpecification= ruleIntegerMinSpecification EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:835:2: iv_ruleIntegerMinSpecification= ruleIntegerMinSpecification EOF
+            {
+             newCompositeNode(grammarAccess.getIntegerMinSpecificationRule()); 
+            pushFollow(FOLLOW_ruleIntegerMinSpecification_in_entryRuleIntegerMinSpecification1926);
+            iv_ruleIntegerMinSpecification=ruleIntegerMinSpecification();
+
+            state._fsp--;
+
+             current =iv_ruleIntegerMinSpecification; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleIntegerMinSpecification1936); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleIntegerMinSpecification"
+
+
+    // $ANTLR start "ruleIntegerMinSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:842:1: ruleIntegerMinSpecification returns [EObject current=null] : (otherlv_0= 'min' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' ) ;
+    public final EObject ruleIntegerMinSpecification() throws RecognitionException {
+        EObject current = null;
+
+        Token otherlv_0=null;
+        Token otherlv_1=null;
+        Token lv_min_2_0=null;
+        Token otherlv_3=null;
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:845:28: ( (otherlv_0= 'min' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:846:1: (otherlv_0= 'min' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:846:1: (otherlv_0= 'min' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:846:3: otherlv_0= 'min' otherlv_1= '(' ( (lv_min_2_0= RULE_INT ) ) otherlv_3= ')'
+            {
+            otherlv_0=(Token)match(input,23,FOLLOW_23_in_ruleIntegerMinSpecification1973); 
+
+                	newLeafNode(otherlv_0, grammarAccess.getIntegerMinSpecificationAccess().getMinKeyword_0());
+                
+            otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleIntegerMinSpecification1985); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getIntegerMinSpecificationAccess().getLeftParenthesisKeyword_1());
+                
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:854:1: ( (lv_min_2_0= RULE_INT ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:855:1: (lv_min_2_0= RULE_INT )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:855:1: (lv_min_2_0= RULE_INT )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:856:3: lv_min_2_0= RULE_INT
+            {
+            lv_min_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleIntegerMinSpecification2002); 
+
+            			newLeafNode(lv_min_2_0, grammarAccess.getIntegerMinSpecificationAccess().getMinINTTerminalRuleCall_2_0()); 
+            		
+
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getIntegerMinSpecificationRule());
+            	        }
+                   		setWithLastConsumed(
+                   			current, 
+                   			"min",
+                    		lv_min_2_0, 
+                    		"INT");
+            	    
+
+            }
+
+
+            }
+
+            otherlv_3=(Token)match(input,21,FOLLOW_21_in_ruleIntegerMinSpecification2019); 
+
+                	newLeafNode(otherlv_3, grammarAccess.getIntegerMinSpecificationAccess().getRightParenthesisKeyword_3());
+                
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleIntegerMinSpecification"
+
+
+    // $ANTLR start "entryRuleIntegerMaxSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:884:1: entryRuleIntegerMaxSpecification returns [EObject current=null] : iv_ruleIntegerMaxSpecification= ruleIntegerMaxSpecification EOF ;
+    public final EObject entryRuleIntegerMaxSpecification() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleIntegerMaxSpecification = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:885:2: (iv_ruleIntegerMaxSpecification= ruleIntegerMaxSpecification EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:886:2: iv_ruleIntegerMaxSpecification= ruleIntegerMaxSpecification EOF
+            {
+             newCompositeNode(grammarAccess.getIntegerMaxSpecificationRule()); 
+            pushFollow(FOLLOW_ruleIntegerMaxSpecification_in_entryRuleIntegerMaxSpecification2055);
+            iv_ruleIntegerMaxSpecification=ruleIntegerMaxSpecification();
+
+            state._fsp--;
+
+             current =iv_ruleIntegerMaxSpecification; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleIntegerMaxSpecification2065); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleIntegerMaxSpecification"
+
+
+    // $ANTLR start "ruleIntegerMaxSpecification"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:893:1: ruleIntegerMaxSpecification returns [EObject current=null] : (otherlv_0= 'max' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' ) ;
+    public final EObject ruleIntegerMaxSpecification() throws RecognitionException {
+        EObject current = null;
+
+        Token otherlv_0=null;
+        Token otherlv_1=null;
+        Token lv_max_2_0=null;
+        Token otherlv_3=null;
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:896:28: ( (otherlv_0= 'max' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:897:1: (otherlv_0= 'max' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:897:1: (otherlv_0= 'max' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:897:3: otherlv_0= 'max' otherlv_1= '(' ( (lv_max_2_0= RULE_INT ) ) otherlv_3= ')'
+            {
+            otherlv_0=(Token)match(input,24,FOLLOW_24_in_ruleIntegerMaxSpecification2102); 
+
+                	newLeafNode(otherlv_0, grammarAccess.getIntegerMaxSpecificationAccess().getMaxKeyword_0());
+                
+            otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleIntegerMaxSpecification2114); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getIntegerMaxSpecificationAccess().getLeftParenthesisKeyword_1());
+                
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:905:1: ( (lv_max_2_0= RULE_INT ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:906:1: (lv_max_2_0= RULE_INT )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:906:1: (lv_max_2_0= RULE_INT )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:907:3: lv_max_2_0= RULE_INT
+            {
+            lv_max_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleIntegerMaxSpecification2131); 
+
+            			newLeafNode(lv_max_2_0, grammarAccess.getIntegerMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0()); 
+            		
+
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getIntegerMaxSpecificationRule());
+            	        }
+                   		setWithLastConsumed(
+                   			current, 
+                   			"max",
+                    		lv_max_2_0, 
+                    		"INT");
+            	    
+
+            }
+
+
+            }
+
+            otherlv_3=(Token)match(input,21,FOLLOW_21_in_ruleIntegerMaxSpecification2148); 
+
+                	newLeafNode(otherlv_3, grammarAccess.getIntegerMaxSpecificationAccess().getRightParenthesisKeyword_3());
+                
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleIntegerMaxSpecification"
+
+
+    // $ANTLR start "entryRulePattern"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:935:1: entryRulePattern returns [EObject current=null] : iv_rulePattern= rulePattern EOF ;
+    public final EObject entryRulePattern() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_rulePattern = null;
+
+
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:936:2: (iv_rulePattern= rulePattern EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:937:2: iv_rulePattern= rulePattern EOF
+            {
+             newCompositeNode(grammarAccess.getPatternRule()); 
+            pushFollow(FOLLOW_rulePattern_in_entryRulePattern2184);
+            iv_rulePattern=rulePattern();
+
+            state._fsp--;
+
+             current =iv_rulePattern; 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePattern2194); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRulePattern"
+
+
+    // $ANTLR start "rulePattern"
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:944:1: rulePattern returns [EObject current=null] : (otherlv_0= 'pattern' otherlv_1= '(' ( (lv_regex_2_0= RULE_STRING ) ) otherlv_3= ')' ) ;
+    public final EObject rulePattern() throws RecognitionException {
+        EObject current = null;
+
+        Token otherlv_0=null;
+        Token otherlv_1=null;
+        Token lv_regex_2_0=null;
+        Token otherlv_3=null;
+
+         enterRule(); 
+            
+        try {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:947:28: ( (otherlv_0= 'pattern' otherlv_1= '(' ( (lv_regex_2_0= RULE_STRING ) ) otherlv_3= ')' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:948:1: (otherlv_0= 'pattern' otherlv_1= '(' ( (lv_regex_2_0= RULE_STRING ) ) otherlv_3= ')' )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:948:1: (otherlv_0= 'pattern' otherlv_1= '(' ( (lv_regex_2_0= RULE_STRING ) ) otherlv_3= ')' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:948:3: otherlv_0= 'pattern' otherlv_1= '(' ( (lv_regex_2_0= RULE_STRING ) ) otherlv_3= ')'
+            {
+            otherlv_0=(Token)match(input,25,FOLLOW_25_in_rulePattern2231); 
+
+                	newLeafNode(otherlv_0, grammarAccess.getPatternAccess().getPatternKeyword_0());
+                
+            otherlv_1=(Token)match(input,20,FOLLOW_20_in_rulePattern2243); 
+
+                	newLeafNode(otherlv_1, grammarAccess.getPatternAccess().getLeftParenthesisKeyword_1());
+                
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:956:1: ( (lv_regex_2_0= RULE_STRING ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:957:1: (lv_regex_2_0= RULE_STRING )
+            {
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:957:1: (lv_regex_2_0= RULE_STRING )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:958:3: lv_regex_2_0= RULE_STRING
+            {
+            lv_regex_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rulePattern2260); 
+
+            			newLeafNode(lv_regex_2_0, grammarAccess.getPatternAccess().getRegexSTRINGTerminalRuleCall_2_0()); 
+            		
+
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getPatternRule());
+            	        }
+                   		setWithLastConsumed(
+                   			current, 
+                   			"regex",
+                    		lv_regex_2_0, 
+                    		"STRING");
+            	    
+
+            }
+
+
+            }
+
+            otherlv_3=(Token)match(input,21,FOLLOW_21_in_rulePattern2277); 
+
+                	newLeafNode(otherlv_3, grammarAccess.getPatternAccess().getRightParenthesisKeyword_3());
+                
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "rulePattern"
+
+
     // $ANTLR start "entryRuleHdlType"
-    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:522:1: entryRuleHdlType returns [EObject current=null] : iv_ruleHdlType= ruleHdlType EOF ;
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:986:1: entryRuleHdlType returns [EObject current=null] : iv_ruleHdlType= ruleHdlType EOF ;
     public final EObject entryRuleHdlType() throws RecognitionException {
         EObject current = null;
 
@@ -1157,17 +2366,17 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
 
         try {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:523:2: (iv_ruleHdlType= ruleHdlType EOF )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:524:2: iv_ruleHdlType= ruleHdlType EOF
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:987:2: (iv_ruleHdlType= ruleHdlType EOF )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:988:2: iv_ruleHdlType= ruleHdlType EOF
             {
              newCompositeNode(grammarAccess.getHdlTypeRule()); 
-            pushFollow(FOLLOW_ruleHdlType_in_entryRuleHdlType1075);
+            pushFollow(FOLLOW_ruleHdlType_in_entryRuleHdlType2313);
             iv_ruleHdlType=ruleHdlType();
 
             state._fsp--;
 
              current =iv_ruleHdlType; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleHdlType1085); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleHdlType2323); 
 
             }
 
@@ -1185,7 +2394,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
 
     // $ANTLR start "ruleHdlType"
-    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:531:1: ruleHdlType returns [EObject current=null] : ( ( (otherlv_0= RULE_ID ) ) | ( (lv_primitiveType_1_0= ruleJHipsterType ) ) ) ;
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:995:1: ruleHdlType returns [EObject current=null] : ( ( (otherlv_0= RULE_ID ) ) | ( (lv_primitiveType_1_0= ruleJHipsterType ) ) ) ;
     public final EObject ruleHdlType() throws RecognitionException {
         EObject current = null;
 
@@ -1196,41 +2405,41 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
          enterRule(); 
             
         try {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:534:28: ( ( ( (otherlv_0= RULE_ID ) ) | ( (lv_primitiveType_1_0= ruleJHipsterType ) ) ) )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:535:1: ( ( (otherlv_0= RULE_ID ) ) | ( (lv_primitiveType_1_0= ruleJHipsterType ) ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:998:28: ( ( ( (otherlv_0= RULE_ID ) ) | ( (lv_primitiveType_1_0= ruleJHipsterType ) ) ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:999:1: ( ( (otherlv_0= RULE_ID ) ) | ( (lv_primitiveType_1_0= ruleJHipsterType ) ) )
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:535:1: ( ( (otherlv_0= RULE_ID ) ) | ( (lv_primitiveType_1_0= ruleJHipsterType ) ) )
-            int alt6=2;
-            int LA6_0 = input.LA(1);
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:999:1: ( ( (otherlv_0= RULE_ID ) ) | ( (lv_primitiveType_1_0= ruleJHipsterType ) ) )
+            int alt10=2;
+            int LA10_0 = input.LA(1);
 
-            if ( (LA6_0==RULE_ID) ) {
-                alt6=1;
+            if ( (LA10_0==RULE_ID) ) {
+                alt10=1;
             }
-            else if ( ((LA6_0>=23 && LA6_0<=32)) ) {
-                alt6=2;
+            else if ( ((LA10_0>=30 && LA10_0<=39)) ) {
+                alt10=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 6, 0, input);
+                    new NoViableAltException("", 10, 0, input);
 
                 throw nvae;
             }
-            switch (alt6) {
+            switch (alt10) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:535:2: ( (otherlv_0= RULE_ID ) )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:999:2: ( (otherlv_0= RULE_ID ) )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:535:2: ( (otherlv_0= RULE_ID ) )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:536:1: (otherlv_0= RULE_ID )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:999:2: ( (otherlv_0= RULE_ID ) )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1000:1: (otherlv_0= RULE_ID )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:536:1: (otherlv_0= RULE_ID )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:537:3: otherlv_0= RULE_ID
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1000:1: (otherlv_0= RULE_ID )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1001:3: otherlv_0= RULE_ID
                     {
 
                     			if (current==null) {
                     	            current = createModelElement(grammarAccess.getHdlTypeRule());
                     	        }
                             
-                    otherlv_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleHdlType1130); 
+                    otherlv_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleHdlType2368); 
 
                     		newLeafNode(otherlv_0, grammarAccess.getHdlTypeAccess().getEnumTypeEnumCrossReference_0_0()); 
                     	
@@ -1244,18 +2453,18 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:549:6: ( (lv_primitiveType_1_0= ruleJHipsterType ) )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1013:6: ( (lv_primitiveType_1_0= ruleJHipsterType ) )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:549:6: ( (lv_primitiveType_1_0= ruleJHipsterType ) )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:550:1: (lv_primitiveType_1_0= ruleJHipsterType )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1013:6: ( (lv_primitiveType_1_0= ruleJHipsterType ) )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1014:1: (lv_primitiveType_1_0= ruleJHipsterType )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:550:1: (lv_primitiveType_1_0= ruleJHipsterType )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:551:3: lv_primitiveType_1_0= ruleJHipsterType
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1014:1: (lv_primitiveType_1_0= ruleJHipsterType )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1015:3: lv_primitiveType_1_0= ruleJHipsterType
                     {
                      
                     	        newCompositeNode(grammarAccess.getHdlTypeAccess().getPrimitiveTypeJHipsterTypeEnumRuleCall_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleJHipsterType_in_ruleHdlType1157);
+                    pushFollow(FOLLOW_ruleJHipsterType_in_ruleHdlType2395);
                     lv_primitiveType_1_0=ruleJHipsterType();
 
                     state._fsp--;
@@ -1301,7 +2510,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
 
     // $ANTLR start "ruleRelationType"
-    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:575:1: ruleRelationType returns [Enumerator current=null] : ( (enumLiteral_0= 'OneToMany' ) | (enumLiteral_1= 'ManyToOne' ) | (enumLiteral_2= 'OneToOne' ) | (enumLiteral_3= 'ManyToMany' ) ) ;
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1039:1: ruleRelationType returns [Enumerator current=null] : ( (enumLiteral_0= 'OneToMany' ) | (enumLiteral_1= 'ManyToOne' ) | (enumLiteral_2= 'OneToOne' ) | (enumLiteral_3= 'ManyToMany' ) ) ;
     public final Enumerator ruleRelationType() throws RecognitionException {
         Enumerator current = null;
 
@@ -1312,47 +2521,47 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
          enterRule(); 
         try {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:577:28: ( ( (enumLiteral_0= 'OneToMany' ) | (enumLiteral_1= 'ManyToOne' ) | (enumLiteral_2= 'OneToOne' ) | (enumLiteral_3= 'ManyToMany' ) ) )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:578:1: ( (enumLiteral_0= 'OneToMany' ) | (enumLiteral_1= 'ManyToOne' ) | (enumLiteral_2= 'OneToOne' ) | (enumLiteral_3= 'ManyToMany' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1041:28: ( ( (enumLiteral_0= 'OneToMany' ) | (enumLiteral_1= 'ManyToOne' ) | (enumLiteral_2= 'OneToOne' ) | (enumLiteral_3= 'ManyToMany' ) ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1042:1: ( (enumLiteral_0= 'OneToMany' ) | (enumLiteral_1= 'ManyToOne' ) | (enumLiteral_2= 'OneToOne' ) | (enumLiteral_3= 'ManyToMany' ) )
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:578:1: ( (enumLiteral_0= 'OneToMany' ) | (enumLiteral_1= 'ManyToOne' ) | (enumLiteral_2= 'OneToOne' ) | (enumLiteral_3= 'ManyToMany' ) )
-            int alt7=4;
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1042:1: ( (enumLiteral_0= 'OneToMany' ) | (enumLiteral_1= 'ManyToOne' ) | (enumLiteral_2= 'OneToOne' ) | (enumLiteral_3= 'ManyToMany' ) )
+            int alt11=4;
             switch ( input.LA(1) ) {
-            case 19:
+            case 26:
                 {
-                alt7=1;
+                alt11=1;
                 }
                 break;
-            case 20:
+            case 27:
                 {
-                alt7=2;
+                alt11=2;
                 }
                 break;
-            case 21:
+            case 28:
                 {
-                alt7=3;
+                alt11=3;
                 }
                 break;
-            case 22:
+            case 29:
                 {
-                alt7=4;
+                alt11=4;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 7, 0, input);
+                    new NoViableAltException("", 11, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt7) {
+            switch (alt11) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:578:2: (enumLiteral_0= 'OneToMany' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1042:2: (enumLiteral_0= 'OneToMany' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:578:2: (enumLiteral_0= 'OneToMany' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:578:4: enumLiteral_0= 'OneToMany'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1042:2: (enumLiteral_0= 'OneToMany' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1042:4: enumLiteral_0= 'OneToMany'
                     {
-                    enumLiteral_0=(Token)match(input,19,FOLLOW_19_in_ruleRelationType1207); 
+                    enumLiteral_0=(Token)match(input,26,FOLLOW_26_in_ruleRelationType2445); 
 
                             current = grammarAccess.getRelationTypeAccess().getONE_TO_MANYEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getRelationTypeAccess().getONE_TO_MANYEnumLiteralDeclaration_0()); 
@@ -1364,12 +2573,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:584:6: (enumLiteral_1= 'ManyToOne' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1048:6: (enumLiteral_1= 'ManyToOne' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:584:6: (enumLiteral_1= 'ManyToOne' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:584:8: enumLiteral_1= 'ManyToOne'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1048:6: (enumLiteral_1= 'ManyToOne' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1048:8: enumLiteral_1= 'ManyToOne'
                     {
-                    enumLiteral_1=(Token)match(input,20,FOLLOW_20_in_ruleRelationType1224); 
+                    enumLiteral_1=(Token)match(input,27,FOLLOW_27_in_ruleRelationType2462); 
 
                             current = grammarAccess.getRelationTypeAccess().getMANY_TO_ONEEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getRelationTypeAccess().getMANY_TO_ONEEnumLiteralDeclaration_1()); 
@@ -1381,12 +2590,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 3 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:590:6: (enumLiteral_2= 'OneToOne' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1054:6: (enumLiteral_2= 'OneToOne' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:590:6: (enumLiteral_2= 'OneToOne' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:590:8: enumLiteral_2= 'OneToOne'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1054:6: (enumLiteral_2= 'OneToOne' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1054:8: enumLiteral_2= 'OneToOne'
                     {
-                    enumLiteral_2=(Token)match(input,21,FOLLOW_21_in_ruleRelationType1241); 
+                    enumLiteral_2=(Token)match(input,28,FOLLOW_28_in_ruleRelationType2479); 
 
                             current = grammarAccess.getRelationTypeAccess().getONE_TO_ONEEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_2, grammarAccess.getRelationTypeAccess().getONE_TO_ONEEnumLiteralDeclaration_2()); 
@@ -1398,12 +2607,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 4 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:596:6: (enumLiteral_3= 'ManyToMany' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1060:6: (enumLiteral_3= 'ManyToMany' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:596:6: (enumLiteral_3= 'ManyToMany' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:596:8: enumLiteral_3= 'ManyToMany'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1060:6: (enumLiteral_3= 'ManyToMany' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1060:8: enumLiteral_3= 'ManyToMany'
                     {
-                    enumLiteral_3=(Token)match(input,22,FOLLOW_22_in_ruleRelationType1258); 
+                    enumLiteral_3=(Token)match(input,29,FOLLOW_29_in_ruleRelationType2496); 
 
                             current = grammarAccess.getRelationTypeAccess().getMANY_TO_MANYEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_3, grammarAccess.getRelationTypeAccess().getMANY_TO_MANYEnumLiteralDeclaration_3()); 
@@ -1435,7 +2644,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
 
     // $ANTLR start "ruleJHipsterType"
-    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:606:1: ruleJHipsterType returns [Enumerator current=null] : ( (enumLiteral_0= 'String' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Long' ) | (enumLiteral_3= 'BigDecimal' ) | (enumLiteral_4= 'Float' ) | (enumLiteral_5= 'Double' ) | (enumLiteral_6= 'Enum' ) | (enumLiteral_7= 'Boolean' ) | (enumLiteral_8= 'LocalDate' ) | (enumLiteral_9= 'ZoneDateTime' ) ) ;
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1070:1: ruleJHipsterType returns [Enumerator current=null] : ( (enumLiteral_0= 'String' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Long' ) | (enumLiteral_3= 'BigDecimal' ) | (enumLiteral_4= 'Float' ) | (enumLiteral_5= 'Double' ) | (enumLiteral_6= 'Enum' ) | (enumLiteral_7= 'Boolean' ) | (enumLiteral_8= 'LocalDate' ) | (enumLiteral_9= 'ZoneDateTime' ) ) ;
     public final Enumerator ruleJHipsterType() throws RecognitionException {
         Enumerator current = null;
 
@@ -1452,77 +2661,77 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
          enterRule(); 
         try {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:608:28: ( ( (enumLiteral_0= 'String' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Long' ) | (enumLiteral_3= 'BigDecimal' ) | (enumLiteral_4= 'Float' ) | (enumLiteral_5= 'Double' ) | (enumLiteral_6= 'Enum' ) | (enumLiteral_7= 'Boolean' ) | (enumLiteral_8= 'LocalDate' ) | (enumLiteral_9= 'ZoneDateTime' ) ) )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:609:1: ( (enumLiteral_0= 'String' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Long' ) | (enumLiteral_3= 'BigDecimal' ) | (enumLiteral_4= 'Float' ) | (enumLiteral_5= 'Double' ) | (enumLiteral_6= 'Enum' ) | (enumLiteral_7= 'Boolean' ) | (enumLiteral_8= 'LocalDate' ) | (enumLiteral_9= 'ZoneDateTime' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1072:28: ( ( (enumLiteral_0= 'String' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Long' ) | (enumLiteral_3= 'BigDecimal' ) | (enumLiteral_4= 'Float' ) | (enumLiteral_5= 'Double' ) | (enumLiteral_6= 'Enum' ) | (enumLiteral_7= 'Boolean' ) | (enumLiteral_8= 'LocalDate' ) | (enumLiteral_9= 'ZoneDateTime' ) ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1073:1: ( (enumLiteral_0= 'String' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Long' ) | (enumLiteral_3= 'BigDecimal' ) | (enumLiteral_4= 'Float' ) | (enumLiteral_5= 'Double' ) | (enumLiteral_6= 'Enum' ) | (enumLiteral_7= 'Boolean' ) | (enumLiteral_8= 'LocalDate' ) | (enumLiteral_9= 'ZoneDateTime' ) )
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:609:1: ( (enumLiteral_0= 'String' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Long' ) | (enumLiteral_3= 'BigDecimal' ) | (enumLiteral_4= 'Float' ) | (enumLiteral_5= 'Double' ) | (enumLiteral_6= 'Enum' ) | (enumLiteral_7= 'Boolean' ) | (enumLiteral_8= 'LocalDate' ) | (enumLiteral_9= 'ZoneDateTime' ) )
-            int alt8=10;
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1073:1: ( (enumLiteral_0= 'String' ) | (enumLiteral_1= 'Integer' ) | (enumLiteral_2= 'Long' ) | (enumLiteral_3= 'BigDecimal' ) | (enumLiteral_4= 'Float' ) | (enumLiteral_5= 'Double' ) | (enumLiteral_6= 'Enum' ) | (enumLiteral_7= 'Boolean' ) | (enumLiteral_8= 'LocalDate' ) | (enumLiteral_9= 'ZoneDateTime' ) )
+            int alt12=10;
             switch ( input.LA(1) ) {
-            case 23:
-                {
-                alt8=1;
-                }
-                break;
-            case 24:
-                {
-                alt8=2;
-                }
-                break;
-            case 25:
-                {
-                alt8=3;
-                }
-                break;
-            case 26:
-                {
-                alt8=4;
-                }
-                break;
-            case 27:
-                {
-                alt8=5;
-                }
-                break;
-            case 28:
-                {
-                alt8=6;
-                }
-                break;
-            case 29:
-                {
-                alt8=7;
-                }
-                break;
             case 30:
                 {
-                alt8=8;
+                alt12=1;
                 }
                 break;
             case 31:
                 {
-                alt8=9;
+                alt12=2;
                 }
                 break;
             case 32:
                 {
-                alt8=10;
+                alt12=3;
+                }
+                break;
+            case 33:
+                {
+                alt12=4;
+                }
+                break;
+            case 34:
+                {
+                alt12=5;
+                }
+                break;
+            case 35:
+                {
+                alt12=6;
+                }
+                break;
+            case 36:
+                {
+                alt12=7;
+                }
+                break;
+            case 37:
+                {
+                alt12=8;
+                }
+                break;
+            case 38:
+                {
+                alt12=9;
+                }
+                break;
+            case 39:
+                {
+                alt12=10;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 8, 0, input);
+                    new NoViableAltException("", 12, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt8) {
+            switch (alt12) {
                 case 1 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:609:2: (enumLiteral_0= 'String' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1073:2: (enumLiteral_0= 'String' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:609:2: (enumLiteral_0= 'String' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:609:4: enumLiteral_0= 'String'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1073:2: (enumLiteral_0= 'String' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1073:4: enumLiteral_0= 'String'
                     {
-                    enumLiteral_0=(Token)match(input,23,FOLLOW_23_in_ruleJHipsterType1303); 
+                    enumLiteral_0=(Token)match(input,30,FOLLOW_30_in_ruleJHipsterType2541); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getSTRINGEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getJHipsterTypeAccess().getSTRINGEnumLiteralDeclaration_0()); 
@@ -1534,12 +2743,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 2 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:615:6: (enumLiteral_1= 'Integer' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1079:6: (enumLiteral_1= 'Integer' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:615:6: (enumLiteral_1= 'Integer' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:615:8: enumLiteral_1= 'Integer'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1079:6: (enumLiteral_1= 'Integer' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1079:8: enumLiteral_1= 'Integer'
                     {
-                    enumLiteral_1=(Token)match(input,24,FOLLOW_24_in_ruleJHipsterType1320); 
+                    enumLiteral_1=(Token)match(input,31,FOLLOW_31_in_ruleJHipsterType2558); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getINTEGEREnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getJHipsterTypeAccess().getINTEGEREnumLiteralDeclaration_1()); 
@@ -1551,12 +2760,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 3 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:621:6: (enumLiteral_2= 'Long' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1085:6: (enumLiteral_2= 'Long' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:621:6: (enumLiteral_2= 'Long' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:621:8: enumLiteral_2= 'Long'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1085:6: (enumLiteral_2= 'Long' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1085:8: enumLiteral_2= 'Long'
                     {
-                    enumLiteral_2=(Token)match(input,25,FOLLOW_25_in_ruleJHipsterType1337); 
+                    enumLiteral_2=(Token)match(input,32,FOLLOW_32_in_ruleJHipsterType2575); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getLONGEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_2, grammarAccess.getJHipsterTypeAccess().getLONGEnumLiteralDeclaration_2()); 
@@ -1568,12 +2777,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 4 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:627:6: (enumLiteral_3= 'BigDecimal' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1091:6: (enumLiteral_3= 'BigDecimal' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:627:6: (enumLiteral_3= 'BigDecimal' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:627:8: enumLiteral_3= 'BigDecimal'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1091:6: (enumLiteral_3= 'BigDecimal' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1091:8: enumLiteral_3= 'BigDecimal'
                     {
-                    enumLiteral_3=(Token)match(input,26,FOLLOW_26_in_ruleJHipsterType1354); 
+                    enumLiteral_3=(Token)match(input,33,FOLLOW_33_in_ruleJHipsterType2592); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getBIG_DECIMALEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_3, grammarAccess.getJHipsterTypeAccess().getBIG_DECIMALEnumLiteralDeclaration_3()); 
@@ -1585,12 +2794,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 5 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:633:6: (enumLiteral_4= 'Float' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1097:6: (enumLiteral_4= 'Float' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:633:6: (enumLiteral_4= 'Float' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:633:8: enumLiteral_4= 'Float'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1097:6: (enumLiteral_4= 'Float' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1097:8: enumLiteral_4= 'Float'
                     {
-                    enumLiteral_4=(Token)match(input,27,FOLLOW_27_in_ruleJHipsterType1371); 
+                    enumLiteral_4=(Token)match(input,34,FOLLOW_34_in_ruleJHipsterType2609); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getFLOATEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_4, grammarAccess.getJHipsterTypeAccess().getFLOATEnumLiteralDeclaration_4()); 
@@ -1602,12 +2811,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 6 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:639:6: (enumLiteral_5= 'Double' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1103:6: (enumLiteral_5= 'Double' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:639:6: (enumLiteral_5= 'Double' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:639:8: enumLiteral_5= 'Double'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1103:6: (enumLiteral_5= 'Double' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1103:8: enumLiteral_5= 'Double'
                     {
-                    enumLiteral_5=(Token)match(input,28,FOLLOW_28_in_ruleJHipsterType1388); 
+                    enumLiteral_5=(Token)match(input,35,FOLLOW_35_in_ruleJHipsterType2626); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getDOUBLEEnumLiteralDeclaration_5().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_5, grammarAccess.getJHipsterTypeAccess().getDOUBLEEnumLiteralDeclaration_5()); 
@@ -1619,12 +2828,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 7 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:645:6: (enumLiteral_6= 'Enum' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1109:6: (enumLiteral_6= 'Enum' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:645:6: (enumLiteral_6= 'Enum' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:645:8: enumLiteral_6= 'Enum'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1109:6: (enumLiteral_6= 'Enum' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1109:8: enumLiteral_6= 'Enum'
                     {
-                    enumLiteral_6=(Token)match(input,29,FOLLOW_29_in_ruleJHipsterType1405); 
+                    enumLiteral_6=(Token)match(input,36,FOLLOW_36_in_ruleJHipsterType2643); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getENUMEnumLiteralDeclaration_6().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_6, grammarAccess.getJHipsterTypeAccess().getENUMEnumLiteralDeclaration_6()); 
@@ -1636,12 +2845,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 8 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:651:6: (enumLiteral_7= 'Boolean' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1115:6: (enumLiteral_7= 'Boolean' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:651:6: (enumLiteral_7= 'Boolean' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:651:8: enumLiteral_7= 'Boolean'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1115:6: (enumLiteral_7= 'Boolean' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1115:8: enumLiteral_7= 'Boolean'
                     {
-                    enumLiteral_7=(Token)match(input,30,FOLLOW_30_in_ruleJHipsterType1422); 
+                    enumLiteral_7=(Token)match(input,37,FOLLOW_37_in_ruleJHipsterType2660); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getBOOLEANEnumLiteralDeclaration_7().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_7, grammarAccess.getJHipsterTypeAccess().getBOOLEANEnumLiteralDeclaration_7()); 
@@ -1653,12 +2862,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 9 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:657:6: (enumLiteral_8= 'LocalDate' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1121:6: (enumLiteral_8= 'LocalDate' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:657:6: (enumLiteral_8= 'LocalDate' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:657:8: enumLiteral_8= 'LocalDate'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1121:6: (enumLiteral_8= 'LocalDate' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1121:8: enumLiteral_8= 'LocalDate'
                     {
-                    enumLiteral_8=(Token)match(input,31,FOLLOW_31_in_ruleJHipsterType1439); 
+                    enumLiteral_8=(Token)match(input,38,FOLLOW_38_in_ruleJHipsterType2677); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getLOCAL_DATEEnumLiteralDeclaration_8().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_8, grammarAccess.getJHipsterTypeAccess().getLOCAL_DATEEnumLiteralDeclaration_8()); 
@@ -1670,12 +2879,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
                     }
                     break;
                 case 10 :
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:663:6: (enumLiteral_9= 'ZoneDateTime' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1127:6: (enumLiteral_9= 'ZoneDateTime' )
                     {
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:663:6: (enumLiteral_9= 'ZoneDateTime' )
-                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:663:8: enumLiteral_9= 'ZoneDateTime'
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1127:6: (enumLiteral_9= 'ZoneDateTime' )
+                    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:1127:8: enumLiteral_9= 'ZoneDateTime'
                     {
-                    enumLiteral_9=(Token)match(input,32,FOLLOW_32_in_ruleJHipsterType1456); 
+                    enumLiteral_9=(Token)match(input,39,FOLLOW_39_in_ruleJHipsterType2694); 
 
                             current = grammarAccess.getJHipsterTypeAccess().getZONE_DATE_TIMEEnumLiteralDeclaration_9().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_9, grammarAccess.getJHipsterTypeAccess().getZONE_DATE_TIMEEnumLiteralDeclaration_9()); 
@@ -1727,7 +2936,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
     public static final BitSet FOLLOW_13_in_ruleEntity428 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleRelation_in_entryRuleRelation465 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleRelation475 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_ruleRelation512 = new BitSet(new long[]{0x0000000000780000L});
+    public static final BitSet FOLLOW_14_in_ruleRelation512 = new BitSet(new long[]{0x000000003C000000L});
     public static final BitSet FOLLOW_ruleRelationType_in_ruleRelation533 = new BitSet(new long[]{0x0000000000001000L});
     public static final BitSet FOLLOW_12_in_ruleRelation545 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleRelation565 = new BitSet(new long[]{0x0000000000001000L});
@@ -1751,26 +2960,76 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
     public static final BitSet FOLLOW_13_in_ruleEnum893 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleField_in_entryRuleField929 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleField939 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleField981 = new BitSet(new long[]{0x00000001FF800010L});
-    public static final BitSet FOLLOW_ruleHdlType_in_ruleField1007 = new BitSet(new long[]{0x0000000000040002L});
-    public static final BitSet FOLLOW_18_in_ruleField1025 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleHdlType_in_entryRuleHdlType1075 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleHdlType1085 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleHdlType1130 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJHipsterType_in_ruleHdlType1157 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_ruleRelationType1207 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_ruleRelationType1224 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_ruleRelationType1241 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_ruleRelationType1258 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_ruleJHipsterType1303 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_ruleJHipsterType1320 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_ruleJHipsterType1337 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_ruleJHipsterType1354 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_ruleJHipsterType1371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_ruleJHipsterType1388 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_ruleJHipsterType1405 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleJHipsterType1422 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_ruleJHipsterType1439 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_ruleJHipsterType1456 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleField981 = new BitSet(new long[]{0x000000FFC0000010L});
+    public static final BitSet FOLLOW_ruleHdlType_in_ruleField1007 = new BitSet(new long[]{0x0000000003CC0002L});
+    public static final BitSet FOLLOW_ruleValidationRule_in_ruleField1028 = new BitSet(new long[]{0x0000000003CC0002L});
+    public static final BitSet FOLLOW_ruleValidationRule_in_entryRuleValidationRule1065 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleValidationRule1075 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRequired_in_ruleValidationRule1122 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValueRange_in_ruleValidationRule1149 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePattern_in_ruleValidationRule1176 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRequired_in_entryRuleRequired1211 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRequired1221 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_ruleRequired1263 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValueRange_in_entryRuleValueRange1311 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleValueRange1321 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMinSpecification_in_ruleValueRange1368 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMaxSpecification_in_ruleValueRange1395 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMinSpecification_in_entryRuleMinSpecification1430 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMinSpecification1440 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringMinSpecification_in_ruleMinSpecification1487 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntegerMinSpecification_in_ruleMinSpecification1514 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMaxSpecification_in_entryRuleMaxSpecification1549 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMaxSpecification1559 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringMaxSpecification_in_ruleMaxSpecification1606 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntegerMaxSpecification_in_ruleMaxSpecification1633 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringMinSpecification_in_entryRuleStringMinSpecification1668 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleStringMinSpecification1678 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_ruleStringMinSpecification1715 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleStringMinSpecification1727 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleStringMinSpecification1744 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_21_in_ruleStringMinSpecification1761 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringMaxSpecification_in_entryRuleStringMaxSpecification1797 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleStringMaxSpecification1807 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_ruleStringMaxSpecification1844 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleStringMaxSpecification1856 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleStringMaxSpecification1873 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_21_in_ruleStringMaxSpecification1890 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntegerMinSpecification_in_entryRuleIntegerMinSpecification1926 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleIntegerMinSpecification1936 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_ruleIntegerMinSpecification1973 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleIntegerMinSpecification1985 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleIntegerMinSpecification2002 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_21_in_ruleIntegerMinSpecification2019 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntegerMaxSpecification_in_entryRuleIntegerMaxSpecification2055 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleIntegerMaxSpecification2065 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_ruleIntegerMaxSpecification2102 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleIntegerMaxSpecification2114 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleIntegerMaxSpecification2131 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_21_in_ruleIntegerMaxSpecification2148 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePattern_in_entryRulePattern2184 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePattern2194 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rulePattern2231 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_rulePattern2243 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rulePattern2260 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_21_in_rulePattern2277 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleHdlType_in_entryRuleHdlType2313 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleHdlType2323 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleHdlType2368 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJHipsterType_in_ruleHdlType2395 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_ruleRelationType2445 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_ruleRelationType2462 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_ruleRelationType2479 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_ruleRelationType2496 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_ruleJHipsterType2541 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_ruleJHipsterType2558 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_ruleJHipsterType2575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_ruleJHipsterType2592 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_ruleJHipsterType2609 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_ruleJHipsterType2626 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_ruleJHipsterType2643 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_ruleJHipsterType2660 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_ruleJHipsterType2677 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_ruleJHipsterType2694 = new BitSet(new long[]{0x0000000000000002L});
 
 }

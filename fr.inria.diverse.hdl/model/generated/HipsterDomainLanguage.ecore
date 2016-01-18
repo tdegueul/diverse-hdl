@@ -28,7 +28,26 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//HdlType"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="validationRules" upperBound="-1"
+        eType="#//ValidationRule" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ValidationRule"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Required" eSuperTypes="#//ValidationRule">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="required" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ValueRange" eSuperTypes="#//ValidationRule"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MinSpecification" eSuperTypes="#//ValueRange">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="min" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxSpecification" eSuperTypes="#//ValueRange">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="max" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StringMinSpecification" eSuperTypes="#//MinSpecification"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StringMaxSpecification" eSuperTypes="#//MaxSpecification"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IntegerMinSpecification" eSuperTypes="#//MinSpecification"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IntegerMaxSpecification" eSuperTypes="#//MaxSpecification"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Pattern" eSuperTypes="#//ValidationRule">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="regex" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HdlType">
     <eStructuralFeatures xsi:type="ecore:EReference" name="enumType" eType="#//Enum"/>

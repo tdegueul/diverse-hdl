@@ -8,7 +8,17 @@ import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMaxSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMinSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.MaxSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.MinSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Pattern;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Required;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.StringMaxSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.StringMinSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.ValidationRule;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.ValueRange;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -123,6 +133,95 @@ public class HipsterDomainLanguageSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case HipsterDomainLanguagePackage.VALIDATION_RULE:
+      {
+        ValidationRule validationRule = (ValidationRule)theEObject;
+        T result = caseValidationRule(validationRule);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.REQUIRED:
+      {
+        Required required = (Required)theEObject;
+        T result = caseRequired(required);
+        if (result == null) result = caseValidationRule(required);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.VALUE_RANGE:
+      {
+        ValueRange valueRange = (ValueRange)theEObject;
+        T result = caseValueRange(valueRange);
+        if (result == null) result = caseValidationRule(valueRange);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.MIN_SPECIFICATION:
+      {
+        MinSpecification minSpecification = (MinSpecification)theEObject;
+        T result = caseMinSpecification(minSpecification);
+        if (result == null) result = caseValueRange(minSpecification);
+        if (result == null) result = caseValidationRule(minSpecification);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.MAX_SPECIFICATION:
+      {
+        MaxSpecification maxSpecification = (MaxSpecification)theEObject;
+        T result = caseMaxSpecification(maxSpecification);
+        if (result == null) result = caseValueRange(maxSpecification);
+        if (result == null) result = caseValidationRule(maxSpecification);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.STRING_MIN_SPECIFICATION:
+      {
+        StringMinSpecification stringMinSpecification = (StringMinSpecification)theEObject;
+        T result = caseStringMinSpecification(stringMinSpecification);
+        if (result == null) result = caseMinSpecification(stringMinSpecification);
+        if (result == null) result = caseValueRange(stringMinSpecification);
+        if (result == null) result = caseValidationRule(stringMinSpecification);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.STRING_MAX_SPECIFICATION:
+      {
+        StringMaxSpecification stringMaxSpecification = (StringMaxSpecification)theEObject;
+        T result = caseStringMaxSpecification(stringMaxSpecification);
+        if (result == null) result = caseMaxSpecification(stringMaxSpecification);
+        if (result == null) result = caseValueRange(stringMaxSpecification);
+        if (result == null) result = caseValidationRule(stringMaxSpecification);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.INTEGER_MIN_SPECIFICATION:
+      {
+        IntegerMinSpecification integerMinSpecification = (IntegerMinSpecification)theEObject;
+        T result = caseIntegerMinSpecification(integerMinSpecification);
+        if (result == null) result = caseMinSpecification(integerMinSpecification);
+        if (result == null) result = caseValueRange(integerMinSpecification);
+        if (result == null) result = caseValidationRule(integerMinSpecification);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.INTEGER_MAX_SPECIFICATION:
+      {
+        IntegerMaxSpecification integerMaxSpecification = (IntegerMaxSpecification)theEObject;
+        T result = caseIntegerMaxSpecification(integerMaxSpecification);
+        if (result == null) result = caseMaxSpecification(integerMaxSpecification);
+        if (result == null) result = caseValueRange(integerMaxSpecification);
+        if (result == null) result = caseValidationRule(integerMaxSpecification);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case HipsterDomainLanguagePackage.PATTERN:
+      {
+        Pattern pattern = (Pattern)theEObject;
+        T result = casePattern(pattern);
+        if (result == null) result = caseValidationRule(pattern);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case HipsterDomainLanguagePackage.HDL_TYPE:
       {
         HdlType hdlType = (HdlType)theEObject;
@@ -226,6 +325,166 @@ public class HipsterDomainLanguageSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseField(Field object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Validation Rule</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Validation Rule</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseValidationRule(ValidationRule object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Required</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Required</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseRequired(Required object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Value Range</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Value Range</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseValueRange(ValueRange object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Min Specification</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Min Specification</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseMinSpecification(MinSpecification object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Max Specification</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Max Specification</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseMaxSpecification(MaxSpecification object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>String Min Specification</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>String Min Specification</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseStringMinSpecification(StringMinSpecification object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>String Max Specification</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>String Max Specification</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseStringMaxSpecification(StringMaxSpecification object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Integer Min Specification</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Integer Min Specification</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseIntegerMinSpecification(IntegerMinSpecification object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Integer Max Specification</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Integer Max Specification</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseIntegerMaxSpecification(IntegerMaxSpecification object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Pattern</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Pattern</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePattern(Pattern object)
   {
     return null;
   }

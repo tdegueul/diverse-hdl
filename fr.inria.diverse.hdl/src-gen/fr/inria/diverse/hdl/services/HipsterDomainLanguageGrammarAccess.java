@@ -267,14 +267,14 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
 		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cTypeHdlTypeParserRuleCall_1_0 = (RuleCall)cTypeAssignment_1.eContents().get(0);
-		private final Assignment cRequiredAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final Keyword cRequiredRequiredKeyword_2_0 = (Keyword)cRequiredAssignment_2.eContents().get(0);
+		private final Assignment cValidationRulesAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cValidationRulesValidationRuleParserRuleCall_2_0 = (RuleCall)cValidationRulesAssignment_2.eContents().get(0);
 		
 		//Field:
-		//	name=ID type=HdlType required?="required"?;
+		//	name=ID type=HdlType validationRules+=ValidationRule*;
 		@Override public ParserRule getRule() { return rule; }
 
-		//name=ID type=HdlType required?="required"?
+		//name=ID type=HdlType validationRules+=ValidationRule*
 		public Group getGroup() { return cGroup; }
 
 		//name=ID
@@ -289,11 +289,271 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		//HdlType
 		public RuleCall getTypeHdlTypeParserRuleCall_1_0() { return cTypeHdlTypeParserRuleCall_1_0; }
 
-		//required?="required"?
-		public Assignment getRequiredAssignment_2() { return cRequiredAssignment_2; }
+		//validationRules+=ValidationRule*
+		public Assignment getValidationRulesAssignment_2() { return cValidationRulesAssignment_2; }
+
+		//ValidationRule
+		public RuleCall getValidationRulesValidationRuleParserRuleCall_2_0() { return cValidationRulesValidationRuleParserRuleCall_2_0; }
+	}
+
+	public class ValidationRuleElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ValidationRule");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cRequiredParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cValueRangeParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		private final RuleCall cPatternParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
+		
+		//ValidationRule:
+		//	Required | ValueRange | Pattern;
+		@Override public ParserRule getRule() { return rule; }
+
+		//Required | ValueRange | Pattern
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//Required
+		public RuleCall getRequiredParserRuleCall_0() { return cRequiredParserRuleCall_0; }
+
+		//ValueRange
+		public RuleCall getValueRangeParserRuleCall_1() { return cValueRangeParserRuleCall_1; }
+
+		//Pattern
+		public RuleCall getPatternParserRuleCall_2() { return cPatternParserRuleCall_2; }
+	}
+
+	public class RequiredElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Required");
+		private final Assignment cRequiredAssignment = (Assignment)rule.eContents().get(1);
+		private final Keyword cRequiredRequiredKeyword_0 = (Keyword)cRequiredAssignment.eContents().get(0);
+		
+		//Required:
+		//	required?="required";
+		@Override public ParserRule getRule() { return rule; }
+
+		//required?="required"
+		public Assignment getRequiredAssignment() { return cRequiredAssignment; }
 
 		//"required"
-		public Keyword getRequiredRequiredKeyword_2_0() { return cRequiredRequiredKeyword_2_0; }
+		public Keyword getRequiredRequiredKeyword_0() { return cRequiredRequiredKeyword_0; }
+	}
+
+	public class ValueRangeElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ValueRange");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cMinSpecificationParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cMaxSpecificationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		
+		//ValueRange:
+		//	MinSpecification | MaxSpecification;
+		@Override public ParserRule getRule() { return rule; }
+
+		//MinSpecification | MaxSpecification
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//MinSpecification
+		public RuleCall getMinSpecificationParserRuleCall_0() { return cMinSpecificationParserRuleCall_0; }
+
+		//MaxSpecification
+		public RuleCall getMaxSpecificationParserRuleCall_1() { return cMaxSpecificationParserRuleCall_1; }
+	}
+
+	public class MinSpecificationElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MinSpecification");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cStringMinSpecificationParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cIntegerMinSpecificationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		
+		//MinSpecification:
+		//	StringMinSpecification | IntegerMinSpecification;
+		@Override public ParserRule getRule() { return rule; }
+
+		//StringMinSpecification | IntegerMinSpecification
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//StringMinSpecification
+		public RuleCall getStringMinSpecificationParserRuleCall_0() { return cStringMinSpecificationParserRuleCall_0; }
+
+		//IntegerMinSpecification
+		public RuleCall getIntegerMinSpecificationParserRuleCall_1() { return cIntegerMinSpecificationParserRuleCall_1; }
+	}
+
+	public class MaxSpecificationElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MaxSpecification");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cStringMaxSpecificationParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cIntegerMaxSpecificationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		
+		//MaxSpecification:
+		//	StringMaxSpecification | IntegerMaxSpecification;
+		@Override public ParserRule getRule() { return rule; }
+
+		//StringMaxSpecification | IntegerMaxSpecification
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//StringMaxSpecification
+		public RuleCall getStringMaxSpecificationParserRuleCall_0() { return cStringMaxSpecificationParserRuleCall_0; }
+
+		//IntegerMaxSpecification
+		public RuleCall getIntegerMaxSpecificationParserRuleCall_1() { return cIntegerMaxSpecificationParserRuleCall_1; }
+	}
+
+	public class StringMinSpecificationElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "StringMinSpecification");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cMinlengthKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cMinAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cMinINTTerminalRuleCall_2_0 = (RuleCall)cMinAssignment_2.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		
+		//StringMinSpecification:
+		//	"minlength" "(" min=INT ")";
+		@Override public ParserRule getRule() { return rule; }
+
+		//"minlength" "(" min=INT ")"
+		public Group getGroup() { return cGroup; }
+
+		//"minlength"
+		public Keyword getMinlengthKeyword_0() { return cMinlengthKeyword_0; }
+
+		//"("
+		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
+
+		//min=INT
+		public Assignment getMinAssignment_2() { return cMinAssignment_2; }
+
+		//INT
+		public RuleCall getMinINTTerminalRuleCall_2_0() { return cMinINTTerminalRuleCall_2_0; }
+
+		//")"
+		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
+	}
+
+	public class StringMaxSpecificationElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "StringMaxSpecification");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cMaxlengthKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cMaxAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cMaxINTTerminalRuleCall_2_0 = (RuleCall)cMaxAssignment_2.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		
+		//StringMaxSpecification:
+		//	"maxlength" "(" max=INT ")";
+		@Override public ParserRule getRule() { return rule; }
+
+		//"maxlength" "(" max=INT ")"
+		public Group getGroup() { return cGroup; }
+
+		//"maxlength"
+		public Keyword getMaxlengthKeyword_0() { return cMaxlengthKeyword_0; }
+
+		//"("
+		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
+
+		//max=INT
+		public Assignment getMaxAssignment_2() { return cMaxAssignment_2; }
+
+		//INT
+		public RuleCall getMaxINTTerminalRuleCall_2_0() { return cMaxINTTerminalRuleCall_2_0; }
+
+		//")"
+		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
+	}
+
+	public class IntegerMinSpecificationElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "IntegerMinSpecification");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cMinKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cMinAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cMinINTTerminalRuleCall_2_0 = (RuleCall)cMinAssignment_2.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		
+		//IntegerMinSpecification:
+		//	"min" "(" min=INT ")";
+		@Override public ParserRule getRule() { return rule; }
+
+		//"min" "(" min=INT ")"
+		public Group getGroup() { return cGroup; }
+
+		//"min"
+		public Keyword getMinKeyword_0() { return cMinKeyword_0; }
+
+		//"("
+		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
+
+		//min=INT
+		public Assignment getMinAssignment_2() { return cMinAssignment_2; }
+
+		//INT
+		public RuleCall getMinINTTerminalRuleCall_2_0() { return cMinINTTerminalRuleCall_2_0; }
+
+		//")"
+		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
+	}
+
+	public class IntegerMaxSpecificationElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "IntegerMaxSpecification");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cMaxKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cMaxAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cMaxINTTerminalRuleCall_2_0 = (RuleCall)cMaxAssignment_2.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		
+		//IntegerMaxSpecification:
+		//	"max" "(" max=INT ")";
+		@Override public ParserRule getRule() { return rule; }
+
+		//"max" "(" max=INT ")"
+		public Group getGroup() { return cGroup; }
+
+		//"max"
+		public Keyword getMaxKeyword_0() { return cMaxKeyword_0; }
+
+		//"("
+		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
+
+		//max=INT
+		public Assignment getMaxAssignment_2() { return cMaxAssignment_2; }
+
+		//INT
+		public RuleCall getMaxINTTerminalRuleCall_2_0() { return cMaxINTTerminalRuleCall_2_0; }
+
+		//")"
+		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
+	}
+
+	public class PatternElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Pattern");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cPatternKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cRegexAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cRegexSTRINGTerminalRuleCall_2_0 = (RuleCall)cRegexAssignment_2.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		
+		//Pattern:
+		//	"pattern" "(" regex=STRING ")";
+		@Override public ParserRule getRule() { return rule; }
+
+		//"pattern" "(" regex=STRING ")"
+		public Group getGroup() { return cGroup; }
+
+		//"pattern"
+		public Keyword getPatternKeyword_0() { return cPatternKeyword_0; }
+
+		//"("
+		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
+
+		//regex=STRING
+		public Assignment getRegexAssignment_2() { return cRegexAssignment_2; }
+
+		//STRING
+		public RuleCall getRegexSTRINGTerminalRuleCall_2_0() { return cRegexSTRINGTerminalRuleCall_2_0; }
+
+		//")"
+		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
 	}
 
 	public class HdlTypeElements extends AbstractParserRuleElementFinder {
@@ -473,6 +733,16 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 	private final RelationElements pRelation;
 	private final EnumElements pEnum;
 	private final FieldElements pField;
+	private final ValidationRuleElements pValidationRule;
+	private final RequiredElements pRequired;
+	private final ValueRangeElements pValueRange;
+	private final MinSpecificationElements pMinSpecification;
+	private final MaxSpecificationElements pMaxSpecification;
+	private final StringMinSpecificationElements pStringMinSpecification;
+	private final StringMaxSpecificationElements pStringMaxSpecification;
+	private final IntegerMinSpecificationElements pIntegerMinSpecification;
+	private final IntegerMaxSpecificationElements pIntegerMaxSpecification;
+	private final PatternElements pPattern;
 	private final HdlTypeElements pHdlType;
 	private final RelationTypeElements unknownRuleRelationType;
 	private final JHipsterTypeElements unknownRuleJHipsterType;
@@ -492,6 +762,16 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		this.pRelation = new RelationElements();
 		this.pEnum = new EnumElements();
 		this.pField = new FieldElements();
+		this.pValidationRule = new ValidationRuleElements();
+		this.pRequired = new RequiredElements();
+		this.pValueRange = new ValueRangeElements();
+		this.pMinSpecification = new MinSpecificationElements();
+		this.pMaxSpecification = new MaxSpecificationElements();
+		this.pStringMinSpecification = new StringMinSpecificationElements();
+		this.pStringMaxSpecification = new StringMaxSpecificationElements();
+		this.pIntegerMinSpecification = new IntegerMinSpecificationElements();
+		this.pIntegerMaxSpecification = new IntegerMaxSpecificationElements();
+		this.pPattern = new PatternElements();
 		this.pHdlType = new HdlTypeElements();
 		this.unknownRuleRelationType = new RelationTypeElements();
 		this.unknownRuleJHipsterType = new JHipsterTypeElements();
@@ -576,13 +856,113 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	//Field:
-	//	name=ID type=HdlType required?="required"?;
+	//	name=ID type=HdlType validationRules+=ValidationRule*;
 	public FieldElements getFieldAccess() {
 		return pField;
 	}
 	
 	public ParserRule getFieldRule() {
 		return getFieldAccess().getRule();
+	}
+
+	//ValidationRule:
+	//	Required | ValueRange | Pattern;
+	public ValidationRuleElements getValidationRuleAccess() {
+		return pValidationRule;
+	}
+	
+	public ParserRule getValidationRuleRule() {
+		return getValidationRuleAccess().getRule();
+	}
+
+	//Required:
+	//	required?="required";
+	public RequiredElements getRequiredAccess() {
+		return pRequired;
+	}
+	
+	public ParserRule getRequiredRule() {
+		return getRequiredAccess().getRule();
+	}
+
+	//ValueRange:
+	//	MinSpecification | MaxSpecification;
+	public ValueRangeElements getValueRangeAccess() {
+		return pValueRange;
+	}
+	
+	public ParserRule getValueRangeRule() {
+		return getValueRangeAccess().getRule();
+	}
+
+	//MinSpecification:
+	//	StringMinSpecification | IntegerMinSpecification;
+	public MinSpecificationElements getMinSpecificationAccess() {
+		return pMinSpecification;
+	}
+	
+	public ParserRule getMinSpecificationRule() {
+		return getMinSpecificationAccess().getRule();
+	}
+
+	//MaxSpecification:
+	//	StringMaxSpecification | IntegerMaxSpecification;
+	public MaxSpecificationElements getMaxSpecificationAccess() {
+		return pMaxSpecification;
+	}
+	
+	public ParserRule getMaxSpecificationRule() {
+		return getMaxSpecificationAccess().getRule();
+	}
+
+	//StringMinSpecification:
+	//	"minlength" "(" min=INT ")";
+	public StringMinSpecificationElements getStringMinSpecificationAccess() {
+		return pStringMinSpecification;
+	}
+	
+	public ParserRule getStringMinSpecificationRule() {
+		return getStringMinSpecificationAccess().getRule();
+	}
+
+	//StringMaxSpecification:
+	//	"maxlength" "(" max=INT ")";
+	public StringMaxSpecificationElements getStringMaxSpecificationAccess() {
+		return pStringMaxSpecification;
+	}
+	
+	public ParserRule getStringMaxSpecificationRule() {
+		return getStringMaxSpecificationAccess().getRule();
+	}
+
+	//IntegerMinSpecification:
+	//	"min" "(" min=INT ")";
+	public IntegerMinSpecificationElements getIntegerMinSpecificationAccess() {
+		return pIntegerMinSpecification;
+	}
+	
+	public ParserRule getIntegerMinSpecificationRule() {
+		return getIntegerMinSpecificationAccess().getRule();
+	}
+
+	//IntegerMaxSpecification:
+	//	"max" "(" max=INT ")";
+	public IntegerMaxSpecificationElements getIntegerMaxSpecificationAccess() {
+		return pIntegerMaxSpecification;
+	}
+	
+	public ParserRule getIntegerMaxSpecificationRule() {
+		return getIntegerMaxSpecificationAccess().getRule();
+	}
+
+	//Pattern:
+	//	"pattern" "(" regex=STRING ")";
+	public PatternElements getPatternAccess() {
+		return pPattern;
+	}
+	
+	public ParserRule getPatternRule() {
+		return getPatternAccess().getRule();
 	}
 
 	//HdlType:

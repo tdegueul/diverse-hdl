@@ -2,6 +2,8 @@
  */
 package fr.inria.diverse.hdl.hipsterDomainLanguage;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -15,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#getName <em>Name</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#getType <em>Type</em>}</li>
- *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#isRequired <em>Required</em>}</li>
+ *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#getValidationRules <em>Validation Rules</em>}</li>
  * </ul>
  *
  * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getField()
@@ -77,29 +79,19 @@ public interface Field extends EObject
   void setType(HdlType value);
 
   /**
-   * Returns the value of the '<em><b>Required</b></em>' attribute.
+   * Returns the value of the '<em><b>Validation Rules</b></em>' containment reference list.
+   * The list contents are of type {@link fr.inria.diverse.hdl.hipsterDomainLanguage.ValidationRule}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Required</em>' attribute isn't clear,
+   * If the meaning of the '<em>Validation Rules</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Required</em>' attribute.
-   * @see #setRequired(boolean)
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getField_Required()
-   * @model
+   * @return the value of the '<em>Validation Rules</em>' containment reference list.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getField_ValidationRules()
+   * @model containment="true"
    * @generated
    */
-  boolean isRequired();
-
-  /**
-   * Sets the value of the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field#isRequired <em>Required</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Required</em>' attribute.
-   * @see #isRequired()
-   * @generated
-   */
-  void setRequired(boolean value);
+  EList<ValidationRule> getValidationRules();
 
 } // Field

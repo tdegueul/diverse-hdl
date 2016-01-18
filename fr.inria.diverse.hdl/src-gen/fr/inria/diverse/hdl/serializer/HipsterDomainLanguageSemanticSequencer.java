@@ -10,7 +10,13 @@ import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMaxSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMinSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Pattern;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Required;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.StringMaxSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.StringMinSpecification;
 import fr.inria.diverse.hdl.services.HipsterDomainLanguageGrammarAccess;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.serializer.acceptor.ISemanticSequenceAcceptor;
@@ -48,8 +54,26 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 			case HipsterDomainLanguagePackage.HDL_TYPE:
 				sequence_HdlType(context, (HdlType) semanticObject); 
 				return; 
+			case HipsterDomainLanguagePackage.INTEGER_MAX_SPECIFICATION:
+				sequence_IntegerMaxSpecification(context, (IntegerMaxSpecification) semanticObject); 
+				return; 
+			case HipsterDomainLanguagePackage.INTEGER_MIN_SPECIFICATION:
+				sequence_IntegerMinSpecification(context, (IntegerMinSpecification) semanticObject); 
+				return; 
+			case HipsterDomainLanguagePackage.PATTERN:
+				sequence_Pattern(context, (Pattern) semanticObject); 
+				return; 
 			case HipsterDomainLanguagePackage.RELATION:
 				sequence_Relation(context, (Relation) semanticObject); 
+				return; 
+			case HipsterDomainLanguagePackage.REQUIRED:
+				sequence_Required(context, (Required) semanticObject); 
+				return; 
+			case HipsterDomainLanguagePackage.STRING_MAX_SPECIFICATION:
+				sequence_StringMaxSpecification(context, (StringMaxSpecification) semanticObject); 
+				return; 
+			case HipsterDomainLanguagePackage.STRING_MIN_SPECIFICATION:
+				sequence_StringMinSpecification(context, (StringMinSpecification) semanticObject); 
 				return; 
 			}
 		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
@@ -84,7 +108,7 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (name=ID type=HdlType required?='required'?)
+	 *     (name=ID type=HdlType validationRules+=ValidationRule*)
 	 */
 	protected void sequence_Field(EObject context, Field semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -97,6 +121,54 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 	 */
 	protected void sequence_HdlType(EObject context, HdlType semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     max=INT
+	 */
+	protected void sequence_IntegerMaxSpecification(EObject context, IntegerMaxSpecification semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.MAX_SPECIFICATION__MAX) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.MAX_SPECIFICATION__MAX));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getIntegerMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0(), semanticObject.getMax());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     min=INT
+	 */
+	protected void sequence_IntegerMinSpecification(EObject context, IntegerMinSpecification semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.MIN_SPECIFICATION__MIN) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.MIN_SPECIFICATION__MIN));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getIntegerMinSpecificationAccess().getMinINTTerminalRuleCall_2_0(), semanticObject.getMin());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     regex=STRING
+	 */
+	protected void sequence_Pattern(EObject context, Pattern semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.PATTERN__REGEX) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.PATTERN__REGEX));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getPatternAccess().getRegexSTRINGTerminalRuleCall_2_0(), semanticObject.getRegex());
+		feeder.finish();
 	}
 	
 	
@@ -124,6 +196,54 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 		feeder.accept(grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0(), semanticObject.getFromRelation());
 		feeder.accept(grammarAccess.getRelationAccess().getToEntityIDTerminalRuleCall_6_0_1(), semanticObject.getTo());
 		feeder.accept(grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0(), semanticObject.getToRelation());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     required?='required'
+	 */
+	protected void sequence_Required(EObject context, Required semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.REQUIRED__REQUIRED) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.REQUIRED__REQUIRED));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getRequiredAccess().getRequiredRequiredKeyword_0(), semanticObject.isRequired());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     max=INT
+	 */
+	protected void sequence_StringMaxSpecification(EObject context, StringMaxSpecification semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.MAX_SPECIFICATION__MAX) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.MAX_SPECIFICATION__MAX));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getStringMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0(), semanticObject.getMax());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     min=INT
+	 */
+	protected void sequence_StringMinSpecification(EObject context, StringMinSpecification semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.MIN_SPECIFICATION__MIN) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.MIN_SPECIFICATION__MIN));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getStringMinSpecificationAccess().getMinINTTerminalRuleCall_2_0(), semanticObject.getMin());
 		feeder.finish();
 	}
 }

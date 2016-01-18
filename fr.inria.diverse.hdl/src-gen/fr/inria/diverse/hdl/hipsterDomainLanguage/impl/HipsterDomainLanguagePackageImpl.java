@@ -9,9 +9,19 @@ import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlType;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguageFactory;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMaxSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.IntegerMinSpecification;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.JHipsterType;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.MaxSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.MinSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Pattern;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.RelationType;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.Required;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.StringMaxSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.StringMinSpecification;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.ValidationRule;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.ValueRange;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -70,6 +80,76 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
    * @generated
    */
   private EClass fieldEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass validationRuleEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass requiredEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass valueRangeEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass minSpecificationEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass maxSpecificationEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass stringMinSpecificationEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass stringMaxSpecificationEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass integerMinSpecificationEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass integerMaxSpecificationEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass patternEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -340,9 +420,149 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getField_Required()
+  public EReference getField_ValidationRules()
   {
-    return (EAttribute)fieldEClass.getEStructuralFeatures().get(2);
+    return (EReference)fieldEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getValidationRule()
+  {
+    return validationRuleEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getRequired()
+  {
+    return requiredEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getRequired_Required()
+  {
+    return (EAttribute)requiredEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getValueRange()
+  {
+    return valueRangeEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getMinSpecification()
+  {
+    return minSpecificationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getMinSpecification_Min()
+  {
+    return (EAttribute)minSpecificationEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getMaxSpecification()
+  {
+    return maxSpecificationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getMaxSpecification_Max()
+  {
+    return (EAttribute)maxSpecificationEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getStringMinSpecification()
+  {
+    return stringMinSpecificationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getStringMaxSpecification()
+  {
+    return stringMaxSpecificationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getIntegerMinSpecification()
+  {
+    return integerMinSpecificationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getIntegerMaxSpecification()
+  {
+    return integerMaxSpecificationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getPattern()
+  {
+    return patternEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPattern_Regex()
+  {
+    return (EAttribute)patternEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -448,7 +668,31 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
     fieldEClass = createEClass(FIELD);
     createEAttribute(fieldEClass, FIELD__NAME);
     createEReference(fieldEClass, FIELD__TYPE);
-    createEAttribute(fieldEClass, FIELD__REQUIRED);
+    createEReference(fieldEClass, FIELD__VALIDATION_RULES);
+
+    validationRuleEClass = createEClass(VALIDATION_RULE);
+
+    requiredEClass = createEClass(REQUIRED);
+    createEAttribute(requiredEClass, REQUIRED__REQUIRED);
+
+    valueRangeEClass = createEClass(VALUE_RANGE);
+
+    minSpecificationEClass = createEClass(MIN_SPECIFICATION);
+    createEAttribute(minSpecificationEClass, MIN_SPECIFICATION__MIN);
+
+    maxSpecificationEClass = createEClass(MAX_SPECIFICATION);
+    createEAttribute(maxSpecificationEClass, MAX_SPECIFICATION__MAX);
+
+    stringMinSpecificationEClass = createEClass(STRING_MIN_SPECIFICATION);
+
+    stringMaxSpecificationEClass = createEClass(STRING_MAX_SPECIFICATION);
+
+    integerMinSpecificationEClass = createEClass(INTEGER_MIN_SPECIFICATION);
+
+    integerMaxSpecificationEClass = createEClass(INTEGER_MAX_SPECIFICATION);
+
+    patternEClass = createEClass(PATTERN);
+    createEAttribute(patternEClass, PATTERN__REGEX);
 
     hdlTypeEClass = createEClass(HDL_TYPE);
     createEReference(hdlTypeEClass, HDL_TYPE__ENUM_TYPE);
@@ -491,6 +735,15 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
     entityEClass.getESuperTypes().add(this.getDomainElement());
     relationEClass.getESuperTypes().add(this.getDomainElement());
     enumEClass.getESuperTypes().add(this.getDomainElement());
+    requiredEClass.getESuperTypes().add(this.getValidationRule());
+    valueRangeEClass.getESuperTypes().add(this.getValidationRule());
+    minSpecificationEClass.getESuperTypes().add(this.getValueRange());
+    maxSpecificationEClass.getESuperTypes().add(this.getValueRange());
+    stringMinSpecificationEClass.getESuperTypes().add(this.getMinSpecification());
+    stringMaxSpecificationEClass.getESuperTypes().add(this.getMaxSpecification());
+    integerMinSpecificationEClass.getESuperTypes().add(this.getMinSpecification());
+    integerMaxSpecificationEClass.getESuperTypes().add(this.getMaxSpecification());
+    patternEClass.getESuperTypes().add(this.getValidationRule());
 
     // Initialize classes and features; add operations and parameters
     initEClass(domainEClass, Domain.class, "Domain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -516,7 +769,31 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
     initEClass(fieldEClass, Field.class, "Field", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getField_Name(), ecorePackage.getEString(), "name", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getField_Type(), this.getHdlType(), null, "type", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getField_Required(), ecorePackage.getEBoolean(), "required", null, 0, 1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getField_ValidationRules(), this.getValidationRule(), null, "validationRules", null, 0, -1, Field.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(validationRuleEClass, ValidationRule.class, "ValidationRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(requiredEClass, Required.class, "Required", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getRequired_Required(), ecorePackage.getEBoolean(), "required", null, 0, 1, Required.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(valueRangeEClass, ValueRange.class, "ValueRange", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(minSpecificationEClass, MinSpecification.class, "MinSpecification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getMinSpecification_Min(), ecorePackage.getEInt(), "min", null, 0, 1, MinSpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(maxSpecificationEClass, MaxSpecification.class, "MaxSpecification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getMaxSpecification_Max(), ecorePackage.getEInt(), "max", null, 0, 1, MaxSpecification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(stringMinSpecificationEClass, StringMinSpecification.class, "StringMinSpecification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(stringMaxSpecificationEClass, StringMaxSpecification.class, "StringMaxSpecification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(integerMinSpecificationEClass, IntegerMinSpecification.class, "IntegerMinSpecification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(integerMaxSpecificationEClass, IntegerMaxSpecification.class, "IntegerMaxSpecification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(patternEClass, Pattern.class, "Pattern", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getPattern_Regex(), ecorePackage.getEString(), "regex", null, 0, 1, Pattern.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(hdlTypeEClass, HdlType.class, "HdlType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getHdlType_EnumType(), this.getEnum(), null, "enumType", null, 0, 1, HdlType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

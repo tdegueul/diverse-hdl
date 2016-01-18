@@ -32,7 +32,48 @@ Enum:
 ;
 
 Field:
-	name = ID type = HdlType (required ?= 'required')?
+	name = ID type = HdlType
+	(validationRules += ValidationRule)*
+;
+
+ValidationRule:
+	Required | ValueRange | Pattern
+;
+
+Required:
+	required ?= 'required'
+;
+
+ValueRange:
+	MinSpecification | MaxSpecification
+;
+
+MinSpecification:
+	StringMinSpecification | IntegerMinSpecification
+;
+
+MaxSpecification:
+	StringMaxSpecification | IntegerMaxSpecification
+;
+
+StringMinSpecification:
+	'minlength' '(' min = INT ')'
+;
+
+StringMaxSpecification:
+	'maxlength' '(' max = INT ')'
+;
+
+IntegerMinSpecification:
+	'min' '(' min = INT ')'
+;
+
+IntegerMaxSpecification:
+	'max' '(' max = INT ')'
+;
+
+Pattern:
+	'pattern' '(' regex = STRING ')'
 ;
 
 HdlType:

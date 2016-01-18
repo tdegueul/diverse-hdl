@@ -498,20 +498,484 @@ ruleField returns [EObject current=null]
 )
 )(
 (
-		lv_required_2_0=	'required' 
+		{ 
+	        newCompositeNode(grammarAccess.getFieldAccess().getValidationRulesValidationRuleParserRuleCall_2_0()); 
+	    }
+		lv_validationRules_2_0=ruleValidationRule		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getFieldRule());
+	        }
+       		add(
+       			$current, 
+       			"validationRules",
+        		lv_validationRules_2_0, 
+        		"ValidationRule");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)*)
+;
+
+
+
+
+
+// Entry rule entryRuleValidationRule
+entryRuleValidationRule returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getValidationRuleRule()); }
+	 iv_ruleValidationRule=ruleValidationRule 
+	 { $current=$iv_ruleValidationRule.current; } 
+	 EOF 
+;
+
+// Rule ValidationRule
+ruleValidationRule returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
+    { 
+        newCompositeNode(grammarAccess.getValidationRuleAccess().getRequiredParserRuleCall_0()); 
+    }
+    this_Required_0=ruleRequired
+    { 
+        $current = $this_Required_0.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getValidationRuleAccess().getValueRangeParserRuleCall_1()); 
+    }
+    this_ValueRange_1=ruleValueRange
+    { 
+        $current = $this_ValueRange_1.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getValidationRuleAccess().getPatternParserRuleCall_2()); 
+    }
+    this_Pattern_2=rulePattern
+    { 
+        $current = $this_Pattern_2.current; 
+        afterParserOrEnumRuleCall();
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleRequired
+entryRuleRequired returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getRequiredRule()); }
+	 iv_ruleRequired=ruleRequired 
+	 { $current=$iv_ruleRequired.current; } 
+	 EOF 
+;
+
+// Rule Required
+ruleRequired returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
+(
+		lv_required_0_0=	'required' 
     {
-        newLeafNode(lv_required_2_0, grammarAccess.getFieldAccess().getRequiredRequiredKeyword_2_0());
+        newLeafNode(lv_required_0_0, grammarAccess.getRequiredAccess().getRequiredRequiredKeyword_0());
     }
  
 	    {
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getFieldRule());
+	            $current = createModelElement(grammarAccess.getRequiredRule());
 	        }
        		setWithLastConsumed($current, "required", true, "required");
 	    }
 
 )
-)?)
+)
+;
+
+
+
+
+
+// Entry rule entryRuleValueRange
+entryRuleValueRange returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getValueRangeRule()); }
+	 iv_ruleValueRange=ruleValueRange 
+	 { $current=$iv_ruleValueRange.current; } 
+	 EOF 
+;
+
+// Rule ValueRange
+ruleValueRange returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
+    { 
+        newCompositeNode(grammarAccess.getValueRangeAccess().getMinSpecificationParserRuleCall_0()); 
+    }
+    this_MinSpecification_0=ruleMinSpecification
+    { 
+        $current = $this_MinSpecification_0.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getValueRangeAccess().getMaxSpecificationParserRuleCall_1()); 
+    }
+    this_MaxSpecification_1=ruleMaxSpecification
+    { 
+        $current = $this_MaxSpecification_1.current; 
+        afterParserOrEnumRuleCall();
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleMinSpecification
+entryRuleMinSpecification returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getMinSpecificationRule()); }
+	 iv_ruleMinSpecification=ruleMinSpecification 
+	 { $current=$iv_ruleMinSpecification.current; } 
+	 EOF 
+;
+
+// Rule MinSpecification
+ruleMinSpecification returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
+    { 
+        newCompositeNode(grammarAccess.getMinSpecificationAccess().getStringMinSpecificationParserRuleCall_0()); 
+    }
+    this_StringMinSpecification_0=ruleStringMinSpecification
+    { 
+        $current = $this_StringMinSpecification_0.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getMinSpecificationAccess().getIntegerMinSpecificationParserRuleCall_1()); 
+    }
+    this_IntegerMinSpecification_1=ruleIntegerMinSpecification
+    { 
+        $current = $this_IntegerMinSpecification_1.current; 
+        afterParserOrEnumRuleCall();
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleMaxSpecification
+entryRuleMaxSpecification returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getMaxSpecificationRule()); }
+	 iv_ruleMaxSpecification=ruleMaxSpecification 
+	 { $current=$iv_ruleMaxSpecification.current; } 
+	 EOF 
+;
+
+// Rule MaxSpecification
+ruleMaxSpecification returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
+    { 
+        newCompositeNode(grammarAccess.getMaxSpecificationAccess().getStringMaxSpecificationParserRuleCall_0()); 
+    }
+    this_StringMaxSpecification_0=ruleStringMaxSpecification
+    { 
+        $current = $this_StringMaxSpecification_0.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getMaxSpecificationAccess().getIntegerMaxSpecificationParserRuleCall_1()); 
+    }
+    this_IntegerMaxSpecification_1=ruleIntegerMaxSpecification
+    { 
+        $current = $this_IntegerMaxSpecification_1.current; 
+        afterParserOrEnumRuleCall();
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleStringMinSpecification
+entryRuleStringMinSpecification returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getStringMinSpecificationRule()); }
+	 iv_ruleStringMinSpecification=ruleStringMinSpecification 
+	 { $current=$iv_ruleStringMinSpecification.current; } 
+	 EOF 
+;
+
+// Rule StringMinSpecification
+ruleStringMinSpecification returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='minlength' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getStringMinSpecificationAccess().getMinlengthKeyword_0());
+    }
+	otherlv_1='(' 
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getStringMinSpecificationAccess().getLeftParenthesisKeyword_1());
+    }
+(
+(
+		lv_min_2_0=RULE_INT
+		{
+			newLeafNode(lv_min_2_0, grammarAccess.getStringMinSpecificationAccess().getMinINTTerminalRuleCall_2_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getStringMinSpecificationRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"min",
+        		lv_min_2_0, 
+        		"INT");
+	    }
+
+)
+)	otherlv_3=')' 
+    {
+    	newLeafNode(otherlv_3, grammarAccess.getStringMinSpecificationAccess().getRightParenthesisKeyword_3());
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleStringMaxSpecification
+entryRuleStringMaxSpecification returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getStringMaxSpecificationRule()); }
+	 iv_ruleStringMaxSpecification=ruleStringMaxSpecification 
+	 { $current=$iv_ruleStringMaxSpecification.current; } 
+	 EOF 
+;
+
+// Rule StringMaxSpecification
+ruleStringMaxSpecification returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='maxlength' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getStringMaxSpecificationAccess().getMaxlengthKeyword_0());
+    }
+	otherlv_1='(' 
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getStringMaxSpecificationAccess().getLeftParenthesisKeyword_1());
+    }
+(
+(
+		lv_max_2_0=RULE_INT
+		{
+			newLeafNode(lv_max_2_0, grammarAccess.getStringMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getStringMaxSpecificationRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"max",
+        		lv_max_2_0, 
+        		"INT");
+	    }
+
+)
+)	otherlv_3=')' 
+    {
+    	newLeafNode(otherlv_3, grammarAccess.getStringMaxSpecificationAccess().getRightParenthesisKeyword_3());
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleIntegerMinSpecification
+entryRuleIntegerMinSpecification returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getIntegerMinSpecificationRule()); }
+	 iv_ruleIntegerMinSpecification=ruleIntegerMinSpecification 
+	 { $current=$iv_ruleIntegerMinSpecification.current; } 
+	 EOF 
+;
+
+// Rule IntegerMinSpecification
+ruleIntegerMinSpecification returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='min' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getIntegerMinSpecificationAccess().getMinKeyword_0());
+    }
+	otherlv_1='(' 
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getIntegerMinSpecificationAccess().getLeftParenthesisKeyword_1());
+    }
+(
+(
+		lv_min_2_0=RULE_INT
+		{
+			newLeafNode(lv_min_2_0, grammarAccess.getIntegerMinSpecificationAccess().getMinINTTerminalRuleCall_2_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getIntegerMinSpecificationRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"min",
+        		lv_min_2_0, 
+        		"INT");
+	    }
+
+)
+)	otherlv_3=')' 
+    {
+    	newLeafNode(otherlv_3, grammarAccess.getIntegerMinSpecificationAccess().getRightParenthesisKeyword_3());
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRuleIntegerMaxSpecification
+entryRuleIntegerMaxSpecification returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getIntegerMaxSpecificationRule()); }
+	 iv_ruleIntegerMaxSpecification=ruleIntegerMaxSpecification 
+	 { $current=$iv_ruleIntegerMaxSpecification.current; } 
+	 EOF 
+;
+
+// Rule IntegerMaxSpecification
+ruleIntegerMaxSpecification returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='max' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getIntegerMaxSpecificationAccess().getMaxKeyword_0());
+    }
+	otherlv_1='(' 
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getIntegerMaxSpecificationAccess().getLeftParenthesisKeyword_1());
+    }
+(
+(
+		lv_max_2_0=RULE_INT
+		{
+			newLeafNode(lv_max_2_0, grammarAccess.getIntegerMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getIntegerMaxSpecificationRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"max",
+        		lv_max_2_0, 
+        		"INT");
+	    }
+
+)
+)	otherlv_3=')' 
+    {
+    	newLeafNode(otherlv_3, grammarAccess.getIntegerMaxSpecificationAccess().getRightParenthesisKeyword_3());
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRulePattern
+entryRulePattern returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getPatternRule()); }
+	 iv_rulePattern=rulePattern 
+	 { $current=$iv_rulePattern.current; } 
+	 EOF 
+;
+
+// Rule Pattern
+rulePattern returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='pattern' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getPatternAccess().getPatternKeyword_0());
+    }
+	otherlv_1='(' 
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getPatternAccess().getLeftParenthesisKeyword_1());
+    }
+(
+(
+		lv_regex_2_0=RULE_STRING
+		{
+			newLeafNode(lv_regex_2_0, grammarAccess.getPatternAccess().getRegexSTRINGTerminalRuleCall_2_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getPatternRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"regex",
+        		lv_regex_2_0, 
+        		"STRING");
+	    }
+
+)
+)	otherlv_3=')' 
+    {
+    	newLeafNode(otherlv_3, grammarAccess.getPatternAccess().getRightParenthesisKeyword_3());
+    }
+)
 ;
 
 

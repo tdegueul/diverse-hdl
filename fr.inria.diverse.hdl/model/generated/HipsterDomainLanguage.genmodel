@@ -48,7 +48,25 @@
     <genClasses ecoreClass="HipsterDomainLanguage.ecore#//Field">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Field/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HipsterDomainLanguage.ecore#//Field/type"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Field/required"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HipsterDomainLanguage.ecore#//Field/validationRules"/>
+    </genClasses>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//ValidationRule"/>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//Required">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Required/required"/>
+    </genClasses>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//ValueRange"/>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//MinSpecification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//MinSpecification/min"/>
+    </genClasses>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//MaxSpecification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//MaxSpecification/max"/>
+    </genClasses>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//StringMinSpecification"/>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//StringMaxSpecification"/>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//IntegerMinSpecification"/>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//IntegerMaxSpecification"/>
+    <genClasses ecoreClass="HipsterDomainLanguage.ecore#//Pattern">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Pattern/regex"/>
     </genClasses>
     <genClasses ecoreClass="HipsterDomainLanguage.ecore#//HdlType">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference HipsterDomainLanguage.ecore#//HdlType/enumType"/>

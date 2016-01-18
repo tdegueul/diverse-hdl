@@ -77,6 +77,96 @@ public interface HipsterDomainLanguageFactory extends EFactory
   Field createField();
 
   /**
+   * Returns a new object of class '<em>Validation Rule</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Validation Rule</em>'.
+   * @generated
+   */
+  ValidationRule createValidationRule();
+
+  /**
+   * Returns a new object of class '<em>Required</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Required</em>'.
+   * @generated
+   */
+  Required createRequired();
+
+  /**
+   * Returns a new object of class '<em>Value Range</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Value Range</em>'.
+   * @generated
+   */
+  ValueRange createValueRange();
+
+  /**
+   * Returns a new object of class '<em>Min Specification</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Min Specification</em>'.
+   * @generated
+   */
+  MinSpecification createMinSpecification();
+
+  /**
+   * Returns a new object of class '<em>Max Specification</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Max Specification</em>'.
+   * @generated
+   */
+  MaxSpecification createMaxSpecification();
+
+  /**
+   * Returns a new object of class '<em>String Min Specification</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>String Min Specification</em>'.
+   * @generated
+   */
+  StringMinSpecification createStringMinSpecification();
+
+  /**
+   * Returns a new object of class '<em>String Max Specification</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>String Max Specification</em>'.
+   * @generated
+   */
+  StringMaxSpecification createStringMaxSpecification();
+
+  /**
+   * Returns a new object of class '<em>Integer Min Specification</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Integer Min Specification</em>'.
+   * @generated
+   */
+  IntegerMinSpecification createIntegerMinSpecification();
+
+  /**
+   * Returns a new object of class '<em>Integer Max Specification</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Integer Max Specification</em>'.
+   * @generated
+   */
+  IntegerMaxSpecification createIntegerMaxSpecification();
+
+  /**
+   * Returns a new object of class '<em>Pattern</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Pattern</em>'.
+   * @generated
+   */
+  Pattern createPattern();
+
+  /**
    * Returns a new object of class '<em>Hdl Type</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
