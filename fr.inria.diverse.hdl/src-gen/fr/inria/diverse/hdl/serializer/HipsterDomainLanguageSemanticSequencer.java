@@ -233,7 +233,7 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (type=RelationType from=[Entity|ID] fromRelation=ID to=[Entity|ID] toRelation=ID)
+	 *     (type=RelationType from=[Entity|ID] fromRelationName=ID to=[Entity|ID] toRelationName=ID)
 	 */
 	protected void sequence_Relation(EObject context, Relation semanticObject) {
 		if(errorAcceptor != null) {
@@ -241,20 +241,20 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TYPE));
 			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM));
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM_RELATION) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM_RELATION));
+			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM_RELATION_NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM_RELATION_NAME));
 			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO));
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO_RELATION) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO_RELATION));
+			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO_RELATION_NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO_RELATION_NAME));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
 		feeder.accept(grammarAccess.getRelationAccess().getTypeRelationTypeEnumRuleCall_1_0(), semanticObject.getType());
 		feeder.accept(grammarAccess.getRelationAccess().getFromEntityIDTerminalRuleCall_3_0_1(), semanticObject.getFrom());
-		feeder.accept(grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0(), semanticObject.getFromRelation());
+		feeder.accept(grammarAccess.getRelationAccess().getFromRelationNameIDTerminalRuleCall_4_1_0(), semanticObject.getFromRelationName());
 		feeder.accept(grammarAccess.getRelationAccess().getToEntityIDTerminalRuleCall_6_0_1(), semanticObject.getTo());
-		feeder.accept(grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0(), semanticObject.getToRelation());
+		feeder.accept(grammarAccess.getRelationAccess().getToRelationNameIDTerminalRuleCall_7_1_0(), semanticObject.getToRelationName());
 		feeder.finish();
 	}
 	

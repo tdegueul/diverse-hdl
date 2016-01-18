@@ -306,7 +306,7 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getRelation_FromRelation()
+  public EAttribute getRelation_FromRelationName()
   {
     return (EAttribute)relationEClass.getEStructuralFeatures().get(2);
   }
@@ -326,7 +326,7 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getRelation_ToRelation()
+  public EAttribute getRelation_ToRelationName()
   {
     return (EAttribute)relationEClass.getEStructuralFeatures().get(4);
   }
@@ -603,9 +603,9 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
     relationEClass = createEClass(RELATION);
     createEAttribute(relationEClass, RELATION__TYPE);
     createEReference(relationEClass, RELATION__FROM);
-    createEAttribute(relationEClass, RELATION__FROM_RELATION);
+    createEAttribute(relationEClass, RELATION__FROM_RELATION_NAME);
     createEReference(relationEClass, RELATION__TO);
-    createEAttribute(relationEClass, RELATION__TO_RELATION);
+    createEAttribute(relationEClass, RELATION__TO_RELATION_NAME);
 
     enumEClass = createEClass(ENUM);
     createEAttribute(enumEClass, ENUM__NAME);
@@ -695,9 +695,9 @@ public class HipsterDomainLanguagePackageImpl extends EPackageImpl implements Hi
     initEClass(relationEClass, Relation.class, "Relation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getRelation_Type(), this.getRelationType(), "type", null, 0, 1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getRelation_From(), this.getEntity(), null, "from", null, 0, 1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRelation_FromRelation(), ecorePackage.getEString(), "fromRelation", null, 0, 1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRelation_FromRelationName(), ecorePackage.getEString(), "fromRelationName", null, 0, 1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getRelation_To(), this.getEntity(), null, "to", null, 0, 1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getRelation_ToRelation(), ecorePackage.getEString(), "toRelation", null, 0, 1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRelation_ToRelationName(), ecorePackage.getEString(), "toRelationName", null, 0, 1, Relation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(enumEClass, fr.inria.diverse.hdl.hipsterDomainLanguage.Enum.class, "Enum", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getEnum_Name(), ecorePackage.getEString(), "name", null, 0, 1, fr.inria.diverse.hdl.hipsterDomainLanguage.Enum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

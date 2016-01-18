@@ -14,9 +14,9 @@ package fr.inria.diverse.hdl.hipsterDomainLanguage;
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getType <em>Type</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFrom <em>From</em>}</li>
- *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFromRelation <em>From Relation</em>}</li>
+ *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFromRelationName <em>From Relation Name</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getTo <em>To</em>}</li>
- *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getToRelation <em>To Relation</em>}</li>
+ *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getToRelationName <em>To Relation Name</em>}</li>
  * </ul>
  *
  * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getRelation()
@@ -81,30 +81,30 @@ public interface Relation extends DomainElement
   void setFrom(Entity value);
 
   /**
-   * Returns the value of the '<em><b>From Relation</b></em>' attribute.
+   * Returns the value of the '<em><b>From Relation Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>From Relation</em>' attribute isn't clear,
+   * If the meaning of the '<em>From Relation Name</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>From Relation</em>' attribute.
-   * @see #setFromRelation(String)
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getRelation_FromRelation()
+   * @return the value of the '<em>From Relation Name</em>' attribute.
+   * @see #setFromRelationName(String)
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getRelation_FromRelationName()
    * @model
    * @generated
    */
-  String getFromRelation();
+  String getFromRelationName();
 
   /**
-   * Sets the value of the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFromRelation <em>From Relation</em>}' attribute.
+   * Sets the value of the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFromRelationName <em>From Relation Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>From Relation</em>' attribute.
-   * @see #getFromRelation()
+   * @param value the new value of the '<em>From Relation Name</em>' attribute.
+   * @see #getFromRelationName()
    * @generated
    */
-  void setFromRelation(String value);
+  void setFromRelationName(String value);
 
   /**
    * Returns the value of the '<em><b>To</b></em>' reference.
@@ -133,29 +133,29 @@ public interface Relation extends DomainElement
   void setTo(Entity value);
 
   /**
-   * Returns the value of the '<em><b>To Relation</b></em>' attribute.
+   * Returns the value of the '<em><b>To Relation Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>To Relation</em>' attribute isn't clear,
+   * If the meaning of the '<em>To Relation Name</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>To Relation</em>' attribute.
-   * @see #setToRelation(String)
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getRelation_ToRelation()
+   * @return the value of the '<em>To Relation Name</em>' attribute.
+   * @see #setToRelationName(String)
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage#getRelation_ToRelationName()
    * @model
    * @generated
    */
-  String getToRelation();
+  String getToRelationName();
 
   /**
-   * Sets the value of the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getToRelation <em>To Relation</em>}' attribute.
+   * Sets the value of the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getToRelationName <em>To Relation Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>To Relation</em>' attribute.
-   * @see #getToRelation()
+   * @param value the new value of the '<em>To Relation Name</em>' attribute.
+   * @see #getToRelationName()
    * @generated
    */
-  void setToRelation(String value);
+  void setToRelationName(String value);
 
 } // Relation

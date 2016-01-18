@@ -1382,9 +1382,9 @@ rule__Relation__Group_4__1__Impl
     }
 :
 (
-{ before(grammarAccess.getRelationAccess().getFromRelationAssignment_4_1()); }
-(rule__Relation__FromRelationAssignment_4_1)
-{ after(grammarAccess.getRelationAccess().getFromRelationAssignment_4_1()); }
+{ before(grammarAccess.getRelationAccess().getFromRelationNameAssignment_4_1()); }
+(rule__Relation__FromRelationNameAssignment_4_1)
+{ after(grammarAccess.getRelationAccess().getFromRelationNameAssignment_4_1()); }
 )
 
 ;
@@ -1478,9 +1478,9 @@ rule__Relation__Group_7__1__Impl
     }
 :
 (
-{ before(grammarAccess.getRelationAccess().getToRelationAssignment_7_1()); }
-(rule__Relation__ToRelationAssignment_7_1)
-{ after(grammarAccess.getRelationAccess().getToRelationAssignment_7_1()); }
+{ before(grammarAccess.getRelationAccess().getToRelationNameAssignment_7_1()); }
+(rule__Relation__ToRelationNameAssignment_7_1)
+{ after(grammarAccess.getRelationAccess().getToRelationNameAssignment_7_1()); }
 )
 
 ;
@@ -2627,14 +2627,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Relation__FromRelationAssignment_4_1
+rule__Relation__FromRelationNameAssignment_4_1
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0()); }
-	RULE_ID{ after(grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0()); }
+{ before(grammarAccess.getRelationAccess().getFromRelationNameIDTerminalRuleCall_4_1_0()); }
+	RULE_ID{ after(grammarAccess.getRelationAccess().getFromRelationNameIDTerminalRuleCall_4_1_0()); }
 )
 
 ;
@@ -2661,14 +2661,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Relation__ToRelationAssignment_7_1
+rule__Relation__ToRelationNameAssignment_7_1
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0()); }
-	RULE_ID{ after(grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0()); }
+{ before(grammarAccess.getRelationAccess().getToRelationNameIDTerminalRuleCall_7_1_0()); }
+	RULE_ID{ after(grammarAccess.getRelationAccess().getToRelationNameIDTerminalRuleCall_7_1_0()); }
 )
 
 ;

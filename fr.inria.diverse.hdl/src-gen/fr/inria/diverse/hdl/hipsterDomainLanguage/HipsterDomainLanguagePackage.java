@@ -170,13 +170,13 @@ public interface HipsterDomainLanguagePackage extends EPackage
   int RELATION__FROM = DOMAIN_ELEMENT_FEATURE_COUNT + 1;
 
   /**
-   * The feature id for the '<em><b>From Relation</b></em>' attribute.
+   * The feature id for the '<em><b>From Relation Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int RELATION__FROM_RELATION = DOMAIN_ELEMENT_FEATURE_COUNT + 2;
+  int RELATION__FROM_RELATION_NAME = DOMAIN_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The feature id for the '<em><b>To</b></em>' reference.
@@ -188,13 +188,13 @@ public interface HipsterDomainLanguagePackage extends EPackage
   int RELATION__TO = DOMAIN_ELEMENT_FEATURE_COUNT + 3;
 
   /**
-   * The feature id for the '<em><b>To Relation</b></em>' attribute.
+   * The feature id for the '<em><b>To Relation Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int RELATION__TO_RELATION = DOMAIN_ELEMENT_FEATURE_COUNT + 4;
+  int RELATION__TO_RELATION_NAME = DOMAIN_ELEMENT_FEATURE_COUNT + 4;
 
   /**
    * The number of structural features of the '<em>Relation</em>' class.
@@ -611,15 +611,15 @@ public interface HipsterDomainLanguagePackage extends EPackage
   EReference getRelation_From();
 
   /**
-   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFromRelation <em>From Relation</em>}'.
+   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFromRelationName <em>From Relation Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>From Relation</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFromRelation()
+   * @return the meta object for the attribute '<em>From Relation Name</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getFromRelationName()
    * @see #getRelation()
    * @generated
    */
-  EAttribute getRelation_FromRelation();
+  EAttribute getRelation_FromRelationName();
 
   /**
    * Returns the meta object for the reference '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getTo <em>To</em>}'.
@@ -633,15 +633,15 @@ public interface HipsterDomainLanguagePackage extends EPackage
   EReference getRelation_To();
 
   /**
-   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getToRelation <em>To Relation</em>}'.
+   * Returns the meta object for the attribute '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getToRelationName <em>To Relation Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>To Relation</em>'.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getToRelation()
+   * @return the meta object for the attribute '<em>To Relation Name</em>'.
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Relation#getToRelationName()
    * @see #getRelation()
    * @generated
    */
-  EAttribute getRelation_ToRelation();
+  EAttribute getRelation_ToRelationName();
 
   /**
    * Returns the meta object for class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Enum <em>Enum</em>}'.
@@ -988,12 +988,12 @@ public interface HipsterDomainLanguagePackage extends EPackage
     EReference RELATION__FROM = eINSTANCE.getRelation_From();
 
     /**
-     * The meta object literal for the '<em><b>From Relation</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>From Relation Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute RELATION__FROM_RELATION = eINSTANCE.getRelation_FromRelation();
+    EAttribute RELATION__FROM_RELATION_NAME = eINSTANCE.getRelation_FromRelationName();
 
     /**
      * The meta object literal for the '<em><b>To</b></em>' reference feature.
@@ -1004,12 +1004,12 @@ public interface HipsterDomainLanguagePackage extends EPackage
     EReference RELATION__TO = eINSTANCE.getRelation_To();
 
     /**
-     * The meta object literal for the '<em><b>To Relation</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>To Relation Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute RELATION__TO_RELATION = eINSTANCE.getRelation_ToRelation();
+    EAttribute RELATION__TO_RELATION_NAME = eINSTANCE.getRelation_ToRelationName();
 
     /**
      * The meta object literal for the '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.EnumImpl <em>Enum</em>}' class.

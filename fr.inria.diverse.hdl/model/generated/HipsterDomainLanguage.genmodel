@@ -37,9 +37,9 @@
     <genClasses ecoreClass="HipsterDomainLanguage.ecore#//Relation">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Relation/type"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference HipsterDomainLanguage.ecore#//Relation/from"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Relation/fromRelation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Relation/fromRelationName"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference HipsterDomainLanguage.ecore#//Relation/to"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Relation/toRelation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Relation/toRelationName"/>
     </genClasses>
     <genClasses ecoreClass="HipsterDomainLanguage.ecore#//Enum">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HipsterDomainLanguage.ecore#//Enum/name"/>

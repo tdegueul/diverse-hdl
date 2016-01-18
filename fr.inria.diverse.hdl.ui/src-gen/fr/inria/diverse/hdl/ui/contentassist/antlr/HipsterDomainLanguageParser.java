@@ -63,9 +63,9 @@ public class HipsterDomainLanguageParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEntityAccess().getFieldsAssignment_2_1(), "rule__Entity__FieldsAssignment_2_1");
 					put(grammarAccess.getRelationAccess().getTypeAssignment_1(), "rule__Relation__TypeAssignment_1");
 					put(grammarAccess.getRelationAccess().getFromAssignment_3(), "rule__Relation__FromAssignment_3");
-					put(grammarAccess.getRelationAccess().getFromRelationAssignment_4_1(), "rule__Relation__FromRelationAssignment_4_1");
+					put(grammarAccess.getRelationAccess().getFromRelationNameAssignment_4_1(), "rule__Relation__FromRelationNameAssignment_4_1");
 					put(grammarAccess.getRelationAccess().getToAssignment_6(), "rule__Relation__ToAssignment_6");
-					put(grammarAccess.getRelationAccess().getToRelationAssignment_7_1(), "rule__Relation__ToRelationAssignment_7_1");
+					put(grammarAccess.getRelationAccess().getToRelationNameAssignment_7_1(), "rule__Relation__ToRelationNameAssignment_7_1");
 					put(grammarAccess.getEnumAccess().getNameAssignment_1(), "rule__Enum__NameAssignment_1");
 					put(grammarAccess.getEnumAccess().getLiteralsAssignment_3(), "rule__Enum__LiteralsAssignment_3");
 					put(grammarAccess.getEnumAccess().getLiteralsAssignment_4_1(), "rule__Enum__LiteralsAssignment_4_1");

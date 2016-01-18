@@ -39,9 +39,9 @@ class HipsterDomainLanguageLabelProvider extends DefaultEObjectLabelProvider {
 
 	def String text(Relation it) {
 		return
-			'''«from.name»(«fromRelation») '''
+			'''«from.name»(«fromRelationName») '''
 		  + '''«type.formatRelationCardinalities» '''
-		  + '''«to.name»(«toRelation»)'''
+		  + '''«to.name»(«toRelationName»)'''
 	}
 
 	def String image(Relation it) {

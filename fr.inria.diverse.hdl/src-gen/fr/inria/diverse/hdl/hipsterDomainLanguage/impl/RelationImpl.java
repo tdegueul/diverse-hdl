@@ -24,9 +24,9 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getType <em>Type</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getFrom <em>From</em>}</li>
- *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getFromRelation <em>From Relation</em>}</li>
+ *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getFromRelationName <em>From Relation Name</em>}</li>
  *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getTo <em>To</em>}</li>
- *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getToRelation <em>To Relation</em>}</li>
+ *   <li>{@link fr.inria.diverse.hdl.hipsterDomainLanguage.impl.RelationImpl#getToRelationName <em>To Relation Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -64,24 +64,24 @@ public class RelationImpl extends DomainElementImpl implements Relation
   protected Entity from;
 
   /**
-   * The default value of the '{@link #getFromRelation() <em>From Relation</em>}' attribute.
+   * The default value of the '{@link #getFromRelationName() <em>From Relation Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getFromRelation()
+   * @see #getFromRelationName()
    * @generated
    * @ordered
    */
-  protected static final String FROM_RELATION_EDEFAULT = null;
+  protected static final String FROM_RELATION_NAME_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getFromRelation() <em>From Relation</em>}' attribute.
+   * The cached value of the '{@link #getFromRelationName() <em>From Relation Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getFromRelation()
+   * @see #getFromRelationName()
    * @generated
    * @ordered
    */
-  protected String fromRelation = FROM_RELATION_EDEFAULT;
+  protected String fromRelationName = FROM_RELATION_NAME_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getTo() <em>To</em>}' reference.
@@ -94,24 +94,24 @@ public class RelationImpl extends DomainElementImpl implements Relation
   protected Entity to;
 
   /**
-   * The default value of the '{@link #getToRelation() <em>To Relation</em>}' attribute.
+   * The default value of the '{@link #getToRelationName() <em>To Relation Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getToRelation()
+   * @see #getToRelationName()
    * @generated
    * @ordered
    */
-  protected static final String TO_RELATION_EDEFAULT = null;
+  protected static final String TO_RELATION_NAME_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getToRelation() <em>To Relation</em>}' attribute.
+   * The cached value of the '{@link #getToRelationName() <em>To Relation Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getToRelation()
+   * @see #getToRelationName()
    * @generated
    * @ordered
    */
-  protected String toRelation = TO_RELATION_EDEFAULT;
+  protected String toRelationName = TO_RELATION_NAME_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -205,9 +205,9 @@ public class RelationImpl extends DomainElementImpl implements Relation
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getFromRelation()
+  public String getFromRelationName()
   {
-    return fromRelation;
+    return fromRelationName;
   }
 
   /**
@@ -215,12 +215,12 @@ public class RelationImpl extends DomainElementImpl implements Relation
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setFromRelation(String newFromRelation)
+  public void setFromRelationName(String newFromRelationName)
   {
-    String oldFromRelation = fromRelation;
-    fromRelation = newFromRelation;
+    String oldFromRelationName = fromRelationName;
+    fromRelationName = newFromRelationName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, HipsterDomainLanguagePackage.RELATION__FROM_RELATION, oldFromRelation, fromRelation));
+      eNotify(new ENotificationImpl(this, Notification.SET, HipsterDomainLanguagePackage.RELATION__FROM_RELATION_NAME, oldFromRelationName, fromRelationName));
   }
 
   /**
@@ -271,9 +271,9 @@ public class RelationImpl extends DomainElementImpl implements Relation
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getToRelation()
+  public String getToRelationName()
   {
-    return toRelation;
+    return toRelationName;
   }
 
   /**
@@ -281,12 +281,12 @@ public class RelationImpl extends DomainElementImpl implements Relation
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setToRelation(String newToRelation)
+  public void setToRelationName(String newToRelationName)
   {
-    String oldToRelation = toRelation;
-    toRelation = newToRelation;
+    String oldToRelationName = toRelationName;
+    toRelationName = newToRelationName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, HipsterDomainLanguagePackage.RELATION__TO_RELATION, oldToRelation, toRelation));
+      eNotify(new ENotificationImpl(this, Notification.SET, HipsterDomainLanguagePackage.RELATION__TO_RELATION_NAME, oldToRelationName, toRelationName));
   }
 
   /**
@@ -304,13 +304,13 @@ public class RelationImpl extends DomainElementImpl implements Relation
       case HipsterDomainLanguagePackage.RELATION__FROM:
         if (resolve) return getFrom();
         return basicGetFrom();
-      case HipsterDomainLanguagePackage.RELATION__FROM_RELATION:
-        return getFromRelation();
+      case HipsterDomainLanguagePackage.RELATION__FROM_RELATION_NAME:
+        return getFromRelationName();
       case HipsterDomainLanguagePackage.RELATION__TO:
         if (resolve) return getTo();
         return basicGetTo();
-      case HipsterDomainLanguagePackage.RELATION__TO_RELATION:
-        return getToRelation();
+      case HipsterDomainLanguagePackage.RELATION__TO_RELATION_NAME:
+        return getToRelationName();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -331,14 +331,14 @@ public class RelationImpl extends DomainElementImpl implements Relation
       case HipsterDomainLanguagePackage.RELATION__FROM:
         setFrom((Entity)newValue);
         return;
-      case HipsterDomainLanguagePackage.RELATION__FROM_RELATION:
-        setFromRelation((String)newValue);
+      case HipsterDomainLanguagePackage.RELATION__FROM_RELATION_NAME:
+        setFromRelationName((String)newValue);
         return;
       case HipsterDomainLanguagePackage.RELATION__TO:
         setTo((Entity)newValue);
         return;
-      case HipsterDomainLanguagePackage.RELATION__TO_RELATION:
-        setToRelation((String)newValue);
+      case HipsterDomainLanguagePackage.RELATION__TO_RELATION_NAME:
+        setToRelationName((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -360,14 +360,14 @@ public class RelationImpl extends DomainElementImpl implements Relation
       case HipsterDomainLanguagePackage.RELATION__FROM:
         setFrom((Entity)null);
         return;
-      case HipsterDomainLanguagePackage.RELATION__FROM_RELATION:
-        setFromRelation(FROM_RELATION_EDEFAULT);
+      case HipsterDomainLanguagePackage.RELATION__FROM_RELATION_NAME:
+        setFromRelationName(FROM_RELATION_NAME_EDEFAULT);
         return;
       case HipsterDomainLanguagePackage.RELATION__TO:
         setTo((Entity)null);
         return;
-      case HipsterDomainLanguagePackage.RELATION__TO_RELATION:
-        setToRelation(TO_RELATION_EDEFAULT);
+      case HipsterDomainLanguagePackage.RELATION__TO_RELATION_NAME:
+        setToRelationName(TO_RELATION_NAME_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -387,12 +387,12 @@ public class RelationImpl extends DomainElementImpl implements Relation
         return type != TYPE_EDEFAULT;
       case HipsterDomainLanguagePackage.RELATION__FROM:
         return from != null;
-      case HipsterDomainLanguagePackage.RELATION__FROM_RELATION:
-        return FROM_RELATION_EDEFAULT == null ? fromRelation != null : !FROM_RELATION_EDEFAULT.equals(fromRelation);
+      case HipsterDomainLanguagePackage.RELATION__FROM_RELATION_NAME:
+        return FROM_RELATION_NAME_EDEFAULT == null ? fromRelationName != null : !FROM_RELATION_NAME_EDEFAULT.equals(fromRelationName);
       case HipsterDomainLanguagePackage.RELATION__TO:
         return to != null;
-      case HipsterDomainLanguagePackage.RELATION__TO_RELATION:
-        return TO_RELATION_EDEFAULT == null ? toRelation != null : !TO_RELATION_EDEFAULT.equals(toRelation);
+      case HipsterDomainLanguagePackage.RELATION__TO_RELATION_NAME:
+        return TO_RELATION_NAME_EDEFAULT == null ? toRelationName != null : !TO_RELATION_NAME_EDEFAULT.equals(toRelationName);
     }
     return super.eIsSet(featureID);
   }
@@ -410,10 +410,10 @@ public class RelationImpl extends DomainElementImpl implements Relation
     StringBuffer result = new StringBuffer(super.toString());
     result.append(" (type: ");
     result.append(type);
-    result.append(", fromRelation: ");
-    result.append(fromRelation);
-    result.append(", toRelation: ");
-    result.append(toRelation);
+    result.append(", fromRelationName: ");
+    result.append(fromRelationName);
+    result.append(", toRelationName: ");
+    result.append(toRelationName);
     result.append(')');
     return result.toString();
   }

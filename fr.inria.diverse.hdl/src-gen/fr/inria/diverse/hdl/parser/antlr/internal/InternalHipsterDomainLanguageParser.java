@@ -577,7 +577,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
 
     // $ANTLR start "ruleRelation"
-    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:235:1: ruleRelation returns [EObject current=null] : (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelation_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelation_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' ) ;
+    // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:235:1: ruleRelation returns [EObject current=null] : (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' ) ;
     public final EObject ruleRelation() throws RecognitionException {
         EObject current = null;
 
@@ -585,12 +585,12 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
         Token otherlv_2=null;
         Token otherlv_3=null;
         Token otherlv_4=null;
-        Token lv_fromRelation_5_0=null;
+        Token lv_fromRelationName_5_0=null;
         Token otherlv_6=null;
         Token otherlv_7=null;
         Token otherlv_8=null;
         Token otherlv_9=null;
-        Token lv_toRelation_10_0=null;
+        Token lv_toRelationName_10_0=null;
         Token otherlv_11=null;
         Token otherlv_12=null;
         Enumerator lv_type_1_0 = null;
@@ -599,11 +599,11 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
          enterRule(); 
             
         try {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:238:28: ( (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelation_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelation_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' ) )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:1: (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelation_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelation_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:238:28: ( (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:1: (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' )
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:1: (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelation_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelation_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:3: otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelation_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelation_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}'
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:1: (otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:239:3: otherlv_0= 'relationship' ( (lv_type_1_0= ruleRelationType ) ) otherlv_2= '{' ( (otherlv_3= RULE_ID ) ) (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' ) otherlv_7= 'to' ( (otherlv_8= RULE_ID ) ) (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' ) otherlv_12= '}'
             {
             otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleRelation512); 
 
@@ -665,22 +665,22 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:278:2: (otherlv_4= '{' ( (lv_fromRelation_5_0= RULE_ID ) ) otherlv_6= '}' )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:278:4: otherlv_4= '{' ( (lv_fromRelation_5_0= RULE_ID ) ) otherlv_6= '}'
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:278:2: (otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:278:4: otherlv_4= '{' ( (lv_fromRelationName_5_0= RULE_ID ) ) otherlv_6= '}'
             {
             otherlv_4=(Token)match(input,12,FOLLOW_12_in_ruleRelation578); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_4_0());
                 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:282:1: ( (lv_fromRelation_5_0= RULE_ID ) )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:283:1: (lv_fromRelation_5_0= RULE_ID )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:282:1: ( (lv_fromRelationName_5_0= RULE_ID ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:283:1: (lv_fromRelationName_5_0= RULE_ID )
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:283:1: (lv_fromRelation_5_0= RULE_ID )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:284:3: lv_fromRelation_5_0= RULE_ID
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:283:1: (lv_fromRelationName_5_0= RULE_ID )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:284:3: lv_fromRelationName_5_0= RULE_ID
             {
-            lv_fromRelation_5_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRelation595); 
+            lv_fromRelationName_5_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRelation595); 
 
-            			newLeafNode(lv_fromRelation_5_0, grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0()); 
+            			newLeafNode(lv_fromRelationName_5_0, grammarAccess.getRelationAccess().getFromRelationNameIDTerminalRuleCall_4_1_0()); 
             		
 
             	        if (current==null) {
@@ -688,8 +688,8 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             	        }
                    		setWithLastConsumed(
                    			current, 
-                   			"fromRelation",
-                    		lv_fromRelation_5_0, 
+                   			"fromRelationName",
+                    		lv_fromRelationName_5_0, 
                     		"ID");
             	    
 
@@ -730,22 +730,22 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
 
             }
 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:321:2: (otherlv_9= '{' ( (lv_toRelation_10_0= RULE_ID ) ) otherlv_11= '}' )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:321:4: otherlv_9= '{' ( (lv_toRelation_10_0= RULE_ID ) ) otherlv_11= '}'
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:321:2: (otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}' )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:321:4: otherlv_9= '{' ( (lv_toRelationName_10_0= RULE_ID ) ) otherlv_11= '}'
             {
             otherlv_9=(Token)match(input,12,FOLLOW_12_in_ruleRelation658); 
 
                 	newLeafNode(otherlv_9, grammarAccess.getRelationAccess().getLeftCurlyBracketKeyword_7_0());
                 
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:325:1: ( (lv_toRelation_10_0= RULE_ID ) )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:326:1: (lv_toRelation_10_0= RULE_ID )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:325:1: ( (lv_toRelationName_10_0= RULE_ID ) )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:326:1: (lv_toRelationName_10_0= RULE_ID )
             {
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:326:1: (lv_toRelation_10_0= RULE_ID )
-            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:327:3: lv_toRelation_10_0= RULE_ID
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:326:1: (lv_toRelationName_10_0= RULE_ID )
+            // ../fr.inria.diverse.hdl/src-gen/fr/inria/diverse/hdl/parser/antlr/internal/InternalHipsterDomainLanguage.g:327:3: lv_toRelationName_10_0= RULE_ID
             {
-            lv_toRelation_10_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRelation675); 
+            lv_toRelationName_10_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRelation675); 
 
-            			newLeafNode(lv_toRelation_10_0, grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0()); 
+            			newLeafNode(lv_toRelationName_10_0, grammarAccess.getRelationAccess().getToRelationNameIDTerminalRuleCall_7_1_0()); 
             		
 
             	        if (current==null) {
@@ -753,8 +753,8 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalAntlrPa
             	        }
                    		setWithLastConsumed(
                    			current, 
-                   			"toRelation",
-                    		lv_toRelation_10_0, 
+                   			"toRelationName",
+                    		lv_toRelationName_10_0, 
                     		"ID");
             	    
 

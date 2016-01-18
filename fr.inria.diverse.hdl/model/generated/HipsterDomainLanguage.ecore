@@ -15,9 +15,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="Relation" eSuperTypes="#//DomainElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//RelationType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//Entity"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromRelation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromRelationName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="#//Entity"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="toRelation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="toRelationName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Enum" eSuperTypes="#//DomainElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

@@ -18,9 +18,9 @@ Entity:
 
 Relation:
 	'relationship' type=RelationType '{'
-		from = [Entity] ('{' fromRelation = ID '}')
+		from = [Entity] ('{' fromRelationName = ID '}')
 		'to'
-		to = [Entity] ('{' toRelation = ID '}')
+		to = [Entity] ('{' toRelationName = ID '}')
 	'}'
 ;
 

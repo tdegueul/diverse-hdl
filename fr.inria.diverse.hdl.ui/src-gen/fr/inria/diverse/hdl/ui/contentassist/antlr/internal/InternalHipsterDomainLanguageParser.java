@@ -3855,31 +3855,31 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_4__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1379:1: rule__Relation__Group_4__1__Impl : ( ( rule__Relation__FromRelationAssignment_4_1 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1379:1: rule__Relation__Group_4__1__Impl : ( ( rule__Relation__FromRelationNameAssignment_4_1 ) ) ;
     public final void rule__Relation__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1383:1: ( ( ( rule__Relation__FromRelationAssignment_4_1 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1384:1: ( ( rule__Relation__FromRelationAssignment_4_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1383:1: ( ( ( rule__Relation__FromRelationNameAssignment_4_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1384:1: ( ( rule__Relation__FromRelationNameAssignment_4_1 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1384:1: ( ( rule__Relation__FromRelationAssignment_4_1 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1385:1: ( rule__Relation__FromRelationAssignment_4_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1384:1: ( ( rule__Relation__FromRelationNameAssignment_4_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1385:1: ( rule__Relation__FromRelationNameAssignment_4_1 )
             {
-             before(grammarAccess.getRelationAccess().getFromRelationAssignment_4_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1386:1: ( rule__Relation__FromRelationAssignment_4_1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1386:2: rule__Relation__FromRelationAssignment_4_1
+             before(grammarAccess.getRelationAccess().getFromRelationNameAssignment_4_1()); 
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1386:1: ( rule__Relation__FromRelationNameAssignment_4_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1386:2: rule__Relation__FromRelationNameAssignment_4_1
             {
-            pushFollow(FOLLOW_rule__Relation__FromRelationAssignment_4_1_in_rule__Relation__Group_4__1__Impl2884);
-            rule__Relation__FromRelationAssignment_4_1();
+            pushFollow(FOLLOW_rule__Relation__FromRelationNameAssignment_4_1_in_rule__Relation__Group_4__1__Impl2884);
+            rule__Relation__FromRelationNameAssignment_4_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRelationAccess().getFromRelationAssignment_4_1()); 
+             after(grammarAccess.getRelationAccess().getFromRelationNameAssignment_4_1()); 
 
             }
 
@@ -4085,31 +4085,31 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
 
 
     // $ANTLR start "rule__Relation__Group_7__1__Impl"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1475:1: rule__Relation__Group_7__1__Impl : ( ( rule__Relation__ToRelationAssignment_7_1 ) ) ;
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1475:1: rule__Relation__Group_7__1__Impl : ( ( rule__Relation__ToRelationNameAssignment_7_1 ) ) ;
     public final void rule__Relation__Group_7__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1479:1: ( ( ( rule__Relation__ToRelationAssignment_7_1 ) ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1480:1: ( ( rule__Relation__ToRelationAssignment_7_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1479:1: ( ( ( rule__Relation__ToRelationNameAssignment_7_1 ) ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1480:1: ( ( rule__Relation__ToRelationNameAssignment_7_1 ) )
             {
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1480:1: ( ( rule__Relation__ToRelationAssignment_7_1 ) )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1481:1: ( rule__Relation__ToRelationAssignment_7_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1480:1: ( ( rule__Relation__ToRelationNameAssignment_7_1 ) )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1481:1: ( rule__Relation__ToRelationNameAssignment_7_1 )
             {
-             before(grammarAccess.getRelationAccess().getToRelationAssignment_7_1()); 
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1482:1: ( rule__Relation__ToRelationAssignment_7_1 )
-            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1482:2: rule__Relation__ToRelationAssignment_7_1
+             before(grammarAccess.getRelationAccess().getToRelationNameAssignment_7_1()); 
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1482:1: ( rule__Relation__ToRelationNameAssignment_7_1 )
+            // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:1482:2: rule__Relation__ToRelationNameAssignment_7_1
             {
-            pushFollow(FOLLOW_rule__Relation__ToRelationAssignment_7_1_in_rule__Relation__Group_7__1__Impl3071);
-            rule__Relation__ToRelationAssignment_7_1();
+            pushFollow(FOLLOW_rule__Relation__ToRelationNameAssignment_7_1_in_rule__Relation__Group_7__1__Impl3071);
+            rule__Relation__ToRelationNameAssignment_7_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRelationAccess().getToRelationAssignment_7_1()); 
+             after(grammarAccess.getRelationAccess().getToRelationNameAssignment_7_1()); 
 
             }
 
@@ -6943,9 +6943,9 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     // $ANTLR end "rule__Relation__FromAssignment_3"
 
 
-    // $ANTLR start "rule__Relation__FromRelationAssignment_4_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2630:1: rule__Relation__FromRelationAssignment_4_1 : ( RULE_ID ) ;
-    public final void rule__Relation__FromRelationAssignment_4_1() throws RecognitionException {
+    // $ANTLR start "rule__Relation__FromRelationNameAssignment_4_1"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2630:1: rule__Relation__FromRelationNameAssignment_4_1 : ( RULE_ID ) ;
+    public final void rule__Relation__FromRelationNameAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -6956,9 +6956,9 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
             // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2635:1: ( RULE_ID )
             // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2636:1: RULE_ID
             {
-             before(grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__FromRelationAssignment_4_15335); 
-             after(grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0()); 
+             before(grammarAccess.getRelationAccess().getFromRelationNameIDTerminalRuleCall_4_1_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__FromRelationNameAssignment_4_15335); 
+             after(grammarAccess.getRelationAccess().getFromRelationNameIDTerminalRuleCall_4_1_0()); 
 
             }
 
@@ -6977,7 +6977,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
         }
         return ;
     }
-    // $ANTLR end "rule__Relation__FromRelationAssignment_4_1"
+    // $ANTLR end "rule__Relation__FromRelationNameAssignment_4_1"
 
 
     // $ANTLR start "rule__Relation__ToAssignment_6"
@@ -7025,9 +7025,9 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     // $ANTLR end "rule__Relation__ToAssignment_6"
 
 
-    // $ANTLR start "rule__Relation__ToRelationAssignment_7_1"
-    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2664:1: rule__Relation__ToRelationAssignment_7_1 : ( RULE_ID ) ;
-    public final void rule__Relation__ToRelationAssignment_7_1() throws RecognitionException {
+    // $ANTLR start "rule__Relation__ToRelationNameAssignment_7_1"
+    // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2664:1: rule__Relation__ToRelationNameAssignment_7_1 : ( RULE_ID ) ;
+    public final void rule__Relation__ToRelationNameAssignment_7_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -7038,9 +7038,9 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
             // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2669:1: ( RULE_ID )
             // ../fr.inria.diverse.hdl.ui/src-gen/fr/inria/diverse/hdl/ui/contentassist/antlr/internal/InternalHipsterDomainLanguage.g:2670:1: RULE_ID
             {
-             before(grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__ToRelationAssignment_7_15405); 
-             after(grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0()); 
+             before(grammarAccess.getRelationAccess().getToRelationNameIDTerminalRuleCall_7_1_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Relation__ToRelationNameAssignment_7_15405); 
+             after(grammarAccess.getRelationAccess().getToRelationNameIDTerminalRuleCall_7_1_0()); 
 
             }
 
@@ -7059,7 +7059,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
         }
         return ;
     }
-    // $ANTLR end "rule__Relation__ToRelationAssignment_7_1"
+    // $ANTLR end "rule__Relation__ToRelationNameAssignment_7_1"
 
 
     // $ANTLR start "rule__Enum__NameAssignment_1"
@@ -7742,7 +7742,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     public static final BitSet FOLLOW_26_in_rule__Relation__Group_4__0__Impl2823 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Relation__Group_4__1__Impl_in_rule__Relation__Group_4__12854 = new BitSet(new long[]{0x0000000008000000L});
     public static final BitSet FOLLOW_rule__Relation__Group_4__2_in_rule__Relation__Group_4__12857 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__FromRelationAssignment_4_1_in_rule__Relation__Group_4__1__Impl2884 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__FromRelationNameAssignment_4_1_in_rule__Relation__Group_4__1__Impl2884 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Relation__Group_4__2__Impl_in_rule__Relation__Group_4__22914 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_27_in_rule__Relation__Group_4__2__Impl2942 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Relation__Group_7__0__Impl_in_rule__Relation__Group_7__02979 = new BitSet(new long[]{0x0000000000000010L});
@@ -7750,7 +7750,7 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     public static final BitSet FOLLOW_26_in_rule__Relation__Group_7__0__Impl3010 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Relation__Group_7__1__Impl_in_rule__Relation__Group_7__13041 = new BitSet(new long[]{0x0000000008000000L});
     public static final BitSet FOLLOW_rule__Relation__Group_7__2_in_rule__Relation__Group_7__13044 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Relation__ToRelationAssignment_7_1_in_rule__Relation__Group_7__1__Impl3071 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Relation__ToRelationNameAssignment_7_1_in_rule__Relation__Group_7__1__Impl3071 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Relation__Group_7__2__Impl_in_rule__Relation__Group_7__23101 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_27_in_rule__Relation__Group_7__2__Impl3129 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Enum__Group__0__Impl_in_rule__Enum__Group__03166 = new BitSet(new long[]{0x0000000000000010L});
@@ -7846,9 +7846,9 @@ public class InternalHipsterDomainLanguageParser extends AbstractInternalContent
     public static final BitSet FOLLOW_ruleField_in_rule__Entity__FieldsAssignment_2_15234 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleRelationType_in_rule__Relation__TypeAssignment_15265 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__FromAssignment_35300 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__FromRelationAssignment_4_15335 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__FromRelationNameAssignment_4_15335 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__ToAssignment_65370 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__ToRelationAssignment_7_15405 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Relation__ToRelationNameAssignment_7_15405 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Enum__NameAssignment_15436 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_35467 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Enum__LiteralsAssignment_4_15498 = new BitSet(new long[]{0x0000000000000002L});

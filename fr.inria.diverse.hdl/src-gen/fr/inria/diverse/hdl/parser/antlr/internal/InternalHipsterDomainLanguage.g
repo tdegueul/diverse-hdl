@@ -281,9 +281,9 @@ ruleRelation returns [EObject current=null]
     }
 (
 (
-		lv_fromRelation_5_0=RULE_ID
+		lv_fromRelationName_5_0=RULE_ID
 		{
-			newLeafNode(lv_fromRelation_5_0, grammarAccess.getRelationAccess().getFromRelationIDTerminalRuleCall_4_1_0()); 
+			newLeafNode(lv_fromRelationName_5_0, grammarAccess.getRelationAccess().getFromRelationNameIDTerminalRuleCall_4_1_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -291,8 +291,8 @@ ruleRelation returns [EObject current=null]
 	        }
        		setWithLastConsumed(
        			$current, 
-       			"fromRelation",
-        		lv_fromRelation_5_0, 
+       			"fromRelationName",
+        		lv_fromRelationName_5_0, 
         		"ID");
 	    }
 
@@ -324,9 +324,9 @@ ruleRelation returns [EObject current=null]
     }
 (
 (
-		lv_toRelation_10_0=RULE_ID
+		lv_toRelationName_10_0=RULE_ID
 		{
-			newLeafNode(lv_toRelation_10_0, grammarAccess.getRelationAccess().getToRelationIDTerminalRuleCall_7_1_0()); 
+			newLeafNode(lv_toRelationName_10_0, grammarAccess.getRelationAccess().getToRelationNameIDTerminalRuleCall_7_1_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -334,8 +334,8 @@ ruleRelation returns [EObject current=null]
 	        }
        		setWithLastConsumed(
        			$current, 
-       			"toRelation",
-        		lv_toRelation_10_0, 
+       			"toRelationName",
+        		lv_toRelationName_10_0, 
         		"ID");
 	    }
 
