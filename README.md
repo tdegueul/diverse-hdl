@@ -56,6 +56,9 @@ Besides the facilities offered by Xtext, we would like to design an additional t
 - If two entities have the same name, merge their fields
 - Implement a basic support for conflict management (eg. the same entity with the same field's name having different types in both .hdl files)
 
+### 5 - Bonus
+Come back here when you're done with the next section :) Have a look at the [IDE Concepts documentation](https://eclipse.org/Xtext/documentation/304_ide_concepts.html) and try to implement your own outline and quickfixes!
+
 ## Sirius
 Ok, so we've got a basic textual editor for JDL. But wouldn't it be more convenient to be able to visualize our entity-relation domain model graphically (ie. "boxes and arrows")?
 
@@ -63,4 +66,10 @@ Ok, so we've got a basic textual editor for JDL. But wouldn't it be more conveni
 
 When cloning the repository, you obtained a project `fr.inria.diverse.hdl.design`. Within it, you'll find a so-called 'Viewpoint Specification Model' `description/hdl.odesign`. This file specifies how the elements of a model (ie. your `.hdl` file) are projected as graphical elements. Additional documentation can be found at [https://www.eclipse.org/sirius/doc/specifier/diagrams/Diagrams.html](https://www.eclipse.org/sirius/doc/specifier/diagrams/Diagrams.html).
 
+To get started, enter the Modeling perspective: `Window -> Open Perspective -> Modeling` and open the `.odesign` file. Also, open the Properties view which you'll use to customize your representation elements: `Window -> Show View -> Properties`.
 
+In the `.odesign`, right-click on the 'Default' layer and create a new container diagram element. Give it a unique ID and select the domain element you want to represent. Then, right-click on your new container element and create a new style for it (for example, a gradient).
+
+To test your new editor, restart the Eclipse instance that contains your `.hdl` files. Enter the modeling perspective right-click the project containing your test files -> `Viewpoint selection` and select the default viewpoint. Right-click again on the project and create a new representation for one of your `.hdl` model. Sirius will open a new graphical representation with the elements of your model.
+
+Iterate between your `.odesign` and editor to obtain a representation you're comfortable with.
