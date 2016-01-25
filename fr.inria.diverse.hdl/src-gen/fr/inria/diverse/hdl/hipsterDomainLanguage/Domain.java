@@ -26,7 +26,7 @@ public interface Domain extends EObject
 {
   /**
    * Returns the value of the '<em><b>Elements</b></em>' containment reference list.
-   * The list contents are of type {@link fr.inria.diverse.hdl.hipsterDomainLanguage.DomainElement}.
+   * The list contents are of type {@link fr.inria.diverse.hdl.hipsterDomainLanguage.MyElement}.
    * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Elements</em>' containment reference list isn't clear,
@@ -38,6 +38,6 @@ public interface Domain extends EObject
    * @model containment="true"
    * @generated
    */
-  EList<DomainElement> getElements();
+  EList<MyElement> getElements();
 
 } // Domain

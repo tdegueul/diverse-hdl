@@ -2,20 +2,7 @@
  */
 package fr.inria.diverse.hdl.hipsterDomainLanguage.util;
 
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Domain;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.DomainElement;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.HdlTypeReference;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.MaxSpecification;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.MinSpecification;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Pattern;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.ValidationRule;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.ValueRange;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -93,69 +80,14 @@ public class HipsterDomainLanguageAdapterFactory extends AdapterFactoryImpl
         return createDomainAdapter();
       }
       @Override
-      public Adapter caseDomainElement(DomainElement object)
+      public Adapter caseMyElement(MyElement object)
       {
-        return createDomainElementAdapter();
+        return createMyElementAdapter();
       }
       @Override
-      public Adapter caseEntity(Entity object)
+      public Adapter caseMyFeature(MyFeature object)
       {
-        return createEntityAdapter();
-      }
-      @Override
-      public Adapter caseRelation(Relation object)
-      {
-        return createRelationAdapter();
-      }
-      @Override
-      public Adapter caseEnum(fr.inria.diverse.hdl.hipsterDomainLanguage.Enum object)
-      {
-        return createEnumAdapter();
-      }
-      @Override
-      public Adapter caseField(Field object)
-      {
-        return createFieldAdapter();
-      }
-      @Override
-      public Adapter caseValidationRule(ValidationRule object)
-      {
-        return createValidationRuleAdapter();
-      }
-      @Override
-      public Adapter caseValueRange(ValueRange object)
-      {
-        return createValueRangeAdapter();
-      }
-      @Override
-      public Adapter caseMinSpecification(MinSpecification object)
-      {
-        return createMinSpecificationAdapter();
-      }
-      @Override
-      public Adapter caseMaxSpecification(MaxSpecification object)
-      {
-        return createMaxSpecificationAdapter();
-      }
-      @Override
-      public Adapter casePattern(Pattern object)
-      {
-        return createPatternAdapter();
-      }
-      @Override
-      public Adapter caseHdlTypeReference(HdlTypeReference object)
-      {
-        return createHdlTypeReferenceAdapter();
-      }
-      @Override
-      public Adapter caseEnumTypeReference(EnumTypeReference object)
-      {
-        return createEnumTypeReferenceAdapter();
-      }
-      @Override
-      public Adapter casePrimitiveTypeReference(PrimitiveTypeReference object)
-      {
-        return createPrimitiveTypeReferenceAdapter();
+        return createMyFeatureAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -195,196 +127,31 @@ public class HipsterDomainLanguageAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.DomainElement <em>Domain Element</em>}'.
+   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.MyElement <em>My Element</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.DomainElement
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.MyElement
    * @generated
    */
-  public Adapter createDomainElementAdapter()
+  public Adapter createMyElementAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Entity <em>Entity</em>}'.
+   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.MyFeature <em>My Feature</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Entity
+   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.MyFeature
    * @generated
    */
-  public Adapter createEntityAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Relation <em>Relation</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Relation
-   * @generated
-   */
-  public Adapter createRelationAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Enum <em>Enum</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Enum
-   * @generated
-   */
-  public Adapter createEnumAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Field <em>Field</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Field
-   * @generated
-   */
-  public Adapter createFieldAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.ValidationRule <em>Validation Rule</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.ValidationRule
-   * @generated
-   */
-  public Adapter createValidationRuleAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.ValueRange <em>Value Range</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.ValueRange
-   * @generated
-   */
-  public Adapter createValueRangeAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.MinSpecification <em>Min Specification</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.MinSpecification
-   * @generated
-   */
-  public Adapter createMinSpecificationAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.MaxSpecification <em>Max Specification</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.MaxSpecification
-   * @generated
-   */
-  public Adapter createMaxSpecificationAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.Pattern <em>Pattern</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.Pattern
-   * @generated
-   */
-  public Adapter createPatternAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.HdlTypeReference <em>Hdl Type Reference</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.HdlTypeReference
-   * @generated
-   */
-  public Adapter createHdlTypeReferenceAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference <em>Enum Type Reference</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference
-   * @generated
-   */
-  public Adapter createEnumTypeReferenceAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference <em>Primitive Type Reference</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference
-   * @generated
-   */
-  public Adapter createPrimitiveTypeReferenceAdapter()
+  public Adapter createMyFeatureAdapter()
   {
     return null;
   }

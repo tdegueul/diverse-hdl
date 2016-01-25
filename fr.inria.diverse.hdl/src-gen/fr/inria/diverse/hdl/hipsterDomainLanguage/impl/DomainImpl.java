@@ -3,8 +3,8 @@
 package fr.inria.diverse.hdl.hipsterDomainLanguage.impl;
 
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Domain;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.DomainElement;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.MyElement;
 
 import java.util.Collection;
 
@@ -43,7 +43,7 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain
    * @generated
    * @ordered
    */
-  protected EList<DomainElement> elements;
+  protected EList<MyElement> elements;
 
   /**
    * <!-- begin-user-doc -->
@@ -71,11 +71,11 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<DomainElement> getElements()
+  public EList<MyElement> getElements()
   {
     if (elements == null)
     {
-      elements = new EObjectContainmentEList<DomainElement>(DomainElement.class, this, HipsterDomainLanguagePackage.DOMAIN__ELEMENTS);
+      elements = new EObjectContainmentEList<MyElement>(MyElement.class, this, HipsterDomainLanguagePackage.DOMAIN__ELEMENTS);
     }
     return elements;
   }
@@ -125,7 +125,7 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain
     {
       case HipsterDomainLanguagePackage.DOMAIN__ELEMENTS:
         getElements().clear();
-        getElements().addAll((Collection<? extends DomainElement>)newValue);
+        getElements().addAll((Collection<? extends MyElement>)newValue);
         return;
     }
     super.eSet(featureID, newValue);

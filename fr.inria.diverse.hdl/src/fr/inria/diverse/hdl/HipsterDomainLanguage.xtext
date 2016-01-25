@@ -2,105 +2,17 @@ grammar fr.inria.diverse.hdl.HipsterDomainLanguage with org.eclipse.xtext.common
 
 generate hipsterDomainLanguage "http://www.inria.fr/diverse/hdl/HipsterDomainLanguage"
 
-Domain:
-	elements += DomainElement*
+// Just an example
+Domain: // root grammar element
+	(elements += MyElement)*
 ;
 
-DomainElement:
-	Entity | Relation | Enum
-;
-
-Entity:
-	'entity' name=ID ('{'
-		fields += Field*
-	'}')
-;
-
-Relation:
-	'relationship' type=RelationType '{'
-		from = [Entity] ('[' fromRelationName = ID ']')
-		'to'
-		to = [Entity] ('[' toRelationName = ID ']')
+MyElement:
+	'myElement' name = ID '{'
+		(someFeatureOfMyElement += MyFeature)*
 	'}'
 ;
 
-Enum:
-	'enum' name=ID '{'
-		literals += ID
-		(',' literals += ID)*
-	'}'
-;
-
-Field:
-	name = ID type = HdlTypeReference
-	(required ?= 'required')?
-	(validationRules += ValidationRule)*
-;
-
-ValidationRule:
-	ValueRange | Pattern
-;
-
-ValueRange:
-	MinSpecification | MaxSpecification
-;
-
-MinSpecification:
-	StringMinSpecification | IntegerMinSpecification
-;
-
-MaxSpecification:
-	StringMaxSpecification | IntegerMaxSpecification
-;
-
-StringMinSpecification returns MinSpecification:
-	'minlength' '(' min = INT ')'
-;
-
-StringMaxSpecification returns MaxSpecification:
-	'maxlength' '(' max = INT ')'
-;
-
-IntegerMinSpecification returns MinSpecification:
-	'min' '(' min = INT ')'
-;
-
-IntegerMaxSpecification returns MaxSpecification:
-	'max' '(' max = INT ')'
-;
-
-Pattern:
-	'pattern' '(' regex = STRING ')'
-;
-
-HdlTypeReference:
-	EnumTypeReference | PrimitiveTypeReference
-;
-
-EnumTypeReference:
-	type = [Enum]
-;
-
-PrimitiveTypeReference:
-	type = JHipsterType
-;
-
-enum RelationType:
-	  ONE_TO_MANY  = 'OneToMany'
-	| MANY_TO_ONE  = 'ManyToOne'
-	| ONE_TO_ONE   = 'OneToOne'
-	| MANY_TO_MANY = 'ManyToMany'
-;
-
-enum JHipsterType:
-	  STRING         = 'String'
-	| INTEGER        = 'Integer'
-	| LONG           = 'Long'
-	| BIG_DECIMAL    = 'BigDecimal'
-	| FLOAT          = 'Float'
-	| DOUBLE         = 'Double'
-	| ENUM           = 'Enum'
-	| BOOLEAN        = 'Boolean'
-	| LOCAL_DATE     = 'LocalDate'
-	| ZONE_DATE_TIME = 'ZoneDateTime'
+MyFeature:
+	'feature' name = ID
 ;

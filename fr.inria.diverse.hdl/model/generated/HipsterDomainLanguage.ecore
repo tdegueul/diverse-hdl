@@ -4,68 +4,14 @@
     nsPrefix="hipsterDomainLanguage">
   <eClassifiers xsi:type="ecore:EClass" name="Domain">
     <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
-        eType="#//DomainElement" containment="true"/>
+        eType="#//MyElement" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DomainElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Entity" eSuperTypes="#//DomainElement">
+  <eClassifiers xsi:type="ecore:EClass" name="MyElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="fields" upperBound="-1"
-        eType="#//Field" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="someFeatureOfMyElement"
+        upperBound="-1" eType="#//MyFeature" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Relation" eSuperTypes="#//DomainElement">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//RelationType"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//Entity"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromRelationName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="#//Entity"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="toRelationName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Enum" eSuperTypes="#//DomainElement">
+  <eClassifiers xsi:type="ecore:EClass" name="MyFeature">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="literals" unique="false"
-        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Field">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//HdlTypeReference"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="required" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="validationRules" upperBound="-1"
-        eType="#//ValidationRule" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ValidationRule"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ValueRange" eSuperTypes="#//ValidationRule"/>
-  <eClassifiers xsi:type="ecore:EClass" name="MinSpecification" eSuperTypes="#//ValueRange">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="min" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MaxSpecification" eSuperTypes="#//ValueRange">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="max" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Pattern" eSuperTypes="#//ValidationRule">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="regex" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HdlTypeReference"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EnumTypeReference" eSuperTypes="#//HdlTypeReference">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//Enum"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PrimitiveTypeReference" eSuperTypes="#//HdlTypeReference">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//JHipsterType"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="RelationType">
-    <eLiterals name="ONE_TO_MANY" literal="OneToMany"/>
-    <eLiterals name="MANY_TO_ONE" value="1" literal="ManyToOne"/>
-    <eLiterals name="ONE_TO_ONE" value="2" literal="OneToOne"/>
-    <eLiterals name="MANY_TO_MANY" value="3" literal="ManyToMany"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="JHipsterType">
-    <eLiterals name="STRING" literal="String"/>
-    <eLiterals name="INTEGER" value="1" literal="Integer"/>
-    <eLiterals name="LONG" value="2" literal="Long"/>
-    <eLiterals name="BIG_DECIMAL" value="3" literal="BigDecimal"/>
-    <eLiterals name="FLOAT" value="4" literal="Float"/>
-    <eLiterals name="DOUBLE" value="5" literal="Double"/>
-    <eLiterals name="ENUM" value="6" literal="Enum"/>
-    <eLiterals name="BOOLEAN" value="7" literal="Boolean"/>
-    <eLiterals name="LOCAL_DATE" value="8" literal="LocalDate"/>
-    <eLiterals name="ZONE_DATE_TIME" value="9" literal="ZoneDateTime"/>
   </eClassifiers>
 </ecore:EPackage>

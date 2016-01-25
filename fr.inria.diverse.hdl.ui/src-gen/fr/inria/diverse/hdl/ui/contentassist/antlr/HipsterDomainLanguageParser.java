@@ -37,49 +37,12 @@ public class HipsterDomainLanguageParser extends AbstractContentAssistParser {
 			nameMappings = new HashMap<AbstractElement, String>() {
 				private static final long serialVersionUID = 1L;
 				{
-					put(grammarAccess.getDomainElementAccess().getAlternatives(), "rule__DomainElement__Alternatives");
-					put(grammarAccess.getValidationRuleAccess().getAlternatives(), "rule__ValidationRule__Alternatives");
-					put(grammarAccess.getValueRangeAccess().getAlternatives(), "rule__ValueRange__Alternatives");
-					put(grammarAccess.getMinSpecificationAccess().getAlternatives(), "rule__MinSpecification__Alternatives");
-					put(grammarAccess.getMaxSpecificationAccess().getAlternatives(), "rule__MaxSpecification__Alternatives");
-					put(grammarAccess.getHdlTypeReferenceAccess().getAlternatives(), "rule__HdlTypeReference__Alternatives");
-					put(grammarAccess.getRelationTypeAccess().getAlternatives(), "rule__RelationType__Alternatives");
-					put(grammarAccess.getJHipsterTypeAccess().getAlternatives(), "rule__JHipsterType__Alternatives");
-					put(grammarAccess.getEntityAccess().getGroup(), "rule__Entity__Group__0");
-					put(grammarAccess.getEntityAccess().getGroup_2(), "rule__Entity__Group_2__0");
-					put(grammarAccess.getRelationAccess().getGroup(), "rule__Relation__Group__0");
-					put(grammarAccess.getRelationAccess().getGroup_4(), "rule__Relation__Group_4__0");
-					put(grammarAccess.getRelationAccess().getGroup_7(), "rule__Relation__Group_7__0");
-					put(grammarAccess.getEnumAccess().getGroup(), "rule__Enum__Group__0");
-					put(grammarAccess.getEnumAccess().getGroup_4(), "rule__Enum__Group_4__0");
-					put(grammarAccess.getFieldAccess().getGroup(), "rule__Field__Group__0");
-					put(grammarAccess.getStringMinSpecificationAccess().getGroup(), "rule__StringMinSpecification__Group__0");
-					put(grammarAccess.getStringMaxSpecificationAccess().getGroup(), "rule__StringMaxSpecification__Group__0");
-					put(grammarAccess.getIntegerMinSpecificationAccess().getGroup(), "rule__IntegerMinSpecification__Group__0");
-					put(grammarAccess.getIntegerMaxSpecificationAccess().getGroup(), "rule__IntegerMaxSpecification__Group__0");
-					put(grammarAccess.getPatternAccess().getGroup(), "rule__Pattern__Group__0");
+					put(grammarAccess.getMyElementAccess().getGroup(), "rule__MyElement__Group__0");
+					put(grammarAccess.getMyFeatureAccess().getGroup(), "rule__MyFeature__Group__0");
 					put(grammarAccess.getDomainAccess().getElementsAssignment(), "rule__Domain__ElementsAssignment");
-					put(grammarAccess.getEntityAccess().getNameAssignment_1(), "rule__Entity__NameAssignment_1");
-					put(grammarAccess.getEntityAccess().getFieldsAssignment_2_1(), "rule__Entity__FieldsAssignment_2_1");
-					put(grammarAccess.getRelationAccess().getTypeAssignment_1(), "rule__Relation__TypeAssignment_1");
-					put(grammarAccess.getRelationAccess().getFromAssignment_3(), "rule__Relation__FromAssignment_3");
-					put(grammarAccess.getRelationAccess().getFromRelationNameAssignment_4_1(), "rule__Relation__FromRelationNameAssignment_4_1");
-					put(grammarAccess.getRelationAccess().getToAssignment_6(), "rule__Relation__ToAssignment_6");
-					put(grammarAccess.getRelationAccess().getToRelationNameAssignment_7_1(), "rule__Relation__ToRelationNameAssignment_7_1");
-					put(grammarAccess.getEnumAccess().getNameAssignment_1(), "rule__Enum__NameAssignment_1");
-					put(grammarAccess.getEnumAccess().getLiteralsAssignment_3(), "rule__Enum__LiteralsAssignment_3");
-					put(grammarAccess.getEnumAccess().getLiteralsAssignment_4_1(), "rule__Enum__LiteralsAssignment_4_1");
-					put(grammarAccess.getFieldAccess().getNameAssignment_0(), "rule__Field__NameAssignment_0");
-					put(grammarAccess.getFieldAccess().getTypeAssignment_1(), "rule__Field__TypeAssignment_1");
-					put(grammarAccess.getFieldAccess().getRequiredAssignment_2(), "rule__Field__RequiredAssignment_2");
-					put(grammarAccess.getFieldAccess().getValidationRulesAssignment_3(), "rule__Field__ValidationRulesAssignment_3");
-					put(grammarAccess.getStringMinSpecificationAccess().getMinAssignment_2(), "rule__StringMinSpecification__MinAssignment_2");
-					put(grammarAccess.getStringMaxSpecificationAccess().getMaxAssignment_2(), "rule__StringMaxSpecification__MaxAssignment_2");
-					put(grammarAccess.getIntegerMinSpecificationAccess().getMinAssignment_2(), "rule__IntegerMinSpecification__MinAssignment_2");
-					put(grammarAccess.getIntegerMaxSpecificationAccess().getMaxAssignment_2(), "rule__IntegerMaxSpecification__MaxAssignment_2");
-					put(grammarAccess.getPatternAccess().getRegexAssignment_2(), "rule__Pattern__RegexAssignment_2");
-					put(grammarAccess.getEnumTypeReferenceAccess().getTypeAssignment(), "rule__EnumTypeReference__TypeAssignment");
-					put(grammarAccess.getPrimitiveTypeReferenceAccess().getTypeAssignment(), "rule__PrimitiveTypeReference__TypeAssignment");
+					put(grammarAccess.getMyElementAccess().getNameAssignment_1(), "rule__MyElement__NameAssignment_1");
+					put(grammarAccess.getMyElementAccess().getSomeFeatureOfMyElementAssignment_3(), "rule__MyElement__SomeFeatureOfMyElementAssignment_3");
+					put(grammarAccess.getMyFeatureAccess().getNameAssignment_1(), "rule__MyFeature__NameAssignment_1");
 				}
 			};
 		}

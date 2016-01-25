@@ -21,213 +21,41 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 	public class DomainElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Domain");
 		private final Assignment cElementsAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cElementsDomainElementParserRuleCall_0 = (RuleCall)cElementsAssignment.eContents().get(0);
+		private final RuleCall cElementsMyElementParserRuleCall_0 = (RuleCall)cElementsAssignment.eContents().get(0);
 		
+		//// Just an example
+		//// root grammar element
 		//Domain:
-		//	elements+=DomainElement*;
+		//	elements+=MyElement*;
 		@Override public ParserRule getRule() { return rule; }
 
-		//elements+=DomainElement*
+		//elements+=MyElement*
 		public Assignment getElementsAssignment() { return cElementsAssignment; }
 
-		//DomainElement
-		public RuleCall getElementsDomainElementParserRuleCall_0() { return cElementsDomainElementParserRuleCall_0; }
+		//MyElement
+		public RuleCall getElementsMyElementParserRuleCall_0() { return cElementsMyElementParserRuleCall_0; }
 	}
 
-	public class DomainElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DomainElement");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cEntityParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cRelationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		private final RuleCall cEnumParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
-		
-		//DomainElement:
-		//	Entity | Relation | Enum;
-		@Override public ParserRule getRule() { return rule; }
-
-		//Entity | Relation | Enum
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//Entity
-		public RuleCall getEntityParserRuleCall_0() { return cEntityParserRuleCall_0; }
-
-		//Relation
-		public RuleCall getRelationParserRuleCall_1() { return cRelationParserRuleCall_1; }
-
-		//Enum
-		public RuleCall getEnumParserRuleCall_2() { return cEnumParserRuleCall_2; }
-	}
-
-	public class EntityElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Entity");
+	public class MyElementElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MyElement");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cEntityKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
-		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
-		private final Keyword cLeftCurlyBracketKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
-		private final Assignment cFieldsAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final RuleCall cFieldsFieldParserRuleCall_2_1_0 = (RuleCall)cFieldsAssignment_2_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_2_2 = (Keyword)cGroup_2.eContents().get(2);
-		
-		//Entity:
-		//	"entity" name=ID ("{" fields+=Field* "}");
-		@Override public ParserRule getRule() { return rule; }
-
-		//"entity" name=ID ("{" fields+=Field* "}")
-		public Group getGroup() { return cGroup; }
-
-		//"entity"
-		public Keyword getEntityKeyword_0() { return cEntityKeyword_0; }
-
-		//name=ID
-		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
-
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
-
-		//"{" fields+=Field* "}"
-		public Group getGroup_2() { return cGroup_2; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_2_0() { return cLeftCurlyBracketKeyword_2_0; }
-
-		//fields+=Field*
-		public Assignment getFieldsAssignment_2_1() { return cFieldsAssignment_2_1; }
-
-		//Field
-		public RuleCall getFieldsFieldParserRuleCall_2_1_0() { return cFieldsFieldParserRuleCall_2_1_0; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_2_2() { return cRightCurlyBracketKeyword_2_2; }
-	}
-
-	public class RelationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Relation");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cRelationshipKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cTypeRelationTypeEnumRuleCall_1_0 = (RuleCall)cTypeAssignment_1.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cFromAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final CrossReference cFromEntityCrossReference_3_0 = (CrossReference)cFromAssignment_3.eContents().get(0);
-		private final RuleCall cFromEntityIDTerminalRuleCall_3_0_1 = (RuleCall)cFromEntityCrossReference_3_0.eContents().get(1);
-		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cLeftSquareBracketKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cFromRelationNameAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cFromRelationNameIDTerminalRuleCall_4_1_0 = (RuleCall)cFromRelationNameAssignment_4_1.eContents().get(0);
-		private final Keyword cRightSquareBracketKeyword_4_2 = (Keyword)cGroup_4.eContents().get(2);
-		private final Keyword cToKeyword_5 = (Keyword)cGroup.eContents().get(5);
-		private final Assignment cToAssignment_6 = (Assignment)cGroup.eContents().get(6);
-		private final CrossReference cToEntityCrossReference_6_0 = (CrossReference)cToAssignment_6.eContents().get(0);
-		private final RuleCall cToEntityIDTerminalRuleCall_6_0_1 = (RuleCall)cToEntityCrossReference_6_0.eContents().get(1);
-		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
-		private final Keyword cLeftSquareBracketKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
-		private final Assignment cToRelationNameAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
-		private final RuleCall cToRelationNameIDTerminalRuleCall_7_1_0 = (RuleCall)cToRelationNameAssignment_7_1.eContents().get(0);
-		private final Keyword cRightSquareBracketKeyword_7_2 = (Keyword)cGroup_7.eContents().get(2);
-		private final Keyword cRightCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
-		
-		//Relation:
-		//	"relationship" type=RelationType "{" from=[Entity] ("[" fromRelationName=ID "]") "to" to=[Entity] ("["
-		//	toRelationName=ID "]") "}";
-		@Override public ParserRule getRule() { return rule; }
-
-		//"relationship" type=RelationType "{" from=[Entity] ("[" fromRelationName=ID "]") "to" to=[Entity] ("[" toRelationName=ID
-		//"]") "}"
-		public Group getGroup() { return cGroup; }
-
-		//"relationship"
-		public Keyword getRelationshipKeyword_0() { return cRelationshipKeyword_0; }
-
-		//type=RelationType
-		public Assignment getTypeAssignment_1() { return cTypeAssignment_1; }
-
-		//RelationType
-		public RuleCall getTypeRelationTypeEnumRuleCall_1_0() { return cTypeRelationTypeEnumRuleCall_1_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
-
-		//from=[Entity]
-		public Assignment getFromAssignment_3() { return cFromAssignment_3; }
-
-		//[Entity]
-		public CrossReference getFromEntityCrossReference_3_0() { return cFromEntityCrossReference_3_0; }
-
-		//ID
-		public RuleCall getFromEntityIDTerminalRuleCall_3_0_1() { return cFromEntityIDTerminalRuleCall_3_0_1; }
-
-		//"[" fromRelationName=ID "]"
-		public Group getGroup_4() { return cGroup_4; }
-
-		//"["
-		public Keyword getLeftSquareBracketKeyword_4_0() { return cLeftSquareBracketKeyword_4_0; }
-
-		//fromRelationName=ID
-		public Assignment getFromRelationNameAssignment_4_1() { return cFromRelationNameAssignment_4_1; }
-
-		//ID
-		public RuleCall getFromRelationNameIDTerminalRuleCall_4_1_0() { return cFromRelationNameIDTerminalRuleCall_4_1_0; }
-
-		//"]"
-		public Keyword getRightSquareBracketKeyword_4_2() { return cRightSquareBracketKeyword_4_2; }
-
-		//"to"
-		public Keyword getToKeyword_5() { return cToKeyword_5; }
-
-		//to=[Entity]
-		public Assignment getToAssignment_6() { return cToAssignment_6; }
-
-		//[Entity]
-		public CrossReference getToEntityCrossReference_6_0() { return cToEntityCrossReference_6_0; }
-
-		//ID
-		public RuleCall getToEntityIDTerminalRuleCall_6_0_1() { return cToEntityIDTerminalRuleCall_6_0_1; }
-
-		//"[" toRelationName=ID "]"
-		public Group getGroup_7() { return cGroup_7; }
-
-		//"["
-		public Keyword getLeftSquareBracketKeyword_7_0() { return cLeftSquareBracketKeyword_7_0; }
-
-		//toRelationName=ID
-		public Assignment getToRelationNameAssignment_7_1() { return cToRelationNameAssignment_7_1; }
-
-		//ID
-		public RuleCall getToRelationNameIDTerminalRuleCall_7_1_0() { return cToRelationNameIDTerminalRuleCall_7_1_0; }
-
-		//"]"
-		public Keyword getRightSquareBracketKeyword_7_2() { return cRightSquareBracketKeyword_7_2; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_8() { return cRightCurlyBracketKeyword_8; }
-	}
-
-	public class EnumElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Enum");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cEnumKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cMyElementKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cLiteralsAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cLiteralsIDTerminalRuleCall_3_0 = (RuleCall)cLiteralsAssignment_3.eContents().get(0);
-		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Keyword cCommaKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
-		private final Assignment cLiteralsAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
-		private final RuleCall cLiteralsIDTerminalRuleCall_4_1_0 = (RuleCall)cLiteralsAssignment_4_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		private final Assignment cSomeFeatureOfMyElementAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cSomeFeatureOfMyElementMyFeatureParserRuleCall_3_0 = (RuleCall)cSomeFeatureOfMyElementAssignment_3.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
-		//Enum:
-		//	"enum" name=ID "{" literals+=ID ("," literals+=ID)* "}";
+		//MyElement:
+		//	"myElement" name=ID "{" someFeatureOfMyElement+=MyFeature* "}";
 		@Override public ParserRule getRule() { return rule; }
 
-		//"enum" name=ID "{" literals+=ID ("," literals+=ID)* "}"
+		//"myElement" name=ID "{" someFeatureOfMyElement+=MyFeature* "}"
 		public Group getGroup() { return cGroup; }
 
-		//"enum"
-		public Keyword getEnumKeyword_0() { return cEnumKeyword_0; }
+		//"myElement"
+		public Keyword getMyElementKeyword_0() { return cMyElementKeyword_0; }
 
 		//name=ID
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
@@ -238,527 +66,44 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
 
-		//literals+=ID
-		public Assignment getLiteralsAssignment_3() { return cLiteralsAssignment_3; }
+		//someFeatureOfMyElement+=MyFeature*
+		public Assignment getSomeFeatureOfMyElementAssignment_3() { return cSomeFeatureOfMyElementAssignment_3; }
 
-		//ID
-		public RuleCall getLiteralsIDTerminalRuleCall_3_0() { return cLiteralsIDTerminalRuleCall_3_0; }
-
-		//("," literals+=ID)*
-		public Group getGroup_4() { return cGroup_4; }
-
-		//","
-		public Keyword getCommaKeyword_4_0() { return cCommaKeyword_4_0; }
-
-		//literals+=ID
-		public Assignment getLiteralsAssignment_4_1() { return cLiteralsAssignment_4_1; }
-
-		//ID
-		public RuleCall getLiteralsIDTerminalRuleCall_4_1_0() { return cLiteralsIDTerminalRuleCall_4_1_0; }
+		//MyFeature
+		public RuleCall getSomeFeatureOfMyElementMyFeatureParserRuleCall_3_0() { return cSomeFeatureOfMyElementMyFeatureParserRuleCall_3_0; }
 
 		//"}"
-		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
+		public Keyword getRightCurlyBracketKeyword_4() { return cRightCurlyBracketKeyword_4; }
 	}
 
-	public class FieldElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Field");
+	public class MyFeatureElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MyFeature");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
-		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cTypeHdlTypeReferenceParserRuleCall_1_0 = (RuleCall)cTypeAssignment_1.eContents().get(0);
-		private final Assignment cRequiredAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final Keyword cRequiredRequiredKeyword_2_0 = (Keyword)cRequiredAssignment_2.eContents().get(0);
-		private final Assignment cValidationRulesAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cValidationRulesValidationRuleParserRuleCall_3_0 = (RuleCall)cValidationRulesAssignment_3.eContents().get(0);
+		private final Keyword cFeatureKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		
-		//Field:
-		//	name=ID type=HdlTypeReference required?="required"? validationRules+=ValidationRule*;
+		//MyFeature:
+		//	"feature" name=ID;
 		@Override public ParserRule getRule() { return rule; }
 
-		//name=ID type=HdlTypeReference required?="required"? validationRules+=ValidationRule*
+		//"feature" name=ID
 		public Group getGroup() { return cGroup; }
+
+		//"feature"
+		public Keyword getFeatureKeyword_0() { return cFeatureKeyword_0; }
 
 		//name=ID
-		public Assignment getNameAssignment_0() { return cNameAssignment_0; }
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
 		//ID
-		public RuleCall getNameIDTerminalRuleCall_0_0() { return cNameIDTerminalRuleCall_0_0; }
-
-		//type=HdlTypeReference
-		public Assignment getTypeAssignment_1() { return cTypeAssignment_1; }
-
-		//HdlTypeReference
-		public RuleCall getTypeHdlTypeReferenceParserRuleCall_1_0() { return cTypeHdlTypeReferenceParserRuleCall_1_0; }
-
-		//required?="required"?
-		public Assignment getRequiredAssignment_2() { return cRequiredAssignment_2; }
-
-		//"required"
-		public Keyword getRequiredRequiredKeyword_2_0() { return cRequiredRequiredKeyword_2_0; }
-
-		//validationRules+=ValidationRule*
-		public Assignment getValidationRulesAssignment_3() { return cValidationRulesAssignment_3; }
-
-		//ValidationRule
-		public RuleCall getValidationRulesValidationRuleParserRuleCall_3_0() { return cValidationRulesValidationRuleParserRuleCall_3_0; }
-	}
-
-	public class ValidationRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ValidationRule");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cValueRangeParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cPatternParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//ValidationRule:
-		//	ValueRange | Pattern;
-		@Override public ParserRule getRule() { return rule; }
-
-		//ValueRange | Pattern
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//ValueRange
-		public RuleCall getValueRangeParserRuleCall_0() { return cValueRangeParserRuleCall_0; }
-
-		//Pattern
-		public RuleCall getPatternParserRuleCall_1() { return cPatternParserRuleCall_1; }
-	}
-
-	public class ValueRangeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ValueRange");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cMinSpecificationParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cMaxSpecificationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//ValueRange:
-		//	MinSpecification | MaxSpecification;
-		@Override public ParserRule getRule() { return rule; }
-
-		//MinSpecification | MaxSpecification
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//MinSpecification
-		public RuleCall getMinSpecificationParserRuleCall_0() { return cMinSpecificationParserRuleCall_0; }
-
-		//MaxSpecification
-		public RuleCall getMaxSpecificationParserRuleCall_1() { return cMaxSpecificationParserRuleCall_1; }
-	}
-
-	public class MinSpecificationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MinSpecification");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cStringMinSpecificationParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cIntegerMinSpecificationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//MinSpecification:
-		//	StringMinSpecification | IntegerMinSpecification;
-		@Override public ParserRule getRule() { return rule; }
-
-		//StringMinSpecification | IntegerMinSpecification
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//StringMinSpecification
-		public RuleCall getStringMinSpecificationParserRuleCall_0() { return cStringMinSpecificationParserRuleCall_0; }
-
-		//IntegerMinSpecification
-		public RuleCall getIntegerMinSpecificationParserRuleCall_1() { return cIntegerMinSpecificationParserRuleCall_1; }
-	}
-
-	public class MaxSpecificationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MaxSpecification");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cStringMaxSpecificationParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cIntegerMaxSpecificationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//MaxSpecification:
-		//	StringMaxSpecification | IntegerMaxSpecification;
-		@Override public ParserRule getRule() { return rule; }
-
-		//StringMaxSpecification | IntegerMaxSpecification
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//StringMaxSpecification
-		public RuleCall getStringMaxSpecificationParserRuleCall_0() { return cStringMaxSpecificationParserRuleCall_0; }
-
-		//IntegerMaxSpecification
-		public RuleCall getIntegerMaxSpecificationParserRuleCall_1() { return cIntegerMaxSpecificationParserRuleCall_1; }
-	}
-
-	public class StringMinSpecificationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "StringMinSpecification");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cMinlengthKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cMinAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cMinINTTerminalRuleCall_2_0 = (RuleCall)cMinAssignment_2.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//StringMinSpecification returns MinSpecification:
-		//	"minlength" "(" min=INT ")";
-		@Override public ParserRule getRule() { return rule; }
-
-		//"minlength" "(" min=INT ")"
-		public Group getGroup() { return cGroup; }
-
-		//"minlength"
-		public Keyword getMinlengthKeyword_0() { return cMinlengthKeyword_0; }
-
-		//"("
-		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
-
-		//min=INT
-		public Assignment getMinAssignment_2() { return cMinAssignment_2; }
-
-		//INT
-		public RuleCall getMinINTTerminalRuleCall_2_0() { return cMinINTTerminalRuleCall_2_0; }
-
-		//")"
-		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
-	}
-
-	public class StringMaxSpecificationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "StringMaxSpecification");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cMaxlengthKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cMaxAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cMaxINTTerminalRuleCall_2_0 = (RuleCall)cMaxAssignment_2.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//StringMaxSpecification returns MaxSpecification:
-		//	"maxlength" "(" max=INT ")";
-		@Override public ParserRule getRule() { return rule; }
-
-		//"maxlength" "(" max=INT ")"
-		public Group getGroup() { return cGroup; }
-
-		//"maxlength"
-		public Keyword getMaxlengthKeyword_0() { return cMaxlengthKeyword_0; }
-
-		//"("
-		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
-
-		//max=INT
-		public Assignment getMaxAssignment_2() { return cMaxAssignment_2; }
-
-		//INT
-		public RuleCall getMaxINTTerminalRuleCall_2_0() { return cMaxINTTerminalRuleCall_2_0; }
-
-		//")"
-		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
-	}
-
-	public class IntegerMinSpecificationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "IntegerMinSpecification");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cMinKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cMinAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cMinINTTerminalRuleCall_2_0 = (RuleCall)cMinAssignment_2.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//IntegerMinSpecification returns MinSpecification:
-		//	"min" "(" min=INT ")";
-		@Override public ParserRule getRule() { return rule; }
-
-		//"min" "(" min=INT ")"
-		public Group getGroup() { return cGroup; }
-
-		//"min"
-		public Keyword getMinKeyword_0() { return cMinKeyword_0; }
-
-		//"("
-		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
-
-		//min=INT
-		public Assignment getMinAssignment_2() { return cMinAssignment_2; }
-
-		//INT
-		public RuleCall getMinINTTerminalRuleCall_2_0() { return cMinINTTerminalRuleCall_2_0; }
-
-		//")"
-		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
-	}
-
-	public class IntegerMaxSpecificationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "IntegerMaxSpecification");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cMaxKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cMaxAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cMaxINTTerminalRuleCall_2_0 = (RuleCall)cMaxAssignment_2.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//IntegerMaxSpecification returns MaxSpecification:
-		//	"max" "(" max=INT ")";
-		@Override public ParserRule getRule() { return rule; }
-
-		//"max" "(" max=INT ")"
-		public Group getGroup() { return cGroup; }
-
-		//"max"
-		public Keyword getMaxKeyword_0() { return cMaxKeyword_0; }
-
-		//"("
-		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
-
-		//max=INT
-		public Assignment getMaxAssignment_2() { return cMaxAssignment_2; }
-
-		//INT
-		public RuleCall getMaxINTTerminalRuleCall_2_0() { return cMaxINTTerminalRuleCall_2_0; }
-
-		//")"
-		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
-	}
-
-	public class PatternElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Pattern");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cPatternKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cRegexAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cRegexSTRINGTerminalRuleCall_2_0 = (RuleCall)cRegexAssignment_2.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//Pattern:
-		//	"pattern" "(" regex=STRING ")";
-		@Override public ParserRule getRule() { return rule; }
-
-		//"pattern" "(" regex=STRING ")"
-		public Group getGroup() { return cGroup; }
-
-		//"pattern"
-		public Keyword getPatternKeyword_0() { return cPatternKeyword_0; }
-
-		//"("
-		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
-
-		//regex=STRING
-		public Assignment getRegexAssignment_2() { return cRegexAssignment_2; }
-
-		//STRING
-		public RuleCall getRegexSTRINGTerminalRuleCall_2_0() { return cRegexSTRINGTerminalRuleCall_2_0; }
-
-		//")"
-		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
-	}
-
-	public class HdlTypeReferenceElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "HdlTypeReference");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cEnumTypeReferenceParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cPrimitiveTypeReferenceParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//HdlTypeReference:
-		//	EnumTypeReference | PrimitiveTypeReference;
-		@Override public ParserRule getRule() { return rule; }
-
-		//EnumTypeReference | PrimitiveTypeReference
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//EnumTypeReference
-		public RuleCall getEnumTypeReferenceParserRuleCall_0() { return cEnumTypeReferenceParserRuleCall_0; }
-
-		//PrimitiveTypeReference
-		public RuleCall getPrimitiveTypeReferenceParserRuleCall_1() { return cPrimitiveTypeReferenceParserRuleCall_1; }
-	}
-
-	public class EnumTypeReferenceElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EnumTypeReference");
-		private final Assignment cTypeAssignment = (Assignment)rule.eContents().get(1);
-		private final CrossReference cTypeEnumCrossReference_0 = (CrossReference)cTypeAssignment.eContents().get(0);
-		private final RuleCall cTypeEnumIDTerminalRuleCall_0_1 = (RuleCall)cTypeEnumCrossReference_0.eContents().get(1);
-		
-		//EnumTypeReference:
-		//	type=[Enum];
-		@Override public ParserRule getRule() { return rule; }
-
-		//type=[Enum]
-		public Assignment getTypeAssignment() { return cTypeAssignment; }
-
-		//[Enum]
-		public CrossReference getTypeEnumCrossReference_0() { return cTypeEnumCrossReference_0; }
-
-		//ID
-		public RuleCall getTypeEnumIDTerminalRuleCall_0_1() { return cTypeEnumIDTerminalRuleCall_0_1; }
-	}
-
-	public class PrimitiveTypeReferenceElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "PrimitiveTypeReference");
-		private final Assignment cTypeAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cTypeJHipsterTypeEnumRuleCall_0 = (RuleCall)cTypeAssignment.eContents().get(0);
-		
-		//PrimitiveTypeReference:
-		//	type=JHipsterType;
-		@Override public ParserRule getRule() { return rule; }
-
-		//type=JHipsterType
-		public Assignment getTypeAssignment() { return cTypeAssignment; }
-
-		//JHipsterType
-		public RuleCall getTypeJHipsterTypeEnumRuleCall_0() { return cTypeJHipsterTypeEnumRuleCall_0; }
+		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
 	}
 	
-	
-	public class RelationTypeElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "RelationType");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final EnumLiteralDeclaration cONE_TO_MANYEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
-		private final Keyword cONE_TO_MANYOneToManyKeyword_0_0 = (Keyword)cONE_TO_MANYEnumLiteralDeclaration_0.eContents().get(0);
-		private final EnumLiteralDeclaration cMANY_TO_ONEEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
-		private final Keyword cMANY_TO_ONEManyToOneKeyword_1_0 = (Keyword)cMANY_TO_ONEEnumLiteralDeclaration_1.eContents().get(0);
-		private final EnumLiteralDeclaration cONE_TO_ONEEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
-		private final Keyword cONE_TO_ONEOneToOneKeyword_2_0 = (Keyword)cONE_TO_ONEEnumLiteralDeclaration_2.eContents().get(0);
-		private final EnumLiteralDeclaration cMANY_TO_MANYEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
-		private final Keyword cMANY_TO_MANYManyToManyKeyword_3_0 = (Keyword)cMANY_TO_MANYEnumLiteralDeclaration_3.eContents().get(0);
-		
-		//enum RelationType:
-		//	ONE_TO_MANY="OneToMany" | MANY_TO_ONE="ManyToOne" | ONE_TO_ONE="OneToOne" | MANY_TO_MANY="ManyToMany";
-		public EnumRule getRule() { return rule; }
-
-		//ONE_TO_MANY="OneToMany" | MANY_TO_ONE="ManyToOne" | ONE_TO_ONE="OneToOne" | MANY_TO_MANY="ManyToMany"
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//ONE_TO_MANY="OneToMany"
-		public EnumLiteralDeclaration getONE_TO_MANYEnumLiteralDeclaration_0() { return cONE_TO_MANYEnumLiteralDeclaration_0; }
-
-		//"OneToMany"
-		public Keyword getONE_TO_MANYOneToManyKeyword_0_0() { return cONE_TO_MANYOneToManyKeyword_0_0; }
-
-		//MANY_TO_ONE="ManyToOne"
-		public EnumLiteralDeclaration getMANY_TO_ONEEnumLiteralDeclaration_1() { return cMANY_TO_ONEEnumLiteralDeclaration_1; }
-
-		//"ManyToOne"
-		public Keyword getMANY_TO_ONEManyToOneKeyword_1_0() { return cMANY_TO_ONEManyToOneKeyword_1_0; }
-
-		//ONE_TO_ONE="OneToOne"
-		public EnumLiteralDeclaration getONE_TO_ONEEnumLiteralDeclaration_2() { return cONE_TO_ONEEnumLiteralDeclaration_2; }
-
-		//"OneToOne"
-		public Keyword getONE_TO_ONEOneToOneKeyword_2_0() { return cONE_TO_ONEOneToOneKeyword_2_0; }
-
-		//MANY_TO_MANY="ManyToMany"
-		public EnumLiteralDeclaration getMANY_TO_MANYEnumLiteralDeclaration_3() { return cMANY_TO_MANYEnumLiteralDeclaration_3; }
-
-		//"ManyToMany"
-		public Keyword getMANY_TO_MANYManyToManyKeyword_3_0() { return cMANY_TO_MANYManyToManyKeyword_3_0; }
-	}
-
-	public class JHipsterTypeElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "JHipsterType");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final EnumLiteralDeclaration cSTRINGEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
-		private final Keyword cSTRINGStringKeyword_0_0 = (Keyword)cSTRINGEnumLiteralDeclaration_0.eContents().get(0);
-		private final EnumLiteralDeclaration cINTEGEREnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
-		private final Keyword cINTEGERIntegerKeyword_1_0 = (Keyword)cINTEGEREnumLiteralDeclaration_1.eContents().get(0);
-		private final EnumLiteralDeclaration cLONGEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
-		private final Keyword cLONGLongKeyword_2_0 = (Keyword)cLONGEnumLiteralDeclaration_2.eContents().get(0);
-		private final EnumLiteralDeclaration cBIG_DECIMALEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
-		private final Keyword cBIG_DECIMALBigDecimalKeyword_3_0 = (Keyword)cBIG_DECIMALEnumLiteralDeclaration_3.eContents().get(0);
-		private final EnumLiteralDeclaration cFLOATEnumLiteralDeclaration_4 = (EnumLiteralDeclaration)cAlternatives.eContents().get(4);
-		private final Keyword cFLOATFloatKeyword_4_0 = (Keyword)cFLOATEnumLiteralDeclaration_4.eContents().get(0);
-		private final EnumLiteralDeclaration cDOUBLEEnumLiteralDeclaration_5 = (EnumLiteralDeclaration)cAlternatives.eContents().get(5);
-		private final Keyword cDOUBLEDoubleKeyword_5_0 = (Keyword)cDOUBLEEnumLiteralDeclaration_5.eContents().get(0);
-		private final EnumLiteralDeclaration cENUMEnumLiteralDeclaration_6 = (EnumLiteralDeclaration)cAlternatives.eContents().get(6);
-		private final Keyword cENUMEnumKeyword_6_0 = (Keyword)cENUMEnumLiteralDeclaration_6.eContents().get(0);
-		private final EnumLiteralDeclaration cBOOLEANEnumLiteralDeclaration_7 = (EnumLiteralDeclaration)cAlternatives.eContents().get(7);
-		private final Keyword cBOOLEANBooleanKeyword_7_0 = (Keyword)cBOOLEANEnumLiteralDeclaration_7.eContents().get(0);
-		private final EnumLiteralDeclaration cLOCAL_DATEEnumLiteralDeclaration_8 = (EnumLiteralDeclaration)cAlternatives.eContents().get(8);
-		private final Keyword cLOCAL_DATELocalDateKeyword_8_0 = (Keyword)cLOCAL_DATEEnumLiteralDeclaration_8.eContents().get(0);
-		private final EnumLiteralDeclaration cZONE_DATE_TIMEEnumLiteralDeclaration_9 = (EnumLiteralDeclaration)cAlternatives.eContents().get(9);
-		private final Keyword cZONE_DATE_TIMEZoneDateTimeKeyword_9_0 = (Keyword)cZONE_DATE_TIMEEnumLiteralDeclaration_9.eContents().get(0);
-		
-		//enum JHipsterType:
-		//	STRING="String" | INTEGER="Integer" | LONG="Long" | BIG_DECIMAL="BigDecimal" | FLOAT="Float" | DOUBLE="Double" |
-		//	ENUM="Enum" | BOOLEAN="Boolean" | LOCAL_DATE="LocalDate" | ZONE_DATE_TIME="ZoneDateTime";
-		public EnumRule getRule() { return rule; }
-
-		//STRING="String" | INTEGER="Integer" | LONG="Long" | BIG_DECIMAL="BigDecimal" | FLOAT="Float" | DOUBLE="Double" |
-		//ENUM="Enum" | BOOLEAN="Boolean" | LOCAL_DATE="LocalDate" | ZONE_DATE_TIME="ZoneDateTime"
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//STRING="String"
-		public EnumLiteralDeclaration getSTRINGEnumLiteralDeclaration_0() { return cSTRINGEnumLiteralDeclaration_0; }
-
-		//"String"
-		public Keyword getSTRINGStringKeyword_0_0() { return cSTRINGStringKeyword_0_0; }
-
-		//INTEGER="Integer"
-		public EnumLiteralDeclaration getINTEGEREnumLiteralDeclaration_1() { return cINTEGEREnumLiteralDeclaration_1; }
-
-		//"Integer"
-		public Keyword getINTEGERIntegerKeyword_1_0() { return cINTEGERIntegerKeyword_1_0; }
-
-		//LONG="Long"
-		public EnumLiteralDeclaration getLONGEnumLiteralDeclaration_2() { return cLONGEnumLiteralDeclaration_2; }
-
-		//"Long"
-		public Keyword getLONGLongKeyword_2_0() { return cLONGLongKeyword_2_0; }
-
-		//BIG_DECIMAL="BigDecimal"
-		public EnumLiteralDeclaration getBIG_DECIMALEnumLiteralDeclaration_3() { return cBIG_DECIMALEnumLiteralDeclaration_3; }
-
-		//"BigDecimal"
-		public Keyword getBIG_DECIMALBigDecimalKeyword_3_0() { return cBIG_DECIMALBigDecimalKeyword_3_0; }
-
-		//FLOAT="Float"
-		public EnumLiteralDeclaration getFLOATEnumLiteralDeclaration_4() { return cFLOATEnumLiteralDeclaration_4; }
-
-		//"Float"
-		public Keyword getFLOATFloatKeyword_4_0() { return cFLOATFloatKeyword_4_0; }
-
-		//DOUBLE="Double"
-		public EnumLiteralDeclaration getDOUBLEEnumLiteralDeclaration_5() { return cDOUBLEEnumLiteralDeclaration_5; }
-
-		//"Double"
-		public Keyword getDOUBLEDoubleKeyword_5_0() { return cDOUBLEDoubleKeyword_5_0; }
-
-		//ENUM="Enum"
-		public EnumLiteralDeclaration getENUMEnumLiteralDeclaration_6() { return cENUMEnumLiteralDeclaration_6; }
-
-		//"Enum"
-		public Keyword getENUMEnumKeyword_6_0() { return cENUMEnumKeyword_6_0; }
-
-		//BOOLEAN="Boolean"
-		public EnumLiteralDeclaration getBOOLEANEnumLiteralDeclaration_7() { return cBOOLEANEnumLiteralDeclaration_7; }
-
-		//"Boolean"
-		public Keyword getBOOLEANBooleanKeyword_7_0() { return cBOOLEANBooleanKeyword_7_0; }
-
-		//LOCAL_DATE="LocalDate"
-		public EnumLiteralDeclaration getLOCAL_DATEEnumLiteralDeclaration_8() { return cLOCAL_DATEEnumLiteralDeclaration_8; }
-
-		//"LocalDate"
-		public Keyword getLOCAL_DATELocalDateKeyword_8_0() { return cLOCAL_DATELocalDateKeyword_8_0; }
-
-		//ZONE_DATE_TIME="ZoneDateTime"
-		public EnumLiteralDeclaration getZONE_DATE_TIMEEnumLiteralDeclaration_9() { return cZONE_DATE_TIMEEnumLiteralDeclaration_9; }
-
-		//"ZoneDateTime"
-		public Keyword getZONE_DATE_TIMEZoneDateTimeKeyword_9_0() { return cZONE_DATE_TIMEZoneDateTimeKeyword_9_0; }
-	}
 	
 	private final DomainElements pDomain;
-	private final DomainElementElements pDomainElement;
-	private final EntityElements pEntity;
-	private final RelationElements pRelation;
-	private final EnumElements pEnum;
-	private final FieldElements pField;
-	private final ValidationRuleElements pValidationRule;
-	private final ValueRangeElements pValueRange;
-	private final MinSpecificationElements pMinSpecification;
-	private final MaxSpecificationElements pMaxSpecification;
-	private final StringMinSpecificationElements pStringMinSpecification;
-	private final StringMaxSpecificationElements pStringMaxSpecification;
-	private final IntegerMinSpecificationElements pIntegerMinSpecification;
-	private final IntegerMaxSpecificationElements pIntegerMaxSpecification;
-	private final PatternElements pPattern;
-	private final HdlTypeReferenceElements pHdlTypeReference;
-	private final EnumTypeReferenceElements pEnumTypeReference;
-	private final PrimitiveTypeReferenceElements pPrimitiveTypeReference;
-	private final RelationTypeElements unknownRuleRelationType;
-	private final JHipsterTypeElements unknownRuleJHipsterType;
+	private final MyElementElements pMyElement;
+	private final MyFeatureElements pMyFeature;
 	
 	private final Grammar grammar;
 
@@ -770,25 +115,8 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaTerminals = gaTerminals;
 		this.pDomain = new DomainElements();
-		this.pDomainElement = new DomainElementElements();
-		this.pEntity = new EntityElements();
-		this.pRelation = new RelationElements();
-		this.pEnum = new EnumElements();
-		this.pField = new FieldElements();
-		this.pValidationRule = new ValidationRuleElements();
-		this.pValueRange = new ValueRangeElements();
-		this.pMinSpecification = new MinSpecificationElements();
-		this.pMaxSpecification = new MaxSpecificationElements();
-		this.pStringMinSpecification = new StringMinSpecificationElements();
-		this.pStringMaxSpecification = new StringMaxSpecificationElements();
-		this.pIntegerMinSpecification = new IntegerMinSpecificationElements();
-		this.pIntegerMaxSpecification = new IntegerMaxSpecificationElements();
-		this.pPattern = new PatternElements();
-		this.pHdlTypeReference = new HdlTypeReferenceElements();
-		this.pEnumTypeReference = new EnumTypeReferenceElements();
-		this.pPrimitiveTypeReference = new PrimitiveTypeReferenceElements();
-		this.unknownRuleRelationType = new RelationTypeElements();
-		this.unknownRuleJHipsterType = new JHipsterTypeElements();
+		this.pMyElement = new MyElementElements();
+		this.pMyFeature = new MyFeatureElements();
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -818,8 +146,10 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	
+	//// Just an example
+	//// root grammar element
 	//Domain:
-	//	elements+=DomainElement*;
+	//	elements+=MyElement*;
 	public DomainElements getDomainAccess() {
 		return pDomain;
 	}
@@ -828,196 +158,24 @@ public class HipsterDomainLanguageGrammarAccess extends AbstractGrammarElementFi
 		return getDomainAccess().getRule();
 	}
 
-	//DomainElement:
-	//	Entity | Relation | Enum;
-	public DomainElementElements getDomainElementAccess() {
-		return pDomainElement;
+	//MyElement:
+	//	"myElement" name=ID "{" someFeatureOfMyElement+=MyFeature* "}";
+	public MyElementElements getMyElementAccess() {
+		return pMyElement;
 	}
 	
-	public ParserRule getDomainElementRule() {
-		return getDomainElementAccess().getRule();
+	public ParserRule getMyElementRule() {
+		return getMyElementAccess().getRule();
 	}
 
-	//Entity:
-	//	"entity" name=ID ("{" fields+=Field* "}");
-	public EntityElements getEntityAccess() {
-		return pEntity;
+	//MyFeature:
+	//	"feature" name=ID;
+	public MyFeatureElements getMyFeatureAccess() {
+		return pMyFeature;
 	}
 	
-	public ParserRule getEntityRule() {
-		return getEntityAccess().getRule();
-	}
-
-	//Relation:
-	//	"relationship" type=RelationType "{" from=[Entity] ("[" fromRelationName=ID "]") "to" to=[Entity] ("["
-	//	toRelationName=ID "]") "}";
-	public RelationElements getRelationAccess() {
-		return pRelation;
-	}
-	
-	public ParserRule getRelationRule() {
-		return getRelationAccess().getRule();
-	}
-
-	//Enum:
-	//	"enum" name=ID "{" literals+=ID ("," literals+=ID)* "}";
-	public EnumElements getEnumAccess() {
-		return pEnum;
-	}
-	
-	public ParserRule getEnumRule() {
-		return getEnumAccess().getRule();
-	}
-
-	//Field:
-	//	name=ID type=HdlTypeReference required?="required"? validationRules+=ValidationRule*;
-	public FieldElements getFieldAccess() {
-		return pField;
-	}
-	
-	public ParserRule getFieldRule() {
-		return getFieldAccess().getRule();
-	}
-
-	//ValidationRule:
-	//	ValueRange | Pattern;
-	public ValidationRuleElements getValidationRuleAccess() {
-		return pValidationRule;
-	}
-	
-	public ParserRule getValidationRuleRule() {
-		return getValidationRuleAccess().getRule();
-	}
-
-	//ValueRange:
-	//	MinSpecification | MaxSpecification;
-	public ValueRangeElements getValueRangeAccess() {
-		return pValueRange;
-	}
-	
-	public ParserRule getValueRangeRule() {
-		return getValueRangeAccess().getRule();
-	}
-
-	//MinSpecification:
-	//	StringMinSpecification | IntegerMinSpecification;
-	public MinSpecificationElements getMinSpecificationAccess() {
-		return pMinSpecification;
-	}
-	
-	public ParserRule getMinSpecificationRule() {
-		return getMinSpecificationAccess().getRule();
-	}
-
-	//MaxSpecification:
-	//	StringMaxSpecification | IntegerMaxSpecification;
-	public MaxSpecificationElements getMaxSpecificationAccess() {
-		return pMaxSpecification;
-	}
-	
-	public ParserRule getMaxSpecificationRule() {
-		return getMaxSpecificationAccess().getRule();
-	}
-
-	//StringMinSpecification returns MinSpecification:
-	//	"minlength" "(" min=INT ")";
-	public StringMinSpecificationElements getStringMinSpecificationAccess() {
-		return pStringMinSpecification;
-	}
-	
-	public ParserRule getStringMinSpecificationRule() {
-		return getStringMinSpecificationAccess().getRule();
-	}
-
-	//StringMaxSpecification returns MaxSpecification:
-	//	"maxlength" "(" max=INT ")";
-	public StringMaxSpecificationElements getStringMaxSpecificationAccess() {
-		return pStringMaxSpecification;
-	}
-	
-	public ParserRule getStringMaxSpecificationRule() {
-		return getStringMaxSpecificationAccess().getRule();
-	}
-
-	//IntegerMinSpecification returns MinSpecification:
-	//	"min" "(" min=INT ")";
-	public IntegerMinSpecificationElements getIntegerMinSpecificationAccess() {
-		return pIntegerMinSpecification;
-	}
-	
-	public ParserRule getIntegerMinSpecificationRule() {
-		return getIntegerMinSpecificationAccess().getRule();
-	}
-
-	//IntegerMaxSpecification returns MaxSpecification:
-	//	"max" "(" max=INT ")";
-	public IntegerMaxSpecificationElements getIntegerMaxSpecificationAccess() {
-		return pIntegerMaxSpecification;
-	}
-	
-	public ParserRule getIntegerMaxSpecificationRule() {
-		return getIntegerMaxSpecificationAccess().getRule();
-	}
-
-	//Pattern:
-	//	"pattern" "(" regex=STRING ")";
-	public PatternElements getPatternAccess() {
-		return pPattern;
-	}
-	
-	public ParserRule getPatternRule() {
-		return getPatternAccess().getRule();
-	}
-
-	//HdlTypeReference:
-	//	EnumTypeReference | PrimitiveTypeReference;
-	public HdlTypeReferenceElements getHdlTypeReferenceAccess() {
-		return pHdlTypeReference;
-	}
-	
-	public ParserRule getHdlTypeReferenceRule() {
-		return getHdlTypeReferenceAccess().getRule();
-	}
-
-	//EnumTypeReference:
-	//	type=[Enum];
-	public EnumTypeReferenceElements getEnumTypeReferenceAccess() {
-		return pEnumTypeReference;
-	}
-	
-	public ParserRule getEnumTypeReferenceRule() {
-		return getEnumTypeReferenceAccess().getRule();
-	}
-
-	//PrimitiveTypeReference:
-	//	type=JHipsterType;
-	public PrimitiveTypeReferenceElements getPrimitiveTypeReferenceAccess() {
-		return pPrimitiveTypeReference;
-	}
-	
-	public ParserRule getPrimitiveTypeReferenceRule() {
-		return getPrimitiveTypeReferenceAccess().getRule();
-	}
-
-	//enum RelationType:
-	//	ONE_TO_MANY="OneToMany" | MANY_TO_ONE="ManyToOne" | ONE_TO_ONE="OneToOne" | MANY_TO_MANY="ManyToMany";
-	public RelationTypeElements getRelationTypeAccess() {
-		return unknownRuleRelationType;
-	}
-	
-	public EnumRule getRelationTypeRule() {
-		return getRelationTypeAccess().getRule();
-	}
-
-	//enum JHipsterType:
-	//	STRING="String" | INTEGER="Integer" | LONG="Long" | BIG_DECIMAL="BigDecimal" | FLOAT="Float" | DOUBLE="Double" |
-	//	ENUM="Enum" | BOOLEAN="Boolean" | LOCAL_DATE="LocalDate" | ZONE_DATE_TIME="ZoneDateTime";
-	public JHipsterTypeElements getJHipsterTypeAccess() {
-		return unknownRuleJHipsterType;
-	}
-	
-	public EnumRule getJHipsterTypeRule() {
-		return getJHipsterTypeAccess().getRule();
+	public ParserRule getMyFeatureRule() {
+		return getMyFeatureAccess().getRule();
 	}
 
 	//terminal ID:

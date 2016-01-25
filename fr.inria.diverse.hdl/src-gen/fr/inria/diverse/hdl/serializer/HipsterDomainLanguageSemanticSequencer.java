@@ -6,15 +6,9 @@ package fr.inria.diverse.hdl.serializer;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.Domain;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Entity;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.EnumTypeReference;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Field;
 import fr.inria.diverse.hdl.hipsterDomainLanguage.HipsterDomainLanguagePackage;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.MaxSpecification;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.MinSpecification;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Pattern;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.PrimitiveTypeReference;
-import fr.inria.diverse.hdl.hipsterDomainLanguage.Relation;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.MyElement;
+import fr.inria.diverse.hdl.hipsterDomainLanguage.MyFeature;
 import fr.inria.diverse.hdl.services.HipsterDomainLanguageGrammarAccess;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.serializer.acceptor.ISemanticSequenceAcceptor;
@@ -40,58 +34,11 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 			case HipsterDomainLanguagePackage.DOMAIN:
 				sequence_Domain(context, (Domain) semanticObject); 
 				return; 
-			case HipsterDomainLanguagePackage.ENTITY:
-				sequence_Entity(context, (Entity) semanticObject); 
+			case HipsterDomainLanguagePackage.MY_ELEMENT:
+				sequence_MyElement(context, (MyElement) semanticObject); 
 				return; 
-			case HipsterDomainLanguagePackage.ENUM:
-				sequence_Enum(context, (fr.inria.diverse.hdl.hipsterDomainLanguage.Enum) semanticObject); 
-				return; 
-			case HipsterDomainLanguagePackage.ENUM_TYPE_REFERENCE:
-				sequence_EnumTypeReference(context, (EnumTypeReference) semanticObject); 
-				return; 
-			case HipsterDomainLanguagePackage.FIELD:
-				sequence_Field(context, (Field) semanticObject); 
-				return; 
-			case HipsterDomainLanguagePackage.MAX_SPECIFICATION:
-				if(context == grammarAccess.getIntegerMaxSpecificationRule()) {
-					sequence_IntegerMaxSpecification(context, (MaxSpecification) semanticObject); 
-					return; 
-				}
-				else if(context == grammarAccess.getMaxSpecificationRule() ||
-				   context == grammarAccess.getValidationRuleRule() ||
-				   context == grammarAccess.getValueRangeRule()) {
-					sequence_IntegerMaxSpecification_MaxSpecification_StringMaxSpecification(context, (MaxSpecification) semanticObject); 
-					return; 
-				}
-				else if(context == grammarAccess.getStringMaxSpecificationRule()) {
-					sequence_StringMaxSpecification(context, (MaxSpecification) semanticObject); 
-					return; 
-				}
-				else break;
-			case HipsterDomainLanguagePackage.MIN_SPECIFICATION:
-				if(context == grammarAccess.getIntegerMinSpecificationRule()) {
-					sequence_IntegerMinSpecification(context, (MinSpecification) semanticObject); 
-					return; 
-				}
-				else if(context == grammarAccess.getMinSpecificationRule() ||
-				   context == grammarAccess.getValidationRuleRule() ||
-				   context == grammarAccess.getValueRangeRule()) {
-					sequence_IntegerMinSpecification_MinSpecification_StringMinSpecification(context, (MinSpecification) semanticObject); 
-					return; 
-				}
-				else if(context == grammarAccess.getStringMinSpecificationRule()) {
-					sequence_StringMinSpecification(context, (MinSpecification) semanticObject); 
-					return; 
-				}
-				else break;
-			case HipsterDomainLanguagePackage.PATTERN:
-				sequence_Pattern(context, (Pattern) semanticObject); 
-				return; 
-			case HipsterDomainLanguagePackage.PRIMITIVE_TYPE_REFERENCE:
-				sequence_PrimitiveTypeReference(context, (PrimitiveTypeReference) semanticObject); 
-				return; 
-			case HipsterDomainLanguagePackage.RELATION:
-				sequence_Relation(context, (Relation) semanticObject); 
+			case HipsterDomainLanguagePackage.MY_FEATURE:
+				sequence_MyFeature(context, (MyFeature) semanticObject); 
 				return; 
 			}
 		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
@@ -99,7 +46,7 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     elements+=DomainElement*
+	 *     elements+=MyElement*
 	 */
 	protected void sequence_Domain(EObject context, Domain semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -108,185 +55,25 @@ public class HipsterDomainLanguageSemanticSequencer extends AbstractDelegatingSe
 	
 	/**
 	 * Constraint:
-	 *     (name=ID fields+=Field*)
+	 *     (name=ID someFeatureOfMyElement+=MyFeature*)
 	 */
-	protected void sequence_Entity(EObject context, Entity semanticObject) {
+	protected void sequence_MyElement(EObject context, MyElement semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     type=[Enum|ID]
+	 *     name=ID
 	 */
-	protected void sequence_EnumTypeReference(EObject context, EnumTypeReference semanticObject) {
+	protected void sequence_MyFeature(EObject context, MyFeature semanticObject) {
 		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.ENUM_TYPE_REFERENCE__TYPE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.ENUM_TYPE_REFERENCE__TYPE));
+			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.MY_FEATURE__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.MY_FEATURE__NAME));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getEnumTypeReferenceAccess().getTypeEnumIDTerminalRuleCall_0_1(), semanticObject.getType());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (name=ID literals+=ID literals+=ID*)
-	 */
-	protected void sequence_Enum(EObject context, fr.inria.diverse.hdl.hipsterDomainLanguage.Enum semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (name=ID type=HdlTypeReference required?='required'? validationRules+=ValidationRule*)
-	 */
-	protected void sequence_Field(EObject context, Field semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     max=INT
-	 */
-	protected void sequence_IntegerMaxSpecification(EObject context, MaxSpecification semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.MAX_SPECIFICATION__MAX) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.MAX_SPECIFICATION__MAX));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getIntegerMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0(), semanticObject.getMax());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (max=INT | max=INT)
-	 */
-	protected void sequence_IntegerMaxSpecification_MaxSpecification_StringMaxSpecification(EObject context, MaxSpecification semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     min=INT
-	 */
-	protected void sequence_IntegerMinSpecification(EObject context, MinSpecification semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.MIN_SPECIFICATION__MIN) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.MIN_SPECIFICATION__MIN));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getIntegerMinSpecificationAccess().getMinINTTerminalRuleCall_2_0(), semanticObject.getMin());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (min=INT | min=INT)
-	 */
-	protected void sequence_IntegerMinSpecification_MinSpecification_StringMinSpecification(EObject context, MinSpecification semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     regex=STRING
-	 */
-	protected void sequence_Pattern(EObject context, Pattern semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.PATTERN__REGEX) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.PATTERN__REGEX));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getPatternAccess().getRegexSTRINGTerminalRuleCall_2_0(), semanticObject.getRegex());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     type=JHipsterType
-	 */
-	protected void sequence_PrimitiveTypeReference(EObject context, PrimitiveTypeReference semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.PRIMITIVE_TYPE_REFERENCE__TYPE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.PRIMITIVE_TYPE_REFERENCE__TYPE));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getPrimitiveTypeReferenceAccess().getTypeJHipsterTypeEnumRuleCall_0(), semanticObject.getType());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (type=RelationType from=[Entity|ID] fromRelationName=ID to=[Entity|ID] toRelationName=ID)
-	 */
-	protected void sequence_Relation(EObject context, Relation semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TYPE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TYPE));
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM));
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM_RELATION_NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__FROM_RELATION_NAME));
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO));
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO_RELATION_NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.RELATION__TO_RELATION_NAME));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getRelationAccess().getTypeRelationTypeEnumRuleCall_1_0(), semanticObject.getType());
-		feeder.accept(grammarAccess.getRelationAccess().getFromEntityIDTerminalRuleCall_3_0_1(), semanticObject.getFrom());
-		feeder.accept(grammarAccess.getRelationAccess().getFromRelationNameIDTerminalRuleCall_4_1_0(), semanticObject.getFromRelationName());
-		feeder.accept(grammarAccess.getRelationAccess().getToEntityIDTerminalRuleCall_6_0_1(), semanticObject.getTo());
-		feeder.accept(grammarAccess.getRelationAccess().getToRelationNameIDTerminalRuleCall_7_1_0(), semanticObject.getToRelationName());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     max=INT
-	 */
-	protected void sequence_StringMaxSpecification(EObject context, MaxSpecification semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.MAX_SPECIFICATION__MAX) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.MAX_SPECIFICATION__MAX));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getStringMaxSpecificationAccess().getMaxINTTerminalRuleCall_2_0(), semanticObject.getMax());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     min=INT
-	 */
-	protected void sequence_StringMinSpecification(EObject context, MinSpecification semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HipsterDomainLanguagePackage.Literals.MIN_SPECIFICATION__MIN) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HipsterDomainLanguagePackage.Literals.MIN_SPECIFICATION__MIN));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getStringMinSpecificationAccess().getMinINTTerminalRuleCall_2_0(), semanticObject.getMin());
+		feeder.accept(grammarAccess.getMyFeatureAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
 		feeder.finish();
 	}
 }
