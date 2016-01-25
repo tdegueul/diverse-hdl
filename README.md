@@ -12,7 +12,7 @@ To get started, clone this repository on your filesystem.
 
 ## Xtext
 
-![screen1](/home/dig/repositories/diverse-hdl/hdl.png)
+![screen1](hdl.png)
 
 *Step 0*: clone this repository and import the projects it contains in Eclipse. (`File -> Import -> Existing projects into workspace`).
 
@@ -59,7 +59,7 @@ Besides the facilities offered by Xtext, we would like to design an additional t
 ## Sirius
 Ok, so we've got a basic textual editor for JDL. But wouldn't it be more convenient to be able to visualize our entity-relation domain model graphically (ie. "boxes and arrows")?
 
-![screen2](/home/dig/repositories/diverse-hdl/sirius.png) 
+![screen2](sirius.png) 
 
 When cloning the repository, you obtained a project `fr.inria.diverse.hdl.design`. Within it, you'll find a so-called 'Viewpoint Specification Model' `description/hdl.odesign`. This file specifies how the elements of a model (ie. your `.hdl` file) are projected as graphical elements. Additional documentation can be found at [https://www.eclipse.org/sirius/doc/specifier/diagrams/Diagrams.html](https://www.eclipse.org/sirius/doc/specifier/diagrams/Diagrams.html).
 
