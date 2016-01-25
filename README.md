@@ -12,7 +12,7 @@ To get started, clone this repository on your filesystem.
 
 ## Xtext
 
-![screen1](/home/dig/repositories/diverse-hdl/hdl.png)
+![screen1](hdl.png)
 
 *Step 0*: clone this repository and import the projects it contains in Eclipse. (`File -> Import -> Existing projects into workspace`).
 
@@ -57,7 +57,7 @@ Besides the facilities offered by Xtext, we would like to design an additional t
 
 ## Sirius
 
-![screen2](/home/dig/repositories/diverse-hdl/sirius.png) 
+![screen2](sirius.png) 
 
 
 
