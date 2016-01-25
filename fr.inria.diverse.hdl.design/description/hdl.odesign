@@ -1,55 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="hdl" version="9.0.0">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" name="hdl" version="9.0.0">
   <ownedViewpoints name="hdl.viewpoint" label="HDL Viewpoint" modelFileExtension="hdl">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="hdl.classdiagram" label="HDL Class Diagram" domainClass="hipsterDomainLanguage.Domain">
       <metamodel href="../../fr.inria.diverse.hdl/model/generated/HipsterDomainLanguage.ecore#/"/>
-      <defaultLayer name="Default">
-        <edgeMappings name="hdl.Relation" sourceMapping="//@ownedViewpoints[name='hdl.viewpoint']/@ownedRepresentations[name='hdl.classdiagram']/@defaultLayer/@containerMappings[name='hdl.Entity']" targetMapping="//@ownedViewpoints[name='hdl.viewpoint']/@ownedRepresentations[name='hdl.classdiagram']/@defaultLayer/@containerMappings[name='hdl.Entity']" targetFinderExpression="feature:to" sourceFinderExpression="feature:from" domainClass="hipsterDomainLanguage.Relation" useDomainElement="true">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelFormat="italic" showIcon="false" labelExpression="feature:type">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <containerMappings name="hdl.Entity" semanticCandidatesExpression="feature:elements" domainClass="hipsterDomainLanguage.Entity" childrenPresentation="List">
-          <subNodeMappings name="hdl.Field" semanticCandidatesExpression="feature:eAllContents" domainClass="hipsterDomainLanguage.Field">
-            <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[self.name /]" labelAlignment="LEFT" resizeKind="NSEW">
-              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            </style>
-            <conditionnalStyles predicateExpression="[self.type.oclIsKindOf(EnumTypeReference) /]">
-              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[self.name + ' : ' + self.type.oclAsType(EnumTypeReference).type.name /]" labelAlignment="LEFT" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </conditionnalStyles>
-            <conditionnalStyles predicateExpression="[self.type.oclIsKindOf(PrimitiveTypeReference) /]">
-              <style xsi:type="style:DotDescription" showIcon="false" labelExpression="[self.name + ' : ' + self.type.oclAsType(PrimitiveTypeReference).type /]" labelAlignment="LEFT" resizeKind="NSEW">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-              </style>
-            </conditionnalStyles>
-          </subNodeMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="5" arcHeight="5" labelFormat="bold" showIcon="false" roundedCorner="true" backgroundStyle="GradientTopToBottom">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style>
-        </containerMappings>
-        <containerMappings name="hdl.Enum" semanticCandidatesExpression="feature:elements" domainClass="hipsterDomainLanguage.Enum" childrenPresentation="List">
-          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="5" arcHeight="5" labelFormat="bold" showIcon="false" roundedCorner="true" backgroundStyle="GradientTopToBottom">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
-          </style>
-        </containerMappings>
-      </defaultLayer>
+      <defaultLayer name="Default"/>
     </ownedRepresentations>
   </ownedViewpoints>
 </description:Group>
