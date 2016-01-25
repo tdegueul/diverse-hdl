@@ -1,6 +1,6 @@
 # Yet Another Hipster Domain Language (HDL)
 
-Our own implementation of the [JDL language](https://jhipster.github.io/jhipster-uml/#jdl)., and more. Also, an opportunity to have a look at the [Xtend programming language](http://xtend-lang.org/)! Xtend itself is implemented in Xtext, so it's a good showcase of what can be achieved.
+Our own implementation of the [JDL language](https://jhipster.github.io/jhipster-uml/#jdl), and more. Also, an opportunity to have a look at the [Xtend programming language](http://xtend-lang.org/)! Xtend itself is implemented in Xtext, so it's a good showcase of what can be achieved.
 
 To get started, clone this repository on your filesystem.
 
@@ -64,7 +64,7 @@ Ok, so we've got a basic textual editor for JDL. But wouldn't it be more conveni
 
 ![screen2](sirius.png) 
 
-When cloning the repository, you obtained a project `fr.inria.diverse.hdl.design`. Within it, you'll find a so-called 'Viewpoint Specification Model' `description/hdl.odesign`. This file specifies how the elements of a model (ie. your `.hdl` file) are projected as graphical elements. Additional documentation can be found at [https://www.eclipse.org/sirius/doc/specifier/diagrams/Diagrams.html](https://www.eclipse.org/sirius/doc/specifier/diagrams/Diagrams.html).
+When cloning the repository, you obtained a project `fr.inria.diverse.hdl.design`. Within it, you'll find a so-called 'Viewpoint Specification Model' `description/hdl.odesign`. This file specifies how the elements of a model (ie. your `.hdl` file) are projected as graphical elements. Additional documentation can be found at [https://wiki.eclipse.org/Sirius/Tutorials/StarterTutorial](https://wiki.eclipse.org/Sirius/Tutorials/StarterTutorial) and [https://www.eclipse.org/sirius/doc/specifier/diagrams/Diagrams.html](https://www.eclipse.org/sirius/doc/specifier/diagrams/Diagrams.html).
 
 To get started, enter the Modeling perspective: `Window -> Open Perspective -> Modeling` and open the `.odesign` file. Also, open the Properties view which you'll use to customize your representation elements: `Window -> Show View -> Properties`.
 
